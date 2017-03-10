@@ -19,10 +19,3 @@ To build minified version:
 
 ***********************************************
 
-resources
----------
-
-- [complete project demo](http://sang-shockwave.rhcloud.com)
-
-
-******************************************************************
