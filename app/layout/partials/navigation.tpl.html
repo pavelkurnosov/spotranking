@@ -1,0 +1,79 @@
+<aside id="left-panel">
+
+    <!-- User info -->
+    <!--<div login-info></div>-->
+    <!-- end user info -->
+
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+        <ul data-smart-menu>
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.home" title="Outlook">
+                    <i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-cogs"></i> <span
+                        class="menu-item-parent">{{getWord('My Campaigns')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.mainSearch">{{getWord('Main Search')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.rtvReport">{{getWord('RTV AD Airing Certificate')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-globe"></i> <span
+                        class="menu-item-parent">{{getWord('My Insight')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('Media Outlet Listing')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('Campaign Breakdown')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-signal"></i> <span
+                        class="menu-item-parent">{{getWord('Organization Perform')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('Brand Size VS Competition')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('Share and Positing')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-th"></i> <span
+                        class="menu-item-parent">{{getWord('OOH')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('OOH Library')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="#">{{getWord('OOH Inventory Map')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a data-ui-sref="app.home" title="Outlook">
+                    <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">{{getWord('Billing System')}}</span></a>
+            </li>
+        </ul>
+
+        <!-- NOTE: This allows you to pull menu items from server -->
+        <!-- <ul data-smart-menu-items="/api/menu-items.json"></ul> -->
+    </nav>
+
+  <span class="minifyme" data-action="minifyMenu" minify-menu>
+    <i class="fa fa-arrow-circle-left hit"></i>
+  </span>
+
+</aside>
