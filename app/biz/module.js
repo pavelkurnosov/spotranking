@@ -13,7 +13,8 @@ angular.module('app.biz', ['ui.router'])
             views: {
                 "content@app": {
                     templateUrl: 'app/biz/views/main-search.html',
-                    controller: 'MainSearchController'
+                    controller: 'MainSearchController',
+                    controllerAs: 'vm'
                 }
             }
         })
@@ -25,7 +26,21 @@ angular.module('app.biz', ['ui.router'])
             views: {
                 "content@app": {
                     templateUrl: 'app/biz/views/rtv-report.html',
-                    controller: 'RtvReportController'
+                    controller: 'RtvReportController',
+                    controllerAs: 'vm'
+                }
+            }
+        })
+        .state('app.biz.mediaOutlet', {
+            url: '/media_outlet',
+            data: {
+                title: 'Media Outlet Listing'
+            },
+            views: {
+                "content@app": {
+                    templateUrl: 'app/biz/views/media-outlet.html',
+                    controller: 'MediaOutletController',
+                    controllerAs: 'vm'
                 }
             }
         })
