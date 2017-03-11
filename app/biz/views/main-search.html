@@ -1,4 +1,5 @@
 <div id="content">
+
     <!--<div class="row">
         <big-breadcrumbs items="['My Campaign', 'Main Search']" icon="home" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
     </div>-->
@@ -141,7 +142,7 @@
 
                     <div class="content-fluid">
 
-                        <div class="row" ng-repeat="i in [1,1,1,1] track by $index">
+                        <div class="row" ng-repeat="i in [1,1] track by $index">
                             <div class="col-md-12">
                                 <div class="well">
                                     <div class="container-fluid">
@@ -158,12 +159,11 @@
                                                         <div class="col-xs-12 text-center">
                                                             <a href-void class="btn btn-warning">Share</a>
                                                             <a href-void class="btn btn-labeled btn-danger"> <span class="btn-label"><i class="glyphicon glyphicon-download-alt"></i></span>Click to Download</a>
-                                                            <a href-void class="btn btn-labeled btn-primary"> <span class="btn-label"><i class="glyphicon glyphicon-download-alt"></i></span>Download Report</a>
                                                             <a href-void class="btn btn-warning">+ Report</a>
                                                         </div>
                                                     </div>
                                                     <div class="row">
-                                                        <div class="col-xs-6">
+                                                        <div class="col-xs-7">
                                                             <div class="table-responsive">
                                                                 <table class="table table-bordered table-striped">
                                                                     <tr>
@@ -171,7 +171,7 @@
                                                                         <td>TOY/Print/130816/01</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Headline: </td>
+                                                                        <td>Headline:</td>
                                                                         <td>2017 Toyota Camry</td>
                                                                     </tr>
                                                                     <tr>
@@ -192,18 +192,58 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Campaign Message:</td>
-                                                                        <td>New Kind of Lunry, a head of its time. Introducing the all new Camry Hybrid</td>
+                                                                        <td>New Kind of Lunry, a head of its time. <br/>Introducing the all new Camry Hybrid</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Country</td>
                                                                         <td>Algeria</td>
                                                                     </tr>
+                                                                    <tr>
+                                                                        <td>Publication Name</td>
+                                                                        <td>EI Watan</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Frequency</td>
+                                                                        <td>Daily</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Language</td>
+                                                                        <td>Arabic</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Format</td>
+                                                                        <td>Tabloid</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Circulation</td>
+                                                                        <td>30000</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Section</td>
+                                                                        <td>National</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Page Number</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Image Specs</td>
+                                                                        <td>B&W</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ads Type</td>
+                                                                        <td>Banner advertising</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Ads Size</td>
+                                                                        <td>1/4 Vertical</td>
+                                                                    </tr>
                                                                 </table>
                                                             </div>
                                                         </div>
-                                                        <div class="col-xs-6">
+                                                        <div class="col-xs-5">
                                                             <div class="margin-bottom-10"><img class="img-responsive" src="./styles/img/cover.png"></div>
-                                                            <div><a href-void class="btn btn-primary">Generate CMT Report</a></div>
+                                                            <div class="margin-bottom-10"><img class="img-responsive margin-auto" src="./styles/img/temp/9.jpg"></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -214,7 +254,13 @@
                             </div>
                         </div>
 
-
+                        <div class="row margin-bottom-10">
+                            <div class="col-xs-12 ">
+                                <a href-void class="btn btn-primary"> Download Report</a>
+                                <a href-void class="btn btn-primary">Generate E-Report</a>
+                                <a href-void class="btn btn-primary">Export Report</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- end widget content -->
@@ -223,82 +269,111 @@
 
         </div>
         <div class="col-md-3">
-            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Campaigns Messages</h2>
-                </header>
+            <div ng-class="{'fixed-main-search-summary': vm.fixedSummaryDiv}">
+                <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                        <h2>Campaigns Messages</h2>
+                    </header>
 
-                <!-- widget div-->
-                <div>
-                    <!-- widget content -->
-                    <div class="widget-body">
-                        <p>A Whopper for Gignac</p>
-                        <p>World famous Fries The proud Whopper The friendship is strong but the Whopper is strong 100% British and BEEF</p>
-                    </div>
-                    <!-- end widget body-->
+                    <!-- widget div-->
+                    <div>
+                        <!-- widget content -->
+                        <div class="widget-body">
+                            <p>A Whopper for Gignac</p>
+                            <p>World famous Fries The proud Whopper The friendship is strong but the Whopper is strong 100% British and BEEF</p>
 
-                </div>
-                <!-- end widget content -->
+                            <br/>
+                            <h6>Search Summary</h6>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-striped">
+                                    <tr>
+                                        <td>Access</td>
+                                        <td>Arabian PR</td>
+                                    </tr>
+                                    <tr>
+                                        <td>TAG Match</td>
+                                        <td>Toyota</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Industry</td>
+                                        <td>Automobile</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Product List</td>
+                                        <td>
+                                            CAMRY 2017<br/>
+                                            Television<br/>
+                                            Newspaper<br/>
+                                            Magazine Radio
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Media Vehicle</td>
+                                        <td>
+                                            Online Display<br/>
+                                            Outdoor<br/>
+                                            Cinema
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Country</td>
+                                        <td>Algeria</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Language</td>
+                                        <td>All</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date Period</td>
+                                        <td>01-07-16 to 30-07-16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Search Result</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">76 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Television</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">20 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Newspaper</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">4 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magazine</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">5 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Radio</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">33 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Online Display</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">6 Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Outdoor</td>
+                                        <td><a data-ui-sref="app.biz.mainSearch">8 Spots</a></td>
+                                    </tr>
+                                </table>
+                            </div>
 
-            </div>
-            <div jarvis-widget data-widget-color="blueDark" id="search-summary" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-table"></i> </span>
-
-                    <h2>Search Summary</h2>
-                </header>
-                <div>
-                    <div class="widget-body no-padding">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped">
-                                <tr>
-                                    <td>Access</td>
-                                    <td>Arabian PR</td>
-                                </tr>
-                                <tr>
-                                    <td>TAG Match</td>
-                                    <td>Toyota</td>
-                                </tr>
-                                <tr>
-                                    <td>Industry</td>
-                                    <td>Automobile</td>
-                                </tr>
-                                <tr>
-                                    <td>Product List</td>
-                                    <td>
-                                        CAMRY 2017<br/>
-                                        Television<br/>
-                                        Newspaper<br/>
-                                        Magazine Radio
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Media Vehicle</td>
-                                    <td>
-                                        Online Display<br/>
-                                        Outdoor<br/>
-                                        Cinema
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Country</td>
-                                    <td>Algeria</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
-                            </table>
                         </div>
+                        <!-- end widget body-->
+
                     </div>
+                    <!-- end widget content -->
+
                 </div>
             </div>
             <!-- end widget -->
         </div>
     </div>
+{{vm}}
+    <a href-void
+       class="btn btn-primary btn-circle btn-lg back-to-top"
+       ng-click="vm.backToTop()">
+        <i class="glyphicon glyphicon-chevron-up"></i>
+    </a>
 </div>

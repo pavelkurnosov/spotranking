@@ -4,6 +4,12 @@
     <!--<div login-info></div>-->
     <!-- end user info -->
 
+    <div class="container-fluid">
+        <div class="row">
+            <img class="col-xs-12 img-responsive margin-top-10 margin-bottom-10" src="./styles/img/temp/6.jpg">
+        </div>
+    </div>
+
     <nav>
         <!-- NOTE: Notice the gaps after each icon usage <i></i>..
         Please note that these links work a bit different than
@@ -11,7 +17,7 @@
         -->
         <ul data-smart-menu>
             <li data-ui-sref-active="active">
-                <a data-ui-sref="app.home" title="Outlook">
+                <a data-ui-sref="app.biz.dashboard" title="Dashboard">
                     <i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
             </li>
             <li data-menu-collapse>
@@ -55,10 +61,10 @@
                         class="menu-item-parent">{{getWord('OOH')}}</span></a>
                 <ul>
                     <li data-ui-sref-active="active">
-                        <a data-ui-sref="#">{{getWord('OOH Library')}}</a>
+                        <a data-ui-sref="app.biz.mediaLibrary">{{getWord('OOH Media Library')}}</a>
                     </li>
                     <li data-ui-sref-active="active">
-                        <a data-ui-sref="#">{{getWord('OOH Inventory Map')}}</a>
+                        <a data-ui-sref="app.biz.inventoryMap">{{getWord('OOH Inventory Map')}}</a>
                     </li>
                 </ul>
             </li>
@@ -72,7 +78,7 @@
         <!-- <ul data-smart-menu-items="/api/menu-items.json"></ul> -->
     </nav>
 
-  <span class="minifyme" data-action="minifyMenu" minify-menu>
+    <span class="minifyme" data-action="minifyMenu" minify-menu>
     <i class="fa fa-arrow-circle-left hit"></i>
   </span>
 
