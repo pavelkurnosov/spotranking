@@ -39,35 +39,35 @@ var destinations = {
 };
 
 
-gulp.task('build', function(){
-    return es.merge(gulp.src(source.js.src) , getTemplateStream())
-         .pipe(ngAnnotate())
-         .pipe(uglify())
+gulp.task('build', function () {
+    return es.merge(gulp.src(source.js.src), getTemplateStream())
+        .pipe(ngAnnotate())
+        .pipe(uglify())
         .pipe(concat('app.js'))
         .pipe(gulp.dest(destinations.js));
 });
 
-gulp.task('js', function(){
-    return es.merge(gulp.src(source.js.src) , getTemplateStream())
+gulp.task('js', function () {
+    return es.merge(gulp.src(source.js.src), getTemplateStream())
         .pipe(concat('app.js'))
         .pipe(gulp.dest(destinations.js));
 });
 
-gulp.task('watch', function(){
+gulp.task('watch', function () {
     gulp.watch(source.js.src, ['js']);
     gulp.watch(source.js.tpl, ['js']);
 });
 
-gulp.task('connect', function() {
+gulp.task('connect', function () {
     connect.server({
         port: 8888
     });
 });
 
-gulp.task('vendor', function(){
-    _.forIn(scripts.chunks, function(chunkScripts, chunkName){
+gulp.task('vendor', function () {
+    _.forIn(scripts.chunks, function (chunkScripts, chunkName) {
         var paths = [];
-        chunkScripts.forEach(function(script){
+        chunkScripts.forEach(function (script) {
             var scriptFileName = scripts.paths[script];
 
             if (!fs.existsSync(__dirname + '/' + scriptFileName)) {
@@ -88,7 +88,7 @@ gulp.task('prod', ['vendor', 'build']);
 gulp.task('dev', ['vendor', 'js', 'watch', 'connect']);
 gulp.task('default', ['dev']);
 
-var swallowError = function(error){
+var swallowError = function (error) {
     console.log(error.toString());
     this.emit('end')
 };

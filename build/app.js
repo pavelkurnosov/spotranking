@@ -327,7 +327,8 @@ angular.module('app', [
     //'app.smartAdmin',
     //'app.eCommerce'
     'app.home',
-    'app.biz'
+    'app.biz',
+    'ngBootstrap'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 
@@ -2560,6 +2561,11 @@ angular.module('app.biz').controller('MainSearchController', function ($window) 
     var vm = this;
 
     vm.fixedSummaryDiv = false;
+    vm.checks = [];
+    vm.extendTableVisible = [];
+
+    vm.dates4 = { startDate: moment().subtract(1, 'day'), endDate: moment().subtract(1, 'day') };
+
 
     vm.backToTop = function () {
         document.body.scrollTop = 0;

@@ -37,7 +37,8 @@ angular.module('app', [
     //'app.smartAdmin',
     //'app.eCommerce'
     'app.home',
-    'app.biz'
+    'app.biz',
+    'ngBootstrap'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 
