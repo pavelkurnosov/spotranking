@@ -62,6 +62,32 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.campaignBreakdown', {
+                url: '/campaign_breakdown',
+                data: {
+                    title: 'Campaign Breakdown'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/campaign-breakdown.html',
+                        controller: 'CampaignBreakdownController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialMedia', {
+                url: '/social_media',
+                data: {
+                    title: 'Social Media Engagement'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social-media.html',
+                        controller: 'SocialMediaController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             .state('app.biz.mediaLibrary', {
                 url: '/media_library',
                 data: {
