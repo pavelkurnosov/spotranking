@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spotranking.zip" afterPath="$PROJECT_DIR$/spotranking.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="spotranking.iws" />
@@ -50,8 +53,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+            <state relative-caret-position="663">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -313,12 +316,12 @@
       <workItem from="1489384166889" duration="22345000" />
       <workItem from="1489452666156" duration="5550000" />
       <workItem from="1489488505641" duration="17000" />
-      <workItem from="1489490419778" duration="13000000" />
+      <workItem from="1489490419778" duration="13678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="116551000" />
+    <option name="totallyTimeSpent" value="117229000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -595,7 +598,7 @@
         <state relative-caret-position="266">
           <caret line="4004" column="0" selection-start-line="4004" selection-start-column="0" selection-end-line="4004" selection-end-column="0" />
           <folding>
-            <marker date="1489507925273" expanded="true" signature="546778:546788" ph="{...}" />
+            <marker date="1489508100468" expanded="true" signature="546778:546788" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -728,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="663">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
