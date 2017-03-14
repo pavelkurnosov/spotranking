@@ -291,6 +291,10 @@
 .dt-buttons .dt-button:hover{
     background: rgba(117,205,241,.83)!important;
 }
+
+::-webkit-input-placeholder {
+    color: #868686;
+}
 /*----------------------------------------------------------------------------*/
 .title-in-table {
     border-right: 2px solid rgba(255, 255, 255, 0.2);
@@ -316,10 +320,12 @@
     width: 200px;
 }
 
-
-
-
-
-::-webkit-input-placeholder {
-    color: #868686;
+.media-logo {
+    width: 30px;
+    margin-top: -10px;
+    margin-left: 5px;
 }
+
+
+
+
