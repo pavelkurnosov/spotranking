@@ -276,6 +276,21 @@
     bottom: 30px;
 }
 
+.dt-buttons {
+    width: 100%;
+    text-align: right;
+}
+.dt-buttons .dt-button{
+    border-color: rgba(117,205,241,.83);
+    background: rgba(71,188,236,.83);
+    color: white;
+    webkit-text-shadow: 0 1px 5px rgba(0,0,0,.25);
+    -moz-text-shadow: 0 1px 5px rgba(0,0,0,.25);
+    text-shadow: 0 1px 5px rgba(0,0,0,.25);
+}
+.dt-buttons .dt-button:hover{
+    background: rgba(117,205,241,.83)!important;
+}
 /*----------------------------------------------------------------------------*/
 .title-in-table {
     border-right: 2px solid rgba(255, 255, 255, 0.2);

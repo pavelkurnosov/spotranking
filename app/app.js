@@ -15,6 +15,7 @@ angular.module('app', [
     'restangular',
     'ui.router',
     'ui.bootstrap',
+    'datatables', 'datatables.buttons', 'datatables.bootstrap',
 
     // Smartadmin Angular Common Module
     'SmartAdmin',
@@ -27,18 +28,18 @@ angular.module('app', [
     //'app.calendar',
     //'app.inbox',
     'app.graphs',
-    //'app.tables',
-    //'app.forms',
+    'app.tables',
+    'app.forms',
     //'app.ui',
-    //'app.widgets',
+    // 'app.widgets',
     'app.maps',
     //'app.appViews',
-    //'app.misc',
+    // 'app.misc',
     //'app.smartAdmin',
     //'app.eCommerce'
     'app.home',
     'app.biz',
-    'ngBootstrap'
+    'ngBootstrap',
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 

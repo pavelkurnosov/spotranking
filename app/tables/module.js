@@ -1,6 +1,6 @@
 "use strict";
 
-angular.module('app.tables', [ 'ui.router', 'datatables', 'datatables.bootstrap']);
+angular.module('app.tables', [ 'ui.router']);
 
 angular.module('app.tables').config(function ($stateProvider) {
 
