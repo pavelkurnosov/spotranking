@@ -291,6 +291,9 @@
 .dt-buttons .dt-button:hover{
     background: rgba(117,205,241,.83)!important;
 }
+div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-collection button.dt-button.active:not(.disabled), div.dt-button-collection div.dt-button:active:not(.disabled), div.dt-button-collection div.dt-button.active:not(.disabled), div.dt-button-collection a.dt-button:active:not(.disabled), div.dt-button-collection a.dt-button.active:not(.disabled) {
+    background: #85b4e0!important;
+}
 
 ::-webkit-input-placeholder {
     color: #868686;
