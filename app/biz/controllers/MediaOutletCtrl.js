@@ -19,14 +19,14 @@ angular.module('app.biz').controller('MediaOutletController', function (DTOption
             'copy',
             'pdf',
             'excel',
-            'csv'/*,
+            'csv',
             {
-                text: 'Some button',
+                text: 'Report',
                 key: '1',
                 action: function (e, dt, node, config) {
-                    alert('Button activated');
+                    alert('Report will be created.');
                 }
-            }*/
+            }
         ])
         .withBootstrap();
 
