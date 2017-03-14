@@ -33,7 +33,9 @@
       "flot-tooltip",
       "datatables",
       "angular-datatables",
-      "angular-datatables.bootstrap"
+      "angular-datatables.bootstrap",
+      "bootstrap-daterangepicker",
+      "ng-bs-daterangepicker"
 
     ],
     "vendor.ui": [
@@ -119,7 +121,7 @@
     "flot-pie": "smartadmin-plugin/legacy/flot/jquery.flot.pie.min.js",
     "flot-time": "smartadmin-plugin/legacy/flot/jquery.flot.time.min.js",
     "flot-tooltip": "smartadmin-plugin/legacy/flot/jquery.flot.tooltip.min.js",
-    "raphael": "bower_components/raphael/raphael-min.js",
+    "raphael": "bower_components/raphael/raphael.min.js",
     "morris": "bower_components/morris.js/morris.min.js",
     "dygraphs": "bower_components/dygraphs/dygraph-combined.js",
     "chartjs": "bower_components/Chart.js/Chart.min.js",
@@ -141,7 +143,7 @@
     "nouislider": "bower_components/nouislider/distribute/jquery.nouislider.min.js",
     "ionslider": "bower_components/ion.rangeSlider/js/ion.rangeSlider.min.js",
     "bootstrap-duallistbox": "bower_components/bootstrap-duallistbox/dist/jquery.bootstrap-duallistbox.min.js",
-    "bootstrap-colorpicker": "bower_components/bootstrap-colorpicker/js/bootstrap-colorpicker.js",
+    "bootstrap-colorpicker": "bower_components/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js",
     "jquery-knob": "bower_components/jquery-knob/dist/jquery.knob.min.js",
     "bootstrap-slider": "bower_components/seiyria-bootstrap-slider/dist/bootstrap-slider.min.js",
     "bootstrap-tagsinput": "bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.min.js",
@@ -158,6 +160,8 @@
     "magnific-popup": "bower_components/magnific-popup/dist/jquery.magnific-popup.js",
     "fullcalendar": "smartadmin-plugin/fullcalendar/jquery.fullcalendar.min.js",
     "smartwidgets": "smartadmin-plugin/smartwidgets/jarvis.widget.min.js",
-    "notification": "smartadmin-plugin/notification/SmartNotification.min.js"
+    "notification": "smartadmin-plugin/notification/SmartNotification.min.js",
+    "bootstrap-daterangepicker": "bower_components/bootstrap-daterangepicker/daterangepicker.js",
+    "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js"
   }
 }

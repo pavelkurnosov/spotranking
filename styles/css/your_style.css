@@ -296,3 +296,15 @@
 .tag-box {
     width: 80px;
 }
+
+.date-range-box {
+    width: 200px;
+}
+
+
+
+
+
+::-webkit-input-placeholder {
+    color: #868686;
+}

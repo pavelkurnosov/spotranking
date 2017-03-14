@@ -69,9 +69,7 @@ gulp.task('vendor', function () {
         var paths = [];
         chunkScripts.forEach(function (script) {
             var scriptFileName = scripts.paths[script];
-
             if (!fs.existsSync(__dirname + '/' + scriptFileName)) {
-
                 throw console.error('Required path doesn\'t exist: ' + __dirname + '/' + scriptFileName, script)
             }
             paths.push(scriptFileName);
