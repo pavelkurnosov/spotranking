@@ -5,6 +5,279 @@
 
     <!-- content -->
     <div class="row">
-        Social Media
+        <div class="col-xs-12 col-sm-8">
+            <div class="well display-inline-block width-full">
+                <div class="container-fluid">
+                    <div class="row margin-bottom-10">
+                        <div class="col-xs-12 text-center">
+                            <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Country <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void>United States</a>
+                                    </li>
+                                    <li>
+                                        <a href-void>France</a>
+                                    </li>
+                                    <li>
+                                        <a href-void>United Kingdom</a>
+                                    </li>
+                                    <li>
+                                        <a href-void>... ... ...</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Language <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void>English</a>
+                                    </li>
+                                    <li>
+                                        <a href-void>French</a>
+                                    </li>
+                                    <li>
+                                        <a href-void>Arabic</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Media type <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Industry <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Sub-Industry <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Brand <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void></a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="btn-group dropdown float-left margin-left-5" data-dropdown>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                    Product Name <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href-void></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="smart-form float-left tag-box margin-left-5">
+                                <label class="input">
+                                    <input type="text" placeholder="Tag">
+                                </label>
+                            </div>
+
+                            <div class="smart-form float-left search-box margin-left-5">
+                                <label class="input">
+                                    <input type="text" placeholder="Campaign message">
+                                </label>
+                            </div>
+
+                            <div class="smart-form float-left date-range-box margin-left-5">
+                                <label class="input">
+                                    <input type="daterange" ng-model="vm.dates4" ranges="vm.ranges" placeholder="Period">
+                                </label>
+                            </div>
+
+                            <a href-void class="btn btn-primary float-left margin-left-20">Generate report pack</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="well text-right">
+                <a href-void class="btn btn-primary">Back to main Search</a>
+                <a href-void class="btn btn-danger">Clear All</a>
+                <a href-void class="btn btn-success">Generate report pack</a>
+            </div>-->
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Social Engagement Summary</h2>
+                </header>
+
+                <!-- widget div-->
+                <div>
+                    <!-- widget content -->
+                    <div class="widget-body">
+                        <table class="table table-bordered table-striped">
+                            <tr ng-repeat="sm in vm.socialSummaries">
+                                <td class="col-xs-4 text-right">{{sm.title}} ({{sm.amount}})</td>
+                                <td class="col-xs-8">
+                                    <div class="progress margin-0">
+                                        <div class="progress-bar" role="progressbar" style="width: {{sm.amount / 5}}%"></div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row margin-bottom-20">
+        <div class="col-xs-6 col-sm-3 margin-bottom-5" ng-repeat="t in vm.tops">
+            <div class="top-div text-center">
+                <h4>{{t.title}}</h4>
+                <div class="top-div-icon">
+                    <i class="fa fa-3x fa-{{t.icon}}"></i>
+                    <span class="margin-left-10">{{t.amount}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" ng-repeat="sw in vm.socialWebsites">
+        <div class="col-xs-12">
+            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messagessd" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>{{sw.name}} Engagement</h2>
+                </header>
+
+                <!-- widget div-->
+                <div>
+                    <!-- widget content -->
+                    <div class="widget-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-8 table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                        <tr>
+                                            <td>Posting</td>
+                                            <td>Published on</td>
+                                            <td>Post type</td>
+                                            <td>Length</td>
+                                            <td>Number of views</td>
+                                            <td>Comment</td>
+                                            <td>Shared</td>
+                                            <td>Likes</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>#GearVR</td>
+                                            <td>June 09, 2016 4:00PM</td>
+                                            <td>Video</td>
+                                            <td>20 Secs</td>
+                                            <td>40</td>
+                                            <td>5</td>
+                                            <td>15</td>
+                                            <td>18</td>
+                                        </tr>
+                                        <tr>
+                                            <td>#GearVR</td>
+                                            <td>June 09, 2016 4:00PM</td>
+                                            <td>Photo</td>
+                                            <td>GIF</td>
+                                            <td>55</td>
+                                            <td>48</td>
+                                            <td>23</td>
+                                            <td>20</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                        <tr>
+                                            <td>Post type</td>
+                                            <td>Post type share</td>
+                                            <td>Likes</td>
+                                            <td>View</td>
+                                            <td>Retweet</td>
+                                            <td>Replay</td>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Photo</td>
+                                            <td>48.09%</td>
+                                            <td>3,220</td>
+                                            <td>3,220</td>
+                                            <td>369</td>
+                                            <td>229</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Link</td>
+                                            <td>0%</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Video</td>
+                                            <td>0%</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Status</td>
+                                            <td>51%</td>
+                                            <td>3,456</td>
+                                            <td>1,234</td>
+                                            <td>234</td>
+                                            <td>456</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-xs-4">
+                                    <flot-bar-chart data="vm.barChartData"></flot-bar-chart>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
