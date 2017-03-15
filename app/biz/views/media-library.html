@@ -5,7 +5,32 @@
 
     <!-- content -->
     <div class="row">
-        <div class="col-xs-4">
+        <div class="col-xs-3">
+            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Choose Country</h2>
+                </header>
+
+                <!-- widget div-->
+                <div>
+                    <!-- widget content -->
+                    <div class="widget-body">
+                        <div class="smart-form" ng-repeat="f in ['French', 'United Arab', 'Turkey', 'Ukraine', 'Russia', 'Germany', 'Netherlands', '... ...'] track by $index">
+                            <label class="checkbox">
+                                <input type="checkbox" name="checkbox">
+                                <i></i>
+                                {{f}}
+                            </label>
+                        </div>
+                    </div>
+                    <!-- end widget body-->
+
+                </div>
+                <!-- end widget content -->
+            </div>
+        </div>
+        <div class="col-xs-3">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
@@ -31,7 +56,7 @@
             </div>
 
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-3">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
@@ -57,7 +82,7 @@
             </div>
 
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-3">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
@@ -84,17 +109,19 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-8 text-center">
+        <div class="col-xs-6 text-center">
             <a href-void class="btn btn-danger">Search</a>
             <a href-void class="btn btn-primary">Clear Filters</a>
             <a href-void class="btn btn-danger">Export</a>
         </div>
-        <div class="col-xs-4 smart-form">
-            <label class="checkbox">
+        <div class="col-xs-6 text-center">
+            <a href-void class="btn btn-primary">Select all OOH Categories and Formats</a>
+            <a href-void class="btn btn-info">Deselect All</a>
+            <!--<label class="checkbox">
                 <input type="checkbox" name="checkbox">
                 <i></i>
                 Select/Deselect All
-            </label>
+            </label>-->
         </div>
         <div class="col-xs-12">
             <h5 class="text-center">Total Result: 6</h5>
