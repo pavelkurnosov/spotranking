@@ -5,7 +5,7 @@
 
     <!-- content -->
     <div class="row">
-        <div class="col-xs-12 col-sm-8">
+        <div class="col-xs-12 col-sm-7">
             <div class="well display-inline-block width-full">
                 <div class="container-fluid">
                     <div class="row">
@@ -40,11 +40,11 @@
                 <a href-void class="btn btn-success">Generate report pack</a>
             </div>-->
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-xs-12 col-sm-5">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Social Engagement Summary</h2>
+                    <h2>Social Engagement Summary (Jul 20,2015 - Aug 18, 2015)</h2>
                 </header>
 
                 <!-- widget div-->
@@ -53,8 +53,10 @@
                     <div class="widget-body">
                         <table class="table table-bordered table-striped">
                             <tr ng-repeat="sm in vm.socialSummaries">
-                                <td class="col-xs-4 text-right">{{sm.title}} ({{sm.amount}})</td>
-                                <td class="col-xs-8">
+                                <td class="col-xs-3">
+                                    <img class="social-icon" ng-src="./styles/img/temp/icons/{{sm.icon}}">
+                                    ({{sm.amount}})</td>
+                                <td class="col-xs-9">
                                     <div class="progress margin-0">
                                         <div class="progress-bar" role="progressbar" style="width: {{sm.amount / 5}}%"></div>
                                     </div>
@@ -67,7 +69,7 @@
         </div>
     </div>
     <div class="row margin-bottom-20">
-        <div class="col-xs-6 col-sm-3 margin-bottom-5" ng-repeat="t in vm.tops">
+        <div class="col-xs-3 col-sm-2 margin-bottom-5" ng-repeat="t in vm.tops">
             <div class="top-div text-center">
                 <h4>{{t.title}}</h4>
                 <div class="top-div-icon">

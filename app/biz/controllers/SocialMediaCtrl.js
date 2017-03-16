@@ -3,28 +3,28 @@
 angular.module('app.biz').controller('SocialMediaController', function ($scope) {
     var vm = this;
     vm.socialWebsites = [
-        {name: "Twitter"},
         {name: "Facebook"},
+        {name: "Twitter"},
         {name: "Youtube"},
         {name: "Google+"},
-        {name: "LinkedIn"},
-        {name: "Instagram"}
+        {name: "Pinterest"}
     ];
 
     vm.tops = [
-        {title: "Top Comment", amount: 78, icon: "comments"},
-        {title: "Top Shared", amount: 9, icon: "twitter"},
+        {title: "Top Posting", amount: 218, icon: "film"},
+        {title: "Top Audience", amount: 218, icon: "users"},
+        {title: "Top Viewed", amount: 218, icon: "eye"},
+        {title: "Top Commented", amount: 78, icon: "comments"},
         {title: "Top Likes", amount: 30, icon: "facebook"},
-        {title: "Top Viewed", amount: 218, icon: "eye"}
+        {title: "Top Shared", amount: 9, icon: "twitter"}
     ];
 
     vm.socialSummaries = [
-        {title: "Twitter", amount: 332},
-        {title: "Facebook", amount: 240},
-        {title: "LinkedIn", amount: 74},
-        {title: "Google+", amount: 45},
-        {title: "YouTube", amount: 82},
-        {title: "Blogs", amount: 290},
+        {title: "Twitter", amount: 332, icon: "facebook.png"},
+        {title: "Facebook", amount: 240, icon: "twitter.png"},
+        {title: "LinkedIn", amount: 74, icon: "youtube.png"},
+        {title: "Google+", amount: 45, icon: "googleplus.png"},
+        {title: "YouTube", amount: 290, icon: "pinterest.png"}
     ];
 
     vm.barChartData = [
