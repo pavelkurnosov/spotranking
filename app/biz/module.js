@@ -114,6 +114,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.customers', {
+                url: '/customers',
+                data: {
+                    title: 'Customers'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/customers.html',
+                        controller: 'CustomersController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

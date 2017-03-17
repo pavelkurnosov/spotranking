@@ -21,7 +21,7 @@
                     <i class="fa fa-lg fa-fw fa-dashboard"></i> <span class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
             </li>
             <li data-menu-collapse>
-                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-cogs"></i> <span
+                <a href="#" title="My Campaigns"><i class="fa fa-lg fa-fw fa-cogs"></i> <span
                         class="menu-item-parent">{{getWord('My Campaigns')}}</span></a>
                 <ul>
                     <li data-ui-sref-active="active">
@@ -33,7 +33,7 @@
                 </ul>
             </li>
             <li data-menu-collapse>
-                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-globe"></i> <span
+                <a href="#" title="'My Insight"><i class="fa fa-lg fa-fw fa-globe"></i> <span
                         class="menu-item-parent">{{getWord('My Insight')}}</span></a>
                 <ul>
                     <li data-ui-sref-active="active">
@@ -48,7 +48,7 @@
                 </ul>
             </li>
             <li data-menu-collapse>
-                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-signal"></i> <span
+                <a href="#" title="Organization Perform"><i class="fa fa-lg fa-fw fa-signal"></i> <span
                         class="menu-item-parent">{{getWord('Organization Perform')}}</span></a>
                 <ul>
                     <li data-ui-sref-active="active">
@@ -60,7 +60,7 @@
                 </ul>
             </li>
             <li data-menu-collapse>
-                <a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-th"></i> <span
+                <a href="#" title="OOH"><i class="fa fa-lg fa-fw fa-th"></i> <span
                         class="menu-item-parent">{{getWord('OOH')}}</span></a>
                 <ul>
                     <li data-ui-sref-active="active">
@@ -71,9 +71,14 @@
                     </li>
                 </ul>
             </li>
-            <li>
-                <a data-ui-sref="app.home" title="Outlook">
-                    <i class="fa fa-lg fa-fw fa-shopping-cart"></i> <span class="menu-item-parent">{{getWord('Billing System')}}</span></a>
+            <li data-menu-collapse>
+                <a href="#" title="Billing System"><i class="fa fa-lg fa-fw fa-th"></i> <span
+                        class="menu-item-parent">{{getWord('Billing System')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.biz.customers">{{getWord('Customers')}}</a>
+                    </li>
+                </ul>
             </li>
         </ul>
 
