@@ -8,12 +8,13 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         credits: {enabled: false},
         title: {text: 'Jun 5, 2015 - jun 11, 2015'},
         xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', 'WooCommerce', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
-        yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
         series: [{
             name: 'Twitter',
-            data: [1, 3, 4, 7, 2, 3, 4, 7, 2, 3, 4, 7]
+            data: [11, 3, 4, 7, 2, 3, 4, 7, 2, 3, 4, 7]
         }, {
             name: 'Facebook',
             data: [2, 2, 1, 2, 1, 2, 1, 2, 1, 1, 2, 2]
@@ -22,10 +23,10 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
             data: [3, 4, 4, 2, 2, 1, 1, 1, 2, 4, 1, 2]
         }, {
             name: 'YouTube',
-            data: [4, 4, 4, 2, 5, 4, 4, 2, 5, 4, 4, 2]
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
         }, {
             name: 'Instagram',
-            data: [14, 4, 4, 2, 5, 4, 4, 2, 5, 4, 4, 2]
+            data: [3, 4, 4, 2, 5, 4, 4, 2, 5, 4, 4, 2]
         }]
     };
     vm.data2 = {
@@ -33,9 +34,10 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         credits: {enabled: false},
         title: {text: ''},
         xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'WooCommerce', 'BigCommerce', '3dcart', 'CubeCart', 'UltraCart', 'Magento', 'Pinnacle Cart', 'X-Cart', 'Elastic Path']},
-        yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#5fc2f7', '#285c7b', '#b1e0f8'],
         series: [{
             name: 'Twitter',
             data: [1, 3, 4, 7, 2, 3, 4, 7, 2, 3, 4, 7]
@@ -55,6 +57,7 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#6c788e'],
         series: [{
             showInLegend: false,
             name: '',
@@ -67,7 +70,7 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         subtitle: {text: 'Average Engagement Rate by Published Hour(PDT)'},
         xAxis: {categories: ['12am', '4am', '8am', '12pm', '4pm', '8pm', '12am']},
         yAxis: {title: {text: ''}},
-        plotOptions: {line: {dataLabels: {enabled: true},enableMouseTracking: true}},
+        plotOptions: {line: {dataLabels: {enabled: true}, enableMouseTracking: true}},
         series: [{
             name: 'Tesla Motors',
             data: [0.1, 0.2, 0.1, 0.55, 0.81, 0.2, 0.1]
@@ -80,23 +83,26 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        xAxis: {lineColor: 'black', categories: [
-            'WooCommerce',
-            '3dcart',
-            'Elastic Path',
-            'X-Cart',
-            'Presta Shop',
-            'Volusion',
-            'Shopify',
-            'UltraCart',
-            'Pinnacle Cart',
-            'Magento',
-            'Bigcommerce',
-            'CubeCart'
-        ]},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'WooCommerce',
+                '3dcart',
+                'Elastic Path',
+                'X-Cart',
+                'Presta Shop',
+                'Volusion',
+                'Shopify',
+                'UltraCart',
+                'Pinnacle Cart',
+                'Magento',
+                'Bigcommerce',
+                'CubeCart'
+            ]
+        },
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#6c788e'],
         series: [{
             showInLegend: false,
             name: '',
