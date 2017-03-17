@@ -14,19 +14,19 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
         series: [{
             name: 'Twitter',
-            data: [11, 3, 4, 7, 2, 3, 4, 7, 2, 3, 4, 7]
+            data: [130, 100, 52, 35, 26, 18, 10, 8, 4, 3, 3, 1]
         }, {
             name: 'Facebook',
-            data: [2, 2, 1, 2, 1, 2, 1, 2, 1, 1, 2, 2]
+            data: [40, 12, 8, 6, 9, 2, 1, 2, 1, 1, 2, 2]
         }, {
             name: 'Google+',
-            data: [3, 4, 4, 2, 2, 1, 1, 1, 2, 4, 1, 2]
+            data: [5, 8, 9, 5, 3, 1, 1, 1, 2, 4, 1, 2]
         }, {
             name: 'YouTube',
-            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+            data: [7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
         }, {
             name: 'Instagram',
-            data: [3, 4, 4, 2, 5, 4, 4, 2, 5, 4, 4, 2]
+            data: [20, 10, 6, 7, 5, 4, 4, 2, 5, 4, 4, 2]
         }]
     };
     vm.data2 = {
