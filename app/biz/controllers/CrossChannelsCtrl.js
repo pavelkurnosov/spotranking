@@ -57,15 +57,11 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6c788e', '#5fc2f7'],
+        colors: ['#6c788e'],
         series: [{
             showInLegend: false,
             name: '',
-            data: [0, 0, 0, 0, 2.03, 0, 0, 0, 0]
-        },{
-            showInLegend: false,
-            name: '',
-            data: [3.89, 2.48, 2.32, 2.22, 0, 1.95, 1.85, 1.78, 1.75]
+            data: [3.89, 2.48, 2.32, 2.22, {y:2.03, color: '#5fc2f7'}, 1.95, 1.85, 1.78, 1.75]
         }]
     };
     vm.data4 = {
@@ -106,15 +102,11 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6c788e', '#5fc2f7'],
+        colors: ['#6c788e'],
         series: [{
             showInLegend: false,
             name: '',
-            data: [0, 0, 0, 0, 0, 0, 733, 0, 0, 0, 0, 0]
-        },{
-            showInLegend: false,
-            name: '',
-            data: [2481, 1786, 1436, 1232, 1085, 798, 0, 631, 609, 187, 162, 1]
+            data: [2481, 1786, 1436, 1232, 1085, 798, {y:733,color: '#5fc2f7'}, 631, 609, 187, 162, 1]
         }]
     };
 });

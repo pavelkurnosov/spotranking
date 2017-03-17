@@ -140,6 +140,71 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialTwitter', {
+                url: '/social_twitter',
+                data: {
+                    title: 'Twitter'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/twitter.html',
+                        controller: 'TwitterController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube', {
+                url: '/social_youtube',
+                data: {
+                    title: 'YouTube'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/youtube.html',
+                        controller: 'YoutubeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus', {
+                url: '/social_googleplus',
+                data: {
+                    title: 'Google +'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/googleplus.html',
+                        controller: 'GoogleplusController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin', {
+                url: '/social_linkedin',
+                data: {
+                    title: 'LinkedIn'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/linkedin.html',
+                        controller: 'LinkedinController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest', {
+                url: '/social_pinterest',
+                data: {
+                    title: 'Pinterest'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/pinterest.html',
+                        controller: 'PinterestController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
