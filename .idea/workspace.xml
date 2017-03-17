@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" afterPath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-    </list>
+    <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="" />
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -41,8 +37,8 @@
       <file leaf-file-name="navigation.tpl.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+            <state relative-caret-position="300">
+              <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -295,12 +291,12 @@
       <workItem from="1489565417794" duration="610000" />
       <workItem from="1489586262431" duration="6428000" />
       <workItem from="1489602280123" duration="7859000" />
-      <workItem from="1489740834873" duration="2733000" />
+      <workItem from="1489740834873" duration="2828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140730000" />
+    <option name="totallyTimeSpent" value="140825000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="943" extended-state="0" />
@@ -688,8 +684,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="122" column="19" selection-start-line="122" selection-start-column="19" selection-end-line="122" selection-end-column="19" />
+        <state relative-caret-position="300">
+          <caret line="114" column="17" selection-start-line="114" selection-start-column="17" selection-end-line="114" selection-end-column="17" />
           <folding />
         </state>
       </provider>
