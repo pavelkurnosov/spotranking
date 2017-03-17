@@ -7,7 +7,7 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: 'Jun 5, 2015 - jun 11, 2015'},
-        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', 'WooCommerce', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
+        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', '<span style="color:black;font-weight: bold;">WooCommerce</span>', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
@@ -33,7 +33,7 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'WooCommerce', 'BigCommerce', '3dcart', 'CubeCart', 'UltraCart', 'Magento', 'Pinnacle Cart', 'X-Cart', 'Elastic Path']},
+        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'WooCommerce', '<span style="color:black;font-weight: bold;">BigCommerce</span>', '3dcart', 'CubeCart', 'UltraCart', 'Magento', 'Pinnacle Cart', 'X-Cart', 'Elastic Path']},
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
@@ -53,15 +53,19 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        xAxis: {lineColor: 'black', categories: ['Bentley Motors', 'BMW', 'Porsche(North America)', 'Mercedes-Benz', 'Tesla Motors', 'Toyota', 'Audi USA', 'Lamborghini', 'Ford']},
+        xAxis: {lineColor: 'black', categories: ['Bentley Motors', 'BMW', 'Porsche(North America)', 'Mercedes-Benz', '<span style="color:black;font-weight: bold;">Tesla Motors</span>', 'Toyota', 'Audi USA', 'Lamborghini', 'Ford']},
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6c788e'],
+        colors: ['#6c788e', '#5fc2f7'],
         series: [{
             showInLegend: false,
             name: '',
-            data: [1, 3, 4, 7, 2, 3, 4, 7, 2]
+            data: [0, 0, 0, 0, 2.03, 0, 0, 0, 0]
+        },{
+            showInLegend: false,
+            name: '',
+            data: [3.89, 2.48, 2.32, 2.22, 0, 1.95, 1.85, 1.78, 1.75]
         }]
     };
     vm.data4 = {
@@ -91,7 +95,7 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
                 'X-Cart',
                 'Presta Shop',
                 'Volusion',
-                'Shopify',
+                '<span style="color:black;font-weight: bold;">Shopify</span>',
                 'UltraCart',
                 'Pinnacle Cart',
                 'Magento',
@@ -102,11 +106,15 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6c788e'],
+        colors: ['#6c788e', '#5fc2f7'],
         series: [{
             showInLegend: false,
             name: '',
-            data: [2481, 1786, 1436, 1232, 1085, 798, 733, 631, 609, 187, 162, 1]
+            data: [0, 0, 0, 0, 0, 0, 733, 0, 0, 0, 0, 0]
+        },{
+            showInLegend: false,
+            name: '',
+            data: [2481, 1786, 1436, 1232, 1085, 798, 0, 631, 609, 187, 162, 1]
         }]
     };
 });

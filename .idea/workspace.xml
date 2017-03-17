@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" afterPath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
@@ -26,48 +26,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/module.js">
+      <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="679">
-              <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="navigation.tpl.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="918">
-              <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacebookCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="107" column="82" selection-start-line="107" selection-start-column="82" selection-end-line="107" selection-end-column="82" />
+            <state relative-caret-position="496">
+              <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
               <folding>
-                <element signature="e#123#1233#0" expanded="false" />
-                <element signature="e#1250#2372#0" expanded="false" />
-                <element signature="e#2389#3494#0" expanded="false" />
-                <element signature="e#4205#6148#0" expanded="false" />
-                <element signature="n#!!block;n#getRandomArray#0" expanded="false" />
+                <marker date="1489792106133" expanded="true" signature="431:461" ph="..." />
+                <marker date="1489792106133" expanded="true" signature="1646:1676" ph="..." />
+                <marker date="1489792106133" expanded="true" signature="2656:2686" ph="..." />
+                <marker date="1489792106133" expanded="true" signature="4331:4361" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="149" column="49" selection-start-line="149" selection-start-column="49" selection-end-line="149" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -134,10 +103,10 @@
         <option value="$PROJECT_DIR$/app/graphs/directives/highchart/highchart.js" />
         <option value="$PROJECT_DIR$/app/biz/views/cross-channels.html" />
         <option value="$PROJECT_DIR$/app/biz/module.js" />
-        <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/facebook.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
+        <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
       </list>
     </option>
   </component>
@@ -159,7 +128,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
     <option name="width" value="960" />
     <option name="height" value="943" />
   </component>
@@ -278,15 +246,15 @@
       <workItem from="1489602280123" duration="7859000" />
       <workItem from="1489740834873" duration="8065000" />
       <workItem from="1489761755215" duration="11452000" />
-      <workItem from="1489775158111" duration="5865000" />
+      <workItem from="1489775158111" duration="7627000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163379000" />
+    <option name="totallyTimeSpent" value="165141000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="943" extended-state="0" />
+    <frame x="0" y="0" width="960" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -641,30 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="93" column="60" selection-start-line="93" selection-start-column="60" selection-end-line="93" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="110" column="6" selection-start-line="110" selection-start-column="6" selection-end-line="110" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="111" column="35" selection-start-line="111" selection-start-column="35" selection-end-line="111" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -675,14 +619,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="107" column="82" selection-start-line="107" selection-start-column="82" selection-end-line="107" selection-end-column="82" />
+        <state relative-caret-position="136">
+          <caret line="104" column="24" selection-start-line="104" selection-start-column="24" selection-end-line="104" selection-end-column="24" />
           <folding>
             <element signature="e#123#1233#0" expanded="false" />
             <element signature="e#1250#2372#0" expanded="false" />
             <element signature="e#2389#3494#0" expanded="false" />
             <element signature="e#4205#6148#0" expanded="false" />
             <element signature="n#!!block;n#getRandomArray#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="83" column="53" selection-start-line="83" selection-start-column="53" selection-end-line="83" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="83" column="36" selection-start-line="83" selection-start-column="36" selection-end-line="83" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="109" column="18" selection-start-line="109" selection-start-column="18" selection-end-line="109" selection-end-column="18" />
+          <folding>
+            <marker date="1489792106133" expanded="true" signature="431:461" ph="..." />
+            <marker date="1489792106133" expanded="true" signature="1646:1676" ph="..." />
+            <marker date="1489792106133" expanded="true" signature="2656:2686" ph="..." />
+            <marker date="1489792106133" expanded="true" signature="4331:4361" ph="..." />
           </folding>
         </state>
       </provider>
