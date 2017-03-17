@@ -127,6 +127,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialFacebook', {
+                url: '/social_facebook',
+                data: {
+                    title: 'Facebook'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/facebook.html',
+                        controller: 'FacebookController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

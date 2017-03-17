@@ -757,6 +757,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialFacebook', {
+                url: '/social_facebook',
+                data: {
+                    title: 'Facebook'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/facebook.html',
+                        controller: 'FacebookController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
@@ -1879,7 +1892,7 @@ $templateCache.put("app/dashboard/todo/todo-widget.tpl.html","<div id=\"todo-wid
 $templateCache.put("app/layout/language/language-selector.tpl.html","<ul class=\"header-dropdown-list hidden-xs ng-cloak\" ng-controller=\"LanguagesCtrl\">\n    <li class=\"dropdown\" dropdown>\n        <a class=\"dropdown-toggle\"  data-toggle=\"dropdown\" href> <img src=\"styles/img/blank.gif\" class=\"flag flag-{{currentLanguage.key}}\" alt=\"{{currentLanguage.alt}}\"> <span> {{currentLanguage.title}} </span>\n            <i class=\"fa fa-angle-down\"></i> </a>\n        <ul class=\"dropdown-menu pull-right\">\n            <li ng-class=\"{active: language==currentLanguage}\" ng-repeat=\"language in languages\">\n                <a ng-click=\"selectLanguage(language)\" ><img src=\"styles/img/blank.gif\" class=\"flag flag-{{language.key}}\"\n                                                   alt=\"{{language.alt}}\"> {{language.title}}</a>\n            </li>\n        </ul>\n    </li>\n</ul>");
 $templateCache.put("app/layout/partials/footer.tpl.html","<div class=\"page-footer\">\n    <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-6\">\n            <span class=\"txt-color-white\">SmartAdmin WebApp © 2013-2016</span>\n        </div>\n\n        <div class=\"col-xs-6 col-sm-6 text-right hidden-xs\">\n            <div class=\"txt-color-white inline-block\">\n                <i class=\"txt-color-blueLight hidden-mobile\">Last account activity <i class=\"fa fa-clock-o\"></i>\n                    <strong>52 mins ago &nbsp;</strong> </i>\n\n                <div class=\"btn-group dropup\">\n                    <button class=\"btn btn-xs dropdown-toggle bg-color-blue txt-color-white\" data-toggle=\"dropdown\">\n                        <i class=\"fa fa-link\"></i> <span class=\"caret\"></span>\n                    </button>\n                    <ul class=\"dropdown-menu pull-right text-left\">\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Download Progress</p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-success\" style=\"width: 50%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Server Load</p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-success\" style=\"width: 20%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Memory Load <span class=\"text-danger\">*critical*</span>\n                                </p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-danger\" style=\"width: 70%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <button class=\"btn btn-block btn-default\">refresh</button>\n                            </div>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
 $templateCache.put("app/layout/partials/header.tpl.html","<header id=\"header\">\n    <div id=\"logo-group\">\n\n        <!-- PLACE YOUR LOGO HERE -->\n        <span id=\"logo\"> <img src=\"styles/img/logo.png\" alt=\"Spot Ranking\"> </span>\n        <!-- END LOGO PLACEHOLDER -->\n\n        <!-- Note: The activity badge color changes when clicked and resets the number to 0\n        Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->\n        <!--<span id=\"activity\" class=\"activity-dropdown\" activities-dropdown-toggle>\n            <i class=\"fa fa-user\"></i>\n            <b class=\"badge bg-color-red\">21</b>\n        </span>\n        <div smart-include=\"app/dashboard/activities/activities.html\"></div>-->\n    </div>\n\n\n    <div class=\"margin-top-10\">\n        <h4>Welcome Pavel</h4>\n        <p>{{vm.dateTime}}</p>\n    </div>\n\n    <!--<recent-projects></recent-projects>-->\n\n\n    <!-- pulled right: nav area -->\n    <div class=\"pull-right\">\n\n        <!-- collapse menu button -->\n        <div id=\"hide-menu\" class=\"btn-header pull-right\">\n            <span> <a toggle-menu title=\"Collapse Menu\"><i class=\"fa fa-reorder\"></i></a> </span>\n        </div>\n        <!-- end collapse menu -->\n\n        <!-- #MOBILE -->\n        <!-- Top menu profile link : this shows only when top menu is active -->\n        <ul id=\"mobile-profile-img\" class=\"header-dropdown-list hidden-xs padding-5\">\n            <li class=\"\">\n                <a href=\"#\" class=\"dropdown-toggle no-margin userdropdown\" data-toggle=\"dropdown\">\n                    <img src=\"styles/img/avatars/sunny.png\" alt=\"John Doe\" class=\"online\"/>\n                </a>\n                <ul class=\"dropdown-menu pull-right\">\n                    <li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"><i\n                                class=\"fa fa-cog\"></i> Setting</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a ui-sref=\"app.appViews.profileDemo\" class=\"padding-10 padding-top-0 padding-bottom-0\"> <i class=\"fa fa-user\"></i>\n                            <u>P</u>rofile</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"\n                           data-action=\"toggleShortcut\"><i class=\"fa fa-arrow-down\"></i> <u>S</u>hortcut</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"\n                           data-action=\"launchFullscreen\"><i class=\"fa fa-arrows-alt\"></i> Full <u>S</u>creen</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a href=\"#/login\" class=\"padding-10 padding-top-5 padding-bottom-5\" data-action=\"userLogout\"><i\n                                class=\"fa fa-sign-out fa-lg\"></i> <strong><u>L</u>ogout</strong></a>\n                    </li>\n                </ul>\n            </li>\n        </ul>\n\n        <!-- logout button -->\n        <div id=\"logout\" class=\"btn-header transparent pull-right\">\n        <span> <a ui-sref=\"login\" title=\"Sign Out\" data-action=\"userLogout\"\n                  data-logout-msg=\"You can improve your security further after logging out by closing this opened browser\"><i\n                class=\"fa fa-sign-out\"></i></a> </span>\n        </div>\n        <!-- end logout button -->\n\n        <!-- search mobile button (this is hidden till mobile view port) -->\n        <!--<div id=\"search-mobile\" class=\"btn-header transparent pull-right\" data-search-mobile>\n            <span> <a href=\"#\" title=\"Search\"><i class=\"fa fa-search\"></i></a> </span>\n        </div>-->\n        <!-- end search mobile button -->\n\n        <!-- input: search field -->\n        <!--<form action=\"#/search\" class=\"header-search pull-right\">\n            <input id=\"search-fld\" type=\"text\" name=\"param\" placeholder=\"Find reports and more\" data-autocomplete=\'[\n                        \"ActionScript\",\n                        \"AppleScript\",\n                        \"Asp\",\n                        \"BASIC\",\n                        \"C\",\n                        \"C++\",\n                        \"Clojure\",\n                        \"COBOL\",\n                        \"ColdFusion\",\n                        \"Erlang\",\n                        \"Fortran\",\n                        \"Groovy\",\n                        \"Haskell\",\n                        \"Java\",\n                        \"JavaScript\",\n                        \"Lisp\",\n                        \"Perl\",\n                        \"PHP\",\n                        \"Python\",\n                        \"Ruby\",\n                        \"Scala\",\n                        \"Scheme\"]\'>\n            <button type=\"submit\">\n                <i class=\"fa fa-search\"></i>\n            </button>\n            <a href=\"$\" id=\"cancel-search-js\" title=\"Cancel Search\"><i class=\"fa fa-times\"></i></a>\n        </form>-->\n        <!-- end input: search field -->\n\n        <!-- fullscreen button -->\n        <div id=\"fullscreen\" class=\"btn-header transparent pull-right\">\n        <span> <a full-screen title=\"Full Screen\"><i\n                class=\"fa fa-arrows-alt\"></i></a> </span>\n        </div>\n        <!-- end fullscreen button -->\n\n\n        <!-- multiple lang dropdown : find all flags in the flags page -->\n        <language-selector></language-selector>\n        <!-- end multiple lang -->\n\n    </div>\n    <!-- end pulled right: nav area -->\n\n</header>");
-$templateCache.put("app/layout/partials/navigation.tpl.html","<aside id=\"left-panel\">\n\n    <!-- User info -->\n    <!--<div login-info></div>-->\n    <!-- end user info -->\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <img class=\"col-xs-12 img-responsive margin-top-10 margin-bottom-10\" src=\"./styles/img/temp/6.jpg\">\n        </div>\n    </div>\n\n    <nav>\n        <!-- NOTE: Notice the gaps after each icon usage <i></i>..\n        Please note that these links work a bit different than\n        traditional href=\"\" links. See documentation for details.\n        -->\n        <ul data-smart-menu>\n            <li data-ui-sref-active=\"active\">\n                <a data-ui-sref=\"app.biz.dashboard\" title=\"Dashboard\">\n                    <i class=\"fa fa-lg fa-fw fa-dashboard\"></i> <span class=\"menu-item-parent\">{{getWord(\'Dashboard\')}}</span></a>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"My Campaigns\"><i class=\"fa fa-lg fa-fw fa-cogs\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Campaigns\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mainSearch\">{{getWord(\'Main Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.rtvReport\">{{getWord(\'RTV AD Airing Certificate\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialMedia\">{{getWord(\'Social Media engagement\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"\'My Insight\"><i class=\"fa fa-lg fa-fw fa-globe\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Insight\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaOutlet\">{{getWord(\'Media Outlet Listing\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.campaignBreakdown\">{{getWord(\'Campaign Breakdown\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Geographic Coverage\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Over time trends\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Comparing the performance across multiple campaigns\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Organization Perform\"><i class=\"fa fa-lg fa-fw fa-signal\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Organization Perform\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Brand Size VS Competition\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Media Volume Comparative\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Over time trends\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Social LANDSCAPE\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Social LANDSCAPE\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.crossChannels\">{{getWord(\'Cross Channels\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Facebook\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Twitter\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'YouTube\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Google+\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'LinkedIn\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Pinterest\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"OOH\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'OOH\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'OOH Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaLibrary\">{{getWord(\'OOH Media Library\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.inventoryMap\">{{getWord(\'OOH Inventory Map\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <!--<li data-menu-collapse>\n                <a href=\"#\" title=\"Billing System\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Billing System\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.customers\">{{getWord(\'Customers\')}}</a>\n                    </li>\n                </ul>\n            </li>-->\n        </ul>\n\n        <!-- NOTE: This allows you to pull menu items from server -->\n        <!-- <ul data-smart-menu-items=\"/api/menu-items.json\"></ul> -->\n    </nav>\n\n    <span class=\"minifyme\" data-action=\"minifyMenu\" minify-menu>\n    <i class=\"fa fa-arrow-circle-left hit\"></i>\n  </span>\n\n</aside>");
+$templateCache.put("app/layout/partials/navigation.tpl.html","<aside id=\"left-panel\">\n\n    <!-- User info -->\n    <!--<div login-info></div>-->\n    <!-- end user info -->\n\n    <div class=\"container-fluid\">\n        <div class=\"row\">\n            <img class=\"col-xs-12 img-responsive margin-top-10 margin-bottom-10\" src=\"./styles/img/temp/6.jpg\">\n        </div>\n    </div>\n\n    <nav>\n        <!-- NOTE: Notice the gaps after each icon usage <i></i>..\n        Please note that these links work a bit different than\n        traditional href=\"\" links. See documentation for details.\n        -->\n        <ul data-smart-menu>\n            <li data-ui-sref-active=\"active\">\n                <a data-ui-sref=\"app.biz.dashboard\" title=\"Dashboard\">\n                    <i class=\"fa fa-lg fa-fw fa-dashboard\"></i> <span class=\"menu-item-parent\">{{getWord(\'Dashboard\')}}</span></a>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"My Campaigns\"><i class=\"fa fa-lg fa-fw fa-cogs\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Campaigns\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mainSearch\">{{getWord(\'Main Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.rtvReport\">{{getWord(\'RTV AD Airing Certificate\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialMedia\">{{getWord(\'Social Media engagement\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"\'My Insight\"><i class=\"fa fa-lg fa-fw fa-globe\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Insight\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaOutlet\">{{getWord(\'Media Outlet Listing\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.campaignBreakdown\">{{getWord(\'Campaign Breakdown\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Geographic Coverage\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Over time trends\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Comparing the performance across multiple campaigns\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Organization Perform\"><i class=\"fa fa-lg fa-fw fa-signal\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Organization Perform\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Brand Size VS Competition\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Media Volume Comparative\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Over time trends\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Social LANDSCAPE\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Social LANDSCAPE\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.crossChannels\">{{getWord(\'Cross Channels\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialFacebook\">{{getWord(\'Facebook\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Twitter\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'YouTube\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Google+\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'LinkedIn\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'Pinterest\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"OOH\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'OOH\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'OOH Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaLibrary\">{{getWord(\'OOH Media Library\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.inventoryMap\">{{getWord(\'OOH Inventory Map\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <!--<li data-menu-collapse>\n                <a href=\"#\" title=\"Billing System\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Billing System\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.customers\">{{getWord(\'Customers\')}}</a>\n                    </li>\n                </ul>\n            </li>-->\n        </ul>\n\n        <!-- NOTE: This allows you to pull menu items from server -->\n        <!-- <ul data-smart-menu-items=\"/api/menu-items.json\"></ul> -->\n    </nav>\n\n    <span class=\"minifyme\" data-action=\"minifyMenu\" minify-menu>\n    <i class=\"fa fa-arrow-circle-left hit\"></i>\n  </span>\n\n</aside>");
 $templateCache.put("app/layout/partials/sub-header.tpl.html","<div class=\"col-xs-12 col-sm-5 col-md-5 col-lg-8\" data-sparkline-container>\n    <ul id=\"sparks\" class=\"\">\n        <li class=\"sparks-info\">\n            <h5> My Income <span class=\"txt-color-blue\">$47,171</span></h5>\n            <div class=\"sparkline txt-color-blue hidden-mobile hidden-md hidden-sm\">\n                1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471\n            </div>\n        </li>\n        <li class=\"sparks-info\">\n            <h5> Site Traffic <span class=\"txt-color-purple\"><i class=\"fa fa-arrow-circle-up\"></i>&nbsp;45%</span></h5>\n            <div class=\"sparkline txt-color-purple hidden-mobile hidden-md hidden-sm\">\n                110,150,300,130,400,240,220,310,220,300, 270, 210\n            </div>\n        </li>\n        <li class=\"sparks-info\">\n            <h5> Site Orders <span class=\"txt-color-greenDark\"><i class=\"fa fa-shopping-cart\"></i>&nbsp;2447</span></h5>\n            <div class=\"sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm\">\n                110,150,300,130,400,240,220,310,220,300, 270, 210\n            </div>\n        </li>\n    </ul>\n</div>\n			");
 $templateCache.put("app/layout/partials/voice-commands.tpl.html","<!-- TRIGGER BUTTON:\n<a href=\"/my-ajax-page.html\" data-toggle=\"modal\" data-target=\"#remoteModal\" class=\"btn btn-default\">Open Modal</a>  -->\n\n<!-- MODAL PLACE HOLDER\n<div class=\"modal fade\" id=\"remoteModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"remoteModalLabel\" aria-hidden=\"true\">\n<div class=\"modal-dialog\">\n<div class=\"modal-content\"></div>\n</div>\n</div>   -->\n<!--////////////////////////////////////-->\n\n<!--<div class=\"modal-header\">\n<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">\n&times;\n</button>\n<h4 class=\"modal-title\" id=\"myModalLabel\">Command List</h4>\n</div>-->\n<div class=\"modal-body\">\n\n	<h1><i class=\"fa fa-microphone text-muted\"></i>&nbsp;&nbsp; SmartAdmin Voice Command</h1>\n	<hr class=\"simple\">\n	<h5>Instruction</h5>\n\n	Click <span class=\"text-success\">\"Allow\"</span> to access your microphone and activate Voice Command.\n	You will notice a <span class=\"text-primary\"><strong>BLUE</strong> Flash</span> on the microphone icon indicating activation.\n	The icon will appear <span class=\"text-danger\"><strong>RED</strong></span> <span class=\"label label-danger\"><i class=\"fa fa-microphone fa-lg\"></i></span> if you <span class=\"text-danger\">\"Deny\"</span> access or don\'t have any microphone installed.\n	<br>\n	<br>\n	As a security precaution, your browser will disconnect the microphone every 60 to 120 seconds (sooner if not being used). In which case Voice Command will prompt you again to <span class=\"text-success\">\"Allow\"</span> or <span class=\"text-danger\">\"Deny\"</span> access to your microphone.\n	<br>\n	<br>\n	If you host your page over <strong>http<span class=\"text-success\">s</span></strong> (secure socket layer) protocol you can wave this security measure and have an unintrupted Voice Command.\n	<br>\n	<br>\n	<h5>Commands</h5>\n	<ul>\n		<li>\n			<strong>\'show\' </strong> then say the <strong>*page*</strong> you want to go to. For example <strong>\"show inbox\"</strong> or <strong>\"show calendar\"</strong>\n		</li>\n		<li>\n			<strong>\'mute\' </strong> - mutes all sound effects for the theme.\n		</li>\n		<li>\n			<strong>\'sound on\'</strong> - unmutes all sound effects for the theme.\n		</li>\n		<li>\n			<span class=\"text-danger\"><strong>\'stop\'</strong></span> - deactivates voice command.\n		</li>\n		<li>\n			<span class=\"text-primary\"><strong>\'help\'</strong></span> - brings up the command list\n		</li>\n		<li>\n			<span class=\"text-danger\"><strong>\'got it\'</strong></span> - closes help modal\n		</li>\n		<li>\n			<strong>\'hide navigation\'</strong> - toggle navigation collapse\n		</li>\n		<li>\n			<strong>\'show navigation\'</strong> - toggle navigation to open (can be used again to close)\n		</li>\n		<li>\n			<strong>\'scroll up\'</strong> - scrolls to the top of the page\n		</li>\n		<li>\n			<strong>\'scroll down\'</strong> - scrollts to the bottom of the page\n		</li>\n		<li>\n			<strong>\'go back\' </strong> - goes back in history (history -1 click)\n		</li>\n		<li>\n			<strong>\'logout\'</strong> - logs you out\n		</li>\n	</ul>\n	<br>\n	<h5>Adding your own commands</h5>\n	Voice Command supports up to 80 languages. Adding your own commands is extreamly easy. All commands are stored inside <strong>app.config.js</strong> file under the <code>var commands = {...}</code>. \n\n	<hr class=\"simple\">\n	<div class=\"text-right\">\n		<button type=\"button\" class=\"btn btn-success btn-lg\" data-dismiss=\"modal\">\n			Got it!\n		</button>\n	</div>\n\n</div>\n<!--<div class=\"modal-footer\">\n<button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Got it!</button>\n</div> -->");
 $templateCache.put("app/layout/shortcut/shortcut.tpl.html","<div id=\"shortcut\">\n	<ul>\n		<li>\n			<a href=\"#/inbox/\" class=\"jarvismetro-tile big-cubes bg-color-blue\"> <span class=\"iconbox\"> <i class=\"fa fa-envelope fa-4x\"></i> <span>Mail <span class=\"label pull-right bg-color-darken\">14</span></span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/calendar\" class=\"jarvismetro-tile big-cubes bg-color-orangeDark\"> <span class=\"iconbox\"> <i class=\"fa fa-calendar fa-4x\"></i> <span>Calendar</span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/maps\" class=\"jarvismetro-tile big-cubes bg-color-purple\"> <span class=\"iconbox\"> <i class=\"fa fa-map-marker fa-4x\"></i> <span>Maps</span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/invoice\" class=\"jarvismetro-tile big-cubes bg-color-blueDark\"> <span class=\"iconbox\"> <i class=\"fa fa-book fa-4x\"></i> <span>Invoice <span class=\"label pull-right bg-color-darken\">99</span></span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/gallery\" class=\"jarvismetro-tile big-cubes bg-color-greenLight\"> <span class=\"iconbox\"> <i class=\"fa fa-picture-o fa-4x\"></i> <span>Gallery </span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/profile\" class=\"jarvismetro-tile big-cubes selected bg-color-pinkDark\"> <span class=\"iconbox\"> <i class=\"fa fa-user fa-4x\"></i> <span>My Profile </span> </span> </a>\n		</li>\n	</ul>\n</div>");
@@ -5316,6 +5329,294 @@ angular.module('app.auth').directive('googleSignin', function ($rootScope, Googl
     };
 });
 
+'use strict';
+
+angular.module('app.biz').controller('FacebookController', function () {
+    var vm = this;
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data4 = vm.data3;
+    vm.data5 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data6 = vm.data5;
+    vm.data7 = vm.data3;
+    vm.data8 = vm.data1;
+    vm.data9 = {
+        chart: {
+            type: 'scatter',
+            zoomType: 'xy', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'Jul 20, 2015 - Aug 18, 2015'
+        },
+        xAxis: {
+            title: {
+                enabled: true,
+                text: ''
+            },
+            startOnTick: true,
+            endOnTick: true,
+            showLastLabel: true
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Average<br/>Engagement Total per Post'
+            }
+        },
+        legend: {
+            layout: 'vertical',
+            align: 'left',
+            verticalAlign: 'top',
+            x: 100,
+            y: 70,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
+            borderWidth: 1
+        },
+        plotOptions: {
+            scatter: {
+                marker: {
+                    radius: 5,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            lineColor: 'rgb(100,100,100)'
+                        }
+                    }
+                },
+                states: {
+                    hover: {
+                        marker: {
+                            enabled: false
+                        }
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    // pointFormat: '{point.x} cm, {point.y} kg'
+                }
+            }
+        },
+        series: [{
+            name: 'Lamborghini',
+            color: 'rgba(223, 83, 83, .5)',
+            data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
+                [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
+                [172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],
+                [147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],
+                [159.5, 50.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 72.8],
+                [174.0, 54.5], [173.0, 59.8], [179.9, 67.3], [170.5, 67.8], [160.0, 47.0],
+                [156.2, 60.0], [149.9, 46.8], [169.5, 57.3], [160.0, 64.1], [175.3, 63.6],
+                [169.5, 67.3], [160.0, 75.5], [172.7, 68.2], [162.6, 61.4], [157.5, 76.8],
+                [176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]]
+
+        }, {
+            name: 'Fiat USA',
+            color: 'rgba(119, 152, 191, .5)',
+            data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
+                [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
+                [193.0, 95.9], [171.4, 91.4], [177.8, 81.8], [177.8, 96.8], [167.6, 69.1],
+                [167.6, 82.7], [180.3, 75.5], [182.9, 79.5], [176.5, 73.6], [186.7, 91.8],
+                [188.0, 84.1], [188.0, 85.9], [177.8, 81.8], [174.0, 82.5], [177.8, 80.5],
+                [170.2, 62.3], [177.8, 82.7], [179.1, 79.1], [190.5, 98.2], [177.8, 84.1],
+                [180.3, 83.2], [180.3, 83.2]]
+        }]
+    };
+});
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.chat').factory('ChatApi', function ($q, $rootScope, User, $http, APP_CONFIG) {
