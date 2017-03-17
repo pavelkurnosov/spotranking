@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/CustomersCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/customers.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.scripts.json" afterPath="$PROJECT_DIR$/app.scripts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.js" afterPath="$PROJECT_DIR$/app/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" afterPath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vendor.js" afterPath="$PROJECT_DIR$/build/vendor.js" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,8 +49,8 @@
       <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+            <state relative-caret-position="360">
+              <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -171,8 +163,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="987" />
-    <option name="width" value="933" />
+    <option name="width" value="877" />
     <option name="height" value="943" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -289,15 +280,15 @@
       <workItem from="1489586262431" duration="6428000" />
       <workItem from="1489602280123" duration="7859000" />
       <workItem from="1489740834873" duration="8065000" />
-      <workItem from="1489761755215" duration="9814000" />
+      <workItem from="1489761755215" duration="11354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155876000" />
+    <option name="totallyTimeSpent" value="157416000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="987" y="0" width="933" height="943" extended-state="0" />
+    <frame x="0" y="0" width="877" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -707,8 +698,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="59" column="19" selection-start-line="59" selection-start-column="19" selection-end-line="59" selection-end-column="19" />
+        <state relative-caret-position="360">
+          <caret line="74" column="26" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
           <folding />
         </state>
       </provider>

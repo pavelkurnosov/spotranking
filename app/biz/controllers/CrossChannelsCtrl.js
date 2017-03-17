@@ -62,28 +62,18 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
         }]
     };
     vm.data4 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
+        chart: {type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         title: {text: ''},
-        xAxis: {lineColor: 'black', categories: ['Bentley Motors', 'BMW', 'Porsche(North America)', 'Mercedes-Benz', 'Tesla Motors', 'Toyota', 'Audi USA', 'Lamborghini', 'Ford']},
-        yAxis: {visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
+        subtitle: {text: 'Average Engagement Rate by Published Hour(PDT)'},
+        xAxis: {categories: ['12am', '4am', '8am', '12pm', '4pm', '8pm', '12am']},
+        yAxis: {title: {text: ''}},
+        plotOptions: {line: {dataLabels: {enabled: true},enableMouseTracking: true}},
         series: [{
-            name: 'Twitter',
-            data: [1, 3, 4, 7, 2, 3, 4, 7, 2]
+            name: 'Tesla Motors',
+            data: [0.1, 0.2, 0.1, 0.55, 0.81, 0.2, 0.1]
         }, {
-            name: 'Facebook',
-            data: [2, 2, 1, 2, 1, 2, 1, 2, 1]
-        }, {
-            name: 'Google+',
-            data: [3, 4, 4, 2, 2, 1, 1, 1, 2]
-        }, {
-            name: 'YouTube',
-            data: [4, 4, 4, 2, 5, 4, 4, 2, 5]
-        }, {
-            name: 'Instagram',
-            data: [14, 4, 4, 2, 5, 4, 4, 2, 5]
+            name: 'Landscape',
+            data: [0.2, 0.31, 0.14, 0.4, 0.63, 0.47, 0.2]
         }]
     };
     vm.data5 = {
