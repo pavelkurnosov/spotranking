@@ -114,15 +114,15 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
-            .state('app.biz.customers', {
-                url: '/customers',
+            .state('app.biz.crossChannels', {
+                url: '/cross_channels',
                 data: {
-                    title: 'Customers'
+                    title: 'Cross Channels'
                 },
                 views: {
                     "content@app": {
-                        templateUrl: 'app/biz/views/customers.html',
-                        controller: 'CustomersController',
+                        templateUrl: 'app/biz/views/cross-channels.html',
+                        controller: 'CrossChannelsController',
                         controllerAs: 'vm'
                     }
                 }

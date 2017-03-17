@@ -59,6 +59,7 @@
     "dropzone": "~4.2.0",
     "angular-google-maps": "~2.3.1",
     "angular-datatables": "^0.5.3",
-    "ng-bs-daterangepicker": "^0.0.6"
+    "ng-bs-daterangepicker": "^0.0.6",
+    "chart.js": "^2.5.0"
   }
 }

@@ -36,7 +36,14 @@
       "angular-datatables.bootstrap",
       "angular-datatables.buttons",
       "bootstrap-daterangepicker",
-      "ng-bs-daterangepicker"
+      "ng-bs-daterangepicker",
+
+      "raphael",
+      "morris",
+      "dygraphs",
+      "chartjs",
+      "highcharts",
+      "highchartTable"
 
     ],
     "vendor.ui": [
