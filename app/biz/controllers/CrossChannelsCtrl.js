@@ -2,8 +2,40 @@
 
 angular.module('app.biz').controller('CrossChannelsController', function () {
     var vm = this;
-
     vm.data1 = {
+        chart: {type: 'bar', height: 150, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Social Audience',
+                'Eat24'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+
+    /*vm.data1 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: 'Jun 5, 2015 - jun 11, 2015'},
@@ -108,5 +140,5 @@ angular.module('app.biz').controller('CrossChannelsController', function () {
             name: '',
             data: [2481, 1786, 1436, 1232, 1085, 798, {y:733,color: '#5fc2f7'}, 631, 609, 187, 162, 1]
         }]
-    };
+    };*/
 });
