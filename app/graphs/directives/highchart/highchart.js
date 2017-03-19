@@ -8,11 +8,10 @@ angular.module('app.graphs').directive('highchart', function () {
             data: '='
         },
         link: function (scope, element, attributes) {
-            if (element[0].id) {
-                Highcharts.chart(element[0].id, scope.data);
-            } else {
-                console.log('missing id in canvas div');
-            }
+            $(element[0]).highcharts(scope.data);
+            $(element[0]).resize(function () {
+                $(element[0]).highcharts().reflow();
+            });
         }
     }
 });
