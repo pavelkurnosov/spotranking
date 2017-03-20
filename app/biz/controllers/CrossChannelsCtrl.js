@@ -1,7 +1,21 @@
 'use strict';
 
-angular.module('app.biz').controller('CrossChannelsController', function ($timeout) {
+angular.module('app.biz').controller('CrossChannelsController', function ($state) {
     var vm = this;
+
+    vm.socialPages = [
+        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
+        {id: 2, title: 'Twitter', url: 'socialTwitter'},
+        {id: 3, title: 'Facebook', url: 'socialFacebook'},
+        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'},
+        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
+        {id: 6, title: 'YouTube', url: 'socialYoutube'},
+        {id: 7, title: 'Instagram', url: 'socialInstagram'}
+    ];
+    vm.openPage = function (url) {
+        $state.go('app.biz.' + url);
+    };
+
     vm.data1 = {
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},

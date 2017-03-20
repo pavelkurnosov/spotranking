@@ -1,0 +1,178 @@
+<div id="content">
+
+    <!--    <div class="row">
+            <big-breadcrumbs items="['Charts', 'Flot Chart']" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
+            <div smart-include="app/layout/partials/sub-header.tpl.html"></div>
+        </div>-->
+
+    <div class="row">
+        <section id="widget-grid-twitter" widget-grid>
+            <div class="col-xs-6">
+
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart1" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>Twitter Followers</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <p><i class="fa fa-thumbs-up"></i> Tesla Motors is above average for Twitter followers, ranking 9th of 26 companies in your landscape. Keep chasing the leader, mercedes-Benz, with their 1,378,781 Followers.</p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-6">
+                                                <div highchart id="container1" data="vm.data1"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart2" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>Activity & Engagement</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-6">
+                                                <p><i class="fa fa-thumbs-up"></i> Tesla Motors is above average for Twitter followers, ranking 9th of 26 companies in your landscape. Keep chasing the leader, mercedes-Benz, with their 1,378,781 Followers.</p>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3">
+                                                <div highchart id="container2" data="vm.data2"></div>
+                                            </div>
+                                            <div class="col-xs-12 col-sm-3">
+                                                <div highchart id="container3" data="vm.data3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart3" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>Tweet Engagement Total</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div highchart id="container4" data="vm.data4"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-xs-6">
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart4" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>Twitter Followers</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div highchart id="container5" data="vm.data5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart5" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>All Tweets</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div>
+                                        <b>Twitter Followers</b>
+                                        <p>The number of people following this company on Twitter.</p>
+                                    </div>
+                                    <div highchart id="container6" data="vm.data6"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="row">
+                    <article class="col-sm-12 col-md-12 col-lg-12">
+                        <div jarvis-widget id="chartjs-line-chart6" data-widget-editbutton="false">
+                            <header>
+                                <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                                <h2>Top # Post</h2>
+                            </header>
+                            <div>
+                                <div class="widget-body">
+                                    <div class="margin-bottom-10">
+                                        <label class="smart-form ">
+                                            <input class="form-control">
+                                        </label>
+                                        <div class="btn-group btn-sm dropdown-left " data-dropdown>
+                                            <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                All media <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href-void>TV Channel</a>
+                                                </li>
+                                                <li>
+                                                    <a href-void>Newspaper</a>
+                                                </li>
+                                                <li>
+                                                    <a href-void>... ... ...</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <span>(Analyzing 144 matching posts)</span>
+                                    </div>
+
+                                    <table class="table table-responsive">
+                                        <thead>
+                                        <tr>
+                                            <th>Published At</th>
+                                            <th>Post</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Mar 1 2016</td>
+                                            <td>Lamborghini <br/> Here's the Lamborghini Centenario: Perfection Forged. #Lamborghini #Centenario #FerruccioLamborghini #Cool #GIMS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mar 1 2016</td>
+                                            <td>Lamborghini <br/> Here's the Lamborghini Centenario: Perfection Forged. #Lamborghini #Centenario #FerruccioLamborghini #Cool #GIMS</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mar 1 2016</td>
+                                            <td>Lamborghini <br/> Here's the Lamborghini Centenario: Perfection Forged. #Lamborghini #Centenario #FerruccioLamborghini #Cool #GIMS</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

@@ -121,7 +121,7 @@ angular.module('app.biz', ['ui.router'])
                 },
                 views: {
                     "content@app": {
-                        templateUrl: 'app/biz/views/cross-channels.html',
+                        templateUrl: 'app/biz/views/social/cross-channels.html',
                         controller: 'CrossChannelsController',
                         controllerAs: 'vm'
                     }
