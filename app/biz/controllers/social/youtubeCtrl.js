@@ -83,7 +83,7 @@ angular.module('app.biz').controller('YoutubeController', function () {
         }]
     };
     vm.data6 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
         subtitle: {text: 'Jun 5, 2015 - jun 11, 2015'},
@@ -99,7 +99,7 @@ angular.module('app.biz').controller('YoutubeController', function () {
         }]
     };
     vm.data7 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
         subtitle: {text: 'Who has the top 50 posts?'},
@@ -156,7 +156,7 @@ angular.module('app.biz').controller('YoutubeController', function () {
         }]
     };
     vm.data9 = {
-        chart: {type: 'column', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
         subtitle: {text: 'When were they posted?'},

@@ -71,4 +71,79 @@ angular.module('app.biz').controller('CrossChannelsController', function ($timeo
             data: [20, 10, 9, 8, 7, 7]
         }]
     };
+    vm.data4 = {
+        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Who has the top 50 posts?'},
+        xAxis: {
+            lineColor: 'black',
+            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#6b7889'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [7, 6, 6, 4, 4]
+        }]
+    };
+    vm.data5 = {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: 'What type of posts were they?'
+        },
+        tooltip: {
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Brands',
+            colorByPoint: true,
+            data: [{
+                name: 'Video',
+                y: 100
+            }]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'When were they posted?'},
+        xAxis: {
+            lineColor: 'black',
+            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        colors: ['#6b7889'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [1, 6, 7, 10, 18, 8, 0]
+        }]
+    };
 });
