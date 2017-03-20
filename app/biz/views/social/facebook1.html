@@ -1,0 +1,193 @@
+<div id="content">
+
+    <!--    <div class="row">
+            <big-breadcrumbs items="['Charts', 'Flot Chart']" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
+            <div smart-include="app/layout/partials/sub-header.tpl.html"></div>
+        </div>-->
+    <!-- widget grid -->
+    <section id="widget-grid" widget-grid>
+        <!-- row -->
+        <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart1" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Page Likes</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container1" data="vm.data1"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart2" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Page Likes, % Change</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container2" data="vm.data2"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart3" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Average Facebook Posts per Day</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container3" data="vm.data3"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart4" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Average Engagement Rate per Post</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container4" data="vm.data4"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart5" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Post Engagement Rate, by Day</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container5" data="vm.data5"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart6" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Posts, by Day</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container6" data="vm.data6"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart7" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Post Engagement Total</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container7" data="vm.data7"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="col-sm-12 col-md-6 col-lg-6">
+                <div jarvis-widget id="chartjs-line-chart8" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Average Engagement Total per Post</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container8" data="vm.data8"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget id="chartjs-line-chart9" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Facebook Posts vs. Facebook Average Engagement Total per Post</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div highchart id="container9" data="vm.data9"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget id="chartjs-line-chart10" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Top Landscape Post</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr>
+                                    <td>Published At</td>
+                                    <td>Post</td>
+                                    <td>Engagement Rate</td>
+                                    <td>Engagement Total</td>
+                                    <td>Series</td>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Mar 11 2016</td>
+                                    <td>Jeep</td>
+                                    <td>0.97%</td>
+                                    <td>46.3k</td>
+                                    <td>16.2k</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 11 2016</td>
+                                    <td>Jeep</td>
+                                    <td>0.97%</td>
+                                    <td>46.3k</td>
+                                    <td>16.2k</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 11 2016</td>
+                                    <td>Jeep</td>
+                                    <td>0.97%</td>
+                                    <td>46.3k</td>
+                                    <td>16.2k</td>
+                                </tr>
+                                <tr>
+                                    <td>Mar 11 2016</td>
+                                    <td>Jeep</td>
+                                    <td>0.97%</td>
+                                    <td>46.3k</td>
+                                    <td>16.2k</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>
