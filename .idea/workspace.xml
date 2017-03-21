@@ -8,7 +8,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/my-ranking.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/my-ranking.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/dashboard.html" afterPath="$PROJECT_DIR$/app/biz/views/dashboard.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/insights.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/top-content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/googleplus-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/googleplus-templates/detailed-metric.html" />
@@ -19,7 +21,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/by-company.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/by-company.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentioners.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentioners.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/overview.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/overview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/youtube-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/youtube-templates/detailed-metric.html" />
@@ -84,8 +88,8 @@
       <file leaf-file-name="detailed-metric.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -147,7 +151,6 @@
         <option value="$PROJECT_DIR$/app/biz/views/cross-channels.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/twitter.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/TwitterCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/by-company.html" />
         <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/mentioners.html" />
@@ -177,6 +180,7 @@
         <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
         <option value="$PROJECT_DIR$/app/biz/views/instagram-templates/detailed-metric.html" />
         <option value="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
       </list>
     </option>
   </component>
@@ -259,6 +263,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="biz" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biz" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biz" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -369,12 +417,12 @@
       <workItem from="1490029479925" duration="595000" />
       <workItem from="1490034772427" duration="630000" />
       <workItem from="1490037188181" duration="197000" />
-      <workItem from="1490037459178" duration="13777000" />
+      <workItem from="1490037459178" duration="14471000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226817000" />
+    <option name="totallyTimeSpent" value="227511000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -840,8 +888,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="187">
+          <caret line="11" column="63" lean-forward="false" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
           <folding />
         </state>
       </provider>
