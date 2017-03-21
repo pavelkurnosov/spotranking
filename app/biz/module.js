@@ -205,6 +205,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialInstagram', {
+                url: '/social_instagram',
+                data: {
+                    title: 'Instagram'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/social/instagram.html',
+                        controller: 'InstagramController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
