@@ -257,6 +257,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.BrandCompetition', {
+                url: '/brand_competition',
+                data: {
+                    title: 'Brand Competition'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/brand-competition.html',
+                        controller: 'BrandCompetitionController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
