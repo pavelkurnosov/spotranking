@@ -231,6 +231,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.GeographicalCoverage', {
+                url: '/geographical_coverage',
+                data: {
+                    title: 'Geographical Coverage'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/geographical-coverage.html',
+                        controller: 'GeographicalCoverageController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
