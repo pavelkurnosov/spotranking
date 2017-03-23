@@ -218,6 +218,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.ComparingPerform', {
+                url: '/comparing_performance',
+                data: {
+                    title: 'Comparing Performance'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/comparing-perform.html',
+                        controller: 'ComparingPerformController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

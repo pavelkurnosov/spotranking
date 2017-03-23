@@ -161,7 +161,7 @@ angular.module('app.biz').controller('FacebookController', function ($state) {
         }]
     };
     vm.data7 = {
-        chart: {type: 'line', height: 170},
+        chart: {type: 'line', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         title: {text: ''},
         subtitle: {text: ''},
         xAxis: {type: 'datetime',
