@@ -244,6 +244,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.MeasuringOutput', {
+                url: '/measuring_output',
+                data: {
+                    title: 'Measuring Output'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/measuring-output.html',
+                        controller: 'MeasuringOutputController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
