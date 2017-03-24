@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" afterPath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/dashboard.html" afterPath="$PROJECT_DIR$/app/biz/views/dashboard.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social-media.html" afterPath="$PROJECT_DIR$/app/biz/views/social-media.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -69,16 +69,126 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="190">
               <caret line="97" column="31" lean-forward="true" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
+              <folding>
+                <marker date="1490317020500" expanded="true" signature="89:4238" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="opportunity.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/opportunity.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="opportunity.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/opportunity.html">
+      <file leaf-file-name="form-elements.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/forms/views/form-elements.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="91" column="55" lean-forward="false" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+            <state relative-caret-position="266">
+              <caret line="651" column="37" lean-forward="true" selection-start-line="651" selection-start-column="37" selection-end-line="651" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DashboardCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/DashboardCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="3716" column="27" lean-forward="true" selection-start-line="3716" selection-start-column="27" selection-end-line="3716" selection-end-column="27" />
+              <folding>
+                <marker date="1490319460725" expanded="true" signature="264506:264521" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="266239:266246" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="266377:266384" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="266680:266687" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="266794:266801" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="266933:266940" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267043:267050" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267331:267338" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267452:267459" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267593:267600" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267710:267717" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="267999:268006" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="268133:268140" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="268527:268534" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="268650:268657" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="268785:268792" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="268904:268911" ph="–" />
+                <marker date="1490319460725" expanded="true" signature="280955:280973" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="281025:281043" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="281178:281184" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281184:281190" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281190:281196" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281196:281202" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281202:281208" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281534:281540" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="281684:281690" ph=" " />
+                <marker date="1490319460725" expanded="true" signature="290890:290922" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="305523:305537" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="305608:305638" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="305688:305697" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="310298:310330" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="316851:316883" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="331439:331453" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="331524:331554" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="331604:331613" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="336597:336627" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="337495:337525" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="338393:338423" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="343886:343916" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="344784:344814" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="345682:345712" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="350788:350820" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="357526:357558" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="392536:392579" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="395195:395238" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="398054:398097" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="400740:400783" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="403662:403705" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="408497:408540" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="556627:556684" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="574356:574372" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="574374:574381" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="611104:611154" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="613890:613940" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="627743:627754" ph="..." />
+                <marker date="1490319460725" expanded="true" signature="630718:630725" ph="×" />
+                <marker date="1490319460725" expanded="true" signature="729488:729499" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="social-media.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social-media.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -113,6 +223,12 @@
       <find>request a</find>
       <find>high</find>
       <find>data7</find>
+      <find>country</find>
+      <find>&lt;p</find>
+      <find>product</find>
+      <find>first</find>
+      <find>run</find>
+      <find>id=</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -125,10 +241,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/bios.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/my-ranking.html" />
         <option value="$PROJECT_DIR$/app/biz/views/cross-channels.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/twitter.html" />
@@ -176,6 +288,10 @@
         <option value="$PROJECT_DIR$/app/biz/module.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/OpportunityCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/opportunity.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/dashboard.html" />
+        <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/ApiController.php" />
+        <option value="$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/aaaaa.php" />
+        <option value="$PROJECT_DIR$/app/biz/views/social-media.html" />
       </list>
     </option>
   </component>
@@ -197,8 +313,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="753" />
-    <option name="height" value="943" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -314,7 +432,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="op&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/OpportunityCtrl.js&#10;geogr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;opp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/opportunity.html&#10;modu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;cam&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/campaign-breakdown.html&#10;comparingper&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;brand&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/BrandCompetitionCtrl.js&#10;brandcom&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/brand-competition.html&#10;mea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/measuring-output.html&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;geographic&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/GeographicalCoverageCtrl.js&#10;geo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;breakdown&#9;null&#9;null&#10;campa&#9;null&#9;null&#10;top-con&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/top-content.html&#10;face&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;overview&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/overview.html&#10;compa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/ComparingPerformCtrl.js&#10;overv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;comparin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;detailed&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/detailed-metric.html&#10;insta&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/instagram.html&#10;overvie&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;instagr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/InstagramCtrl.js&#10;top&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/googleplus-templates/top-content.html&#10;overvi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/googleplus-templates/overview.html&#10;youtu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/youtube.html&#10;goo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/googleplus.html&#10;google&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/GoogleplusCtrl.js&#10;you&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/YoutubeCtrl.js&#10;top-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/youtube-templates/top-content.html&#10;faceboo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;detail&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/youtube-templates/detailed-metric.html&#10;youtub&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/YoutubeCtrl.js&#10;twitt&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/TwitterCtrl.js&#10;youtube&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/youtube.html&#10;facebook&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;insi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/insights.html&#10;facebook1&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook1.html&#10;overview.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/cross-channel-templates/overview.html&#10;insights&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/insights.html&#10;mention&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/twitter-templates/mentions.html&#10;over&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/twitter-templates/overview.html&#10;by&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/twitter-templates/by-company.html&#10;twitterc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/TwitterCtrl.js" />
+    <property name="SearchEverywhereHistoryKey" value="soci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social-media.html&#10;social&#9;null&#9;null&#10;dash&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/dashboard.html&#10;dashboard&#9;null&#9;null&#10;op&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/OpportunityCtrl.js&#10;geogr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;opp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/opportunity.html&#10;modu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;cam&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/campaign-breakdown.html&#10;comparingper&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;brand&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/BrandCompetitionCtrl.js&#10;brandcom&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/brand-competition.html&#10;mea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/measuring-output.html&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;geographic&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/GeographicalCoverageCtrl.js&#10;geo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;breakdown&#9;null&#9;null&#10;campa&#9;null&#9;null&#10;top-con&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/top-content.html&#10;face&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;overview&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/overview.html&#10;compa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/ComparingPerformCtrl.js&#10;overv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;comparin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;detailed&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/detailed-metric.html&#10;insta&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/instagram.html&#10;overvie&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;instagr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/InstagramCtrl.js&#10;top&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/googleplus-templates/top-content.html&#10;overvi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/googleplus-templates/overview.html&#10;youtu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/youtube.html&#10;goo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/googleplus.html&#10;google&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/GoogleplusCtrl.js&#10;you&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/YoutubeCtrl.js&#10;top-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/youtube-templates/top-content.html&#10;faceboo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;detail&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/youtube-templates/detailed-metric.html&#10;youtub&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/YoutubeCtrl.js&#10;twitt&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/TwitterCtrl.js&#10;youtube&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/youtube.html&#10;facebook&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;insi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/insights.html&#10;facebook1&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook1.html&#10;overview.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/cross-channel-templates/overview.html&#10;insights&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/insights.html" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -414,19 +532,19 @@
       <workItem from="1490114520180" duration="5294000" />
       <workItem from="1490200002749" duration="3024000" />
       <workItem from="1490282969245" duration="922000" />
-      <workItem from="1490284575737" duration="10425000" />
+      <workItem from="1490284575737" duration="16310000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247922000" />
+    <option name="totallyTimeSpent" value="253807000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="753" height="943" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -467,42 +585,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/mentions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="16" column="45" lean-forward="true" selection-start-line="16" selection-start-column="45" selection-end-line="16" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook1.html" />
-    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/insights.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="26" column="59" lean-forward="true" selection-start-line="26" selection-start-column="59" selection-end-line="26" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -740,87 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="2668" column="13" lean-forward="true" selection-start-line="2668" selection-start-column="13" selection-end-line="2668" selection-end-column="13" />
-          <folding>
-            <marker date="1490317020832" expanded="true" signature="91857:91863" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="92605:92616" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="93147:93158" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="93768:93779" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="108304:108310" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="108657:108663" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="109715:109721" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="109721:109727" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="124190:124226" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="125781:125787" ph="‐" />
-            <marker date="1490317020832" expanded="true" signature="143001:143008" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="147257:147271" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="148630:148644" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="152103:152117" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="187400:187432" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="264506:264521" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="266239:266246" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="266377:266384" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="266680:266687" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="266794:266801" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="266933:266940" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267043:267050" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267331:267338" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267452:267459" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267593:267600" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267710:267717" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="267999:268006" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="268133:268140" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="268527:268534" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="268650:268657" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="268785:268792" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="268904:268911" ph="–" />
-            <marker date="1490317020832" expanded="true" signature="280955:280973" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="281025:281043" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="281178:281184" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281184:281190" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281190:281196" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281196:281202" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281202:281208" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281534:281540" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="281684:281690" ph=" " />
-            <marker date="1490317020832" expanded="true" signature="290890:290922" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="305523:305537" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="305608:305638" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="305688:305697" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="310298:310330" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="316851:316883" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="331439:331453" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="331524:331554" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="331604:331613" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="336597:336627" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="337495:337525" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="338393:338423" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="343886:343916" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="344784:344814" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="345682:345712" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="350788:350820" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="357526:357558" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="392536:392579" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="395195:395238" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="398054:398097" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="400740:400783" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="403662:403705" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="408497:408540" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="556627:556684" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="574356:574372" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="574374:574381" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="611104:611154" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="613890:613940" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="627743:627754" ph="..." />
-            <marker date="1490317020832" expanded="true" signature="630718:630725" ph="×" />
-            <marker date="1490317020832" expanded="true" signature="729488:729499" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/ComparingPerformCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -919,7 +920,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="97" column="31" lean-forward="true" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
-          <folding />
+          <folding>
+            <marker date="1490317020500" expanded="true" signature="89:4238" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -933,8 +936,125 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/opportunity.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="91" column="55" lean-forward="false" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        <state relative-caret-position="195">
+          <caret line="58" column="26" lean-forward="true" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/forms/views/form-elements.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="651" column="37" lean-forward="true" selection-start-line="651" selection-start-column="37" selection-end-line="651" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/DashboardCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="false" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/aaaaa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="168" column="71" lean-forward="false" selection-start-line="168" selection-start-column="71" selection-end-line="168" selection-end-column="71" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#4;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Skype/My Skype Received Files/ApiController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="82" lean-forward="true" selection-start-line="10" selection-start-column="82" selection-end-line="10" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="3716" column="27" lean-forward="true" selection-start-line="3716" selection-start-column="27" selection-end-line="3716" selection-end-column="27" />
+          <folding>
+            <marker date="1490319460725" expanded="true" signature="264506:264521" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="266239:266246" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="266377:266384" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="266680:266687" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="266794:266801" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="266933:266940" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267043:267050" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267331:267338" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267452:267459" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267593:267600" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267710:267717" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="267999:268006" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="268133:268140" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="268527:268534" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="268650:268657" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="268785:268792" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="268904:268911" ph="–" />
+            <marker date="1490319460725" expanded="true" signature="280955:280973" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="281025:281043" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="281178:281184" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281184:281190" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281190:281196" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281196:281202" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281202:281208" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281534:281540" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="281684:281690" ph=" " />
+            <marker date="1490319460725" expanded="true" signature="290890:290922" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="305523:305537" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="305608:305638" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="305688:305697" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="310298:310330" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="316851:316883" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="331439:331453" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="331524:331554" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="331604:331613" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="336597:336627" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="337495:337525" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="338393:338423" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="343886:343916" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="344784:344814" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="345682:345712" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="350788:350820" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="357526:357558" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="392536:392579" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="395195:395238" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="398054:398097" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="400740:400783" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="403662:403705" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="408497:408540" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="556627:556684" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="574356:574372" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="574374:574381" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="611104:611154" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="613890:613940" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="627743:627754" ph="..." />
+            <marker date="1490319460725" expanded="true" signature="630718:630725" ph="×" />
+            <marker date="1490319460725" expanded="true" signature="729488:729499" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social-media.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
       </provider>
