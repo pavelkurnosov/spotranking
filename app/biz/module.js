@@ -270,6 +270,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.Opportunity', {
+                url: '/opportunity',
+                data: {
+                    title: 'Opportunity'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/opportunity.html',
+                        controller: 'OpportunityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
