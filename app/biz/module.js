@@ -283,19 +283,6 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
-            .state('app.biz.accountCreation', {
-                url: '/cs_account_creation',
-                data: {
-                    title: 'CS Account Creation'
-                },
-                views: {
-                    "content@app": {
-                        templateUrl: 'app/biz/views/account-creation.html',
-                        controller: 'AccountCreationController',
-                        controllerAs: 'vm'
-                    }
-                }
-            })
         ;
     })
 ;
