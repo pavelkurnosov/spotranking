@@ -5,12 +5,13 @@ angular.module('app.biz').controller('YoutubeController', function ($state) {
 
     vm.socialPages = [
         {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Twitter', url: 'socialTwitter'},
-        {id: 3, title: 'Facebook', url: 'socialFacebook'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
+        {id: 2, title: 'Facebook', url: 'socialFacebook'},
+        {id: 3, title: 'Twitter', url: 'socialTwitter'},
         {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'}
+        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
+        {id: 7, title: 'Instagram', url: 'socialInstagram'},
+        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
+        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
     ];
     vm.openPage = function (url) {
         $state.go('app.biz.' + url);

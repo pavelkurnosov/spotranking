@@ -5,16 +5,21 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
 
     vm.socialPages = [
         {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Twitter', url: 'socialTwitter'},
-        {id: 3, title: 'Facebook', url: 'socialFacebook'},
+        {id: 2, title: 'Facebook', url: 'socialFacebook'},
+        {id: 3, title: 'Twitter', url: 'socialTwitter'},
         {id: 4, title: 'LinkedIn', url: 'socialLinkedin'},
         {id: 5, title: 'Google+', url: 'socialGoogleplus'},
         {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'}
+        {id: 7, title: 'Instagram', url: 'socialInstagram'},
+        {id: 8, title: 'Pinterest', url: 'socialPinterest'}
     ];
     vm.openPage = function (url) {
         $state.go('app.biz.' + url);
     };
+
+
+    vm.sdate = moment().subtract(7,'d').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
 
     vm.data1 = {
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
