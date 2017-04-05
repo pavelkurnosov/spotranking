@@ -3587,6 +3587,45 @@ angular.module('app.biz').controller('SocialMediaController', function ($scope) 
 });
 'use strict';
 
+angular
+    .module('app')
+    .directive('exportButton', function () {
+        var directive = {};
+
+        directive.restrict = 'E';
+
+        var html = '<div class="btn-group dropdown float-right {{class}}" data-dropdown="">';
+        html += '<button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">';
+        html += 'Export <span class="caret"></span>';
+        html += '</button>';
+        html += '<ul class="dropdown-menu pull-right">';
+        html += '<li>';
+        html += '<a href-void="" href="#">Download a PPT</a>';
+        html += '<a href-void="" href="#">Download a PDF</a>';
+        html += '<a href-void="" href="#">Download a PNG</a>';
+        html += '<hr class="margin-top-5 margin-bottom-5"/>';
+        html += '<a href-void="" href="#">Email...</a>';
+        html += '<a href-void="" href="#">Schedule...</a>';
+        html += '<hr class="margin-top-5 margin-bottom-5"/>';
+        html += '<a href-void="" href="#">Customize Branding</a>';
+        html += '</li>';
+        html += '</ul>';
+        html += '</div>';
+
+        directive.template = html;
+
+        directive.scope = {
+            class: "@"
+        };
+
+        directive.link = function (scope, element, attrs) {
+
+        };
+        return directive;
+    });
+
+'use strict';
+
 angular.module('app.calendar').controller('CalendarCtrl', function ($scope, $log, CalendarEvent) {
 
 
@@ -6079,13 +6118,14 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
+        subtitle: {text: 'Social Audience'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Social Audience',
-                'Ooredoo'
+                'Ooredoo',
+                'Landscape Average'
             ]
         },
+        exporting: { enabled: false },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},

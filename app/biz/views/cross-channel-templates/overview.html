@@ -1,17 +1,7 @@
 <div class="container-fluid">
     <div class="row margin-bottom-10">
         <div class="col-xs-12">
-            <div class="btn-group dropdown float-right" data-dropdown="">
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    Export <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu pull-right">
-                    <li>
-                        <a href-void="" href="#">Excel</a>
-                        <a href-void="" href="#">PDF</a>
-                    </li>
-                </ul>
-            </div>
+            <export-button></export-button>
         </div>
     </div>
     <section id="widget-grid-cross-overview" widget-grid>
@@ -25,33 +15,25 @@
                             ({{vm.sdate}} ~ {{vm.edate}})
                         </h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
-                            <div class="btn-group btn-group-xs dropdown" data-dropdown="">
-                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                                    Export <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu pull-right">
-                                    <li>
-                                        <a href-void="" href="#">Excel</a>
-                                        <a href-void="" href="#">PDF</a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
                         </div>
                     </header>
                     <div>
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-5">
+                                    <div class="col-xs-4">
                                         <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> is the landscape leader for Social Audience, ranking 1st of 3 companies in your landscape.</p>
                                         <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> is the landscape leader for Social Audience growth, ranking 1st of 2 companies in your landscape.</p>
                                         <div>
-                                            <button class="btn btn-primary">Additional Social Audience Metrics</button>
-                                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-7">
+                                    <div class="col-xs-7">
                                         <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
                                     </div>
                                 </div>
                             </div>

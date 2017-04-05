@@ -26,13 +26,14 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
+        subtitle: {text: 'Social Audience'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Social Audience',
-                'Ooredoo'
+                'Ooredoo',
+                'Landscape Average'
             ]
         },
+        exporting: { enabled: false },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
