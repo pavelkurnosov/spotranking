@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,11 +46,9 @@
       <file leaf-file-name="top-content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="104" column="41" lean-forward="true" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="565">
+              <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,7 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>11m</find>
       <find>twee</find>
       <find>twi</find>
       <find>twe</find>
@@ -119,6 +113,7 @@
       <find>&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</find>
       <find>data11</find>
       <find>expo</find>
+      <find>1.7</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -554,12 +549,12 @@
       <workItem from="1491047474904" duration="17015000" />
       <workItem from="1491245536400" duration="15131000" />
       <workItem from="1491396647277" duration="955000" />
-      <workItem from="1491406902641" duration="13110000" />
+      <workItem from="1491406902641" duration="13709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308739000" />
+    <option name="totallyTimeSpent" value="309338000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -963,11 +958,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="104" column="41" lean-forward="true" selection-start-line="104" selection-start-column="41" selection-end-line="104" selection-end-column="41" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="565">
+          <caret line="67" column="42" lean-forward="true" selection-start-line="67" selection-start-column="42" selection-end-line="67" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
