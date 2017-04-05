@@ -47,24 +47,35 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <div jarvis-widget data-widget-editbutton="false">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
                     <header>
-                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
-                        <h2>Social Activity ({{vm.sdate}} ~ {{vm.edate}})</h2>
+                        <h2>
+                            Social Activity
+                            <a><i class="fa fa-info-circle"></i></a>
+                            ({{vm.sdate}} ~ {{vm.edate}})
+                        </h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
                     </header>
                     <div>
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-5">
-                                        <p><i class="fa fa-like"></i> <a href="#/cross_channels">Eat24</a> was the landscape leader for Total Social Activity. ranking 1st of 6.</p>
+                                    <div class="col-xs-4">
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> was below average for Total Social Activity, ranking 3rd of 3. DJEZZY leads with 44 posts.</p>
                                         <div>
-                                            <button class="btn btn-primary">Additional Activity Metrics</button>
-                                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-7">
-                                        <div highchart data="vm.data2"></div>
+                                    <div class="col-xs-7">
+                                        <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                    <div class="col-xs-12 padding-top-10 margin-top-10 text-right">
+                                        <button class="btn btn-primary">View Details</button>
                                     </div>
                                 </div>
                             </div>
@@ -75,24 +86,35 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <div jarvis-widget data-widget-editbutton="false">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
                     <header>
-                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
-                        <h2>Social Activity ({{vm.sdate}} ~ {{vm.edate}})</h2>
+                        <h2>
+                            Social Engagement
+                            <a><i class="fa fa-info-circle"></i></a>
+                            ({{vm.sdate}} ~ {{vm.edate}})
+                        </h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
                     </header>
                     <div>
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-12 col-sm-5">
-                                        <p><i class="fa fa-like"></i> <a href="#/cross_channels">Eat24</a> was the landscape leader for Total Social Activity. ranking 1st of 6.</p>
+                                    <div class="col-xs-4">
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> was above average for Total Social Engagement, ranking 2nd of 3. Keep chasing the leader, Mobilis, with their landscape leading 18,945 interactions.</p>
                                         <div>
-                                            <button class="btn btn-primary">Additional Engagement Metrics</button>
-                                            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+
                                         </div>
                                     </div>
-                                    <div class="col-xs-12 col-sm-7">
-                                        <div highchart data="vm.data2"></div>
+                                    <div class="col-xs-7">
+                                        <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                    <div class="col-xs-12 padding-top-10 margin-top-10 text-right">
+                                        <button class="btn btn-primary">View Details</button>
                                     </div>
                                 </div>
                             </div>
