@@ -3,14 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/twitter.html" afterPath="$PROJECT_DIR$/app/biz/views/social/twitter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/youtube.html" afterPath="$PROJECT_DIR$/app/biz/views/social/youtube.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/layout.tpl.html" afterPath="$PROJECT_DIR$/app/layout/layout.tpl.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -40,27 +35,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PinterestCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/PinterestCtrl.js">
+      <file leaf-file-name="FacebookCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3808">
+              <caret line="224" column="13" lean-forward="false" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
+              <folding>
+                <marker date="1491313976063" expanded="true" signature="2168:2200" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="7690:7704" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="7775:7805" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="7864:7873" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="7932:7941" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="17256:17270" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="17341:17371" ph="..." />
+                <marker date="1491313976063" expanded="true" signature="17421:17430" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="highchart.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/graphs/directives/highchart/highchart.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding>
-                <element signature="e#716#1705#0" expanded="false" />
-                <element signature="e#1747#2962#0" expanded="false" />
-                <element signature="e#2979#3709#0" expanded="false" />
-                <element signature="e#3726#4813#0" expanded="false" />
-                <element signature="e#4830#5480#0" expanded="false" />
-                <element signature="e#5497#6837#0" expanded="false" />
-                <element signature="e#6857#7967#0" expanded="false" />
-                <element signature="e#7985#9107#0" expanded="false" />
-                <element signature="e#9125#10230#0" expanded="false" />
-                <element signature="e#10275#12893#0" expanded="false" />
-                <marker date="1491221139913" expanded="true" signature="2096:2128" ph="..." />
-                <marker date="1491221139913" expanded="true" signature="16729:16743" ph="..." />
-                <marker date="1491221139913" expanded="true" signature="16814:16844" ph="..." />
-                <marker date="1491221139913" expanded="true" signature="16894:16903" ph="..." />
-              </folding>
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overview.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,31 +77,19 @@
       <file leaf-file-name="detailed-metric.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+            <state relative-caret-position="187">
+              <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detailed-metric.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html">
+      <file leaf-file-name="overview.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="75" column="66" lean-forward="true" selection-start-line="75" selection-start-column="66" selection-end-line="75" selection-end-column="66" />
+            <state relative-caret-position="153">
+              <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwitterCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/TwitterCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2312">
-              <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding>
-                <marker date="1491221139977" expanded="true" signature="2094:2126" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +108,6 @@
       <find>img</find>
       <find>11m</find>
       <find>twee</find>
-      <find>data11</find>
       <find>twi</find>
       <find>twe</find>
       <find>Youtube</find>
@@ -138,6 +134,7 @@
       <find>faceboo</find>
       <find>pinterest</find>
       <find>&lt;div class=&quot;clearfix&quot;&gt;&lt;/div&gt;</find>
+      <find>data11</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -181,11 +178,8 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/AccountCreationCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/account-creation.html" />
         <option value="$PROJECT_DIR$/app/biz/module.js" />
-        <option value="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/GoogleplusCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/InstagramCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/PinterestCtrl.js" />
@@ -202,6 +196,9 @@
         <option value="$PROJECT_DIR$/app/biz/views/social/instagram.html" />
         <option value="$PROJECT_DIR$/app/layout/layout.tpl.html" />
         <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" />
       </list>
     </option>
   </component>
@@ -243,8 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -431,6 +426,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -438,7 +435,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="twitterC&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/TwitterCtrl.js&#10;tw&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/twitter.html&#10;facebook&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;top-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/pinterest-templates/top-content.html&#10;detailed&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/pinterest-templates/detailed-metric.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;pin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/PinterestCtrl.js&#10;cross&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/CrossChannelsCtrl.js&#10;pinte&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/PinterestCtrl.js&#10;face&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;pinterest&#9;null&#9;null&#10;header&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/bower_components/markdown/test/fixtures/docs-pythonmarkdown2-tm-cases-pass/header.html&#10;index.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/index.html&#10;facebookh&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;facebo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;modu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;acco&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/AccountCreationCtrl.js&#10;your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;account&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/account-creation.html&#10;account-cre&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/account-creation.html&#10;accountC&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/AccountCreationCtrl.js&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;soci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social-media.html&#10;social&#9;null&#9;null&#10;dash&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/dashboard.html&#10;dashboard&#9;null&#9;null&#10;op&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/OpportunityCtrl.js&#10;geogr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;opp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/opportunity.html&#10;cam&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/campaign-breakdown.html&#10;comparingper&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;brand&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/BrandCompetitionCtrl.js&#10;brandcom&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/brand-competition.html&#10;mea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/measuring-output.html&#10;geographic&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/GeographicalCoverageCtrl.js&#10;geo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;breakdown&#9;null&#9;null&#10;campa&#9;null&#9;null&#10;top-con&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/top-content.html&#10;overview&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/overview.html&#10;compa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/ComparingPerformCtrl.js&#10;overv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;comparin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;insta&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/instagram.html&#10;overvie&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html" />
+    <property name="SearchEverywhereHistoryKey" value="high&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/graphs/directives/highchart/highchart.js&#10;detail&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/detailed-metric.html&#10;face&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;overview&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/cross-channel-templates/overview.html&#10;highchart&#9;null&#9;null&#10;twitterC&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/TwitterCtrl.js&#10;tw&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/twitter.html&#10;facebook&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;top-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/pinterest-templates/top-content.html&#10;detailed&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/pinterest-templates/detailed-metric.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;pin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/PinterestCtrl.js&#10;cross&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/CrossChannelsCtrl.js&#10;pinte&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/PinterestCtrl.js&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;pinterest&#9;null&#9;null&#10;header&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/bower_components/markdown/test/fixtures/docs-pythonmarkdown2-tm-cases-pass/header.html&#10;index.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/index.html&#10;facebookh&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;facebo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;modu&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;acco&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/AccountCreationCtrl.js&#10;your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;account&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/account-creation.html&#10;account-cre&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/account-creation.html&#10;accountC&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/AccountCreationCtrl.js&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;soci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social-media.html&#10;social&#9;null&#9;null&#10;dash&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/dashboard.html&#10;dashboard&#9;null&#9;null&#10;op&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/OpportunityCtrl.js&#10;geogr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;opp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/opportunity.html&#10;cam&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/campaign-breakdown.html&#10;comparingper&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;brand&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/BrandCompetitionCtrl.js&#10;brandcom&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/brand-competition.html&#10;mea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/measuring-output.html&#10;geographic&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/GeographicalCoverageCtrl.js&#10;geo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/geographical-coverage.html&#10;breakdown&#9;null&#9;null&#10;campa&#9;null&#9;null&#10;top-con&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/facebook-templates/top-content.html&#10;compa&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/ComparingPerformCtrl.js&#10;overv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/instagram-templates/overview.html&#10;comparin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/comparing-perform.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -545,19 +542,20 @@
       <workItem from="1491012416904" duration="35000" />
       <workItem from="1491015280533" duration="14000" />
       <workItem from="1491047474904" duration="17015000" />
-      <workItem from="1491245536400" duration="2533000" />
+      <workItem from="1491245536400" duration="15131000" />
+      <workItem from="1491396647277" duration="25000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282076000" />
+    <option name="totallyTimeSpent" value="294699000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44777778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18443497" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -598,13 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/OpportunityCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="31" lean-forward="false" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/geographical-coverage.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1258">
@@ -699,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="60" lean-forward="true" selection-start-line="7" selection-start-column="60" selection-end-line="7" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bower_components/markdown/test/fixtures/docs-pythonmarkdown2-tm-cases-pass/header.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -727,13 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/SocialMediaCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -748,30 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <marker date="1491221112536" expanded="true" signature="92:19312" ph="{...}" />
-            <marker date="1491221112536" expanded="true" signature="135:618" ph="[...]" />
-            <marker date="1491221112536" expanded="true" signature="2095:2127" ph="..." />
-            <marker date="1491221112536" expanded="true" signature="16728:16742" ph="..." />
-            <marker date="1491221112536" expanded="true" signature="16813:16843" ph="..." />
-            <marker date="1491221112536" expanded="true" signature="16893:16902" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/GoogleplusCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <marker date="1491221139882" expanded="true" signature="94:6612" ph="{...}" />
-            <marker date="1491221139882" expanded="true" signature="137:620" ph="[...]" />
-            <marker date="1491221139882" expanded="true" signature="2097:2129" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -779,12 +736,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <marker date="1491221139947" expanded="true" signature="2096:2128" ph="..." />
-            <marker date="1491221139947" expanded="true" signature="16684:16698" ph="..." />
-            <marker date="1491221139947" expanded="true" signature="16769:16799" ph="..." />
-            <marker date="1491221139947" expanded="true" signature="16849:16858" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -792,11 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1489800271063" expanded="true" signature="2419:2449" ph="..." />
-            <marker date="1489800271063" expanded="true" signature="3317:3347" ph="..." />
-            <marker date="1489800271063" expanded="true" signature="4215:4245" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -804,9 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="30" lean-forward="false" selection-start-line="13" selection-start-column="30" selection-end-line="13" selection-end-column="30" />
-          <folding>
-            <marker date="1491221139913" expanded="true" signature="2094:2126" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -814,9 +757,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <marker date="1491207039521" expanded="true" signature="2210:2242" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -852,7 +792,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -860,7 +799,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="57" selection-end-line="27" selection-end-column="57" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,7 +806,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
           <caret line="35" column="53" lean-forward="false" selection-start-line="35" selection-start-column="53" selection-end-line="44" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +813,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +820,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +827,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +834,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="58" lean-forward="false" selection-start-line="44" selection-start-column="58" selection-end-line="44" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25670">
           <caret line="1510" column="54" lean-forward="true" selection-start-line="1510" selection-start-column="54" selection-end-line="1510" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +862,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
           <caret line="2052" column="55" lean-forward="false" selection-start-line="2052" selection-start-column="55" selection-end-line="2052" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,9 +869,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <marker date="1455715570000" expanded="true" signature="4826:4837" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -950,38 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/PinterestCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#716#1705#0" expanded="false" />
-            <element signature="e#1747#2962#0" expanded="false" />
-            <element signature="e#2979#3709#0" expanded="false" />
-            <element signature="e#3726#4813#0" expanded="false" />
-            <element signature="e#4830#5480#0" expanded="false" />
-            <element signature="e#5497#6837#0" expanded="false" />
-            <element signature="e#6857#7967#0" expanded="false" />
-            <element signature="e#7985#9107#0" expanded="false" />
-            <element signature="e#9125#10230#0" expanded="false" />
-            <element signature="e#10275#12893#0" expanded="false" />
-            <marker date="1491221139913" expanded="true" signature="2096:2128" ph="..." />
-            <marker date="1491221139913" expanded="true" signature="16729:16743" ph="..." />
-            <marker date="1491221139913" expanded="true" signature="16814:16844" ph="..." />
-            <marker date="1491221139913" expanded="true" signature="16894:16903" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,16 +883,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2312">
           <caret line="14" column="6" lean-forward="false" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <marker date="1491221139977" expanded="true" signature="2094:2126" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="75" column="66" lean-forward="true" selection-start-line="75" selection-start-column="66" selection-end-line="75" selection-end-column="66" />
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/PinterestCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3808">
+          <caret line="224" column="13" lean-forward="false" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
+          <folding>
+            <marker date="1491313976063" expanded="true" signature="2168:2200" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="7690:7704" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="7775:7805" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="7864:7873" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="7932:7941" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="17256:17270" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="17341:17371" ph="..." />
+            <marker date="1491313976063" expanded="true" signature="17421:17430" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/graphs/directives/highchart/highchart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="25" lean-forward="true" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="25" lean-forward="true" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
           <folding />
         </state>
       </provider>

@@ -17,6 +17,10 @@ angular.module('app.biz').controller('FacebookController', function ($state) {
         $state.go('app.biz.' + url);
     };
 
+    vm.viewContent = function () {
+        alert("View Content")
+    };
+
     vm.data1 = {
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
@@ -219,6 +223,15 @@ angular.module('app.biz').controller('FacebookController', function ($state) {
                 'Chrysler',
                 'Scion'
             ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
