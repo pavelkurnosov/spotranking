@@ -1,6 +1,7 @@
+<div class="clearfix"></div>
 <div class="container-fluid">
     <div class="row margin-bottom-10">
-        <div class="col-xs-12">
+        <div class="col-xs-6">
             <div class="btn-group dropdown" data-dropdown>
                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                     Cross-Channel <span class="caret"></span>
@@ -9,6 +10,35 @@
                     <li ng-repeat="s in vm.socialPages">
                         <a href-void ng-click="vm.openPage(s.url)">{{s.title}}</a>
                     </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 text-right">
+            <div class="btn-group dropdown" data-dropdown>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-tag"></i>
+                    All <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href-void>Only Ooredoo</a></li>
+                    <li><a href-void>Untagged</a></li>
+                </ul>
+            </div>
+            <div class="btn-group dropdown" data-dropdown>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-calendar"></i>
+                    Last 7 Days <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu pull-right">
+                    <li><a href-void>Last 7 Days</a></li>
+                    <li><a href-void>Last 30 Days</a></li>
+                    <li><a href-void>Last 90 Days</a></li>
+                    <li><a href-void>Yesterday</a></li>
+                    <li><a href-void>This Week to Date</a></li>
+                    <li><a href-void>Last Week</a></li>
+                    <li><a href-void>This Month to Date</a></li>
+                    <li><a href-void>Last Month</a></li>
+                    <li><a href-void>Custom Range</a></li>
                 </ul>
             </div>
         </div>

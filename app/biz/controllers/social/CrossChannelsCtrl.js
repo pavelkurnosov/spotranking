@@ -21,6 +21,42 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
     vm.sdate = moment().subtract(7,'d').format('YYYY-MM-DD');
     vm.edate = moment().format('YYYY-MM-DD');
 
+
+    vm.chart1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Social Audience',
+                'Ooredoo'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+
+
+
     vm.data1 = {
         chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
