@@ -101,7 +101,7 @@
                                         <h5>8:59 AM</h5>
                                     </td>
                                     <td>
-                                        <img class="image-width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
+                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="image-width-40 margin-top-15" ng-src="./styles/img/temp/01.png"></a>
                                     </td>
                                     <td>
                                         <h4>DJEZZY</h4>
@@ -110,7 +110,7 @@
                                         <p>quelques instants le...</p>
                                     </td>
                                     <td>
-                                        <img class="image-width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
+                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="image-width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg"></a>
                                     </td>
                                     <td>
                                         33
@@ -127,5 +127,80 @@
             </article>
         </div>
     </section>
+</div>
 
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Social Audience ({{vm.sdate}} ~ {{vm.edate}})</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <img class="image-width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
+                        </div>
+                        <div class="col-xs-7">
+                            <h4>DJEZZY</h4>
+                            <p>Apr 2 2017 8:59 AM UTC</p>
+                            <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
+                            <p>quelques instants le...</p>
+                            <p>Suivez avec nous dans quelques instants le live direct de la cérémonie de signature du contrat de sponsoring #Djezzy / #USMA qui aura lieu au stade Omar Hammadi, Bouloughine ».</p>
+                            <p>#Djezzy #USMA #Football</p>
+                            <img class="max-width-400" ng-src="./styles/img/temp/10.jpg">
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p class="">33</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p><small>ENGAGEMENT TOTAL <i class="fa fa-info-circle"></i></small></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>32</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>LIKES <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>COMMENTS <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p>4.51K</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>FOLLOWED BY <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p>0.73%</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>ENGAGEMENT RATE <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>
