@@ -4,6 +4,7 @@
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +48,8 @@
       <file leaf-file-name="top-content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="84" column="75" lean-forward="true" selection-start-line="84" selection-start-column="75" selection-end-line="84" selection-end-column="75" />
+            <state relative-caret-position="263">
+              <caret line="173" column="90" lean-forward="false" selection-start-line="173" selection-start-column="90" selection-end-line="173" selection-end-column="90" />
               <folding>
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
               </folding>
@@ -212,10 +213,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="959" />
+    <option name="x" value="960" />
+    <option name="width" value="960" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -364,15 +364,15 @@
       <workItem from="1491047474904" duration="17015000" />
       <workItem from="1491245536400" duration="15131000" />
       <workItem from="1491396647277" duration="955000" />
-      <workItem from="1491406902641" duration="18303000" />
+      <workItem from="1491406902641" duration="23409000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313932000" />
+    <option name="totallyTimeSpent" value="319038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
+    <frame x="960" y="0" width="960" height="943" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -773,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="84" column="75" lean-forward="true" selection-start-line="84" selection-start-column="75" selection-end-line="84" selection-end-column="75" />
+        <state relative-caret-position="263">
+          <caret line="173" column="90" lean-forward="false" selection-start-line="173" selection-start-column="90" selection-end-line="173" selection-end-column="90" />
           <folding>
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
           </folding>
