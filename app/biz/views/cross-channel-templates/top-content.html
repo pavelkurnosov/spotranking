@@ -107,7 +107,7 @@
                                                     <h5>8:59 AM</h5>
                                                 </td>
                                                 <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="image-width-40 margin-top-15" ng-src="./styles/img/temp/01.png"></a>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png"></a>
                                                 </td>
                                                 <td>
                                                     <h4>DJEZZY</h4>
@@ -116,7 +116,7 @@
                                                     <p>quelques instants le...</p>
                                                 </td>
                                                 <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="image-width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg"></a>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal"><img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg"></a>
                                                 </td>
                                                 <td>
                                                     33
@@ -154,17 +154,39 @@
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
+                                    <div class="col-xs-6">
+                                        <p>YOUR POSTS IN PERIOD</p>
+                                        <h1>15</h1>
+                                        <p>Landscape Avg: 27.7</p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p>YOUR ENG. RATE / POST</p>
+                                        <h1>0.031%</h1>
+                                        <p>Landscape Avg: 0.031%</p>
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div class="col-xs-12">
-                                        <table class="table table-response table-bordered">
+                                        <table class="table table-response">
                                             <thead>
                                             <tr>
-                                                <th>Company</th>
+                                                <th colspan="2">Company</th>
                                                 <th>Posts</th>
-                                                <th>Eng. Rate / Post</th>
+                                                <th colspan="2">Eng. Rate / Post</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-
+                                            <tr ng-repeat="i in ['Mobilis', 'Ooredoo', 'DJEZZY'] track by $index">
+                                                <td class="col-xs-1"><img class="width-30 margin-top-15" ng-src="./styles/img/temp/01.png"></td>
+                                                <td class="col-xs-4">{{$index + 1}}. {{i}}</td>
+                                                <td class="col-xs-1">21</td>
+                                                <td class="col-xs-4">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -191,18 +213,33 @@
                     <div>
                         <div class="widget-body">
                             <div class="container-fluid">
+                                <div class="row margin-top-20 margin-bottom-20 padding-top-10 padding-bottom-20">
+                                    <div class="col-xs-12">
+                                        <p>Of the 8 most broadly used hashtags, #جازي generates the most engagement per post. You didn't use any of these hashtags.</p>
+                                    </div>
+                                </div>
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <table class="table table-response table-bordered">
+                                        <table class="table table-response">
                                             <thead>
                                             <tr>
-                                                <th>Hashtag</th>
+                                                <th colspan="2">Hashtag</th>
                                                 <th>Companies Using</th>
-                                                <th>Eng. Rate / Post</th>
+                                                <th colspan="2">Eng. Rate / Post</th>
                                             </tr>
                                             </thead>
                                             <tbody>
-
+                                            <tr ng-repeat="i in ['djezzy4g', 'algerie', '4g', 'جازي', 'Djezzy', 'إتحاد_العاصمة', 'USMA', 'Football']">
+                                                <td class="col-xs-4">{{i}}</td>
+                                                <td class="col-xs-2"><a href="#">Show Posts</a></td>
+                                                <td class="col-xs-2"><span class="badge bg-color-blue txt-color-white">1</span></td>
+                                                <td class="col-xs-3">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-xs-1">{{0.04 * ($index + 1)}}%</td>
+                                            </tr>
                                             </tbody>
                                         </table>
                                     </div>
@@ -230,7 +267,59 @@
                     </header>
                     <div>
                         <div class="widget-body">
-
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Your most active channel is Facebook. The channel that generates the highest engagement in your landscape is Instagram.</p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Post Ch.</th>
+                                                <th>Avg Posts / Day</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="fa fa-facebook"></i> Facebook</td>
+                                                <td>2 / day</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-twitter"></i> Twitter</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div highchart data="vm.data55"></div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Post Ch.</th>
+                                                <th>Posts per Day per Company</th>
+                                                <th colspan="2">Eng. Rate / Post</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr ng-repeat="i in ['Instagram', 'Google+', 'Facebook', 'Twitter']">
+                                                <td class="col-xs-3">{{i}}</td>
+                                                <td class="col-xs-3">0.14 / day</td>
+                                                <td class="col-xs-4">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -248,7 +337,59 @@
                     </header>
                     <div>
                         <div class="widget-body">
-
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <p>Your most common post type is Photo. This is also the post type that generates the highest engagement.</p>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Post Type</th>
+                                                <th>Avg Posts / Day</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><i class="fa fa-photo"></i> Photo</td>
+                                                <td>2 / day</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-link"></i> Link</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <div highchart data="vm.data56"></div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Post Type</th>
+                                                <th>Posts per Day per Company</th>
+                                                <th colspan="2">Eng. Rate / Post</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr ng-repeat="i in ['Photo', 'Video', 'Link']">
+                                                <td class="col-xs-3">{{i}}</td>
+                                                <td class="col-xs-3">0.14 / day</td>
+                                                <td class="col-xs-4">
+                                                    <div class="progress progress-sm">
+                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
+                                                    </div>
+                                                </td>
+                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -262,11 +403,35 @@
                         <h2>Post Times <i class="fa fa-info-circle"></i></h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
                             <export-button class="btn-group-xs margin-top-5"></export-button>
+                            <div class="btn-group dropdown float-right btn-group-xs margin-top-5 margin-right-5">
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Change Time Zone...</button>
+                            </div>
                         </div>
                     </header>
                     <div>
                         <div class="widget-body">
-
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-6">
+                                        <div>AVERAGE ACTIVITY BY PUBLISHED HOUR (CET)</div>
+                                        <div highchart data="vm.data7"></div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div>AVERAGE ACTIVITY BY PUBLISHED DAY (CET)</div>
+                                        <div highchart data="vm.data7"></div>
+                                    </div>
+                                </div>
+                                <div class="row margin-top-20">
+                                    <div class="col-xs-6">
+                                        <div>AVERAGE ENGAGEMENT RATE BY PUBLISHED HOUR (CET)</div>
+                                        <div highchart data="vm.data7"></div>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <div>AVERAGE ENGAGEMENT RATE BY PUBLISHED DAY (CET)</div>
+                                        <div highchart data="vm.data7"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -286,7 +451,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xs-1">
-                            <img class="image-width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
+                            <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
                         </div>
                         <div class="col-xs-7">
                             <h4>DJEZZY</h4>
