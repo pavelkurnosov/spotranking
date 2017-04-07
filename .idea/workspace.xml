@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" afterPath="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+            <state relative-caret-position="374">
+              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
               <folding>
                 <marker date="1491560538577" expanded="true" signature="4250:4282" ph="..." />
               </folding>
@@ -48,15 +45,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top-content.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="top-content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1270">
-              <caret line="552" column="61" lean-forward="true" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+            <state relative-caret-position="81">
+              <caret line="223" column="29" lean-forward="true" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#section#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#3;n#section#0;n#div#0;n#!!top" expanded="false" />
@@ -65,7 +60,7 @@
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#4;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#5;n#section#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-                <element signature="e#33119#33126#0" expanded="true" />
+                <element signature="e#33120#33127#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,8 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>compa</find>
-      <find>Radios Styles</find>
       <find>request a</find>
       <find>high</find>
       <find>data7</find>
@@ -132,6 +125,8 @@
       <find>manage co</find>
       <find>logo</find>
       <find>badg</find>
+      <find>hashtags</find>
+      <find>manage colu</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -195,8 +190,8 @@
         <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" />
         <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
       </list>
     </option>
   </component>
@@ -218,10 +213,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="460" />
-    <option name="y" value="292" />
-    <option name="width" value="1458" />
-    <option name="height" value="487" />
+    <option name="x" value="68" />
+    <option name="y" value="315" />
+    <option name="width" value="1218" />
+    <option name="height" value="518" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -355,15 +350,15 @@
       <workItem from="1491396647277" duration="955000" />
       <workItem from="1491406902641" duration="27855000" />
       <workItem from="1491545981020" duration="602000" />
-      <workItem from="1491554835740" duration="5590000" />
+      <workItem from="1491554835740" duration="6104000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="329676000" />
+    <option name="totallyTimeSpent" value="330190000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="460" y="292" width="1458" height="487" extended-state="0" />
+    <frame x="68" y="315" width="1218" height="518" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -730,14 +725,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <marker date="1491560538577" expanded="true" signature="4250:4282" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1270">
-          <caret line="552" column="61" lean-forward="true" selection-start-line="552" selection-start-column="61" selection-end-line="552" selection-end-column="61" />
+        <state relative-caret-position="81">
+          <caret line="223" column="29" lean-forward="true" selection-start-line="223" selection-start-column="29" selection-end-line="223" selection-end-column="29" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#section#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#section#0;n#div#0;n#!!top" expanded="false" />
@@ -746,17 +749,7 @@
             <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#4;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#5;n#section#0;n#div#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="e#33119#33126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="11" lean-forward="true" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <marker date="1491560538577" expanded="true" signature="4250:4282" ph="..." />
+            <element signature="e#33120#33127#0" expanded="true" />
           </folding>
         </state>
       </provider>
