@@ -1,0 +1,144 @@
+<div class="container-fluid">
+    <div class="row margin-bottom-10">
+        <div class="col-xs-12">
+            <export-button></export-button>
+        </div>
+    </div>
+    <section id="widget-grid-cross-overview" widget-grid>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
+                    <header>
+                        <h2>
+                            Social Audience
+                            <a><i class="fa fa-info-circle"></i></a>
+                            ({{vm.sdate}} ~ {{vm.edate}})
+                        </h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> is the landscape leader for Social Audience, ranking 1st of 3 companies in your landscape.</p>
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> is the landscape leader for Social Audience growth, ranking 1st of 2 companies in your landscape.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                    <div class="col-xs-12 padding-top-10 margin-top-10 text-right">
+                                        <button class="btn btn-primary">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
+                    <header>
+                        <h2>
+                            Social Activity
+                            <a><i class="fa fa-info-circle"></i></a>
+                            ({{vm.sdate}} ~ {{vm.edate}})
+                        </h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> was below average for Total Social Activity, ranking 3rd of 3. DJEZZY leads with 44 posts.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                    <div class="col-xs-12 padding-top-10 margin-top-10 text-right">
+                                        <button class="btn btn-primary">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
+                    <header>
+                        <h2>
+                            Social Engagement
+                            <a><i class="fa fa-info-circle"></i></a>
+                            ({{vm.sdate}} ~ {{vm.edate}})
+                        </h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4">
+                                        <p><i class="fa fa-trophy"></i> <a href="#/cross_channels">Ooredoo</a> was above average for Total Social Engagement, ranking 2nd of 3. Keep chasing the leader, Mobilis, with their landscape leading 18,945 interactions.</p>
+                                        <div>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-7">
+                                        <div highchart data="vm.chart1"></div>
+                                    </div>
+                                    <div class="col-xs-1">
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
+                                    </div>
+                                    <div class="col-xs-12 padding-top-10 margin-top-10 text-right">
+                                        <button class="btn btn-primary">View Details</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Social Audience ({{vm.sdate}} ~ {{vm.edate}})</h4>
+            </div>
+            <div class="modal-body">
+                <div highchart data="vm.data3"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>

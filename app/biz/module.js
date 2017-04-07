@@ -114,11 +114,9 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            //----------------------------------------------------------------------
             .state('app.biz.crossChannels', {
                 url: '/cross_channels',
-                data: {
-                    title: 'Cross Channels'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/cross-channels.html',
@@ -127,6 +125,67 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.crossChannels.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/social-posts.html',
+                        controller: 'CrossChannelsSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/metrics.html',
+                        controller: 'CrossChannelsMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/landscape-comparison.html',
+                        controller: 'CrossChannelsLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/bios.html',
+                        controller: 'CrossChannelsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/my-rankings.html',
+                        controller: 'CrossChannelsMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-posts.html',
+                        controller: 'CrossChannelsDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            //----------------------------------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',
                 data: {

@@ -7,8 +7,8 @@
                     Cross-Channel <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="s in vm.socialPages">
-                        <a href-void ng-click="vm.openPage(s.url)">{{s.title}}</a>
+                    <li ng-repeat="page in vm.socialPages">
+                        <a href-void ng-click="vm.go(page.state)">{{page.title}}</a>
                     </li>
                 </ul>
             </div>
@@ -46,40 +46,14 @@
 
     <div class="row">
         <div class="col-xs-12">
-            <ul id="crossChannelTab" class="nav nav-tabs bordered">
-                <li class="active">
-                    <a href="#top_content_pane" data-toggle="tab" ng-click="vm.selectTab(2)">Social Posts</a>
-                </li>
-                <li class="">
-                    <a href="#detailed_metric_pane" data-toggle="tab" ng-click="vm.selectTab(1)">Detailed Metric</a>
-                </li>
-                <li class="">
-                    <a href="#overview_pane" data-toggle="tab" ng-click="vm.selectTab(0)">Landscape Comparison</a>
-                </li>
-                <li class="">
-                    <a href="#bios_pane" data-toggle="tab" ng-click="vm.selectTab(3)">Bios</a>
-                </li>
-                <li class="">
-                    <a href="#my_ranking_pane" data-toggle="tab" ng-click="vm.selectTab(4)">My Ranking</a>
+            <ul class="nav nav-tabs bordered">
+                <li ng-repeat="tab in vm.tabs" ng-class="{'active':tab.active}">
+                    <a ng-click="vm.selectTab(tab)">{{tab.title}}</a>
                 </li>
             </ul>
 
-            <div id="crossChannelTabContent" class="tab-content padding-10">
-                <div class="tab-pane fade in active" id="top_content_pane">
-                    <div ng-include src="'./app/biz/views/cross-channel-templates/top-content.html'"></div>
-                </div>
-                <div class="tab-pane fade" id="detailed_metric_pane">
-                    <div ng-include src="'./app/biz/views/cross-channel-templates/detailed-metric.html'"></div>
-                </div>
-                <div class="tab-pane fade" id="overview_pane">
-                    <div ng-include src="'./app/biz/views/cross-channel-templates/overview.html'"></div>
-                </div>
-                <div class="tab-pane fade" id="bios_pane">
-                    <div ng-include src="'./app/biz/views/cross-channel-templates/bios.html'"></div>
-                </div>
-                <div class="tab-pane fade" id="my_ranking_pane">
-                    <div ng-include src="'./app/biz/views/cross-channel-templates/my-ranking.html'"></div>
-                </div>
+            <div class="tab-content padding-10">
+                <div data-ui-view="tabContent"></div>
             </div>
         </div>
     </div>

@@ -744,11 +744,9 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            //----------------------------------------------------------------------
             .state('app.biz.crossChannels', {
                 url: '/cross_channels',
-                data: {
-                    title: 'Cross Channels'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/cross-channels.html',
@@ -757,6 +755,67 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.crossChannels.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/social-posts.html',
+                        controller: 'CrossChannelsSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/metrics.html',
+                        controller: 'CrossChannelsMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/landscape-comparison.html',
+                        controller: 'CrossChannelsLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/bios.html',
+                        controller: 'CrossChannelsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/my-rankings.html',
+                        controller: 'CrossChannelsMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-posts.html',
+                        controller: 'CrossChannelsDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            //----------------------------------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',
                 data: {
@@ -2051,6 +2110,1368 @@ $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-
 $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-profile-form.tpl.html","<form id=\"profileForm\">\n\n    <fieldset>\n        <legend>\n            Default Form Elements\n        </legend>\n        <div class=\"form-group\">\n            <label>Email address</label>\n            <input type=\"text\" class=\"form-control\" name=\"email\" />\n        </div>\n    </fieldset>\n    <fieldset>\n        <div class=\"form-group\">\n            <label>Password</label>\n            <input type=\"password\" class=\"form-control\" name=\"password\" />\n        </div>\n    </fieldset>\n\n    <div class=\"form-actions\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <button class=\"btn btn-default\" type=\"submit\">\n                    <i class=\"fa fa-eye\"></i>\n                    Validate\n                </button>\n            </div>\n        </div>\n    </div>\n</form>\n");
 $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-toggling-form.tpl.html","<form id=\"togglingForm\" method=\"post\" class=\"form-horizontal\">\n\n    <fieldset>\n        <legend>\n            Default Form Elements\n        </legend>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Full name <sup>*</sup></label>\n            <div class=\"col-lg-4\">\n                <input type=\"text\" class=\"form-control\" name=\"firstName\" placeholder=\"First name\" />\n            </div>\n            <div class=\"col-lg-4\">\n                <input type=\"text\" class=\"form-control\" name=\"lastName\" placeholder=\"Last name\" />\n            </div>\n        </div>\n    </fieldset>\n\n    <fieldset>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Company <sup>*</sup></label>\n            <div class=\"col-lg-5\">\n                <input type=\"text\" class=\"form-control\" name=\"company\"\n                       required data-bv-notempty-message=\"The company name is required\" />\n            </div>\n            <div class=\"col-lg-2\">\n                <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"#jobInfo\">\n                    Add more info\n                </button>\n            </div>\n        </div>\n    </fieldset>\n\n    <!-- These fields will not be validated as long as they are not visible -->\n    <div id=\"jobInfo\" style=\"display: none;\">\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Job title <sup>*</sup></label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"job\" />\n                </div>\n            </div>\n        </fieldset>\n\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Department <sup>*</sup></label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"department\" />\n                </div>\n            </div>\n        </fieldset>\n    </div>\n\n    <fieldset>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Mobile phone <sup>*</sup></label>\n            <div class=\"col-lg-5\">\n                <input type=\"text\" class=\"form-control\" name=\"mobilePhone\" />\n            </div>\n            <div class=\"col-lg-2\">\n                <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"#phoneInfo\">\n                    Add more phone numbers\n                </button>\n            </div>\n        </div>\n    </fieldset>\n    <!-- These fields will not be validated as long as they are not visible -->\n    <div id=\"phoneInfo\" style=\"display: none;\">\n\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Home phone</label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"homePhone\" />\n                </div>\n            </div>\n        </fieldset>\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Office phone</label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"officePhone\" />\n                </div>\n            </div>\n        </fieldset>\n    </div>\n\n    <div class=\"form-actions\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <button class=\"btn btn-default\" type=\"submit\">\n                    <i class=\"fa fa-eye\"></i>\n                    Validate\n                </button>\n            </div>\n        </div>\n    </div>\n</form>");
 $templateCache.put("app/_common/layout/directives/demo/demo-states.tpl.html","<div class=\"demo\"><span id=\"demo-setting\"><i class=\"fa fa-cog txt-color-blueDark\"></i></span>\n\n    <form>\n        <legend class=\"no-padding margin-bottom-10\">Layout Options</legend>\n        <section>\n            <label><input type=\"checkbox\" ng-model=\"fixedHeader\"\n                          class=\"checkbox style-0\"><span>Fixed Header</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedNavigation\"\n                          class=\"checkbox style-0\"><span>Fixed Navigation</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedRibbon\"\n                          class=\"checkbox style-0\"><span>Fixed Ribbon</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedPageFooter\"\n                          class=\"checkbox style-0\"><span>Fixed Footer</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"insideContainer\"\n                          class=\"checkbox style-0\"><span>Inside <b>.container</b></span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"rtl\"\n                          class=\"checkbox style-0\"><span>RTL</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"menuOnTop\"\n                          class=\"checkbox style-0\"><span>Menu on <b>top</b></span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"colorblindFriendly\"\n                          class=\"checkbox style-0\"><span>For Colorblind <div\n                    class=\"font-xs text-right\">(experimental)\n            </div></span>\n            </label><span id=\"smart-bgimages\"></span></section>\n        <section><h6 class=\"margin-top-10 semi-bold margin-bottom-5\">Clear Localstorage</h6><a\n                ng-click=\"factoryReset()\" class=\"btn btn-xs btn-block btn-primary\" id=\"reset-smart-widget\"><i\n                class=\"fa fa-refresh\"></i> Factory Reset</a></section>\n\n        <h6 class=\"margin-top-10 semi-bold margin-bottom-5\">SmartAdmin Skins</h6>\n\n\n        <section id=\"smart-styles\">\n            <a ng-repeat=\"skin in skins\" ng-click=\"setSkin(skin)\" class=\"{{skin.class}}\" style=\"{{skin.style}}\"><i ng-if=\"skin.name == $parent.smartSkin\" class=\"fa fa-check fa-fw\"></i> {{skin.label}} <sup ng-if=\"skin.beta\">beta</sup></a>\n        </section>\n    </form>\n</div>");}]);
+"use strict";
+
+
+angular.module('app.biz')
+    .constant('Timezones', [
+        {
+            "value": "Dateline Standard Time",
+            "abbr": "DST",
+            "offset": -12,
+            "isdst": false,
+            "text": "(UTC-12:00) International Date Line West",
+            "utc": [
+                "Etc/GMT+12"
+            ]
+        },
+        {
+            "value": "UTC-11",
+            "abbr": "U",
+            "offset": -11,
+            "isdst": false,
+            "text": "(UTC-11:00) Coordinated Universal Time-11",
+            "utc": [
+                "Etc/GMT+11",
+                "Pacific/Midway",
+                "Pacific/Niue",
+                "Pacific/Pago_Pago"
+            ]
+        },
+        {
+            "value": "Hawaiian Standard Time",
+            "abbr": "HST",
+            "offset": -10,
+            "isdst": false,
+            "text": "(UTC-10:00) Hawaii",
+            "utc": [
+                "Etc/GMT+10",
+                "Pacific/Honolulu",
+                "Pacific/Johnston",
+                "Pacific/Rarotonga",
+                "Pacific/Tahiti"
+            ]
+        },
+        {
+            "value": "Alaskan Standard Time",
+            "abbr": "AKDT",
+            "offset": -8,
+            "isdst": true,
+            "text": "(UTC-09:00) Alaska",
+            "utc": [
+                "America/Anchorage",
+                "America/Juneau",
+                "America/Nome",
+                "America/Sitka",
+                "America/Yakutat"
+            ]
+        },
+        {
+            "value": "Pacific Standard Time (Mexico)",
+            "abbr": "PDT",
+            "offset": -7,
+            "isdst": true,
+            "text": "(UTC-08:00) Baja California",
+            "utc": [
+                "America/Santa_Isabel"
+            ]
+        },
+        {
+            "value": "Pacific Standard Time",
+            "abbr": "PDT",
+            "offset": -7,
+            "isdst": true,
+            "text": "(UTC-08:00) Pacific Time (US & Canada)",
+            "utc": [
+                "America/Dawson",
+                "America/Los_Angeles",
+                "America/Tijuana",
+                "America/Vancouver",
+                "America/Whitehorse",
+                "PST8PDT"
+            ]
+        },
+        {
+            "value": "US Mountain Standard Time",
+            "abbr": "UMST",
+            "offset": -7,
+            "isdst": false,
+            "text": "(UTC-07:00) Arizona",
+            "utc": [
+                "America/Creston",
+                "America/Dawson_Creek",
+                "America/Hermosillo",
+                "America/Phoenix",
+                "Etc/GMT+7"
+            ]
+        },
+        {
+            "value": "Mountain Standard Time (Mexico)",
+            "abbr": "MDT",
+            "offset": -6,
+            "isdst": true,
+            "text": "(UTC-07:00) Chihuahua, La Paz, Mazatlan",
+            "utc": [
+                "America/Chihuahua",
+                "America/Mazatlan"
+            ]
+        },
+        {
+            "value": "Mountain Standard Time",
+            "abbr": "MDT",
+            "offset": -6,
+            "isdst": true,
+            "text": "(UTC-07:00) Mountain Time (US & Canada)",
+            "utc": [
+                "America/Boise",
+                "America/Cambridge_Bay",
+                "America/Denver",
+                "America/Edmonton",
+                "America/Inuvik",
+                "America/Ojinaga",
+                "America/Yellowknife",
+                "MST7MDT"
+            ]
+        },
+        {
+            "value": "Central America Standard Time",
+            "abbr": "CAST",
+            "offset": -6,
+            "isdst": false,
+            "text": "(UTC-06:00) Central America",
+            "utc": [
+                "America/Belize",
+                "America/Costa_Rica",
+                "America/El_Salvador",
+                "America/Guatemala",
+                "America/Managua",
+                "America/Tegucigalpa",
+                "Etc/GMT+6",
+                "Pacific/Galapagos"
+            ]
+        },
+        {
+            "value": "Central Standard Time",
+            "abbr": "CDT",
+            "offset": -5,
+            "isdst": true,
+            "text": "(UTC-06:00) Central Time (US & Canada)",
+            "utc": [
+                "America/Chicago",
+                "America/Indiana/Knox",
+                "America/Indiana/Tell_City",
+                "America/Matamoros",
+                "America/Menominee",
+                "America/North_Dakota/Beulah",
+                "America/North_Dakota/Center",
+                "America/North_Dakota/New_Salem",
+                "America/Rainy_River",
+                "America/Rankin_Inlet",
+                "America/Resolute",
+                "America/Winnipeg",
+                "CST6CDT"
+            ]
+        },
+        {
+            "value": "Central Standard Time (Mexico)",
+            "abbr": "CDT",
+            "offset": -5,
+            "isdst": true,
+            "text": "(UTC-06:00) Guadalajara, Mexico City, Monterrey",
+            "utc": [
+                "America/Bahia_Banderas",
+                "America/Cancun",
+                "America/Merida",
+                "America/Mexico_City",
+                "America/Monterrey"
+            ]
+        },
+        {
+            "value": "Canada Central Standard Time",
+            "abbr": "CCST",
+            "offset": -6,
+            "isdst": false,
+            "text": "(UTC-06:00) Saskatchewan",
+            "utc": [
+                "America/Regina",
+                "America/Swift_Current"
+            ]
+        },
+        {
+            "value": "SA Pacific Standard Time",
+            "abbr": "SPST",
+            "offset": -5,
+            "isdst": false,
+            "text": "(UTC-05:00) Bogota, Lima, Quito",
+            "utc": [
+                "America/Bogota",
+                "America/Cayman",
+                "America/Coral_Harbour",
+                "America/Eirunepe",
+                "America/Guayaquil",
+                "America/Jamaica",
+                "America/Lima",
+                "America/Panama",
+                "America/Rio_Branco",
+                "Etc/GMT+5"
+            ]
+        },
+        {
+            "value": "Eastern Standard Time",
+            "abbr": "EDT",
+            "offset": -4,
+            "isdst": true,
+            "text": "(UTC-05:00) Eastern Time (US & Canada)",
+            "utc": [
+                "America/Detroit",
+                "America/Havana",
+                "America/Indiana/Petersburg",
+                "America/Indiana/Vincennes",
+                "America/Indiana/Winamac",
+                "America/Iqaluit",
+                "America/Kentucky/Monticello",
+                "America/Louisville",
+                "America/Montreal",
+                "America/Nassau",
+                "America/New_York",
+                "America/Nipigon",
+                "America/Pangnirtung",
+                "America/Port-au-Prince",
+                "America/Thunder_Bay",
+                "America/Toronto",
+                "EST5EDT"
+            ]
+        },
+        {
+            "value": "US Eastern Standard Time",
+            "abbr": "UEDT",
+            "offset": -4,
+            "isdst": true,
+            "text": "(UTC-05:00) Indiana (East)",
+            "utc": [
+                "America/Indiana/Marengo",
+                "America/Indiana/Vevay",
+                "America/Indianapolis"
+            ]
+        },
+        {
+            "value": "Venezuela Standard Time",
+            "abbr": "VST",
+            "offset": -4.5,
+            "isdst": false,
+            "text": "(UTC-04:30) Caracas",
+            "utc": [
+                "America/Caracas"
+            ]
+        },
+        {
+            "value": "Paraguay Standard Time",
+            "abbr": "PST",
+            "offset": -4,
+            "isdst": false,
+            "text": "(UTC-04:00) Asuncion",
+            "utc": [
+                "America/Asuncion"
+            ]
+        },
+        {
+            "value": "Atlantic Standard Time",
+            "abbr": "ADT",
+            "offset": -3,
+            "isdst": true,
+            "text": "(UTC-04:00) Atlantic Time (Canada)",
+            "utc": [
+                "America/Glace_Bay",
+                "America/Goose_Bay",
+                "America/Halifax",
+                "America/Moncton",
+                "America/Thule",
+                "Atlantic/Bermuda"
+            ]
+        },
+        {
+            "value": "Central Brazilian Standard Time",
+            "abbr": "CBST",
+            "offset": -4,
+            "isdst": false,
+            "text": "(UTC-04:00) Cuiaba",
+            "utc": [
+                "America/Campo_Grande",
+                "America/Cuiaba"
+            ]
+        },
+        {
+            "value": "SA Western Standard Time",
+            "abbr": "SWST",
+            "offset": -4,
+            "isdst": false,
+            "text": "(UTC-04:00) Georgetown, La Paz, Manaus, San Juan",
+            "utc": [
+                "America/Anguilla",
+                "America/Antigua",
+                "America/Aruba",
+                "America/Barbados",
+                "America/Blanc-Sablon",
+                "America/Boa_Vista",
+                "America/Curacao",
+                "America/Dominica",
+                "America/Grand_Turk",
+                "America/Grenada",
+                "America/Guadeloupe",
+                "America/Guyana",
+                "America/Kralendijk",
+                "America/La_Paz",
+                "America/Lower_Princes",
+                "America/Manaus",
+                "America/Marigot",
+                "America/Martinique",
+                "America/Montserrat",
+                "America/Port_of_Spain",
+                "America/Porto_Velho",
+                "America/Puerto_Rico",
+                "America/Santo_Domingo",
+                "America/St_Barthelemy",
+                "America/St_Kitts",
+                "America/St_Lucia",
+                "America/St_Thomas",
+                "America/St_Vincent",
+                "America/Tortola",
+                "Etc/GMT+4"
+            ]
+        },
+        {
+            "value": "Pacific SA Standard Time",
+            "abbr": "PSST",
+            "offset": -4,
+            "isdst": false,
+            "text": "(UTC-04:00) Santiago",
+            "utc": [
+                "America/Santiago",
+                "Antarctica/Palmer"
+            ]
+        },
+        {
+            "value": "Newfoundland Standard Time",
+            "abbr": "NDT",
+            "offset": -2.5,
+            "isdst": true,
+            "text": "(UTC-03:30) Newfoundland",
+            "utc": [
+                "America/St_Johns"
+            ]
+        },
+        {
+            "value": "E. South America Standard Time",
+            "abbr": "ESAST",
+            "offset": -3,
+            "isdst": false,
+            "text": "(UTC-03:00) Brasilia",
+            "utc": [
+                "America/Sao_Paulo"
+            ]
+        },
+        {
+            "value": "Argentina Standard Time",
+            "abbr": "AST",
+            "offset": -3,
+            "isdst": false,
+            "text": "(UTC-03:00) Buenos Aires",
+            "utc": [
+                "America/Argentina/La_Rioja",
+                "America/Argentina/Rio_Gallegos",
+                "America/Argentina/Salta",
+                "America/Argentina/San_Juan",
+                "America/Argentina/San_Luis",
+                "America/Argentina/Tucuman",
+                "America/Argentina/Ushuaia",
+                "America/Buenos_Aires",
+                "America/Catamarca",
+                "America/Cordoba",
+                "America/Jujuy",
+                "America/Mendoza"
+            ]
+        },
+        {
+            "value": "SA Eastern Standard Time",
+            "abbr": "SEST",
+            "offset": -3,
+            "isdst": false,
+            "text": "(UTC-03:00) Cayenne, Fortaleza",
+            "utc": [
+                "America/Araguaina",
+                "America/Belem",
+                "America/Cayenne",
+                "America/Fortaleza",
+                "America/Maceio",
+                "America/Paramaribo",
+                "America/Recife",
+                "America/Santarem",
+                "Antarctica/Rothera",
+                "Atlantic/Stanley",
+                "Etc/GMT+3"
+            ]
+        },
+        {
+            "value": "Greenland Standard Time",
+            "abbr": "GDT",
+            "offset": -2,
+            "isdst": true,
+            "text": "(UTC-03:00) Greenland",
+            "utc": [
+                "America/Godthab"
+            ]
+        },
+        {
+            "value": "Montevideo Standard Time",
+            "abbr": "MST",
+            "offset": -3,
+            "isdst": false,
+            "text": "(UTC-03:00) Montevideo",
+            "utc": [
+                "America/Montevideo"
+            ]
+        },
+        {
+            "value": "Bahia Standard Time",
+            "abbr": "BST",
+            "offset": -3,
+            "isdst": false,
+            "text": "(UTC-03:00) Salvador",
+            "utc": [
+                "America/Bahia"
+            ]
+        },
+        {
+            "value": "UTC-02",
+            "abbr": "U",
+            "offset": -2,
+            "isdst": false,
+            "text": "(UTC-02:00) Coordinated Universal Time-02",
+            "utc": [
+                "America/Noronha",
+                "Atlantic/South_Georgia",
+                "Etc/GMT+2"
+            ]
+        },
+        {
+            "value": "Mid-Atlantic Standard Time",
+            "abbr": "MDT",
+            "offset": -1,
+            "isdst": true,
+            "text": "(UTC-02:00) Mid-Atlantic - Old"
+        },
+        {
+            "value": "Azores Standard Time",
+            "abbr": "ADT",
+            "offset": 0,
+            "isdst": true,
+            "text": "(UTC-01:00) Azores",
+            "utc": [
+                "America/Scoresbysund",
+                "Atlantic/Azores"
+            ]
+        },
+        {
+            "value": "Cape Verde Standard Time",
+            "abbr": "CVST",
+            "offset": -1,
+            "isdst": false,
+            "text": "(UTC-01:00) Cape Verde Is.",
+            "utc": [
+                "Atlantic/Cape_Verde",
+                "Etc/GMT+1"
+            ]
+        },
+        {
+            "value": "Morocco Standard Time",
+            "abbr": "MDT",
+            "offset": 1,
+            "isdst": true,
+            "text": "(UTC) Casablanca",
+            "utc": [
+                "Africa/Casablanca",
+                "Africa/El_Aaiun"
+            ]
+        },
+        {
+            "value": "UTC",
+            "abbr": "CUT",
+            "offset": 0,
+            "isdst": false,
+            "text": "(UTC) Coordinated Universal Time",
+            "utc": [
+                "America/Danmarkshavn",
+                "Etc/GMT"
+            ]
+        },
+        {
+            "value": "GMT Standard Time",
+            "abbr": "GDT",
+            "offset": 1,
+            "isdst": true,
+            "text": "(UTC) Dublin, Edinburgh, Lisbon, London",
+            "utc": [
+                "Atlantic/Canary",
+                "Atlantic/Faeroe",
+                "Atlantic/Madeira",
+                "Europe/Dublin",
+                "Europe/Guernsey",
+                "Europe/Isle_of_Man",
+                "Europe/Jersey",
+                "Europe/Lisbon",
+                "Europe/London"
+            ]
+        },
+        {
+            "value": "Greenwich Standard Time",
+            "abbr": "GST",
+            "offset": 0,
+            "isdst": false,
+            "text": "(UTC) Monrovia, Reykjavik",
+            "utc": [
+                "Africa/Abidjan",
+                "Africa/Accra",
+                "Africa/Bamako",
+                "Africa/Banjul",
+                "Africa/Bissau",
+                "Africa/Conakry",
+                "Africa/Dakar",
+                "Africa/Freetown",
+                "Africa/Lome",
+                "Africa/Monrovia",
+                "Africa/Nouakchott",
+                "Africa/Ouagadougou",
+                "Africa/Sao_Tome",
+                "Atlantic/Reykjavik",
+                "Atlantic/St_Helena"
+            ]
+        },
+        {
+            "value": "W. Europe Standard Time",
+            "abbr": "WEDT",
+            "offset": 2,
+            "isdst": true,
+            "text": "(UTC+01:00) Amsterdam, Berlin, Bern, Rome, Stockholm, Vienna",
+            "utc": [
+                "Arctic/Longyearbyen",
+                "Europe/Amsterdam",
+                "Europe/Andorra",
+                "Europe/Berlin",
+                "Europe/Busingen",
+                "Europe/Gibraltar",
+                "Europe/Luxembourg",
+                "Europe/Malta",
+                "Europe/Monaco",
+                "Europe/Oslo",
+                "Europe/Rome",
+                "Europe/San_Marino",
+                "Europe/Stockholm",
+                "Europe/Vaduz",
+                "Europe/Vatican",
+                "Europe/Vienna",
+                "Europe/Zurich"
+            ]
+        },
+        {
+            "value": "Central Europe Standard Time",
+            "abbr": "CEDT",
+            "offset": 2,
+            "isdst": true,
+            "text": "(UTC+01:00) Belgrade, Bratislava, Budapest, Ljubljana, Prague",
+            "utc": [
+                "Europe/Belgrade",
+                "Europe/Bratislava",
+                "Europe/Budapest",
+                "Europe/Ljubljana",
+                "Europe/Podgorica",
+                "Europe/Prague",
+                "Europe/Tirane"
+            ]
+        },
+        {
+            "value": "Romance Standard Time",
+            "abbr": "RDT",
+            "offset": 2,
+            "isdst": true,
+            "text": "(UTC+01:00) Brussels, Copenhagen, Madrid, Paris",
+            "utc": [
+                "Africa/Ceuta",
+                "Europe/Brussels",
+                "Europe/Copenhagen",
+                "Europe/Madrid",
+                "Europe/Paris"
+            ]
+        },
+        {
+            "value": "Central European Standard Time",
+            "abbr": "CEDT",
+            "offset": 2,
+            "isdst": true,
+            "text": "(UTC+01:00) Sarajevo, Skopje, Warsaw, Zagreb",
+            "utc": [
+                "Europe/Sarajevo",
+                "Europe/Skopje",
+                "Europe/Warsaw",
+                "Europe/Zagreb"
+            ]
+        },
+        {
+            "value": "W. Central Africa Standard Time",
+            "abbr": "WCAST",
+            "offset": 1,
+            "isdst": false,
+            "text": "(UTC+01:00) West Central Africa",
+            "utc": [
+                "Africa/Algiers",
+                "Africa/Bangui",
+                "Africa/Brazzaville",
+                "Africa/Douala",
+                "Africa/Kinshasa",
+                "Africa/Lagos",
+                "Africa/Libreville",
+                "Africa/Luanda",
+                "Africa/Malabo",
+                "Africa/Ndjamena",
+                "Africa/Niamey",
+                "Africa/Porto-Novo",
+                "Africa/Tunis",
+                "Etc/GMT-1"
+            ]
+        },
+        {
+            "value": "Namibia Standard Time",
+            "abbr": "NST",
+            "offset": 1,
+            "isdst": false,
+            "text": "(UTC+01:00) Windhoek",
+            "utc": [
+                "Africa/Windhoek"
+            ]
+        },
+        {
+            "value": "GTB Standard Time",
+            "abbr": "GDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) Athens, Bucharest",
+            "utc": [
+                "Asia/Nicosia",
+                "Europe/Athens",
+                "Europe/Bucharest",
+                "Europe/Chisinau"
+            ]
+        },
+        {
+            "value": "Middle East Standard Time",
+            "abbr": "MEDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) Beirut",
+            "utc": [
+                "Asia/Beirut"
+            ]
+        },
+        {
+            "value": "Egypt Standard Time",
+            "abbr": "EST",
+            "offset": 2,
+            "isdst": false,
+            "text": "(UTC+02:00) Cairo",
+            "utc": [
+                "Africa/Cairo"
+            ]
+        },
+        {
+            "value": "Syria Standard Time",
+            "abbr": "SDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) Damascus",
+            "utc": [
+                "Asia/Damascus"
+            ]
+        },
+        {
+            "value": "E. Europe Standard Time",
+            "abbr": "EEDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) E. Europe"
+        },
+        {
+            "value": "South Africa Standard Time",
+            "abbr": "SAST",
+            "offset": 2,
+            "isdst": false,
+            "text": "(UTC+02:00) Harare, Pretoria",
+            "utc": [
+                "Africa/Blantyre",
+                "Africa/Bujumbura",
+                "Africa/Gaborone",
+                "Africa/Harare",
+                "Africa/Johannesburg",
+                "Africa/Kigali",
+                "Africa/Lubumbashi",
+                "Africa/Lusaka",
+                "Africa/Maputo",
+                "Africa/Maseru",
+                "Africa/Mbabane",
+                "Etc/GMT-2"
+            ]
+        },
+        {
+            "value": "FLE Standard Time",
+            "abbr": "FDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) Helsinki, Kyiv, Riga, Sofia, Tallinn, Vilnius",
+            "utc": [
+                "Europe/Helsinki",
+                "Europe/Kiev",
+                "Europe/Mariehamn",
+                "Europe/Riga",
+                "Europe/Sofia",
+                "Europe/Tallinn",
+                "Europe/Uzhgorod",
+                "Europe/Vilnius",
+                "Europe/Zaporozhye"
+            ]
+        },
+        {
+            "value": "Turkey Standard Time",
+            "abbr": "TDT",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Istanbul",
+            "utc": [
+                "Europe/Istanbul"
+            ]
+        },
+        {
+            "value": "Israel Standard Time",
+            "abbr": "JDT",
+            "offset": 3,
+            "isdst": true,
+            "text": "(UTC+02:00) Jerusalem",
+            "utc": [
+                "Asia/Jerusalem"
+            ]
+        },
+        {
+            "value": "Libya Standard Time",
+            "abbr": "LST",
+            "offset": 2,
+            "isdst": false,
+            "text": "(UTC+02:00) Tripoli",
+            "utc": [
+                "Africa/Tripoli"
+            ]
+        },
+        {
+            "value": "Jordan Standard Time",
+            "abbr": "JST",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Amman",
+            "utc": [
+                "Asia/Amman"
+            ]
+        },
+        {
+            "value": "Arabic Standard Time",
+            "abbr": "AST",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Baghdad",
+            "utc": [
+                "Asia/Baghdad"
+            ]
+        },
+        {
+            "value": "Kaliningrad Standard Time",
+            "abbr": "KST",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Kaliningrad, Minsk",
+            "utc": [
+                "Europe/Kaliningrad",
+                "Europe/Minsk"
+            ]
+        },
+        {
+            "value": "Arab Standard Time",
+            "abbr": "AST",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Kuwait, Riyadh",
+            "utc": [
+                "Asia/Aden",
+                "Asia/Bahrain",
+                "Asia/Kuwait",
+                "Asia/Qatar",
+                "Asia/Riyadh"
+            ]
+        },
+        {
+            "value": "E. Africa Standard Time",
+            "abbr": "EAST",
+            "offset": 3,
+            "isdst": false,
+            "text": "(UTC+03:00) Nairobi",
+            "utc": [
+                "Africa/Addis_Ababa",
+                "Africa/Asmera",
+                "Africa/Dar_es_Salaam",
+                "Africa/Djibouti",
+                "Africa/Juba",
+                "Africa/Kampala",
+                "Africa/Khartoum",
+                "Africa/Mogadishu",
+                "Africa/Nairobi",
+                "Antarctica/Syowa",
+                "Etc/GMT-3",
+                "Indian/Antananarivo",
+                "Indian/Comoro",
+                "Indian/Mayotte"
+            ]
+        },
+        {
+            "value": "Iran Standard Time",
+            "abbr": "IDT",
+            "offset": 4.5,
+            "isdst": true,
+            "text": "(UTC+03:30) Tehran",
+            "utc": [
+                "Asia/Tehran"
+            ]
+        },
+        {
+            "value": "Arabian Standard Time",
+            "abbr": "AST",
+            "offset": 4,
+            "isdst": false,
+            "text": "(UTC+04:00) Abu Dhabi, Muscat",
+            "utc": [
+                "Asia/Dubai",
+                "Asia/Muscat",
+                "Etc/GMT-4"
+            ]
+        },
+        {
+            "value": "Azerbaijan Standard Time",
+            "abbr": "ADT",
+            "offset": 5,
+            "isdst": true,
+            "text": "(UTC+04:00) Baku",
+            "utc": [
+                "Asia/Baku"
+            ]
+        },
+        {
+            "value": "Russian Standard Time",
+            "abbr": "RST",
+            "offset": 4,
+            "isdst": false,
+            "text": "(UTC+04:00) Moscow, St. Petersburg, Volgograd",
+            "utc": [
+                "Europe/Moscow",
+                "Europe/Samara",
+                "Europe/Simferopol",
+                "Europe/Volgograd"
+            ]
+        },
+        {
+            "value": "Mauritius Standard Time",
+            "abbr": "MST",
+            "offset": 4,
+            "isdst": false,
+            "text": "(UTC+04:00) Port Louis",
+            "utc": [
+                "Indian/Mahe",
+                "Indian/Mauritius",
+                "Indian/Reunion"
+            ]
+        },
+        {
+            "value": "Georgian Standard Time",
+            "abbr": "GST",
+            "offset": 4,
+            "isdst": false,
+            "text": "(UTC+04:00) Tbilisi",
+            "utc": [
+                "Asia/Tbilisi"
+            ]
+        },
+        {
+            "value": "Caucasus Standard Time",
+            "abbr": "CST",
+            "offset": 4,
+            "isdst": false,
+            "text": "(UTC+04:00) Yerevan",
+            "utc": [
+                "Asia/Yerevan"
+            ]
+        },
+        {
+            "value": "Afghanistan Standard Time",
+            "abbr": "AST",
+            "offset": 4.5,
+            "isdst": false,
+            "text": "(UTC+04:30) Kabul",
+            "utc": [
+                "Asia/Kabul"
+            ]
+        },
+        {
+            "value": "West Asia Standard Time",
+            "abbr": "WAST",
+            "offset": 5,
+            "isdst": false,
+            "text": "(UTC+05:00) Ashgabat, Tashkent",
+            "utc": [
+                "Antarctica/Mawson",
+                "Asia/Aqtau",
+                "Asia/Aqtobe",
+                "Asia/Ashgabat",
+                "Asia/Dushanbe",
+                "Asia/Oral",
+                "Asia/Samarkand",
+                "Asia/Tashkent",
+                "Etc/GMT-5",
+                "Indian/Kerguelen",
+                "Indian/Maldives"
+            ]
+        },
+        {
+            "value": "Pakistan Standard Time",
+            "abbr": "PST",
+            "offset": 5,
+            "isdst": false,
+            "text": "(UTC+05:00) Islamabad, Karachi",
+            "utc": [
+                "Asia/Karachi"
+            ]
+        },
+        {
+            "value": "India Standard Time",
+            "abbr": "IST",
+            "offset": 5.5,
+            "isdst": false,
+            "text": "(UTC+05:30) Chennai, Kolkata, Mumbai, New Delhi",
+            "utc": [
+                "Asia/Kolkata"
+            ]
+        },
+        {
+            "value": "Sri Lanka Standard Time",
+            "abbr": "SLST",
+            "offset": 5.5,
+            "isdst": false,
+            "text": "(UTC+05:30) Sri Jayawardenepura",
+            "utc": [
+                "Asia/Colombo"
+            ]
+        },
+        {
+            "value": "Nepal Standard Time",
+            "abbr": "NST",
+            "offset": 5.75,
+            "isdst": false,
+            "text": "(UTC+05:45) Kathmandu",
+            "utc": [
+                "Asia/Katmandu"
+            ]
+        },
+        {
+            "value": "Central Asia Standard Time",
+            "abbr": "CAST",
+            "offset": 6,
+            "isdst": false,
+            "text": "(UTC+06:00) Astana",
+            "utc": [
+                "Antarctica/Vostok",
+                "Asia/Almaty",
+                "Asia/Bishkek",
+                "Asia/Qyzylorda",
+                "Asia/Urumqi",
+                "Etc/GMT-6",
+                "Indian/Chagos"
+            ]
+        },
+        {
+            "value": "Bangladesh Standard Time",
+            "abbr": "BST",
+            "offset": 6,
+            "isdst": false,
+            "text": "(UTC+06:00) Dhaka",
+            "utc": [
+                "Asia/Dhaka",
+                "Asia/Thimphu"
+            ]
+        },
+        {
+            "value": "Ekaterinburg Standard Time",
+            "abbr": "EST",
+            "offset": 6,
+            "isdst": false,
+            "text": "(UTC+06:00) Ekaterinburg",
+            "utc": [
+                "Asia/Yekaterinburg"
+            ]
+        },
+        {
+            "value": "Myanmar Standard Time",
+            "abbr": "MST",
+            "offset": 6.5,
+            "isdst": false,
+            "text": "(UTC+06:30) Yangon (Rangoon)",
+            "utc": [
+                "Asia/Rangoon",
+                "Indian/Cocos"
+            ]
+        },
+        {
+            "value": "SE Asia Standard Time",
+            "abbr": "SAST",
+            "offset": 7,
+            "isdst": false,
+            "text": "(UTC+07:00) Bangkok, Hanoi, Jakarta",
+            "utc": [
+                "Antarctica/Davis",
+                "Asia/Bangkok",
+                "Asia/Hovd",
+                "Asia/Jakarta",
+                "Asia/Phnom_Penh",
+                "Asia/Pontianak",
+                "Asia/Saigon",
+                "Asia/Vientiane",
+                "Etc/GMT-7",
+                "Indian/Christmas"
+            ]
+        },
+        {
+            "value": "N. Central Asia Standard Time",
+            "abbr": "NCAST",
+            "offset": 7,
+            "isdst": false,
+            "text": "(UTC+07:00) Novosibirsk",
+            "utc": [
+                "Asia/Novokuznetsk",
+                "Asia/Novosibirsk",
+                "Asia/Omsk"
+            ]
+        },
+        {
+            "value": "China Standard Time",
+            "abbr": "CST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Beijing, Chongqing, Hong Kong, Urumqi",
+            "utc": [
+                "Asia/Hong_Kong",
+                "Asia/Macau",
+                "Asia/Shanghai"
+            ]
+        },
+        {
+            "value": "North Asia Standard Time",
+            "abbr": "NAST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Krasnoyarsk",
+            "utc": [
+                "Asia/Krasnoyarsk"
+            ]
+        },
+        {
+            "value": "Singapore Standard Time",
+            "abbr": "MPST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Kuala Lumpur, Singapore",
+            "utc": [
+                "Asia/Brunei",
+                "Asia/Kuala_Lumpur",
+                "Asia/Kuching",
+                "Asia/Makassar",
+                "Asia/Manila",
+                "Asia/Singapore",
+                "Etc/GMT-8"
+            ]
+        },
+        {
+            "value": "W. Australia Standard Time",
+            "abbr": "WAST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Perth",
+            "utc": [
+                "Antarctica/Casey",
+                "Australia/Perth"
+            ]
+        },
+        {
+            "value": "Taipei Standard Time",
+            "abbr": "TST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Taipei",
+            "utc": [
+                "Asia/Taipei"
+            ]
+        },
+        {
+            "value": "Ulaanbaatar Standard Time",
+            "abbr": "UST",
+            "offset": 8,
+            "isdst": false,
+            "text": "(UTC+08:00) Ulaanbaatar",
+            "utc": [
+                "Asia/Choibalsan",
+                "Asia/Ulaanbaatar"
+            ]
+        },
+        {
+            "value": "North Asia East Standard Time",
+            "abbr": "NAEST",
+            "offset": 9,
+            "isdst": false,
+            "text": "(UTC+09:00) Irkutsk",
+            "utc": [
+                "Asia/Irkutsk"
+            ]
+        },
+        {
+            "value": "Tokyo Standard Time",
+            "abbr": "TST",
+            "offset": 9,
+            "isdst": false,
+            "text": "(UTC+09:00) Osaka, Sapporo, Tokyo",
+            "utc": [
+                "Asia/Dili",
+                "Asia/Jayapura",
+                "Asia/Tokyo",
+                "Etc/GMT-9",
+                "Pacific/Palau"
+            ]
+        },
+        {
+            "value": "Korea Standard Time",
+            "abbr": "KST",
+            "offset": 9,
+            "isdst": false,
+            "text": "(UTC+09:00) Seoul",
+            "utc": [
+                "Asia/Pyongyang",
+                "Asia/Seoul"
+            ]
+        },
+        {
+            "value": "Cen. Australia Standard Time",
+            "abbr": "CAST",
+            "offset": 9.5,
+            "isdst": false,
+            "text": "(UTC+09:30) Adelaide",
+            "utc": [
+                "Australia/Adelaide",
+                "Australia/Broken_Hill"
+            ]
+        },
+        {
+            "value": "AUS Central Standard Time",
+            "abbr": "ACST",
+            "offset": 9.5,
+            "isdst": false,
+            "text": "(UTC+09:30) Darwin",
+            "utc": [
+                "Australia/Darwin"
+            ]
+        },
+        {
+            "value": "E. Australia Standard Time",
+            "abbr": "EAST",
+            "offset": 10,
+            "isdst": false,
+            "text": "(UTC+10:00) Brisbane",
+            "utc": [
+                "Australia/Brisbane",
+                "Australia/Lindeman"
+            ]
+        },
+        {
+            "value": "AUS Eastern Standard Time",
+            "abbr": "AEST",
+            "offset": 10,
+            "isdst": false,
+            "text": "(UTC+10:00) Canberra, Melbourne, Sydney",
+            "utc": [
+                "Australia/Melbourne",
+                "Australia/Sydney"
+            ]
+        },
+        {
+            "value": "West Pacific Standard Time",
+            "abbr": "WPST",
+            "offset": 10,
+            "isdst": false,
+            "text": "(UTC+10:00) Guam, Port Moresby",
+            "utc": [
+                "Antarctica/DumontDUrville",
+                "Etc/GMT-10",
+                "Pacific/Guam",
+                "Pacific/Port_Moresby",
+                "Pacific/Saipan",
+                "Pacific/Truk"
+            ]
+        },
+        {
+            "value": "Tasmania Standard Time",
+            "abbr": "TST",
+            "offset": 10,
+            "isdst": false,
+            "text": "(UTC+10:00) Hobart",
+            "utc": [
+                "Australia/Currie",
+                "Australia/Hobart"
+            ]
+        },
+        {
+            "value": "Yakutsk Standard Time",
+            "abbr": "YST",
+            "offset": 10,
+            "isdst": false,
+            "text": "(UTC+10:00) Yakutsk",
+            "utc": [
+                "Asia/Chita",
+                "Asia/Khandyga",
+                "Asia/Yakutsk"
+            ]
+        },
+        {
+            "value": "Central Pacific Standard Time",
+            "abbr": "CPST",
+            "offset": 11,
+            "isdst": false,
+            "text": "(UTC+11:00) Solomon Is., New Caledonia",
+            "utc": [
+                "Antarctica/Macquarie",
+                "Etc/GMT-11",
+                "Pacific/Efate",
+                "Pacific/Guadalcanal",
+                "Pacific/Kosrae",
+                "Pacific/Noumea",
+                "Pacific/Ponape"
+            ]
+        },
+        {
+            "value": "Vladivostok Standard Time",
+            "abbr": "VST",
+            "offset": 11,
+            "isdst": false,
+            "text": "(UTC+11:00) Vladivostok",
+            "utc": [
+                "Asia/Sakhalin",
+                "Asia/Ust-Nera",
+                "Asia/Vladivostok"
+            ]
+        },
+        {
+            "value": "New Zealand Standard Time",
+            "abbr": "NZST",
+            "offset": 12,
+            "isdst": false,
+            "text": "(UTC+12:00) Auckland, Wellington",
+            "utc": [
+                "Antarctica/McMurdo",
+                "Pacific/Auckland"
+            ]
+        },
+        {
+            "value": "UTC+12",
+            "abbr": "U",
+            "offset": 12,
+            "isdst": false,
+            "text": "(UTC+12:00) Coordinated Universal Time+12",
+            "utc": [
+                "Etc/GMT-12",
+                "Pacific/Funafuti",
+                "Pacific/Kwajalein",
+                "Pacific/Majuro",
+                "Pacific/Nauru",
+                "Pacific/Tarawa",
+                "Pacific/Wake",
+                "Pacific/Wallis"
+            ]
+        },
+        {
+            "value": "Fiji Standard Time",
+            "abbr": "FST",
+            "offset": 12,
+            "isdst": false,
+            "text": "(UTC+12:00) Fiji",
+            "utc": [
+                "Pacific/Fiji"
+            ]
+        },
+        {
+            "value": "Magadan Standard Time",
+            "abbr": "MST",
+            "offset": 12,
+            "isdst": false,
+            "text": "(UTC+12:00) Magadan",
+            "utc": [
+                "Asia/Anadyr",
+                "Asia/Kamchatka",
+                "Asia/Magadan",
+                "Asia/Srednekolymsk"
+            ]
+        },
+        {
+            "value": "Kamchatka Standard Time",
+            "abbr": "KDT",
+            "offset": 13,
+            "isdst": true,
+            "text": "(UTC+12:00) Petropavlovsk-Kamchatsky - Old",
+            "utc": [
+                "Asia/Kamchatka"
+            ]
+        },
+        {
+            "value": "Tonga Standard Time",
+            "abbr": "TST",
+            "offset": 13,
+            "isdst": false,
+            "text": "(UTC+13:00) Nuku'alofa",
+            "utc": [
+                "Etc/GMT-13",
+                "Pacific/Enderbury",
+                "Pacific/Fakaofo",
+                "Pacific/Tongatapu"
+            ]
+        },
+        {
+            "value": "Samoa Standard Time",
+            "abbr": "SST",
+            "offset": 13,
+            "isdst": false,
+            "text": "(UTC+13:00) Samoa",
+            "utc": [
+                "Pacific/Apia"
+            ]
+        }
+    ])
+    .constant('SocialPages', [
+        {id: 1, title: 'Cross-Channel', state: 'crossChannels'},
+        {id: 2, title: 'Facebook', state: 'socialFacebook'},
+        {id: 3, title: 'Twitter', state: 'socialTwitter'},
+        {id: 4, title: 'LinkedIn', state: 'socialLinkedin'},
+        {id: 5, title: 'Google+', state: 'socialGoogleplus'},
+        {id: 6, title: 'YouTube', state: 'socialYoutube'},
+        {id: 7, title: 'Instagram', state: 'socialInstagram'},
+        {id: 8, title: 'Pinterest', state: 'socialPinterest'}
+    ])
+;
+
 'use strict';
 
 angular.module('app.dashboard').controller('DashboardCtrl', function ($scope, $interval, CalendarEvent) {
@@ -6092,19 +7513,42 @@ angular.module('app.auth').directive('googleSignin', function ($rootScope, Googl
 
 'use strict';
 
-angular.module('app.biz').controller('CrossChannelsController', function ($state) {
+angular.module('app.biz').controller('CrossChannelsController', function ($state, $filter, SocialPages) {
     var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
 
+    vm.tabs = [
+        {title: 'Social Posts', state: 'crossChannels.socialPosts', active: true},
+        {title: 'Metrics', state: 'crossChannels.metrics'},
+        {title: 'Landscape Comparison', state: 'crossChannels.landscapeComparison'},
+        {title: 'Bios', state: 'crossChannels.bios'},
+        {title: 'My Rankings', state: 'crossChannels.myRankings'}
+    ];
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
+    };
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+
+
+/*
     vm.gridColumns = [
-        { id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true, columns: [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true, columns: [
             {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
             {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
             {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
-        ]},
-        { id: 2, title: 'AUDIENCE', acronym: 'Audience'},
-        { id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
-        { id: 4, title: 'POST TYPE', acronym: 'Post Type'},
-        { id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+        ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
     ];
     vm.columnsForGrid = [];
     for (var col in vm.gridColumns) {
@@ -6116,19 +7560,7 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
         }
     }
 
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'}
-    ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
+
 
 
     vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
@@ -6393,7 +7825,7 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
             name: 'London',
             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
         }]
-    };
+    };*/
 });
 'use strict';
 
@@ -13653,6 +15085,177 @@ angular.module('SmartAdmin.UI').directive('smartTooltipHtml', function () {
     }
 );
 
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsBiosController', function () {
+    var vm = this;
+
+});
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsLandscapeComparisonController', function () {
+    var vm = this;
+
+});
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsMetricsController', function () {
+    var vm = this;
+
+});
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsMyRankingsController', function () {
+    var vm = this;
+
+});
+'use strict';
+
+angular.module('app.biz').controller('CrossChannelsSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+        },
+        yAxis: {
+            title: {
+                text: ''
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [{
+            name: 'Tokyo',
+            data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+        }, {
+            name: 'London',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
 "use strict";
 
 
