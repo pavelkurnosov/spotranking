@@ -5,14 +5,14 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
 
     vm.gridColumns = [
         { id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true, columns: [
-            {id: 11, title: 'APPLAUSE', acronym: 'APPLAUSE'},
-            {id: 12, title: 'CONVERSATION', acronym: 'CONVERSATION', visible: true},
-            {id: 13, title: 'AMPLIFICATION', acronym: 'AMPLIFICATION'}
+            {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+            {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+            {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
         ]},
-        { id: 2, title: 'AUDIENCE', acronym: 'AUDIENCE'},
-        { id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate'},
-        { id: 4, title: 'POST TYPE', acronym: 'Post Type', visible: true},
-        { id: 5, title: 'PRESENCE HANDLE', acronym: 'Pre.Handle', visible: true}
+        { id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        { id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        { id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        { id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
     ];
     vm.columnsForGrid = [];
     for (var col in vm.gridColumns) {
