@@ -3,6 +3,27 @@
 angular.module('app.biz').controller('CrossChannelsController', function ($state) {
     var vm = this;
 
+    vm.gridColumns = [
+        { id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true, columns: [
+            {id: 11, title: 'APPLAUSE', acronym: 'APPLAUSE'},
+            {id: 12, title: 'CONVERSATION', acronym: 'CONVERSATION', visible: true},
+            {id: 13, title: 'AMPLIFICATION', acronym: 'AMPLIFICATION'}
+        ]},
+        { id: 2, title: 'AUDIENCE', acronym: 'AUDIENCE'},
+        { id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate'},
+        { id: 4, title: 'POST TYPE', acronym: 'Post Type', visible: true},
+        { id: 5, title: 'PRESENCE HANDLE', acronym: 'Pre.Handle', visible: true}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
     vm.socialPages = [
         {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
         {id: 2, title: 'Facebook', url: 'socialFacebook'},

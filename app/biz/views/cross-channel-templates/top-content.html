@@ -82,7 +82,7 @@
                         <div class="widget-toolbar hidden-phone" role="menu">
                             <export-button class="btn-group-xs margin-top-5"></export-button>
                             <div class="btn-group dropdown float-right btn-group-xs margin-top-5 margin-right-5">
-                                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Manage Columns...</button>
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="modal" data-target="#manageColumnsModal">Manage Columns...</button>
                             </div>
                         </div>
                     </header>
@@ -96,8 +96,9 @@
                                             <tr>
                                                 <th>Published At</th>
                                                 <th colspan="3">Post</th>
-                                                <th>Eng. Total</th>
-                                                <th>Eng. Rate</th>
+                                                <th ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">{{col.acronym}}</th>
+                                                <!--<th>Eng. Total</th>
+                                                <th>Eng. Rate</th>-->
                                             </tr>
                                             </thead>
                                             <tbody>
@@ -128,12 +129,13 @@
                                                         <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
                                                     </a>
                                                 </td>
-                                                <td>
+                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">10</td>
+                                                <!--<td>
                                                     <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">10.2K</a>
                                                 </td>
                                                 <td>
                                                     <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">0.73%</a>
-                                                </td>
+                                                </td>-->
                                             </tr>
                                             </tbody>
                                         </table>
@@ -524,6 +526,44 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="manageColumnsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="manageColumnsModalLabel">Manage Columns</h4>
+            </div>
+            <div class="modal-body smart-form">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-2">
+
+                        </div>
+                        <div class="col-xs-10">
+                            <div class="padding-bottom-10" ng-repeat="col in vm.gridColumns">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox" ng-model="col.visible">
+                                    <i></i> {{col.title}} <i class="fa fa-info-circle fa-in-label"></i>
+                                </label>
+                                <div class="padding-left-10">
+                                    <label class="checkbox" ng-repeat="c in col.columns">
+                                        <input type="checkbox" name="checkbox" ng-model="c.visible">
+                                        <i></i> {{c.title}} <i class="fa fa-info-circle fa-in-label"></i>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
