@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/facebook-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/googleplus-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/googleplus-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/pinterest-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/pinterest-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentions.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentions.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/youtube-templates/top-content.html" afterPath="$PROJECT_DIR$/app/biz/views/youtube-templates/top-content.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,11 +33,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CrossChannelsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="252" column="82" lean-forward="true" selection-start-line="252" selection-start-column="82" selection-end-line="252" selection-end-column="84" />
+            <state relative-caret-position="447">
+              <caret line="265" column="13" lean-forward="true" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="13" />
               <folding>
                 <marker date="1491521863418" expanded="true" signature="3259:3291" ph="..." />
               </folding>
@@ -55,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="top-content.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="top-content.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="427" column="42" lean-forward="true" selection-start-line="427" selection-start-column="42" selection-end-line="427" selection-end-column="42" />
+            <state relative-caret-position="527">
+              <caret line="131" column="126" lean-forward="false" selection-start-line="131" selection-start-column="126" selection-end-line="131" selection-end-column="126" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -82,7 +72,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>face</find>
       <find>Biz</find>
       <find>compa</find>
       <find>Radios Styles</find>
@@ -112,6 +101,7 @@
       <find>pie</find>
       <find>line</find>
       <find>manage co</find>
+      <find>badg</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -175,8 +165,8 @@
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels.html" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
         <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" />
       </list>
     </option>
   </component>
@@ -198,12 +188,13 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="943" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -216,24 +207,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spotranking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="spotranking" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../oliver/workspace/oliver" />
@@ -349,36 +323,38 @@
       <workItem from="1491047474904" duration="17015000" />
       <workItem from="1491245536400" duration="15131000" />
       <workItem from="1491396647277" duration="955000" />
-      <workItem from="1491406902641" duration="27259000" />
+      <workItem from="1491406902641" duration="27855000" />
+      <workItem from="1491545981020" duration="602000" />
+      <workItem from="1491554835740" duration="457000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322888000" />
+    <option name="totallyTimeSpent" value="324543000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="943" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33535108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33535108" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -654,32 +630,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3808">
           <caret line="224" column="13" lean-forward="false" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
-          <folding>
-            <marker date="1491313976063" expanded="true" signature="2168:2200" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="7690:7704" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="7775:7805" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="7864:7873" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="7932:7941" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="17256:17270" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="17341:17371" ph="..." />
-            <marker date="1491313976063" expanded="true" signature="17421:17430" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="58" column="34" lean-forward="true" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
     <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -687,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -695,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,7 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +666,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="246">
           <caret line="58" column="29" lean-forward="true" selection-start-line="58" selection-start-column="29" selection-end-line="58" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
           <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="23" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1887">
           <caret line="123" column="64" lean-forward="false" selection-start-line="123" selection-start-column="48" selection-end-line="123" selection-end-column="64" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,30 +694,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
           <caret line="366" column="14" lean-forward="false" selection-start-line="366" selection-start-column="14" selection-end-line="366" selection-end-column="14" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="265" column="13" lean-forward="true" selection-start-line="265" selection-start-column="13" selection-end-line="265" selection-end-column="13" />
+          <folding>
+            <marker date="1491521863418" expanded="true" signature="3259:3291" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="427" column="42" lean-forward="true" selection-start-line="427" selection-start-column="42" selection-end-line="427" selection-end-column="42" />
+        <state relative-caret-position="527">
+          <caret line="131" column="126" lean-forward="false" selection-start-line="131" selection-start-column="126" selection-end-line="131" selection-end-column="126" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#3;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#4;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="252" column="82" lean-forward="true" selection-start-line="252" selection-start-column="82" selection-end-line="252" selection-end-column="84" />
-          <folding>
-            <marker date="1491521863418" expanded="true" signature="3259:3291" ph="..." />
           </folding>
         </state>
       </provider>
