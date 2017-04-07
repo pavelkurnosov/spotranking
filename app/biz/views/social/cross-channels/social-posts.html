@@ -125,7 +125,7 @@
                                                         <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
                                                     </a>
                                                 </td>
-                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">10</td>
+                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h2>10</h2>">10</div></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -180,13 +180,13 @@
                                             <tr ng-repeat="i in ['Mobilis', 'Ooredoo', 'DJEZZY'] track by $index">
                                                 <td class="col-xs-1"><img class="width-30 margin-top-15" ng-src="./styles/img/temp/01.png"></td>
                                                 <td class="col-xs-4">{{$index + 1}}. {{i}}</td>
-                                                <td class="col-xs-1">21</td>
+                                                <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>10</h3>">21</div></td>
                                                 <td class="col-xs-4">
-                                                    <div class="progress progress-sm">
+                                                    <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
                                                         <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
                                                     </div>
                                                 </td>
-                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
+                                                <td class="col-xs-2"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -234,11 +234,11 @@
                                                 <td class="col-xs-2"><a href="#">Show Posts</a></td>
                                                 <td class="col-xs-2"><span class="badge bg-color-blue txt-color-white">1</span></td>
                                                 <td class="col-xs-3">
-                                                    <div class="progress progress-sm">
+                                                    <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
                                                         <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
                                                     </div>
                                                 </td>
-                                                <td class="col-xs-1">{{0.04 * ($index + 1)}}%</td>
+                                                <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
                                             </tr>
                                             </tbody>
                                         </table>

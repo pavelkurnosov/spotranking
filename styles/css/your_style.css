@@ -239,6 +239,10 @@
     padding: 2px !important;
 }
 
+.table-text-center th,.table-text-center td {
+    text-align: center;
+}
+
 .float-left {
     float: left;
 }
