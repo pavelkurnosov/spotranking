@@ -4,7 +4,7 @@
             <export-button></export-button>
         </div>
     </div>
-    <section id="widget-grid-cross-overview" widget-grid>
+    <section id="widget-grid-cross-channels-landscape-comparison" widget-grid>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
                 <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
@@ -30,7 +30,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
-                                        <div highchart data="vm.chart1"></div>
+                                        <div highchart data="vm.data1"></div>
                                     </div>
                                     <div class="col-xs-1">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
@@ -69,7 +69,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
-                                        <div highchart data="vm.chart1"></div>
+                                        <div highchart data="vm.data1"></div>
                                     </div>
                                     <div class="col-xs-1">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
@@ -108,7 +108,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xs-7">
-                                        <div highchart data="vm.chart1"></div>
+                                        <div highchart data="vm.data1"></div>
                                     </div>
                                     <div class="col-xs-1">
                                         <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View All</button>
@@ -134,7 +134,7 @@
                 <h4 class="modal-title" id="myModalLabel">Social Audience ({{vm.sdate}} ~ {{vm.edate}})</h4>
             </div>
             <div class="modal-body">
-                <div highchart data="vm.data3"></div>
+                <div highchart data="vm.data2"></div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
