@@ -27,6 +27,19 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
         }
     }
 
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
     vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
     vm.edate = moment().format('YYYY-MM-DD');
 

@@ -40,6 +40,7 @@ angular.module('app', [
     'app.home',
     'app.biz',
     'ngBootstrap',
+    'ngTagCloud'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 
