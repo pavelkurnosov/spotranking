@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html" />
     </list>
     <ignored path="spotranking.iws" />
@@ -34,9 +35,12 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="379" column="51" lean-forward="true" selection-start-line="379" selection-start-column="51" selection-end-line="379" selection-end-column="51" />
+            <state relative-caret-position="722">
+              <caret line="410" column="49" lean-forward="true" selection-start-line="410" selection-start-column="49" selection-end-line="410" selection-end-column="49" />
               <folding>
+                <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#article#0;n#div#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#4;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#div#2;n#!!top" expanded="false" />
                 <element signature="n#div#3;n#!!top" expanded="false" />
               </folding>
@@ -317,12 +321,12 @@
       <workItem from="1491406902641" duration="27855000" />
       <workItem from="1491545981020" duration="602000" />
       <workItem from="1491554835740" duration="19650000" />
-      <workItem from="1491581039343" duration="12558000" />
+      <workItem from="1491581039343" duration="13946000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="356294000" />
+    <option name="totallyTimeSpent" value="357682000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1282" height="943" extended-state="0" />
@@ -747,9 +751,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="379" column="51" lean-forward="true" selection-start-line="379" selection-start-column="51" selection-end-line="379" selection-end-column="51" />
+        <state relative-caret-position="722">
+          <caret line="410" column="49" lean-forward="true" selection-start-line="410" selection-start-column="49" selection-end-line="410" selection-end-column="49" />
           <folding>
+            <element signature="n#article#0;n#div#0;n#div#0;n#div#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#article#0;n#div#1;n#div#2;n#section#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#2;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#4;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#div#2;n#!!top" expanded="false" />
             <element signature="n#div#3;n#!!top" expanded="false" />
           </folding>
