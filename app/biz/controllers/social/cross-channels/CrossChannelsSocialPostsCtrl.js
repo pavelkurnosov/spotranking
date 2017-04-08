@@ -43,7 +43,14 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
     vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
     vm.edate = moment().format('YYYY-MM-DD');
 
-
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon:'instagram'},
+        {id: 2, title: 'Google+', icon:'google-plus'},
+        {id: 3, title: 'Facebook', icon:'facebook'},
+        {id: 4, title: 'Twitter', icon:'twitter'},
+        {id: 5, title: 'Youtube', icon:'youtube'},
+        {id: 6, title: 'Pinterest', icon:'pinterest'}
+    ];
     vm.data1 = {
         chart: {
             type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'

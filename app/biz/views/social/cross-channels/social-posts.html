@@ -307,8 +307,8 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr ng-repeat="i in ['Instagram', 'Google+', 'Facebook', 'Twitter', 'Youtube', 'Pinterest']">
-                                                <td class="col-xs-3"><i class="fa fa-facebook"></i> {{i}}</td>
+                                            <tr ng-repeat="media in vm.socialMedias">
+                                                <td class="col-xs-3"><i class="fa fa-{{media.icon}}"></i> {{media.title}}</td>
                                                 <td class="col-xs-4">0.14 / day</td>
                                                 <td class="col-xs-3">
                                                     <div class="progress progress-sm margin-bottom-0">
@@ -333,8 +333,8 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr ng-repeat="i in ['Instagram', 'Google+', 'Facebook', 'Twitter', 'Youtube', 'Pinterest']">
-                                                <td class="col-xs-3">{{i}}</td>
+                                            <tr ng-repeat="media in vm.socialMedias">
+                                                <td class="col-xs-3">{{media.title}}</td>
                                                 <td class="col-xs-4">0.14 / day</td>
                                                 <td class="col-xs-3">
                                                     <div class="progress progress-sm margin-bottom-0">
