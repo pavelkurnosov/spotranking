@@ -15409,7 +15409,7 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
                 dataLabels: {
                     enabled: true
                 },
-                enableMouseTracking: false
+                enableMouseTracking: true
             }
         },
         series: [{

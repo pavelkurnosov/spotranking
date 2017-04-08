@@ -273,10 +273,7 @@
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-12">
-                                        <p>Your most active channel is Facebook. The channel that generates the highest engagement in your landscape is Instagram.</p>
-                                    </div>
-                                    <div class="col-xs-4">
+                                    <div class="col-xs-5">
                                         <table class="table table-responsive">
                                             <thead>
                                             <tr>
@@ -290,7 +287,23 @@
                                                 <td>2 / day</td>
                                             </tr>
                                             <tr>
+                                                <td><i class="fa fa-instagram"></i> Instagram</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            <tr>
                                                 <td><i class="fa fa-twitter"></i> Twitter</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-youtube"></i> YouTube</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-pinterest"></i> Pinterest</td>
+                                                <td>0.14 / day</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fa fa-google-plus"></i> Google+</td>
                                                 <td>0.14 / day</td>
                                             </tr>
                                             </tbody>
@@ -299,7 +312,7 @@
                                     <div class="col-xs-2">
                                         <div highchart data="vm.data1"></div>
                                     </div>
-                                    <div class="col-xs-6">
+                                    <div class="col-xs-5">
                                         <table class="table table-responsive">
                                             <thead>
                                             <tr>
@@ -309,11 +322,11 @@
                                             </tr>
                                             </thead>
                                             <tbody>
-                                            <tr ng-repeat="i in ['Instagram', 'Google+', 'Facebook', 'Twitter']">
+                                            <tr ng-repeat="i in ['Instagram', 'Google+', 'Facebook', 'Twitter', 'Youtube', 'Pinterest']">
                                                 <td class="col-xs-3">{{i}}</td>
-                                                <td class="col-xs-3">0.14 / day</td>
-                                                <td class="col-xs-4">
-                                                    <div class="progress progress-sm">
+                                                <td class="col-xs-4">0.14 / day</td>
+                                                <td class="col-xs-3">
+                                                    <div class="progress progress-sm margin-bottom-0">
                                                         <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
                                                     </div>
                                                 </td>
