@@ -125,7 +125,7 @@
                                                         <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
                                                     </a>
                                                 </td>
-                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h2>10</h2>">10</div></td>
+                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>{{col.acronym}}</div><br/><h2>10</h2>">10</div></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -179,14 +179,14 @@
                                             <tbody>
                                             <tr ng-repeat="i in ['Mobilis', 'Ooredoo', 'DJEZZY'] track by $index">
                                                 <td class="col-xs-1"><img class="width-30 margin-top-15" ng-src="./styles/img/temp/01.png"></td>
-                                                <td class="col-xs-4">{{$index + 1}}. {{i}}</td>
-                                                <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>10</h3>">21</div></td>
+                                                <td class="col-xs-4"><a class="cursor-pointer">{{$index + 1}}. {{i}}</a></td>
+                                                <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Posts</div><br/><h3>10</h3>">21</div></td>
                                                 <td class="col-xs-4">
-                                                    <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
+                                                    <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Eng. Rate / Post</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
                                                         <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
                                                     </div>
                                                 </td>
-                                                <td class="col-xs-2"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
+                                                <td class="col-xs-2"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Eng. Rate / Post</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
                                             </tr>
                                             </tbody>
                                         </table>
@@ -199,7 +199,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary">View More</button>
+                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsActivity')">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -251,7 +251,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary">View More</button>
+                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsHashtags')">View More</button>
                                     </div>
                                 </div>
                             </div>

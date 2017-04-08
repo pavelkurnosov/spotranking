@@ -185,6 +185,26 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.crossChannels.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-activity.html',
+                        controller: 'CrossChannelsDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.crossChannels.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-hashtags.html',
+                        controller: 'CrossChannelsDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             //----------------------------------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',
