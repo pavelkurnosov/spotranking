@@ -98,7 +98,10 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
         }]
     };
     vm.data3 = {
-        chart: {type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        chart: {
+            type: 'spline'
+        },
+        credits: {enabled: false},
         title: {
             text: ''
         },
@@ -106,26 +109,43 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
             text: ''
         },
         xAxis: {
-            categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            categories: ['12am', '-', '4am', '-', '8am', '-', '12pm', '-', '4pm', '-', '8pm', '-']
         },
         yAxis: {
             title: {
                 text: ''
+            },
+            labels: {
+                formatter: function () {
+                    return this.value + '°';
+                }
             }
         },
+        tooltip: {
+            crosshairs: true,
+            shared: true
+        },
         plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: true
+            spline: {
+                marker: {
+                    radius: 4,
+                    lineColor: '#666666',
+                    lineWidth: 1
+                }
             }
         },
         series: [{
-            name: 'Tokyo',
-            data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+            name: 'Landscape Activity',
+            marker: {
+                symbol: 'square'
+            },
+            data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6]
+
         }, {
-            name: 'London',
+            name: 'Ooredoo Activity',
+            marker: {
+                symbol: 'diamond'
+            },
             data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
         }]
     };

@@ -4,7 +4,6 @@
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -34,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
@@ -50,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrossChannelsSocialPostsCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CrossChannelsSocialPostsCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
+            <state relative-caret-position="357">
+              <caret line="111" column="96" lean-forward="false" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
               <folding />
             </state>
           </provider>
@@ -164,8 +163,8 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsDetailsAnalizeCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/metrics.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" />
       </list>
     </option>
   </component>
@@ -187,8 +186,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="width" value="1282" />
-    <option name="height" value="943" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="959" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -323,15 +324,15 @@
       <workItem from="1491406902641" duration="27855000" />
       <workItem from="1491545981020" duration="602000" />
       <workItem from="1491554835740" duration="19650000" />
-      <workItem from="1491581039343" duration="14583000" />
+      <workItem from="1491581039343" duration="16149000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="358319000" />
+    <option name="totallyTimeSpent" value="359885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1282" height="943" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -743,14 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="48" column="52" lean-forward="true" selection-start-line="48" selection-start-column="52" selection-end-line="48" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -762,6 +755,14 @@
             <element signature="n#div#2;n#!!top" expanded="false" />
             <element signature="n#div#3;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="111" column="96" lean-forward="false" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+          <folding />
         </state>
       </provider>
     </entry>
