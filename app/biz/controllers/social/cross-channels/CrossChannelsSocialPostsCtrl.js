@@ -117,7 +117,7 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
             },
             labels: {
                 formatter: function () {
-                    return this.value + '°';
+                    return this.value + '';
                 }
             }
         },

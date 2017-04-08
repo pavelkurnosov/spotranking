@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
@@ -52,8 +51,8 @@
       <file leaf-file-name="CrossChannelsSocialPostsCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="111" column="96" lean-forward="false" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+            <state relative-caret-position="493">
+              <caret line="119" column="41" lean-forward="false" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -324,12 +323,12 @@
       <workItem from="1491406902641" duration="27855000" />
       <workItem from="1491545981020" duration="602000" />
       <workItem from="1491554835740" duration="19650000" />
-      <workItem from="1491581039343" duration="16149000" />
+      <workItem from="1491581039343" duration="16371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="359885000" />
+    <option name="totallyTimeSpent" value="360107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -760,8 +759,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="111" column="96" lean-forward="false" selection-start-line="111" selection-start-column="96" selection-end-line="111" selection-end-column="96" />
+        <state relative-caret-position="493">
+          <caret line="119" column="41" lean-forward="false" selection-start-line="119" selection-start-column="41" selection-end-line="119" selection-end-column="41" />
           <folding />
         </state>
       </provider>
