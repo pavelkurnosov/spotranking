@@ -205,6 +205,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.crossChannels.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-analyze.html',
+                        controller: 'CrossChannelsDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             //----------------------------------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',

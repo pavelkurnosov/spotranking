@@ -1,10 +1,12 @@
 'use strict';
 
-angular.module('app.biz').controller('CrossChannelsMetricsController', function ($state) {
+angular.module('app.biz').controller('CrossChannelsDetailsAnalyzeController', function ($state) {
     var vm = this;
-    vm.go = function (state, params) {
-        $state.go('app.biz.' + state, params);
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
     };
+
     vm.data1 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
