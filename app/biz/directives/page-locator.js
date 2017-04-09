@@ -25,7 +25,7 @@ angular
         html += '<tr><td data="n1"></td><td data="n2"></td><td data="n3"></td><td data="n4"></td><td data="n5"></td><td data="n6"></td></tr>';
         html += '</table>';
         html += '</div>';
-        html += '<div><label>Show Double Page</label><input type="checkbox" name="chk" id="double_chk" />';
+        html += '<div><label>Show Double Page <input type="checkbox" name="chk" id="double_chk" /></label>';
         html += '</div>';
         html += '<input type="hidden" id="areas" name="position" value=""/>';
         directive.template = html;
@@ -67,9 +67,9 @@ angular
             $(document).ready(function () {
                 $('#double_chk', element).change(function () {
                     if ($(this).is(":checked")) {
-                        $('#position_table_2').show();
+                        $('#position_table_2', element).show();
                     } else {
-                        $('#position_table_2').hide();
+                        $('#position_table_2', element).hide();
                     }
                 });
             });
