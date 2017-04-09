@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('CrossChannelsBiosController', function () {
+angular.module('app.biz').controller('CrossChannelsDetailsBiosController', function ($state) {
     var vm = this;
 
     vm.data1 = [
@@ -9,4 +9,7 @@ angular.module('app.biz').controller('CrossChannelsBiosController', function () 
         ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
     ];
 
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
 });

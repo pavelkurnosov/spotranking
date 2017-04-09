@@ -218,6 +218,16 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.crossChannels.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/cross-channels/details-bios.html',
+                        controller: 'CrossChannelsDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             //----------------------------------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',
