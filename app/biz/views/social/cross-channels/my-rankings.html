@@ -97,26 +97,20 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <ul id="crossChannelTab" class="nav nav-tabs bordered">
-                                            <li class="active">
-                                                <a href="#audience_pane" data-toggle="tab" ng-click="vm.selectTab(0)">Audience</a>
-                                            </li>
-                                            <li class="">
-                                                <a href="#activity_pane" data-toggle="tab" ng-click="vm.selectTab(1)">Activity</a>
-                                            </li>
-                                            <li class="">
-                                                <a href="#engagement_pane" data-toggle="tab" ng-click="vm.selectTab(2)">Engagement</a>
+                                            <li ng-repeat="pane in vm.panes" class="{{pane.active}}">
+                                                <a href="#{{pane.id}}_pane" data-toggle="tab">{{pane.title}}</a>
                                             </li>
                                         </ul>
 
-                                        <div id="crossChannelTabContent" class="tab-content padding-10">
-                                            <div class="tab-pane fade in active" id="audience_pane">
+                                        <div class="tab-content padding-10">
+                                            <div class="tab-pane fade{{pane.active == 'active' ? ' in active' : ''}}" ng-repeat="pane in vm.panes" id="{{pane.id}}_pane">
                                                 <table class="table table-responsive table-text-center">
                                                     <thead>
                                                     <tr>
                                                         <th>Sources</th>
                                                         <th>Charts</th>
                                                         <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
-                                                            Total Audience
+                                                            Total {{pane.title}}
                                                             <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
                                                         </th>
                                                         <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
@@ -130,101 +124,28 @@
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left" style="vertical-align: middle;">
+                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" class="height-70" ng-class="{'text-grey':s.visible}">
+                                                        <td class="text-left vertical-middle">
                                                             <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
                                                                 <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
                                                             </a>
                                                         </td>
-                                                        <td style="height:70px;padding:0;vertical-align: middle;">
+                                                        <td class="vertical-middle padding-0" style="padding:0;">
                                                             <div highchart data="s.data" ng-if="!s.visible"></div>
                                                         </td>
-                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
-                                                        <td style="vertical-align: middle;">
-                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                        <td class="vertical-middle">
+                                                            <h4>{{s.values.total}}</h4>
                                                         </td>
-                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
+                                                        <td class="vertical-middle {{s.values.change > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4>
+                                                                <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                            </h4>
+                                                        </td>
+                                                        <td class="vertical-middle {{s.values.growth > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4>{{s.values.growth}}%</h4>
+                                                        </td>
                                                     </tr>
                                                     </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="tab-pane fade" id="activity_pane">
-                                                <table class="table table-responsive table-text-center">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Sources</th>
-                                                        <th>Charts</th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
-                                                            Total Activity
-                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
-                                                            Change
-                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
-                                                            Growth(%)
-                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left" style="vertical-align: middle;">
-                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
-                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
-                                                            </a>
-                                                        </td>
-                                                        <td style="height:70px;padding:0;vertical-align: middle;">
-                                                            <div highchart data="s.data" ng-if="!s.visible"></div>
-                                                        </td>
-                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
-                                                        <td style="vertical-align: middle;">
-                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
-                                                        </td>
-                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                            <div class="tab-pane fade" id="engagement_pane">
-                                                <table class="table table-responsive table-text-center">
-                                                    <thead>
-                                                    <tr>
-                                                        <th>Sources</th>
-                                                        <th>Charts</th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
-                                                            Total Engagement
-                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
-                                                            Change
-                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
-                                                            Growth(%)
-                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
-                                                        </th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left" style="vertical-align: middle;">
-                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
-                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
-                                                            </a>
-                                                        </td>
-                                                        <td style="vertical-align:middle;height:70px;padding:0;">
-                                                            <div highchart data="s.data" ng-if="!s.visible"></div>
-                                                        </td>
-                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
-                                                        <td style="vertical-align: middle;">
-                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
-                                                        </td>
-                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
                                                 </table>
                                             </div>
                                         </div>

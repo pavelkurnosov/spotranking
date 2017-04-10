@@ -14,6 +14,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
     vm.sortType = 'total'; // set the default sort type
     vm.sortReverse = false;  // set the default sort order
 
+    vm.panes = [
+        {id: 'audience', title:'Audience', active: 'active'},
+        {id: 'activity', title:'Activity'},
+        {id: 'engagement', title:'Engagement'}
+    ]
     vm.sources = [];
 
     var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
