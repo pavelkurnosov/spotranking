@@ -11,19 +11,19 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
         {id: 5, title: 'YouTube', icon: 'youtube'}
     ];
 
-    vm.sortType     = 'total'; // set the default sort type
-    vm.sortReverse  = false;  // set the default sort order
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
 
     vm.sources = [];
 
     var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
-    for (var s = 1; s <= 4; s ++) {
+    for (var s = 1; s <= 4; s++) {
         var series = [];
         for (var m in vm.medias) {
             series[series.length] = {
                 showInLegend: false,
                 name: [vm.medias[m].title],
-                data: [Math.round(Math.random() * 100, 2)]
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 100 : 1)]
             };
         }
         vm.sources[vm.sources.length] = {
@@ -35,7 +35,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 growth: Math.round(Math.random() * 100)
             },
             data: {
-                chart: {type: 'bar', height: 50, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
                 credits: {enabled: false},
                 title: {text: ''},
                 subtitle: {text: ''},

@@ -131,19 +131,19 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left">
+                                                        <td class="text-left" style="vertical-align: middle;">
                                                             <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
                                                                 <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td style="height:70px;padding:0;vertical-align: middle;">
                                                             <div highchart data="s.data" ng-if="!s.visible"></div>
                                                         </td>
-                                                        <td>{{s.values.total}}</td>
-                                                        <td>
+                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
+                                                        <td style="vertical-align: middle;">
                                                             <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
                                                         </td>
-                                                        <td>{{s.values.growth}}%</td>
+                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -170,19 +170,19 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left">
+                                                        <td class="text-left" style="vertical-align: middle;">
                                                             <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
                                                                 <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td style="height:70px;padding:0;vertical-align: middle;">
                                                             <div highchart data="s.data" ng-if="!s.visible"></div>
                                                         </td>
-                                                        <td>{{s.values.total}}</td>
-                                                        <td>
+                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
+                                                        <td style="vertical-align: middle;">
                                                             <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
                                                         </td>
-                                                        <td>{{s.values.growth}}%</td>
+                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -209,19 +209,19 @@
                                                     </thead>
                                                     <tbody>
                                                     <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
-                                                        <td class="text-left">
+                                                        <td class="text-left" style="vertical-align: middle;">
                                                             <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
                                                                 <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
                                                             </a>
                                                         </td>
-                                                        <td>
+                                                        <td style="vertical-align:middle;height:70px;padding:0;">
                                                             <div highchart data="s.data" ng-if="!s.visible"></div>
                                                         </td>
-                                                        <td>{{s.values.total}}</td>
-                                                        <td>
+                                                        <td style="vertical-align: middle;">{{s.values.total}}</td>
+                                                        <td style="vertical-align: middle;">
                                                             <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
                                                         </td>
-                                                        <td>{{s.values.growth}}%</td>
+                                                        <td style="vertical-align: middle;">{{s.values.growth}}%</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
