@@ -134,15 +134,15 @@
                                                             <div highchart data="s.data" ng-if="!s.visible"></div>
                                                         </td>
                                                         <td class="vertical-middle">
-                                                            <h4>{{s.values.total}}</h4>
+                                                            <h4>{{s.total * ($parent.$index + 2.5)}}</h4>
                                                         </td>
-                                                        <td class="vertical-middle {{s.values.change > 0 ? 'text-green' : 'text-red'}}">
+                                                        <td class="vertical-middle {{s.change > 0 ? 'text-green' : 'text-red'}}">
                                                             <h4 ng-class="{'text-grey':s.visible}">
-                                                                <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                                <span ng-if="s.change > 0">+</span>{{s.change * ($parent.$index + 2.5)}}
                                                             </h4>
                                                         </td>
-                                                        <td class="vertical-middle {{s.values.growth > 0 ? 'text-green' : 'text-red'}}">
-                                                            <h4 ng-class="{'text-grey':s.visible}">{{s.values.growth}}%</h4>
+                                                        <td class="vertical-middle {{s.growth > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4 ng-class="{'text-grey':s.visible}">{{s.growth * ($parent.$index + 2.5)}}%</h4>
                                                         </td>
                                                     </tr>
                                                     </tbody>

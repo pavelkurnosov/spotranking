@@ -15,9 +15,9 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
     vm.sortReverse = false;  // set the default sort order
 
     vm.panes = [
-        {id: 'audience', title:'Audience', active: 'active'},
-        {id: 'activity', title:'Activity'},
-        {id: 'engagement', title:'Engagement'}
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
     ]
     vm.sources = [];
 
@@ -34,11 +34,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
         vm.sources[vm.sources.length] = {
             id: s,
             title: websites[s],
-            values: {
-                total: Math.round(Math.random() * 100 - Math.random() * 100),
-                change: Math.round(Math.random() * 100 - Math.random() * 100),
-                growth: Math.round(Math.random() * 100)
-            },
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
             data: {
                 chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
                 credits: {enabled: false},
