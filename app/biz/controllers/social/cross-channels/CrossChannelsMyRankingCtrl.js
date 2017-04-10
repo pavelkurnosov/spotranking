@@ -3,12 +3,20 @@
 angular.module('app.biz').controller('CrossChannelsMyRankingsController', function () {
     var vm = this;
 
+    /* yOUTUBE : HEX: bb0000.
+    Facebook:#3b5998
+    twitter :  #55ACEE
+    Google +"#dd4b39
+    Pinterest: C92228
+    Linkedin: #0077B5
+    Instagram: #8a3ab9 */
+
     vm.medias = [
-        {id: 1, title: 'Facebook', icon: 'facebook'},
-        {id: 2, title: 'Twitter', icon: 'twitter'},
-        {id: 3, title: 'Google+', icon: 'google-plus'},
-        {id: 4, title: 'Instagram', icon: 'instagram'},
-        {id: 5, title: 'YouTube', icon: 'youtube'}
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
     ];
 
     vm.sortType = 'total'; // set the default sort type
@@ -23,13 +31,15 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
 
     var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
     for (var s = 1; s <= 4; s++) {
+        var colors = [];
         var series = [];
         for (var m in vm.medias) {
             series[series.length] = {
                 showInLegend: false,
                 name: [vm.medias[m].title],
-                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 100 : 1)]
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
             };
+            colors[colors.length] = vm.medias[m].color;
         }
         vm.sources[vm.sources.length] = {
             id: s,
@@ -49,7 +59,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
                 legend: {reversed: false},
                 plotOptions: {series: {stacking: 'normal'}},
-                colors: ['#294a83', '#65c1ee', '#b03b2f', '#eb4349', '#4d7ea3'],
+                colors: colors,
                 series: series
             }
         };
