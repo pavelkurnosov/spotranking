@@ -7644,11 +7644,11 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
     };
 
     vm.tabs = [
-        {title: 'Social Posts', state: 'crossChannels.socialPosts', active: true},
+        {title: 'Social Posts', state: 'crossChannels.socialPosts'},
         {title: 'Metrics', state: 'crossChannels.metrics'},
         {title: 'Landscape Comparison', state: 'crossChannels.landscapeComparison'},
         {title: 'Bios', state: 'crossChannels.bios'},
-        {title: 'My Rankings', state: 'crossChannels.myRankings'}
+        {title: 'My Rankings', state: 'crossChannels.myRankings', active: true}
     ];
 
     vm.selectTab = function (tab) {
@@ -15484,7 +15484,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
         {id: 5, title: 'YouTube', icon: 'youtube'}
     ];
 
+    vm.sortType     = 'total'; // set the default sort type
+    vm.sortReverse  = false;  // set the default sort order
+
     vm.sources = [];
+
     var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
     for (var s = 1; s <= 4; s ++) {
         var series = [];
@@ -15498,6 +15502,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
         vm.sources[vm.sources.length] = {
             id: s,
             title: websites[s],
+            values: {
+                total: Math.round(Math.random() * 100 - Math.random() * 100),
+                change: Math.round(Math.random() * 100 - Math.random() * 100),
+                growth: Math.round(Math.random() * 100)
+            },
             data: {
                 chart: {type: 'bar', height: 50, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
                 credits: {enabled: false},
@@ -15511,7 +15520,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 colors: ['#294a83', '#65c1ee', '#b03b2f', '#eb4349', '#4d7ea3'],
                 series: series
             }
-        }
+        };
     }
 });
 'use strict';

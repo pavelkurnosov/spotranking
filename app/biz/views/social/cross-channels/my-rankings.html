@@ -96,37 +96,138 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12">
-                                        <ul class="nav nav-tabs bordered">
-                                            <li class="active"><a class="cursor-pointer">Audience</a></li>
-                                            <li><a class="cursor-pointer">Activity</a></li>
-                                            <li><a class="cursor-pointer">Engagement</a></li>
+                                        <ul id="crossChannelTab" class="nav nav-tabs bordered">
+                                            <li class="active">
+                                                <a href="#audience_pane" data-toggle="tab" ng-click="vm.selectTab(0)">Audience</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#activity_pane" data-toggle="tab" ng-click="vm.selectTab(1)">Activity</a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#engagement_pane" data-toggle="tab" ng-click="vm.selectTab(2)">Engagement</a>
+                                            </li>
                                         </ul>
 
-                                        <div class="tab-content">
-                                            <div data-ui-view="tabContent"></div>
+                                        <div id="crossChannelTabContent" class="tab-content padding-10">
+                                            <div class="tab-pane fade in active" id="audience_pane">
+                                                <table class="table table-responsive table-text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Sources</th>
+                                                        <th>Charts {{vm.sortType}}|{{vm.sortReverse}}</th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
+                                                            Total Audience
+                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
+                                                            Change
+                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
+                                                            Growth(%)
+                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
+                                                        <td class="text-left">
+                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
+                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div highchart data="s.data"></div>
+                                                        </td>
+                                                        <td>{{s.values.total}}</td>
+                                                        <td>
+                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                        </td>
+                                                        <td>{{s.values.growth}}%</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="activity_pane">
+                                                <table class="table table-responsive table-text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Sources</th>
+                                                        <th>Charts {{vm.sortType}}|{{vm.sortReverse}}</th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
+                                                            Total Activity
+                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
+                                                            Change
+                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
+                                                            Growth(%)
+                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
+                                                        <td class="text-left">
+                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
+                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div highchart data="s.data"></div>
+                                                        </td>
+                                                        <td>{{s.values.total}}</td>
+                                                        <td>
+                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                        </td>
+                                                        <td>{{s.values.growth}}%</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div class="tab-pane fade" id="engagement_pane">
+                                                <table class="table table-responsive table-text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Sources</th>
+                                                        <th>Charts {{vm.sortType}}|{{vm.sortReverse}}</th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
+                                                            Total Engagement
+                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
+                                                            Change
+                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
+                                                            Growth(%)
+                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" ng-class="{'text-grey':s.visible}">
+                                                        <td class="text-left">
+                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
+                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
+                                                            </a>
+                                                        </td>
+                                                        <td>
+                                                            <div highchart data="s.data"></div>
+                                                        </td>
+                                                        <td>{{s.values.total}}</td>
+                                                        <td>
+                                                            <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
+                                                        </td>
+                                                        <td>{{s.values.growth}}%</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                                </table>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-xs-12">
-                                        <table class="table table-responsive table-text-center">
-                                            <thead>
-                                            <tr>
-                                                <th>Sources</th>
-                                                <th>Charts</th>
-                                                <th>Total Audience</th>
-                                                <th>Change</th>
-                                                <th>Growth(%)</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="s in vm.sources">
-                                                <td class="text-left"><i class="fa fa-eye"></i> {{s.title}}</td>
-                                                <td><div highchart data="s.data"></div></td>
-                                                <td>4,454,637</td>
-                                                <td>+4,437,150</td>
-                                                <td>+25,373.99%</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
                                     </div>
                                 </div>
                             </div>
