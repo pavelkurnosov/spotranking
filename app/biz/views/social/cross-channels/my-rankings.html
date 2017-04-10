@@ -137,12 +137,12 @@
                                                             <h4>{{s.values.total}}</h4>
                                                         </td>
                                                         <td class="vertical-middle {{s.values.change > 0 ? 'text-green' : 'text-red'}}">
-                                                            <h4>
+                                                            <h4 ng-class="{'text-grey':s.visible}">
                                                                 <span ng-if="s.values.change > 0">+</span>{{s.values.change}}
                                                             </h4>
                                                         </td>
                                                         <td class="vertical-middle {{s.values.growth > 0 ? 'text-green' : 'text-red'}}">
-                                                            <h4>{{s.values.growth}}%</h4>
+                                                            <h4 ng-class="{'text-grey':s.visible}">{{s.values.growth}}%</h4>
                                                         </td>
                                                     </tr>
                                                     </tbody>
