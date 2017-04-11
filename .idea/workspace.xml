@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.scripts.json" afterPath="$PROJECT_DIR$/app.scripts.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/directives/export-button.js" afterPath="$PROJECT_DIR$/app/biz/directives/export-button.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vendor.graphs.js" afterPath="$PROJECT_DIR$/build/vendor.graphs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vendor.js" afterPath="$PROJECT_DIR$/build/vendor.js" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -49,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="export-button.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="export-button.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/directives/export-button.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
@@ -59,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
+            <state relative-caret-position="187">
+              <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -176,8 +168,8 @@
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/build/vendor.js" />
         <option value="$PROJECT_DIR$/app.scripts.json" />
-        <option value="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" />
         <option value="$PROJECT_DIR$/app/biz/directives/export-button.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" />
       </list>
     </option>
   </component>
@@ -369,12 +361,12 @@
       <workItem from="1491545981020" duration="602000" />
       <workItem from="1491554835740" duration="19650000" />
       <workItem from="1491581039343" duration="29916000" />
-      <workItem from="1491753747350" duration="29734000" />
+      <workItem from="1491753747350" duration="30388000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403386000" />
+    <option name="totallyTimeSpent" value="404040000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -815,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="57" lean-forward="true" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -835,6 +819,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding />
         </state>
       </provider>
