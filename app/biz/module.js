@@ -114,7 +114,7 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
-            //----------------------------------------------------------------------
+            //----------------------- Cross Channels -----------------------------------------------
             .state('app.biz.crossChannels', {
                 url: '/cross_channels',
                 views: {
@@ -228,20 +228,30 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
-            //----------------------------------------------------------------------
+
+            //------------------------ Facebook ----------------------------------------------
             .state('app.biz.socialFacebook', {
                 url: '/social_facebook',
-                data: {
-                    title: 'Facebook'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/facebook.html',
-                        controller: 'FacebookController',
+                        controller: 'SocialFacebookController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialFacebook.socialPosts', {
+                url: '/social_facebook/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/social-posts.html',
+                        controller: 'FacebookSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            //----------------------------------------------------------------------
             .state('app.biz.socialTwitter', {
                 url: '/social_twitter',
                 data: {

@@ -49,7 +49,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             change: Math.round(Math.random() * 100 - Math.random() * 100),
             growth: Math.round(Math.random() * 100),
 
-            data: {
+            chart: {
                 chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
                 credits: {enabled: false},
                 title: {text: ''},
@@ -64,4 +64,18 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             }
         };
     }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('FacebookController', function ($state) {
+angular.module('app.biz').controller('FacebookController1', function ($state) {
     var vm = this;
 
     vm.socialPages = [

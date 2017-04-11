@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -36,8 +40,8 @@
       <file leaf-file-name="my-rankings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="141" column="65" lean-forward="true" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
+            <state relative-caret-position="386">
+              <caret line="136" column="93" lean-forward="false" selection-start-line="136" selection-start-column="93" selection-end-line="136" selection-end-column="93" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -46,21 +50,80 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="your_style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
+      <file leaf-file-name="FacebookCtrl1.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="461" column="11" lean-forward="true" selection-start-line="461" selection-start-column="11" selection-end-line="461" selection-end-column="11" />
+            <state relative-caret-position="153">
+              <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+              <folding>
+                <marker date="1491898369150" expanded="true" signature="2169:2201" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="7691:7705" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="7776:7806" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="7865:7874" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="7933:7942" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="17257:17271" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="17342:17372" ph="..." />
+                <marker date="1491898369150" expanded="true" signature="17422:17431" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="facebook.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CrossChannelsMyRankingCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="421">
+              <caret line="242" column="35" lean-forward="false" selection-start-line="242" selection-start-column="35" selection-end-line="242" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocialFacebookCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialFacebookCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="navigation.tpl.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="your_style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="554">
+              <caret line="461" column="11" lean-forward="false" selection-start-line="461" selection-start-column="11" selection-end-line="461" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CrossChannelsMyRankingCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+            <state relative-caret-position="407">
+              <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -70,7 +133,7 @@
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
               <folding>
                 <marker date="1491829465310" expanded="true" signature="4437:4469" ph="..." />
               </folding>
@@ -89,8 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
-      <find>badg</find>
       <find>hashtags</find>
       <find>&lt;span class=&quot;widget-icon&quot;&gt; &lt;i class=&quot;fa fa-bar-chart-o&quot;&gt;&lt;/i&gt; &lt;/span&gt;</find>
       <find>open</find>
@@ -118,6 +179,8 @@
       <find>,</find>
       <find>height-</find>
       <find>middle</find>
+      <find>cross</find>
+      <find>app.biz.socialFacebook</find>
       <find>activity</find>
     </findStrings>
     <replaceStrings>
@@ -136,19 +199,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/YoutubeCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/views/pinterest-templates/overview.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/pinterest-templates/detailed-metric.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/pinterest-templates/top-content.html" />
         <option value="$PROJECT_DIR$/app/biz/views/social/pinterest.html" />
         <option value="$PROJECT_DIR$/app/biz/views/social/twitter.html" />
         <option value="$PROJECT_DIR$/app/biz/views/social/youtube.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/social/facebook.html" />
         <option value="$PROJECT_DIR$/app/biz/views/social/googleplus.html" />
         <option value="$PROJECT_DIR$/app/biz/views/social/instagram.html" />
         <option value="$PROJECT_DIR$/app/layout/layout.tpl.html" />
         <option value="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" />
         <option value="$PROJECT_DIR$/app/biz/directives/export-button.js" />
         <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" />
@@ -166,7 +223,6 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsDetailsHashtagsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/details-hashtags.html" />
         <option value="$PROJECT_DIR$/app/layout/partials/footer.tpl.html" />
-        <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMetricsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/details-analyze.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsDetailsAnalizeCtrl.js" />
@@ -180,13 +236,20 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsDetailsBiosCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/directives/page-locator.js" />
         <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
-        <option value="$PROJECT_DIR$/app/biz/module.js" />
         <option value="$PROJECT_DIR$/app/biz/views/cross-channel-templates/my-ranking.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/layout/partials/header.tpl.html" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
-        <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookSocialPostsCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl1.js" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/facebook.html" />
+        <option value="$PROJECT_DIR$/app/layout/partials/navigation.tpl.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/facebook/SocialFacebookSocialPostsCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/module.js" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialFacebookCtrl.js" />
       </list>
     </option>
   </component>
@@ -234,7 +297,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;header&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/header.tpl.html&#10;cross&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;crossch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;crosscha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels.html&#10;landsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js&#10;cross-ch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels.html&#10;my-ranking&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;crosschanne&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;myrankin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js&#10;my-ran&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/cross-channel-templates/my-ranking.html&#10;page-lo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/directives/page-locator.js&#10;highcha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/graphs/directives/highchart/highchart.js&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;detailsbio&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-bios.html&#10;socialp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;social&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;crosschannelsctr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;bios.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/bios.html&#10;bios&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsBiosCtrl.js&#10;metric&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/metrics.html&#10;landscape-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/landscape-comparison.html&#10;lands&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js&#10;socialpos&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js&#10;socialpo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;analyze&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-analyze.html&#10;detailsAn&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsAnalizeCtrl.js&#10;social-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;crosschan&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;metricsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsMetricsCtrl.js&#10;metric.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/metrics.html&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;footer&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/footer.tpl.html&#10;details-ha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-hashtags.html&#10;crosshash&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsHashtagsCtrl.js&#10;details-acti&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-activity.html&#10;detailsAc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsActivityCtrl.js&#10;index.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/index.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app.scripts.json&#10;mo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;app.sc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app.scripts.json&#10;detailsp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsPostCtrl.js&#10;details-po&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-posts.html&#10;timezone&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/bower_components/moment-timezone/builds/moment-timezone-with-data.js&#10;const&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/constants.js&#10;socialPostC&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js&#10;cross-c&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels.html" />
+    <property name="SearchEverywhereHistoryKey" value="cons&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/constants.js&#10;socialface&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialFacebookCtrl.js&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;facebook.ht&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook.html&#10;facebookc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl.js&#10;facebookctr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/FacebookCtrl1.js&#10;facebooksoci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/facebook/FacebookSocialPostsCtrl.js&#10;your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;header&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/header.tpl.html&#10;cross&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;crossch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;crosscha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels.html&#10;landsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js&#10;cross-ch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels.html&#10;my-ranking&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;crosschanne&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;myrankin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js&#10;my-ran&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/cross-channel-templates/my-ranking.html&#10;page-lo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/directives/page-locator.js&#10;highcha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/graphs/directives/highchart/highchart.js&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;detailsbio&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-bios.html&#10;socialp&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;social&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;crosschannelsctr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;bios.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/bios.html&#10;bios&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsBiosCtrl.js&#10;metric&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/metrics.html&#10;landscape-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/landscape-comparison.html&#10;lands&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js&#10;socialpos&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsSocialPostsCtrl.js&#10;socialpo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;analyze&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-analyze.html&#10;detailsAn&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsAnalizeCtrl.js&#10;social-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/social-posts.html&#10;crosschan&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;metricsc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsMetricsCtrl.js&#10;metric.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/metrics.html&#10;na&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;footer&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/footer.tpl.html&#10;details-ha&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-hashtags.html&#10;crosshash&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsHashtagsCtrl.js&#10;details-acti&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/details-activity.html&#10;detailsAc&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/cross-channels/CrossChannelsDetailsActivityCtrl.js&#10;index.html&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/index.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;app.&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app.scripts.json&#10;mo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js" />
     <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RunManager">
@@ -347,12 +410,12 @@
       <workItem from="1491545981020" duration="602000" />
       <workItem from="1491554835740" duration="19650000" />
       <workItem from="1491581039343" duration="29916000" />
-      <workItem from="1491753747350" duration="17219000" />
+      <workItem from="1491753747350" duration="23192000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390871000" />
+    <option name="totallyTimeSpent" value="396844000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -400,42 +463,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3808">
-          <caret line="224" column="13" lean-forward="false" selection-start-line="224" selection-start-column="13" selection-end-line="224" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/CrossChannelsCtrl.js" />
-    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="46" lean-forward="false" selection-start-line="18" selection-start-column="46" selection-end-line="18" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/directives/export-button.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -471,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6938">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="13" lean-forward="false" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -563,13 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="67" lean-forward="true" selection-start-line="15" selection-start-column="67" selection-end-line="15" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="28" column="68" lean-forward="true" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
         </state>
       </provider>
     </entry>
@@ -732,18 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="172" column="59" lean-forward="false" selection-start-line="172" selection-start-column="59" selection-end-line="172" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="39" column="27" lean-forward="true" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding>
             <marker date="1491829465310" expanded="true" signature="4437:4469" ph="..." />
           </folding>
@@ -761,15 +766,23 @@
     <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
-          <caret line="461" column="11" lean-forward="true" selection-start-line="461" selection-start-column="11" selection-end-line="461" selection-end-column="11" />
+          <caret line="461" column="11" lean-forward="false" selection-start-line="461" selection-start-column="11" selection-end-line="461" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="60" column="60" lean-forward="false" selection-start-line="60" selection-start-column="60" selection-end-line="60" selection-end-column="60" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="141" column="65" lean-forward="true" selection-start-line="141" selection-start-column="65" selection-end-line="141" selection-end-column="65" />
+        <state relative-caret-position="386">
+          <caret line="136" column="93" lean-forward="false" selection-start-line="136" selection-start-column="93" selection-end-line="136" selection-end-column="93" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#0;n#section#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#td#1;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
@@ -777,10 +790,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="52" column="45" lean-forward="false" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+        <state relative-caret-position="153">
+          <caret line="9" column="56" lean-forward="false" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+          <folding>
+            <marker date="1491898369150" expanded="true" signature="2169:2201" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="7691:7705" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="7776:7806" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="7865:7874" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="7933:7942" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="17257:17271" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="17342:17372" ph="..." />
+            <marker date="1491898369150" expanded="true" signature="17422:17431" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookSocialPostsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="56" lean-forward="false" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/layout/partials/navigation.tpl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="74" column="25" lean-forward="true" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/facebook/SocialFacebookSocialPostsCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="67" lean-forward="false" selection-start-line="2" selection-start-column="67" selection-end-line="2" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="242" column="35" lean-forward="false" selection-start-line="242" selection-start-column="35" selection-end-line="242" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="1352" column="57" lean-forward="false" selection-start-line="1352" selection-start-column="43" selection-end-line="1352" selection-end-column="57" />
+          <folding>
+            <element signature="e#69#38989#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialFacebookCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="50" lean-forward="false" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
           <folding />
         </state>
       </provider>
