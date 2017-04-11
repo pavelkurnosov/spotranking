@@ -13,7 +13,7 @@
       "angular-bootstrap",
       "angular-simple-logger",
       "angular-google-maps",
-      "angular-tag-cloud",
+      "html2canvas",
       "restangular",
       "fastclick",
       "moment",
@@ -41,8 +41,10 @@
 
       "highcharts",
       "highcharts-exporting",
-      "highchartTable"
+      "highchartTable",
 
+      "angular-tag-cloud",
+      "jspdf"
     ],
     "vendor.ui": [
       "select2",
@@ -171,6 +173,8 @@
     "smartwidgets": "smartadmin-plugin/smartwidgets/jarvis.widget.min.js",
     "notification": "smartadmin-plugin/notification/SmartNotification.min.js",
     "bootstrap-daterangepicker": "bower_components/bootstrap-daterangepicker/daterangepicker.js",
-    "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js"
+    "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js",
+    "html2canvas": "bower_components/html2canvas/build/html2canvas.min.js",
+    "jspdf": "bower_components/jspdf/dist/jspdf.min.js"
   }
 }

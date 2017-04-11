@@ -241,7 +241,7 @@ angular.module('app.biz', ['ui.router'])
                 }
             })
             .state('app.biz.socialFacebook.socialPosts', {
-                url: '/social_facebook/social_posts',
+                url: '/social_posts',
                 views: {
                     "tabContent": {
                         templateUrl: 'app/biz/views/social/facebook/social-posts.html',

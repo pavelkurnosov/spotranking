@@ -872,7 +872,7 @@ angular.module('app.biz', ['ui.router'])
                 }
             })
             .state('app.biz.socialFacebook.socialPosts', {
-                url: '/social_facebook/social_posts',
+                url: '/social_posts',
                 views: {
                     "tabContent": {
                         templateUrl: 'app/biz/views/social/facebook/social-posts.html',
@@ -5075,9 +5075,9 @@ angular
         html += '</button>';
         html += '<ul class="dropdown-menu pull-right">';
         html += '<li>';
-        html += '<a href-void="" href="#">Download a PPT</a>';
-        html += '<a href-void="" href="#">Download a PDF</a>';
-        html += '<a href-void="" href="#">Download a PNG</a>';
+        html += '<a href-void="" href="#" ng-click="generatePPT()">Download a PPT</a>';
+        html += '<a href-void="" href="#" ng-click="generatePDF()">Download a PDF</a>';
+        html += '<a href-void="" href="#" ng-click="generatePNG()">Download a PNG</a>';
         html += '<hr class="margin-top-5 margin-bottom-5"/>';
         html += '<a href-void="" href="#">Email...</a>';
         html += '<a href-void="" href="#">Schedule...</a>';
@@ -5090,11 +5090,37 @@ angular
         directive.template = html;
 
         directive.scope = {
+            source: "@",
             class: "@"
         };
 
         directive.link = function (scope, element, attrs) {
+            scope.generatePPT = function () {
 
+                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
+            };
+            scope.generatePDF = function () {
+                html2canvas(document.getElementById(scope.source), {
+                    onrendered: function(canvas) {
+                        var imgData = canvas.toDataURL('image/png');
+                        var doc = new jsPDF('l', 'mm', 'a4');
+                        doc.addImage(imgData, 'png', 10, 10);
+                        doc.save('SpotRanking.pdf');       // used the file name as current time.
+                    }
+                });
+                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
+            };
+            scope.generatePNG = function () {
+                html2canvas(document.getElementById(scope.source), {
+                    onrendered: function (canvas) {
+                        var a = document.createElement('a');
+                        a.href = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+                        a.download = 'SpotRanking.png';
+                        a.click();
+                    }
+                });
+                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
+            };
         };
         return directive;
     });
