@@ -1,0 +1,166 @@
+<div class="container-fluid">
+    <section id="widget-grid-cross-channels-my-ranking" widget-grid>
+        <div class="row padding-top-10">
+            <article class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Social Media Tool</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body" style="min-height: inherit;">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-1"></div>
+                                    <div class="col-xs-2" ng-repeat="m in vm.medias">
+                                        <div class="text-center">
+                                            <div>{{m.title}}</div>
+                                            <div>
+                                                <h1>{{m.id * 3}}K <span class="h6">+0.133%</span></h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div class="row margin-bottom-20 form-horizontal">
+            <div class="col-xs-1">
+                <div class="form-group">
+                    <label class="col-md-2 control-label" for="sel1">Company</label>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="form-group">
+                    <div class="col-md-10">
+                        <select class="form-control" id="sel1">
+                            <option>Djezzy</option>
+                            <option>Djezzy</option>
+                            <option>Djezzy</option>
+                            <option>Djezzy</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-1">
+                <div class="form-group smart-form">
+                    <label class="col-md-2 control-label" for="sel1">Dates</label>
+                </div>
+            </div>
+            <div class="col-xs-2">
+                <div class="form-group smart-form">
+                    <div class="input-group">
+                        <input type="text" name="mydate" placeholder="Select a date" class="form-control datepicker" data-smart-datepicker options="datepickerOptions" data-date-format="dd/mm/yy">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Social Channels</h2>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <table class="table table-responsive table-text-center">
+                                            <thead>
+                                            <tr>
+                                                <th>Social Media</th>
+                                                <th>Audience</th>
+                                                <th>Activity</th>
+                                                <th>Engagement</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr ng-repeat="m in vm.medias">
+                                                <td><i class="fa fa-{{m.icon}}"></i> {{m.title}}</td>
+                                                <td>123,456</td>
+                                                <td>14 <i class="fa fa-arrow-up"></i></td>
+                                                <td>123 <i class="fa fa-arrow-down"></i></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul id="crossChannelTab" class="nav nav-tabs bordered">
+                                            <li ng-repeat="pane in vm.panes" class="{{pane.active}}">
+                                                <a href="#{{pane.id}}_pane" data-toggle="tab">{{pane.title}}</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content padding-10">
+                                            <div class="tab-pane fade{{pane.active == 'active' ? ' in active' : ''}}" ng-repeat="pane in vm.panes" id="{{pane.id}}_pane">
+                                                <table class="table table-responsive table-text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Sources</th>
+                                                        <th>Charts</th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'total'; vm.sortReverse = !vm.sortReverse">
+                                                            Total {{pane.title}}
+                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'change'; vm.sortReverse = !vm.sortReverse">
+                                                            Change
+                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'growth'; vm.sortReverse = !vm.sortReverse">
+                                                            Growth(%)
+                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="s in vm.sources | orderBy:vm.sortType:vm.sortReverse" class="height-70" ng-class="{'text-grey':s.visible}">
+                                                        <td class="text-left vertical-middle">
+                                                            <a class="cursor-pointer" ng-class="{'text-grey':s.visible}" ng-click="s.visible = !s.visible">
+                                                                <i class="fa fa-eye{{s.visible ? '-slash' : ''}}"></i> {{s.title}}
+                                                            </a>
+                                                        </td>
+                                                        <td class="vertical-middle padding-0" style="padding:0;">
+                                                            <div highchart data="s.chart" ng-if="!s.visible"></div>
+                                                        </td>
+                                                        <td class="vertical-middle">
+                                                            <h4>{{s.total * ($parent.$index + 2.5)}}</h4>
+                                                        </td>
+                                                        <td class="vertical-middle {{s.change > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4 ng-class="{'text-grey':s.visible}">
+                                                                <span ng-if="s.change > 0">+</span>{{s.change * ($parent.$index + 2.5)}}
+                                                            </h4>
+                                                        </td>
+                                                        <td class="vertical-middle {{s.growth > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4 ng-class="{'text-grey':s.visible}">{{s.growth * ($parent.$index + 2.5)}}%</h4>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td><div highchart data="s.legend"></div></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+</div>

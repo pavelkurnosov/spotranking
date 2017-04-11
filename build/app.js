@@ -881,86 +881,793 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialFacebook.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/metrics.html',
+                        controller: 'FacebookMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/landscape-comparison.html',
+                        controller: 'FacebookLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/bios.html',
+                        controller: 'FacebookBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/my-rankings.html',
+                        controller: 'FacebookMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/details-posts.html',
+                        controller: 'FacebookDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/details-activity.html',
+                        controller: 'FacebookDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/details-hashtags.html',
+                        controller: 'FacebookDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/details-analyze.html',
+                        controller: 'FacebookDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialFacebook.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/details-bios.html',
+                        controller: 'FacebookDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
 
-            //----------------------------------------------------------------------
+            //------------------------ Twitter ----------------------------------------------
             .state('app.biz.socialTwitter', {
                 url: '/social_twitter',
-                data: {
-                    title: 'Twitter'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/twitter.html',
-                        controller: 'TwitterController',
+                        controller: 'SocialTwitterController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialTwitter.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/social-posts.html',
+                        controller: 'TwitterSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/metrics.html',
+                        controller: 'TwitterMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/landscape-comparison.html',
+                        controller: 'TwitterLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/bios.html',
+                        controller: 'TwitterBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/my-rankings.html',
+                        controller: 'TwitterMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/details-posts.html',
+                        controller: 'TwitterDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/details-activity.html',
+                        controller: 'TwitterDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/details-hashtags.html',
+                        controller: 'TwitterDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/details-analyze.html',
+                        controller: 'TwitterDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/details-bios.html',
+                        controller: 'TwitterDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            //------------------------ Youtube ----------------------------------------------
             .state('app.biz.socialYoutube', {
                 url: '/social_youtube',
-                data: {
-                    title: 'YouTube'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/youtube.html',
-                        controller: 'YoutubeController',
+                        controller: 'SocialYoutubeController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialYoutube.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/social-posts.html',
+                        controller: 'YoutubeSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/metrics.html',
+                        controller: 'YoutubeMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/landscape-comparison.html',
+                        controller: 'YoutubeLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/bios.html',
+                        controller: 'YoutubeBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/my-rankings.html',
+                        controller: 'YoutubeMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/details-posts.html',
+                        controller: 'YoutubeDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/details-activity.html',
+                        controller: 'YoutubeDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/details-hashtags.html',
+                        controller: 'YoutubeDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/details-analyze.html',
+                        controller: 'YoutubeDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialYoutube.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/details-bios.html',
+                        controller: 'YoutubeDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            //------------------------ Googleplus ----------------------------------------------
             .state('app.biz.socialGoogleplus', {
                 url: '/social_googleplus',
-                data: {
-                    title: 'Google +'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/googleplus.html',
-                        controller: 'GoogleplusController',
+                        controller: 'SocialGoogleplusController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialGoogleplus.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/social-posts.html',
+                        controller: 'GoogleplusSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/metrics.html',
+                        controller: 'GoogleplusMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/landscape-comparison.html',
+                        controller: 'GoogleplusLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/bios.html',
+                        controller: 'GoogleplusBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/my-rankings.html',
+                        controller: 'GoogleplusMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/details-posts.html',
+                        controller: 'GoogleplusDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/details-activity.html',
+                        controller: 'GoogleplusDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/details-hashtags.html',
+                        controller: 'GoogleplusDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/details-analyze.html',
+                        controller: 'GoogleplusDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/details-bios.html',
+                        controller: 'GoogleplusDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            //------------------------ Linkedin ----------------------------------------------
             .state('app.biz.socialLinkedin', {
                 url: '/social_linkedin',
-                data: {
-                    title: 'LinkedIn'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/linkedin.html',
-                        controller: 'LinkedinController',
+                        controller: 'SocialLinkedinController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialLinkedin.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/social-posts.html',
+                        controller: 'LinkedinSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/metrics.html',
+                        controller: 'LinkedinMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/landscape-comparison.html',
+                        controller: 'LinkedinLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/bios.html',
+                        controller: 'LinkedinBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/my-rankings.html',
+                        controller: 'LinkedinMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/details-posts.html',
+                        controller: 'LinkedinDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/details-activity.html',
+                        controller: 'LinkedinDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/details-hashtags.html',
+                        controller: 'LinkedinDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/details-analyze.html',
+                        controller: 'LinkedinDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialLinkedin.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/details-bios.html',
+                        controller: 'LinkedinDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+                
+            //------------------------ Pinterest ----------------------------------------------
             .state('app.biz.socialPinterest', {
                 url: '/social_pinterest',
-                data: {
-                    title: 'Pinterest'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/pinterest.html',
-                        controller: 'PinterestController',
+                        controller: 'SocialPinterestController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialPinterest.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/social-posts.html',
+                        controller: 'PinterestSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/metrics.html',
+                        controller: 'PinterestMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/landscape-comparison.html',
+                        controller: 'PinterestLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/bios.html',
+                        controller: 'PinterestBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/my-rankings.html',
+                        controller: 'PinterestMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/details-posts.html',
+                        controller: 'PinterestDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/details-activity.html',
+                        controller: 'PinterestDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/details-hashtags.html',
+                        controller: 'PinterestDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/details-analyze.html',
+                        controller: 'PinterestDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialPinterest.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/details-bios.html',
+                        controller: 'PinterestDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            
+            //------------------------ Instagram ----------------------------------------------
             .state('app.biz.socialInstagram', {
                 url: '/social_instagram',
-                data: {
-                    title: 'Instagram'
-                },
                 views: {
                     "content@app": {
                         templateUrl: 'app/biz/views/social/instagram.html',
-                        controller: 'InstagramController',
+                        controller: 'SocialInstagramController',
                         controllerAs: 'vm'
                     }
                 }
             })
+            .state('app.biz.socialInstagram.socialPosts', {
+                url: '/social_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/social-posts.html',
+                        controller: 'InstagramSocialPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.metrics', {
+                url: '/metrics',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/metrics.html',
+                        controller: 'InstagramMetricsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.landscapeComparison', {
+                url: '/landscape_comparison',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/landscape-comparison.html',
+                        controller: 'InstagramLandscapeComparisonController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.bios', {
+                url: '/bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/bios.html',
+                        controller: 'InstagramBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.myRankings', {
+                url: '/my_rankings',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/my-rankings.html',
+                        controller: 'InstagramMyRankingsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.detailsPosts', {
+                url: '/details_posts',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/details-posts.html',
+                        controller: 'InstagramDetailsPostsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.detailsActivity', {
+                url: '/details_activity',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/details-activity.html',
+                        controller: 'InstagramDetailsActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.detailsHashtags', {
+                url: '/details_hashtags',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/details-hashtags.html',
+                        controller: 'InstagramDetailsHashtagsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.detailsAnalyze', {
+                url: '/details_analyze',
+                params: {
+                    pageTitle: ''
+                },
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/details-analyze.html',
+                        controller: 'InstagramDetailsAnalyzeController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.detailsBios', {
+                url: '/details_bios',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/details-bios.html',
+                        controller: 'InstagramDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+
+            //------------------------------------------------------------------------------------------------
+
+
             .state('app.biz.ComparingPerform', {
                 url: '/comparing_performance',
                 data: {
@@ -7988,2136 +8695,6 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
 });
 'use strict';
 
-angular.module('app.biz').controller('FacebookController1', function ($state) {
-    var vm = this;
-
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
-    ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
-
-    vm.viewContent = function () {
-        alert("View Content")
-    };
-
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
-    };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-    vm.data7 = {
-        chart: {type: 'line', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b'
-            },
-            title: {
-                text: 'Date'
-            }},
-        yAxis: {title: {text: ''}},
-        legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle'},
-        plotOptions: {series: {stacking: 'normal'}},
-        series: [{
-            name: 'Eat24',
-            // Define the data points. All series have a dummy year
-            // of 1970/71 in order to be compared on the same x axis. Note
-            // that in JavaScript, months start at 0 for January, 1 for February etc.
-            data: [
-                [Date.UTC(2016, 6, 1), 190],
-                [Date.UTC(2016, 6, 4), 130],
-                [Date.UTC(2016, 6, 7), 115],
-                [Date.UTC(2016, 6, 10), 155],
-                [Date.UTC(2016, 6, 13), 230],
-                [Date.UTC(2016, 6, 16), 145],
-                [Date.UTC(2016, 6, 19), 143],
-                [Date.UTC(2016, 6, 22), 148],
-                [Date.UTC(2016, 6, 25), 150],
-                [Date.UTC(2016, 6, 28), 170]
-            ]
-        }]
-    };
-
-
-    vm.data11 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Mercedes-Benz',
-                'BMW',
-                'Ferrari',
-                'Nissan USA',
-                'Lamborghini',
-                'MINI USA',
-                'Porsche(North America)',
-                'Audi USA',
-                'Mazda USA',
-                'Hyundai USA',
-                'Tesla Motors',
-                'Fiat USA',
-                'Chrysler',
-                'Scion'
-            ]
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
-            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
-            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
-        }]
-    };
-    vm.data12 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Tesla Motors',
-                'Nissan USA',
-                'Chevrolet',
-                'Toyota',
-                'Honda',
-                'Mercedes-Benz',
-                'Mazda USA',
-                'Chrysler',
-                'Ford',
-                'Cadillac',
-                'Jeep',
-                'Porsche(North America)',
-                'Lamborghini',
-                'Dodge'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
-        }]
-    };
-    vm.data13 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Dodge',
-                'Jeep',
-                'Mercedes-Benz',
-                'Fiat USA',
-                'Ferrari',
-                'BMW',
-                'Tesla Motors',
-                'Audi USA',
-                'Scion',
-                'Nissan USA',
-                'Chrysler',
-                'Lamborghini',
-                'Honda',
-                'Toyota',
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
-        }]
-    };
-    vm.data14 = vm.data13;
-    vm.data15 = {
-        chart: {
-            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Post Engagement Rate'
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [
-            {
-                name: 'Audi USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Cadillac',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Chrysler',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Dodge',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Flat USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Honda',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Jeep',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Kia',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mazda USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mercedes-Benz',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Nissan USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Scion',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Subaru',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Tesla Motors',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Volkswagen USA',
-                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
-                dataLabels: false
-            }
-        ]
-    };
-    vm.data16 = vm.data15;
-    vm.data17 = vm.data13;
-    vm.data18 = vm.data11;
-    vm.data19 = {
-        chart: {
-            type: 'scatter',
-            zoomType: 'xy', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        credits: {enabled: false},
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'Jul 20, 2015 - Aug 18, 2015'
-        },
-        xAxis: {
-            title: {
-                enabled: true,
-                text: ''
-            },
-            startOnTick: true,
-            endOnTick: true,
-            showLastLabel: true
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Average<br/>Engagement Total per Post'
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'left',
-            verticalAlign: 'top',
-            x: 100,
-            y: 70,
-            floating: true,
-            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-            borderWidth: 1
-        },
-        plotOptions: {
-            scatter: {
-                marker: {
-                    radius: 5,
-                    states: {
-                        hover: {
-                            enabled: true,
-                            lineColor: 'rgb(100,100,100)'
-                        }
-                    }
-                },
-                states: {
-                    hover: {
-                        marker: {
-                            enabled: false
-                        }
-                    }
-                },
-                tooltip: {
-                    headerFormat: '<b>{series.name}</b><br>',
-                    // pointFormat: '{point.x} cm, {point.y} kg'
-                }
-            }
-        },
-        series: [{
-            name: 'Lamborghini',
-            color: 'rgba(223, 83, 83, .5)',
-            data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
-                [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
-                [172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],
-                [147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],
-                [159.5, 50.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 72.8],
-                [174.0, 54.5], [173.0, 59.8], [179.9, 67.3], [170.5, 67.8], [160.0, 47.0],
-                [156.2, 60.0], [149.9, 46.8], [169.5, 57.3], [160.0, 64.1], [175.3, 63.6],
-                [169.5, 67.3], [160.0, 75.5], [172.7, 68.2], [162.6, 61.4], [157.5, 76.8],
-                [176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]]
-
-        }, {
-            name: 'Fiat USA',
-            color: 'rgba(119, 152, 191, .5)',
-            data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
-                [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
-                [193.0, 95.9], [171.4, 91.4], [177.8, 81.8], [177.8, 96.8], [167.6, 69.1],
-                [167.6, 82.7], [180.3, 75.5], [182.9, 79.5], [176.5, 73.6], [186.7, 91.8],
-                [188.0, 84.1], [188.0, 85.9], [177.8, 81.8], [174.0, 82.5], [177.8, 80.5],
-                [170.2, 62.3], [177.8, 82.7], [179.1, 79.1], [190.5, 98.2], [177.8, 84.1],
-                [180.3, 83.2], [180.3, 83.2]]
-        }]
-    };
-    vm.data21 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],crosshair: true},
-        yAxis: {min: 0,title: {text: 'Rainfall (mm)'            }},
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {column: {pointPadding: 0.2,borderWidth: 0}},
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-        }]
-    };
-    vm.data22 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'DEMOGRAPHICS'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{showInLegend: false,
-            name: '',
-            colorByPoint: true,
-            data: [{
-                name: 'US',
-                y: 74000
-            },{
-                name: 'DE',
-                y: 22000
-            },{
-                name: 'CA',
-                y: 21000
-            },{
-                name: 'IT',
-                y: 18000
-            },{
-                name: 'Other',
-                y: 133000
-            }]
-        }]
-    };
-    vm.data23 = {
-        chart: {
-            type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'PEOPLE YOU REACHED'
-        },
-        xAxis: {
-            categories: ['1', '2', '3', '4', '5']
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
-        }, {
-            name: 'Jane',
-            data: [2, -2, -3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, -2, 5]
-        }]
-    };
-});
-
-function getRandomArray(cnt) {
-    var ary = [];
-    for (var i = 0; i < cnt; i++) {
-        ary[ary.length] = Math.random();
-    }
-    return ary;
-};
-'use strict';
-
-angular.module('app.biz').controller('GoogleplusController', function ($state) {
-    var vm = this;
-
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
-    ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
-
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
-    };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-    vm.data11 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Mercedes-Benz',
-                'BMW',
-                'Ferrari',
-                'Nissan USA',
-                'Lamborghini',
-                'MINI USA',
-                'Porsche(North America)',
-                'Audi USA',
-                'Mazda USA',
-                'Hyundai USA',
-                'Tesla Motors',
-                'Fiat USA',
-                'Chrysler',
-                'Scion'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: 'Youtube',
-            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
-        }]
-    };
-});
-'use strict';
-
-angular.module('app.biz').controller('InstagramController', function ($state) {
-    var vm = this;
-
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
-    ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
-
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
-    };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-    vm.data7 = {
-        chart: {type: 'line', height: 170},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b'
-            },
-            title: {
-                text: 'Date'
-            }},
-        yAxis: {title: {text: ''}},
-        legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle'},
-        plotOptions: {series: {stacking: 'normal'}},
-        series: [{
-            name: 'Eat24',
-            // Define the data points. All series have a dummy year
-            // of 1970/71 in order to be compared on the same x axis. Note
-            // that in JavaScript, months start at 0 for January, 1 for February etc.
-            data: [
-                [Date.UTC(2016, 6, 1), 190],
-                [Date.UTC(2016, 6, 4), 130],
-                [Date.UTC(2016, 6, 7), 115],
-                [Date.UTC(2016, 6, 10), 155],
-                [Date.UTC(2016, 6, 13), 230],
-                [Date.UTC(2016, 6, 16), 145],
-                [Date.UTC(2016, 6, 19), 143],
-                [Date.UTC(2016, 6, 22), 148],
-                [Date.UTC(2016, 6, 25), 150],
-                [Date.UTC(2016, 6, 28), 170]
-            ]
-        }]
-    };
-
-
-    vm.data11 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Mercedes-Benz',
-                'BMW',
-                'Ferrari',
-                'Nissan USA',
-                'Lamborghini',
-                'MINI USA',
-                'Porsche(North America)',
-                'Audi USA',
-                'Mazda USA',
-                'Hyundai USA',
-                'Tesla Motors',
-                'Fiat USA',
-                'Chrysler',
-                'Scion'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
-        }]
-    };
-    vm.data12 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Tesla Motors',
-                'Nissan USA',
-                'Chevrolet',
-                'Toyota',
-                'Honda',
-                'Mercedes-Benz',
-                'Mazda USA',
-                'Chrysler',
-                'Ford',
-                'Cadillac',
-                'Jeep',
-                'Porsche(North America)',
-                'Lamborghini',
-                'Dodge'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
-        }]
-    };
-    vm.data13 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Dodge',
-                'Jeep',
-                'Mercedes-Benz',
-                'Fiat USA',
-                'Ferrari',
-                'BMW',
-                'Tesla Motors',
-                'Audi USA',
-                'Scion',
-                'Nissan USA',
-                'Chrysler',
-                'Lamborghini',
-                'Honda',
-                'Toyota',
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
-        }]
-    };
-    vm.data14 = vm.data13;
-    vm.data15 = {
-        chart: {
-            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Post Engagement Rate'
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [
-            {
-                name: 'Audi USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Cadillac',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Chrysler',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Dodge',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Flat USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Honda',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Jeep',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Kia',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mazda USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mercedes-Benz',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Nissan USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Scion',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Subaru',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Tesla Motors',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Volkswagen USA',
-                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
-                dataLabels: false
-            }
-        ]
-    };
-    vm.data16 = vm.data15;
-    vm.data17 = vm.data13;
-    vm.data18 = vm.data11;
-    vm.data19 = {
-        chart: {
-            type: 'scatter',
-            zoomType: 'xy', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        credits: {enabled: false},
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'Jul 20, 2015 - Aug 18, 2015'
-        },
-        xAxis: {
-            title: {
-                enabled: true,
-                text: ''
-            },
-            startOnTick: true,
-            endOnTick: true,
-            showLastLabel: true
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Average<br/>Engagement Total per Post'
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'left',
-            verticalAlign: 'top',
-            x: 100,
-            y: 70,
-            floating: true,
-            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-            borderWidth: 1
-        },
-        plotOptions: {
-            scatter: {
-                marker: {
-                    radius: 5,
-                    states: {
-                        hover: {
-                            enabled: true,
-                            lineColor: 'rgb(100,100,100)'
-                        }
-                    }
-                },
-                states: {
-                    hover: {
-                        marker: {
-                            enabled: false
-                        }
-                    }
-                },
-                tooltip: {
-                    headerFormat: '<b>{series.name}</b><br>',
-                    // pointFormat: '{point.x} cm, {point.y} kg'
-                }
-            }
-        },
-        series: [{
-            name: 'Lamborghini',
-            color: 'rgba(223, 83, 83, .5)',
-            data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
-                [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
-                [172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],
-                [147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],
-                [159.5, 50.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 72.8],
-                [174.0, 54.5], [173.0, 59.8], [179.9, 67.3], [170.5, 67.8], [160.0, 47.0],
-                [156.2, 60.0], [149.9, 46.8], [169.5, 57.3], [160.0, 64.1], [175.3, 63.6],
-                [169.5, 67.3], [160.0, 75.5], [172.7, 68.2], [162.6, 61.4], [157.5, 76.8],
-                [176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]]
-
-        }, {
-            name: 'Fiat USA',
-            color: 'rgba(119, 152, 191, .5)',
-            data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
-                [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
-                [193.0, 95.9], [171.4, 91.4], [177.8, 81.8], [177.8, 96.8], [167.6, 69.1],
-                [167.6, 82.7], [180.3, 75.5], [182.9, 79.5], [176.5, 73.6], [186.7, 91.8],
-                [188.0, 84.1], [188.0, 85.9], [177.8, 81.8], [174.0, 82.5], [177.8, 80.5],
-                [170.2, 62.3], [177.8, 82.7], [179.1, 79.1], [190.5, 98.2], [177.8, 84.1],
-                [180.3, 83.2], [180.3, 83.2]]
-        }]
-    };
-    vm.data21 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],crosshair: true},
-        yAxis: {min: 0,title: {text: 'Rainfall (mm)'            }},
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {column: {pointPadding: 0.2,borderWidth: 0}},
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-        }]
-    };
-    vm.data22 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'DEMOGRAPHICS'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{showInLegend: false,
-            name: '',
-            colorByPoint: true,
-            data: [{
-                name: 'US',
-                y: 74000
-            },{
-                name: 'DE',
-                y: 22000
-            },{
-                name: 'CA',
-                y: 21000
-            },{
-                name: 'IT',
-                y: 18000
-            },{
-                name: 'Other',
-                y: 133000
-            }]
-        }]
-    };
-    vm.data23 = {
-        chart: {
-            type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'PEOPLE YOU REACHED'
-        },
-        xAxis: {
-            categories: ['1', '2', '3', '4', '5']
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
-        }, {
-            name: 'Jane',
-            data: [2, -2, -3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, -2, 5]
-        }]
-    };
-});
-
-function getRandomArray(cnt) {
-    var ary = [];
-    for (var i = 0; i < cnt; i++) {
-        ary[ary.length] = Math.random();
-    }
-    return ary;
-};
-'use strict';
-
-angular.module('app.biz').controller('LinkedinController', function () {
-    var vm = this;
-    vm.data1 = {
-        chart: {type: 'bar', height: 140, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Followers'},
-        xAxis: {lineColor: 'black', categories: ['Tesla Motors', 'Landscape Average']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#e34748'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [113, 120]
-        }]
-    };
-    vm.data2 = {
-        chart: {type: 'bar', height: 140, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'All Tweets'},
-        xAxis: {lineColor: 'black', categories: ['Tesla Motors', 'Landscape Average']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#e34748'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [705, 586]
-        }]
-    };
-    vm.data3 = {
-        chart: {type: 'bar', height: 140, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Engagement Total'},
-        xAxis: {lineColor: 'black', categories: ['Tesla Motors', 'Landscape Average']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#e34748'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [705, 586]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Jun 5, 2015 - jun 11, 2015'},
-        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', '<span style="color:black;font-weight: bold;">WooCommerce</span>', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: 'Retweets',
-            data: [130, 100, 52, 35, 26, {y:18, color: '#64b0ec'}, 10, 8, 4, 3, 3, 1]
-        }]
-    };
-    vm.data5 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Jun 5, 2015 - jun 11, 2015'},
-        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', '<span style="color:black;font-weight: bold;">WooCommerce</span>', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: 'Retweets',
-            data: [130, 100, 52, 35, 26, {y:18, color: '#64b0ec'}, 10, 8, 4, 3, 3, 1]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Jun 5, 2015 - jun 11, 2015'},
-        xAxis: {lineColor: 'black', categories: ['Prestashop', 'Volusion', 'Shopify', 'Bigcommerce', '3dcart', '<span style="color:black;font-weight: bold;">WooCommerce</span>', 'Pinnacle Cart', 'X-Cart', 'UltraCart', 'Elastic Path', 'Magento', 'CubeCart']},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: 'Retweets',
-            data: [130, 100, 52, 35, 26, {y:18, color: '#64b0ec'}, 10, 8, 4, 3, 3, 1]
-        }]
-    };
-    vm.data7 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data8 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data9 = {
-        chart: {type: 'column', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-});
-
-'use strict';
-
-angular.module('app.biz').controller('PinterestController', function ($state) {
-    var vm = this;
-
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
-    ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
-
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
-    };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-    vm.data7 = {
-        chart: {type: 'line', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b'
-            },
-            title: {
-                text: 'Date'
-            }},
-        yAxis: {title: {text: ''}},
-        legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle'},
-        plotOptions: {series: {stacking: 'normal'}},
-        series: [{
-            name: 'Eat24',
-            // Define the data points. All series have a dummy year
-            // of 1970/71 in order to be compared on the same x axis. Note
-            // that in JavaScript, months start at 0 for January, 1 for February etc.
-            data: [
-                [Date.UTC(2016, 6, 1), 190],
-                [Date.UTC(2016, 6, 4), 130],
-                [Date.UTC(2016, 6, 7), 115],
-                [Date.UTC(2016, 6, 10), 155],
-                [Date.UTC(2016, 6, 13), 230],
-                [Date.UTC(2016, 6, 16), 145],
-                [Date.UTC(2016, 6, 19), 143],
-                [Date.UTC(2016, 6, 22), 148],
-                [Date.UTC(2016, 6, 25), 150],
-                [Date.UTC(2016, 6, 28), 170]
-            ]
-        }]
-    };
-
-
-    vm.data11 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Mercedes-Benz',
-                'BMW',
-                'Ferrari',
-                'Nissan USA',
-                'Lamborghini',
-                'MINI USA',
-                'Porsche(North America)',
-                'Audi USA',
-                'Mazda USA',
-                'Hyundai USA',
-                'Tesla Motors',
-                'Fiat USA',
-                'Chrysler',
-                'Scion'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: 'Twitter',
-            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
-        }]
-    };
-    vm.data12 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Tesla Motors',
-                'Nissan USA',
-                'Chevrolet',
-                'Toyota',
-                'Honda',
-                'Mercedes-Benz',
-                'Mazda USA',
-                'Chrysler',
-                'Ford',
-                'Cadillac',
-                'Jeep',
-                'Porsche(North America)',
-                'Lamborghini',
-                'Dodge'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
-        }]
-    };
-    vm.data13 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Dodge',
-                'Jeep',
-                'Mercedes-Benz',
-                'Fiat USA',
-                'Ferrari',
-                'BMW',
-                'Tesla Motors',
-                'Audi USA',
-                'Scion',
-                'Nissan USA',
-                'Chrysler',
-                'Lamborghini',
-                'Honda',
-                'Toyota',
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
-        }]
-    };
-    vm.data14 = vm.data13;
-    vm.data15 = {
-        chart: {
-            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Post Engagement Rate'
-            }
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [
-            {
-                name: 'Audi USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Cadillac',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Chrysler',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Dodge',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Flat USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Honda',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Jeep',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Kia',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mazda USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mercedes-Benz',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Nissan USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Scion',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Subaru',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Tesla Motors',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Volkswagen USA',
-                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
-                dataLabels: false
-            }
-        ]
-    };
-    vm.data16 = vm.data15;
-    vm.data17 = vm.data13;
-    vm.data18 = vm.data11;
-    vm.data19 = {
-        chart: {
-            type: 'scatter',
-            zoomType: 'xy', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        credits: {enabled: false},
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'Jul 20, 2015 - Aug 18, 2015'
-        },
-        xAxis: {
-            title: {
-                enabled: true,
-                text: ''
-            },
-            startOnTick: true,
-            endOnTick: true,
-            showLastLabel: true
-        },
-        yAxis: {
-            title: {
-                text: 'Facebook Average<br/>Engagement Total per Post'
-            }
-        },
-        legend: {
-            layout: 'vertical',
-            align: 'left',
-            verticalAlign: 'top',
-            x: 100,
-            y: 70,
-            floating: true,
-            backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF',
-            borderWidth: 1
-        },
-        plotOptions: {
-            scatter: {
-                marker: {
-                    radius: 5,
-                    states: {
-                        hover: {
-                            enabled: true,
-                            lineColor: 'rgb(100,100,100)'
-                        }
-                    }
-                },
-                states: {
-                    hover: {
-                        marker: {
-                            enabled: false
-                        }
-                    }
-                },
-                tooltip: {
-                    headerFormat: '<b>{series.name}</b><br>',
-                    // pointFormat: '{point.x} cm, {point.y} kg'
-                }
-            }
-        },
-        series: [{
-            name: 'Lamborghini',
-            color: 'rgba(223, 83, 83, .5)',
-            data: [[161.2, 51.6], [167.5, 59.0], [159.5, 49.2], [157.0, 63.0], [155.8, 53.6],
-                [170.0, 59.0], [159.1, 47.6], [166.0, 69.8], [176.2, 66.8], [160.2, 75.2],
-                [172.5, 55.2], [170.9, 54.2], [172.9, 62.5], [153.4, 42.0], [160.0, 50.0],
-                [147.2, 49.8], [168.2, 49.2], [175.0, 73.2], [157.0, 47.8], [167.6, 68.8],
-                [159.5, 50.6], [175.0, 82.5], [166.8, 57.2], [176.5, 87.8], [170.2, 72.8],
-                [174.0, 54.5], [173.0, 59.8], [179.9, 67.3], [170.5, 67.8], [160.0, 47.0],
-                [156.2, 60.0], [149.9, 46.8], [169.5, 57.3], [160.0, 64.1], [175.3, 63.6],
-                [169.5, 67.3], [160.0, 75.5], [172.7, 68.2], [162.6, 61.4], [157.5, 76.8],
-                [176.5, 71.8], [164.4, 55.5], [160.7, 48.6], [174.0, 66.4], [163.8, 67.3]]
-
-        }, {
-            name: 'Fiat USA',
-            color: 'rgba(119, 152, 191, .5)',
-            data: [[174.0, 65.6], [175.3, 71.8], [193.5, 80.7], [186.5, 72.6], [187.2, 78.8],
-                [181.5, 74.8], [184.0, 86.4], [184.5, 78.4], [175.0, 62.0], [184.0, 81.6],
-                [193.0, 95.9], [171.4, 91.4], [177.8, 81.8], [177.8, 96.8], [167.6, 69.1],
-                [167.6, 82.7], [180.3, 75.5], [182.9, 79.5], [176.5, 73.6], [186.7, 91.8],
-                [188.0, 84.1], [188.0, 85.9], [177.8, 81.8], [174.0, 82.5], [177.8, 80.5],
-                [170.2, 62.3], [177.8, 82.7], [179.1, 79.1], [190.5, 98.2], [177.8, 84.1],
-                [180.3, 83.2], [180.3, 83.2]]
-        }]
-    };
-    vm.data21 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {categories: ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],crosshair: true},
-        yAxis: {min: 0,title: {text: 'Rainfall (mm)'            }},
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-            '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {column: {pointPadding: 0.2,borderWidth: 0}},
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
-
-        }]
-    };
-    vm.data22 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'DEMOGRAPHICS'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{showInLegend: false,
-            name: '',
-            colorByPoint: true,
-            data: [{
-                name: 'US',
-                y: 74000
-            },{
-                name: 'DE',
-                y: 22000
-            },{
-                name: 'CA',
-                y: 21000
-            },{
-                name: 'IT',
-                y: 18000
-            },{
-                name: 'Other',
-                y: 133000
-            }]
-        }]
-    };
-    vm.data23 = {
-        chart: {
-            type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'PEOPLE YOU REACHED'
-        },
-        xAxis: {
-            categories: ['1', '2', '3', '4', '5']
-        },
-        credits: {
-            enabled: false
-        },
-        series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
-        }, {
-            name: 'Jane',
-            data: [2, -2, -3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, -2, 5]
-        }]
-    };
-});
-
-function getRandomArray(cnt) {
-    var ary = [];
-    for (var i = 0; i < cnt; i++) {
-        ary[ary.length] = Math.random();
-    }
-    return ary;
-};
-'use strict';
-
 angular.module('app.biz').controller('SocialFacebookController', function ($state, $filter, SocialPages) {
     var vm = this;
     vm.socialPages = SocialPages;
@@ -10142,398 +8719,147 @@ angular.module('app.biz').controller('SocialFacebookController', function ($stat
 });
 'use strict';
 
-angular.module('app.biz').controller('TwitterController', function ($state) {
+angular.module('app.biz').controller('SocialGoogleplusController', function ($state, $filter, SocialPages) {
     var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
 
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialGoogleplus.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialGoogleplus.metrics'},
+        {title: 'Landscape Comparison', state: 'socialGoogleplus.landscapeComparison'},
+        {title: 'Bios', state: 'socialGoogleplus.bios'},
+        {title: 'My Rankings', state: 'socialGoogleplus.myRankings'}
     ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
-    };
 
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
     };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
-    };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Tweets?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
-    };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Tweets were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
-    };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Tweeted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
-    };
-    vm.data7 = {
-        chart: {type: 'line', height: 170},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {type: 'datetime',
-            dateTimeLabelFormats: { // don't display the dummy year
-                month: '%e. %b',
-                year: '%b'
-            },
-            title: {
-                text: 'Date'
-            }},
-        yAxis: {title: {text: ''}},
-        legend: {layout: 'vertical', align: 'right', verticalAlign: 'middle'},
-        plotOptions: {series: {stacking: 'normal'}},
-        series: [{
-            name: 'Eat24',
-            // Define the data points. All series have a dummy year
-            // of 1970/71 in order to be compared on the same x axis. Note
-            // that in JavaScript, months start at 0 for January, 1 for February etc.
-            data: [
-                [Date.UTC(2016, 6, 1), 190],
-                [Date.UTC(2016, 6, 4), 130],
-                [Date.UTC(2016, 6, 7), 115],
-                [Date.UTC(2016, 6, 10), 155],
-                [Date.UTC(2016, 6, 13), 230],
-                [Date.UTC(2016, 6, 16), 145],
-                [Date.UTC(2016, 6, 19), 143],
-                [Date.UTC(2016, 6, 22), 148],
-                [Date.UTC(2016, 6, 25), 150],
-                [Date.UTC(2016, 6, 28), 170]
-            ]
-        }]
-    };
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
 });
 'use strict';
 
-angular.module('app.biz').controller('YoutubeController', function ($state) {
+angular.module('app.biz').controller('SocialInstagramController', function ($state, $filter, SocialPages) {
     var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
 
-    vm.socialPages = [
-        {id: 1, title: 'Cross-Channel', url: 'crossChannels'},
-        {id: 2, title: 'Facebook', url: 'socialFacebook'},
-        {id: 3, title: 'Twitter', url: 'socialTwitter'},
-        {id: 6, title: 'YouTube', url: 'socialYoutube'},
-        {id: 5, title: 'Google+', url: 'socialGoogleplus'},
-        {id: 7, title: 'Instagram', url: 'socialInstagram'},
-        {id: 8, title: 'Pinterest', url: 'socialPinterest'},
-        {id: 4, title: 'LinkedIn', url: 'socialLinkedin'}
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialInstagram.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialInstagram.metrics'},
+        {title: 'Landscape Comparison', state: 'socialInstagram.landscapeComparison'},
+        {title: 'Bios', state: 'socialInstagram.bios'},
+        {title: 'My Rankings', state: 'socialInstagram.myRankings'}
     ];
-    vm.openPage = function (url) {
-        $state.go('app.biz.' + url);
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
+    };
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+});
+'use strict';
+
+angular.module('app.biz').controller('SocialLinkedinController', function ($state, $filter, SocialPages) {
+    var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
     };
 
-    vm.data1 = {
-        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Social Audience',
-                'Eat24'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
-        }]
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialLinkedin.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialLinkedin.metrics'},
+        {title: 'Landscape Comparison', state: 'socialLinkedin.landscapeComparison'},
+        {title: 'Bios', state: 'socialLinkedin.bios'},
+        {title: 'My Rankings', state: 'socialLinkedin.myRankings'}
+    ];
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
     };
-    vm.data2 = vm.data1;
-    vm.data3 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'GrubHub',
-                'Postmates',
-                '<span style="color: black; font-weight: bold;">Eat24</span>',
-                'Munchery',
-                'BiteSquad',
-                'UberEATS'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
-        series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 9, 8, 7, 7]
-        }]
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+});
+'use strict';
+
+angular.module('app.biz').controller('SocialPinterestController', function ($state, $filter, SocialPages) {
+    var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
     };
-    vm.data4 = {
-        chart: {type: 'bar', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'Who has the top 50 Posts?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Porsche(North America)', 'Mazda USA', 'Mitsubishi Motors', 'Mercedes-Benz', 'Kia']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [7, 6, 6, 4, 4]
-        }]
+
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialPinterest.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialPinterest.metrics'},
+        {title: 'Landscape Comparison', state: 'socialPinterest.landscapeComparison'},
+        {title: 'Bios', state: 'socialPinterest.bios'},
+        {title: 'My Rankings', state: 'socialPinterest.myRankings'}
+    ];
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
     };
-    vm.data5 = {
-        chart: {
-            plotBackgroundColor: null,
-            plotBorderWidth: null,
-            plotShadow: false,
-            type: 'pie', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
-        title: {
-            text: ''
-        },
-        subtitle: {
-            text: 'What type of Posts were they?'
-        },
-        tooltip: {
-            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-        },
-        plotOptions: {
-            pie: {
-                allowPointSelect: true,
-                cursor: 'pointer',
-                dataLabels: {
-                    enabled: true,
-                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
-                    style: {
-                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
-                    }
-                }
-            }
-        },
-        series: [{
-            name: 'Brands',
-            colorByPoint: true,
-            data: [{
-                name: 'Video',
-                y: 100
-            }]
-        }]
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+});
+'use strict';
+
+angular.module('app.biz').controller('SocialTwitterController', function ($state, $filter, SocialPages) {
+    var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
     };
-    vm.data6 = {
-        chart: {type: 'column', height: 200, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'When were they Posted?'},
-        xAxis: {
-            lineColor: 'black',
-            categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        colors: ['#6b7889'],
-        series: [{
-            showInLegend: false,
-            name: '',
-            data: [1, 6, 7, 10, 18, 8, 0]
-        }]
+
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialTwitter.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialTwitter.metrics'},
+        {title: 'Landscape Comparison', state: 'socialTwitter.landscapeComparison'},
+        {title: 'Bios', state: 'socialTwitter.bios'},
+        {title: 'My Rankings', state: 'socialTwitter.myRankings'}
+    ];
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
     };
-    vm.data11 = {
-        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: 'As of Aug 18, 2015'},
-        xAxis: {
-            lineColor: 'black', categories: [
-                'Mercedes-Benz',
-                'BMW',
-                'Ferrari',
-                'Nissan USA',
-                'Lamborghini',
-                'MINI USA',
-                'Porsche(North America)',
-                'Audi USA',
-                'Mazda USA',
-                'Hyundai USA',
-                'Tesla Motors',
-                'Fiat USA',
-                'Chrysler',
-                'Scion'
-            ]
-        },
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#69788d'],
-        series: [{
-            showInLegend: false,
-            name: 'Youtube',
-            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
-        }]
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+});
+'use strict';
+
+angular.module('app.biz').controller('SocialYoutubeController', function ($state, $filter, SocialPages) {
+    var vm = this;
+    vm.socialPages = SocialPages;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
     };
+
+    vm.tabs = [
+        {title: 'Social Posts', state: 'socialYoutube.socialPosts', active: true},
+        {title: 'Metrics', state: 'socialYoutube.metrics'},
+        {title: 'Landscape Comparison', state: 'socialYoutube.landscapeComparison'},
+        {title: 'Bios', state: 'socialYoutube.bios'},
+        {title: 'My Rankings', state: 'socialYoutube.myRankings'}
+    ];
+
+    vm.selectTab = function (tab) {
+        $filter('filter')(vm.tabs, {active:true}, true)[0]['active'] = false;
+        tab.active = true;
+        vm.go(tab.state);
+    };
+    vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
 });
 'use strict';
 
@@ -15822,7 +14148,3607 @@ angular.module('app.biz').controller('CrossChannelsSocialPostsController', funct
 });
 'use strict';
 
+angular.module('app.biz').controller('FacebookBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('FacebookMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
 angular.module('app.biz').controller('FacebookSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('GoogleplusSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('InstagramSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('LinkedinSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('PinterestSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('TwitterSocialPostsController', function ($state, Timezones) {
+    var vm = this;
+    vm.timezones = Timezones;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.couldData = [
+        {text: "#Djezzy", weight: 30, link: "https://google.com"},
+        {text: "#djezzymodem", weight: 20, link: "https://google.com"},
+        {text: "#algerie", weight: 6, link: "https://google.com"},
+        {text: "#game", weight: 7, link: "https://google.com"},
+        {text: "#votre", weight: 5, link: "https://google.com"},
+        {text: "#djezzy718", weight: 18, link: "https://google.com"},
+        {text: "#4millionsfans", weight: 3, link: "https://google.com"},
+        {text: "#djezzy", weight: 17, link: "https://google.com"},
+        {text: "#franchi", weight: 24, link: "https://google.com"},
+        {text: "#trouver", weight: 26, link: "https://google.com"}
+    ];
+
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.socialMedias = [
+        {id: 1, title: 'Instagram', icon: 'instagram'},
+        {id: 2, title: 'Google+', icon: 'google-plus'},
+        {id: 3, title: 'Facebook', icon: 'facebook'},
+        {id: 4, title: 'Twitter', icon: 'twitter'},
+        {id: 5, title: 'Youtube', icon: 'youtube'},
+        {id: 6, title: 'Pinterest', icon: 'pinterest'}
+    ];
+    vm.data1 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Facebook',
+                y: 90
+            }, {
+                name: 'Twitter',
+                y: 10
+            }]
+        }]
+    };
+    vm.data2 = {
+        chart: {
+            type: 'pie', height: 235, backgroundColor: 'rgba(255, 255, 255, 0.5)'
+        },
+        credits: {enabled: false},
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        tooltip: {},
+        series: [{
+            name: 'Brands',
+            data: [{
+                name: 'Photo',
+                y: 90
+            }, {
+                name: 'Link',
+                y: 10
+            }]
+        }]
+    };
+    vm.data3 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [2.67, 3, 4.67, 3.67, 4.67, 2.33, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [1.5, 1, 2, 2, 3, 2, 0]
+        }]
+    };
+    vm.data5 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.004, 0.036, 0.053, 0.035, 0, 0.015, 0.031, 0.026, 0.058, 0.038, 0.21, 0.002, 0.008, 0, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.022, 0, 0.32, 0, 0, 0.34, 0, 0, 0.045, 0.37, 0, 0, 0, 0]
+        }]
+    };
+    vm.data6 = {
+        chart: {type: 'spline'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']},
+        yAxis: {
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '%';
+                }
+            }
+        },
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0.030,0.026,0.040,0.048,0.092,0.033,0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0.035,0.003,0.048,0.051,0.14,0.020,0]
+        }]
+    };
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeBiosController', function () {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeDetailsActivityController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeDetailsAnalyzeController', function ($state) {
+    var vm = this;
+    vm.pageTitle = $state.params.pageTitle;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeDetailsBiosController', function ($state) {
+    var vm = this;
+
+    vm.data1 = [
+        ["Ooredoo", "OoredooDZ", "Ooredoo, opérateur de téléphonie mobile en Algérie, compte actuellement plus de 13,8 millions d’abonnés. www.ooredoo.dz", "104"],
+        ["Mobilis", "Mobilis", "Bienvenue sur la page officielle du 1er opérateur de téléphonie mobile en Algérie qui compte aujourd'hui plus de 15 millions d'abonnés.", "65"],
+        ["DJEZZY", "DJEZZY", "Bienvenue sur la page officielle de Djezzy, Opérateur leader de la téléphonie mobile et du Digital en Algérie.", "113"]
+    ];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeDetailsHashtagsController', function ($state) {
+    var vm = this;
+
+    vm.detailMode = true;
+
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'POSTS USING', acronym: 'Posts Using'},
+        {id: 3, title: 'COMPANIES USING', acronym: 'Companies Using', visible: true},
+        {id: 4, title: 'ENGAGEMENT RATE / POST', acronym: 'Eng.Rate/Post'},
+        {id: 5, title: 'ENGAGEMENT TOTAL / POST', acronym: 'Eng.Total/Post'},
+        {id: 5, title: 'POTENTIAL REACH', acronym: 'Potential Reach'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeDetailsPostsController', function ($state) {
+    var vm = this;
+    vm.gridColumns = [
+        {
+            id: 1, title: 'ENGAGEMENT TOTAL', acronym: 'Eng.Total', visible: true,
+            columns: [
+                {id: 11, title: 'APPLAUSE', acronym: 'Applause'},
+                {id: 12, title: 'CONVERSATION', acronym: 'Conversation'},
+                {id: 13, title: 'AMPLIFICATION', acronym: 'Amplification'}
+            ]
+        },
+        {id: 2, title: 'AUDIENCE', acronym: 'Audience'},
+        {id: 3, title: 'ENGAGEMENT RATE', acronym: 'Eng.Rate', visible: true},
+        {id: 4, title: 'POST TYPE', acronym: 'Post Type'},
+        {id: 5, title: 'PRESENCE HANDLE', acronym: 'Presence Handle'}
+    ];
+    vm.columnsForGrid = [];
+    for (var col in vm.gridColumns) {
+        vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col];
+        if (typeof vm.gridColumns[col].columns == 'object') {
+            for (var c in vm.gridColumns[col].columns) {
+                vm.columnsForGrid[vm.columnsForGrid.length] = vm.gridColumns[col].columns[c];
+            }
+        }
+    }
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeLandscapeComparisonController', function () {
+    var vm = this;
+    vm.sdate = moment().subtract(7, 'd').format('YYYY-MM-DD');
+    vm.edate = moment().format('YYYY-MM-DD');
+
+    vm.data1 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Social Audience'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100]
+        }, {
+            name: 'Facebook',
+            data: [40, 12]
+        }, {
+            name: 'Google+',
+            data: [5, 8]
+        }, {
+            name: 'YouTube',
+            data: [7, 0]
+        }, {
+            name: 'Instagram',
+            data: [20, 10]
+        }]
+    };
+    vm.data2 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'GrubHub',
+                'Postmates',
+                '<span style="color: black; font-weight: bold;">Eat24</span>',
+                'Munchery',
+                'BiteSquad',
+                'UberEATS'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 40, 23, 43, 10]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20, 3, 45, 2]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 9, 5, 6, 4]
+        }, {
+            name: 'YouTube',
+            data: [7, 0, 3, 4, 5, 6]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 9, 8, 7, 7]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeMetricsController', function ($state) {
+    var vm = this;
+    vm.go = function (state, params) {
+        $state.go('app.biz.' + state, params);
+    };
+    vm.data1 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Ooredoo',
+                'DJEZZY',
+                'Mobilis'
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        series: [{
+            name: 'Twitter',
+            data: [130, 100, 60]
+        }, {
+            name: 'Facebook',
+            data: [40, 12, 20]
+        }, {
+            name: 'Google+',
+            data: [5, 8, 13]
+        }, {
+            name: 'YouTube',
+            data: [7, 4, 12]
+        }, {
+            name: 'Instagram',
+            data: [20, 10, 14]
+        }]
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeMyRankingsController', function () {
+    var vm = this;
+
+    vm.medias = [
+        {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
+        {id: 2, title: 'Twitter', icon: 'twitter', color: '#55acee'},
+        {id: 3, title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
+        {id: 4, title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
+        {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+    ];
+
+    vm.sortType = 'total'; // set the default sort type
+    vm.sortReverse = false;  // set the default sort order
+
+    vm.panes = [
+        {id: 'audience', title: 'Audience', active: 'active'},
+        {id: 'activity', title: 'Activity'},
+        {id: 'engagement', title: 'Engagement'}
+    ]
+    vm.sources = [];
+
+    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
+    for (var s = 1; s <= 4; s++) {
+        var colors = [];
+        var series = [];
+        for (var m in vm.medias) {
+            series[series.length] = {
+                showInLegend: false,
+                name: [vm.medias[m].title],
+                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
+            };
+            colors[colors.length] = vm.medias[m].color;
+        }
+        vm.sources[vm.sources.length] = {
+            id: s,
+            title: websites[s],
+
+            total: Math.round(Math.random() * 100 - Math.random() * 100),
+            change: Math.round(Math.random() * 100 - Math.random() * 100),
+            growth: Math.round(Math.random() * 100),
+
+            chart: {
+                chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+                credits: {enabled: false},
+                title: {text: ''},
+                subtitle: {text: ''},
+                xAxis: {lineColor: 'black', categories: ['']},
+                exporting: {enabled: false},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                legend: {reversed: false},
+                plotOptions: {series: {stacking: 'normal'}},
+                colors: colors,
+                series: series
+            }
+        };
+    }
+
+    vm.legend = {
+        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {lineColor: 'black', categories: ['']},
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: colors,
+            series: series
+    };
+});
+'use strict';
+
+angular.module('app.biz').controller('YoutubeSocialPostsController', function ($state, Timezones) {
     var vm = this;
     vm.timezones = Timezones;
     vm.gridColumns = [
