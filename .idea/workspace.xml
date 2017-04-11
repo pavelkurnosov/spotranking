@@ -2,23 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/FacebookCtrl1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/GoogleplusCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/InstagramCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/LinkedinCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/PinterestCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/TwitterCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/controllers/social/youtubeCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/bios.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/my-ranking.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/cross-channel-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/insights.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/facebook-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/googleplus-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/googleplus-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/googleplus-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/instagram-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/instagram-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/instagram-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/pinterest-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/pinterest-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/pinterest-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/by-company.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentioners.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/mentions.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/twitter-templates/top-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/youtube-templates/detailed-metric.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/youtube-templates/overview.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/biz/views/youtube-templates/top-content.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/module.js" afterPath="$PROJECT_DIR$/app/biz/module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/twitter.html" afterPath="$PROJECT_DIR$/app/biz/views/social/twitter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/youtube.html" afterPath="$PROJECT_DIR$/app/biz/views/social/youtube.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -48,101 +65,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="YoutubeMetricsCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMetricsCtrl.js">
+      <file leaf-file-name="landscape-comparison.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YoutubeMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TwitterMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PinterestMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LinkedinMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InstagramMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GoogleplusMyRankingCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacebookMetricsCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMetricsCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FacebookMyRankingCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMyRankingCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YoutubeSocialPostsCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeSocialPostsCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="45" lean-forward="false" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            <state relative-caret-position="357">
+              <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -159,12 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>View on Facebook</find>
-      <find>id=</find>
-      <find>&lt;ex</find>
-      <find>hasht</find>
-      <find>+</find>
-      <find>data3</find>
       <find>e 8 most broadly used hashtags,</find>
       <find>'</find>
       <find>...</find>
@@ -189,6 +110,12 @@
       <find>googleplus</find>
       <find>socialgoogle</find>
       <find>TwitterSocialPostsController</find>
+      <find>Facebook</find>
+      <find>facebook</find>
+      <find>twitter</find>
+      <find>faceb</find>
+      <find>tw</find>
+      <find>face</find>
     </findStrings>
     <replaceStrings>
       <replace>Google+</replace>
@@ -213,12 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsActivityCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsAnalizeCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsBiosCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsHashtagsCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsPostCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMetricsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramSocialPostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinBiosCtrl.js" />
@@ -264,6 +185,12 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMyRankingCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusMyRankingCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMyRankingCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html" />
       </list>
     </option>
   </component>
@@ -382,7 +309,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -404,7 +331,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -430,7 +357,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -460,7 +387,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -490,7 +417,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -520,7 +447,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -550,7 +477,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -580,7 +507,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -610,7 +537,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="views" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -619,6 +546,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="facebook" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spotranking" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biz" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -746,12 +695,12 @@
       <workItem from="1491554835740" duration="19650000" />
       <workItem from="1491581039343" duration="29916000" />
       <workItem from="1491753747350" duration="31584000" />
-      <workItem from="1491925460502" duration="3625000" />
+      <workItem from="1491925460502" duration="4397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="408861000" />
+    <option name="totallyTimeSpent" value="409633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -799,56 +748,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsAnalizeCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsBiosCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsHashtagsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramDetailsPostCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding>
-            <marker date="1491928893923" expanded="true" signature="1645:1677" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMetricsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramSocialPostsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1211,8 +1110,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMyRankingCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="64" column="145" lean-forward="false" selection-start-line="64" selection-start-column="145" selection-end-line="64" selection-end-column="145" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="64" column="147" lean-forward="false" selection-start-line="64" selection-start-column="147" selection-end-line="64" selection-end-column="147" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="60" column="49" lean-forward="true" selection-start-line="60" selection-start-column="49" selection-end-line="60" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="65" column="45" lean-forward="true" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="70" column="54" lean-forward="false" selection-start-line="70" selection-start-column="53" selection-end-line="70" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
           <folding />
         </state>
       </provider>
