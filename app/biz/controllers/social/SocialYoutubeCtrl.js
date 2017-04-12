@@ -11,7 +11,7 @@ angular.module('app.biz').controller('SocialYoutubeController', function ($state
         {title: 'Social Posts', state: 'socialYoutube.socialPosts', active: true},
         {title: 'Metrics', state: 'socialYoutube.metrics'},
         {title: 'Landscape Comparison', state: 'socialYoutube.landscapeComparison'},
-        {title: 'Bios', state: 'socialYoutube.bios'},
+        // {title: 'Bios', state: 'socialYoutube.bios'},
         {title: 'My Rankings', state: 'socialYoutube.myRankings'}
     ];
 

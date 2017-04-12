@@ -11,7 +11,7 @@ angular.module('app.biz').controller('SocialFacebookController', function ($stat
         {title: 'Social Posts', state: 'socialFacebook.socialPosts', active: true},
         {title: 'Metrics', state: 'socialFacebook.metrics'},
         {title: 'Landscape Comparison', state: 'socialFacebook.landscapeComparison'},
-        {title: 'Bios', state: 'socialFacebook.bios'},
+        // {title: 'Bios', state: 'socialFacebook.bios'},
         {title: 'My Rankings', state: 'socialFacebook.myRankings'}
     ];
 

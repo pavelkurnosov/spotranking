@@ -11,7 +11,7 @@ angular.module('app.biz').controller('SocialTwitterController', function ($state
         {title: 'Social Posts', state: 'socialTwitter.socialPosts', active: true},
         {title: 'Metrics', state: 'socialTwitter.metrics'},
         {title: 'Landscape Comparison', state: 'socialTwitter.landscapeComparison'},
-        {title: 'Bios', state: 'socialTwitter.bios'},
+        // {title: 'Bios', state: 'socialTwitter.bios'},
         {title: 'My Rankings', state: 'socialTwitter.myRankings'}
     ];
 

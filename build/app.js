@@ -2835,6 +2835,16 @@ angular.module('app.chat', ['ngSanitize'])
 
     angular.module('SmartAdmin.UI', []);
 })();
+'use strict';
+
+angular.module('app').controller('MainController', function ($interval) {
+    var vm = this;
+    vm.dateTime = moment().format("dddd, MMMM Do YYYY, hh:mm:ss");
+    $interval(function () {
+        vm.dateTime = moment().format("dddd, MMMM Do YYYY, hh:mm:ss");
+    }, 1000);
+});
+
 angular.module("app").run(["$templateCache", function($templateCache) {$templateCache.put("app/dashboard/live-feeds.tpl.html","<div jarvis-widget id=\"live-feeds-widget\" data-widget-togglebutton=\"false\" data-widget-editbutton=\"false\"\n     data-widget-fullscreenbutton=\"false\" data-widget-colorbutton=\"false\" data-widget-deletebutton=\"false\">\n<!-- widget options:\nusage: <div class=\"jarviswidget\" id=\"wid-id-0\" data-widget-editbutton=\"false\">\n\ndata-widget-colorbutton=\"false\"\ndata-widget-editbutton=\"false\"\ndata-widget-togglebutton=\"false\"\ndata-widget-deletebutton=\"false\"\ndata-widget-fullscreenbutton=\"false\"\ndata-widget-custombutton=\"false\"\ndata-widget-collapsed=\"true\"\ndata-widget-sortable=\"false\"\n\n-->\n<header>\n    <span class=\"widget-icon\"> <i class=\"glyphicon glyphicon-stats txt-color-darken\"></i> </span>\n\n    <h2>Live Feeds </h2>\n\n    <ul class=\"nav nav-tabs pull-right in\" id=\"myTab\">\n        <li class=\"active\">\n            <a data-toggle=\"tab\" href=\"#s1\"><i class=\"fa fa-clock-o\"></i> <span class=\"hidden-mobile hidden-tablet\">Live Stats</span></a>\n        </li>\n\n        <li>\n            <a data-toggle=\"tab\" href=\"#s2\"><i class=\"fa fa-facebook\"></i> <span class=\"hidden-mobile hidden-tablet\">Social Network</span></a>\n        </li>\n\n        <li>\n            <a data-toggle=\"tab\" href=\"#s3\"><i class=\"fa fa-dollar\"></i> <span class=\"hidden-mobile hidden-tablet\">Revenue</span></a>\n        </li>\n    </ul>\n\n</header>\n\n<!-- widget div-->\n<div class=\"no-padding\">\n\n    <div class=\"widget-body\">\n        <!-- content -->\n        <div id=\"myTabContent\" class=\"tab-content\">\n            <div class=\"tab-pane fade active in padding-10 no-padding-bottom\" id=\"s1\">\n                <div class=\"row no-space\">\n                    <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n														<span class=\"demo-liveupdate-1\"> <span\n                                                                class=\"onoffswitch-title\">Live switch</span> <span\n                                                                class=\"onoffswitch\">\n																<input type=\"checkbox\" name=\"start_interval\" ng-model=\"autoUpdate\"\n                                                                       class=\"onoffswitch-checkbox\" id=\"start_interval\">\n																<label class=\"onoffswitch-label\" for=\"start_interval\">\n                                                                    <span class=\"onoffswitch-inner\"\n                                                                          data-swchon-text=\"ON\"\n                                                                          data-swchoff-text=\"OFF\"></span>\n                                                                    <span class=\"onoffswitch-switch\"></span>\n                                                                </label> </span> </span>\n\n                        <div id=\"updating-chart\" class=\"chart-large txt-color-blue\" flot-basic flot-data=\"liveStats\" flot-options=\"liveStatsOptions\"></div>\n\n                    </div>\n                    <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4 show-stats\">\n\n                        <div class=\"row\">\n                            <div class=\"col-xs-6 col-sm-6 col-md-12 col-lg-12\"><span class=\"text\"> My Tasks <span\n                                    class=\"pull-right\">130/200</span> </span>\n\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar bg-color-blueDark\" style=\"width: 65%;\"></div>\n                                </div>\n                            </div>\n                            <div class=\"col-xs-6 col-sm-6 col-md-12 col-lg-12\"><span class=\"text\"> Transfered <span\n                                    class=\"pull-right\">440 GB</span> </span>\n\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar bg-color-blue\" style=\"width: 34%;\"></div>\n                                </div>\n                            </div>\n                            <div class=\"col-xs-6 col-sm-6 col-md-12 col-lg-12\"><span class=\"text\"> Bugs Squashed<span\n                                    class=\"pull-right\">77%</span> </span>\n\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar bg-color-blue\" style=\"width: 77%;\"></div>\n                                </div>\n                            </div>\n                            <div class=\"col-xs-6 col-sm-6 col-md-12 col-lg-12\"><span class=\"text\"> User Testing <span\n                                    class=\"pull-right\">7 Days</span> </span>\n\n                                <div class=\"progress\">\n                                    <div class=\"progress-bar bg-color-greenLight\" style=\"width: 84%;\"></div>\n                                </div>\n                            </div>\n\n                            <span class=\"show-stat-buttons\"> <span class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6\"> <a\n                                    href-void class=\"btn btn-default btn-block hidden-xs\">Generate PDF</a> </span> <span\n                                    class=\"col-xs-12 col-sm-6 col-md-6 col-lg-6\"> <a href-void\n                                                                                     class=\"btn btn-default btn-block hidden-xs\">Report\n                                a bug</a> </span> </span>\n\n                        </div>\n\n                    </div>\n                </div>\n\n                <div class=\"show-stat-microcharts\" data-sparkline-container data-easy-pie-chart-container>\n                    <div class=\"col-xs-12 col-sm-3 col-md-3 col-lg-3\">\n\n                        <div class=\"easy-pie-chart txt-color-orangeDark\" data-percent=\"33\" data-pie-size=\"50\">\n                            <span class=\"percent percent-sign\">35</span>\n                        </div>\n                        <span class=\"easy-pie-title\"> Server Load <i class=\"fa fa-caret-up icon-color-bad\"></i> </span>\n                        <ul class=\"smaller-stat hidden-sm pull-right\">\n                            <li>\n                                <span class=\"label bg-color-greenLight\"><i class=\"fa fa-caret-up\"></i> 97%</span>\n                            </li>\n                            <li>\n                                <span class=\"label bg-color-blueLight\"><i class=\"fa fa-caret-down\"></i> 44%</span>\n                            </li>\n                        </ul>\n                        <div class=\"sparkline txt-color-greenLight hidden-sm hidden-md pull-right\"\n                             data-sparkline-type=\"line\" data-sparkline-height=\"33px\" data-sparkline-width=\"70px\"\n                             data-fill-color=\"transparent\">\n                            130, 187, 250, 257, 200, 210, 300, 270, 363, 247, 270, 363, 247\n                        </div>\n                    </div>\n                    <div class=\"col-xs-12 col-sm-3 col-md-3 col-lg-3\">\n                        <div class=\"easy-pie-chart txt-color-greenLight\" data-percent=\"78.9\" data-pie-size=\"50\">\n                            <span class=\"percent percent-sign\">78.9 </span>\n                        </div>\n                        <span class=\"easy-pie-title\"> Disk Space <i class=\"fa fa-caret-down icon-color-good\"></i></span>\n                        <ul class=\"smaller-stat hidden-sm pull-right\">\n                            <li>\n                                <span class=\"label bg-color-blueDark\"><i class=\"fa fa-caret-up\"></i> 76%</span>\n                            </li>\n                            <li>\n                                <span class=\"label bg-color-blue\"><i class=\"fa fa-caret-down\"></i> 3%</span>\n                            </li>\n                        </ul>\n                        <div class=\"sparkline txt-color-blue hidden-sm hidden-md pull-right\" data-sparkline-type=\"line\"\n                             data-sparkline-height=\"33px\" data-sparkline-width=\"70px\" data-fill-color=\"transparent\">\n                            257, 200, 210, 300, 270, 363, 130, 187, 250, 247, 270, 363, 247\n                        </div>\n                    </div>\n                    <div class=\"col-xs-12 col-sm-3 col-md-3 col-lg-3\">\n                        <div class=\"easy-pie-chart txt-color-blue\" data-percent=\"23\" data-pie-size=\"50\">\n                            <span class=\"percent percent-sign\">23 </span>\n                        </div>\n                        <span class=\"easy-pie-title\"> Transfered <i class=\"fa fa-caret-up icon-color-good\"></i></span>\n                        <ul class=\"smaller-stat hidden-sm pull-right\">\n                            <li>\n                                <span class=\"label bg-color-darken\">10GB</span>\n                            </li>\n                            <li>\n                                <span class=\"label bg-color-blueDark\"><i class=\"fa fa-caret-up\"></i> 10%</span>\n                            </li>\n                        </ul>\n                        <div class=\"sparkline txt-color-darken hidden-sm hidden-md pull-right\"\n                             data-sparkline-type=\"line\" data-sparkline-height=\"33px\" data-sparkline-width=\"70px\"\n                             data-fill-color=\"transparent\">\n                            200, 210, 363, 247, 300, 270, 130, 187, 250, 257, 363, 247, 270\n                        </div>\n                    </div>\n                    <div class=\"col-xs-12 col-sm-3 col-md-3 col-lg-3\">\n                        <div class=\"easy-pie-chart txt-color-darken\" data-percent=\"36\" data-pie-size=\"50\">\n                            <span class=\"percent degree-sign\">36 <i class=\"fa fa-caret-up\"></i></span>\n                        </div>\n                        <span class=\"easy-pie-title\"> Temperature <i\n                                class=\"fa fa-caret-down icon-color-good\"></i></span>\n                        <ul class=\"smaller-stat hidden-sm pull-right\">\n                            <li>\n                                <span class=\"label bg-color-red\"><i class=\"fa fa-caret-up\"></i> 124</span>\n                            </li>\n                            <li>\n                                <span class=\"label bg-color-blue\"><i class=\"fa fa-caret-down\"></i> 40 F</span>\n                            </li>\n                        </ul>\n                        <div class=\"sparkline txt-color-red hidden-sm hidden-md pull-right\" data-sparkline-type=\"line\"\n                             data-sparkline-height=\"33px\" data-sparkline-width=\"70px\" data-fill-color=\"transparent\">\n                            2700, 3631, 2471, 2700, 3631, 2471, 1300, 1877, 2500, 2577, 2000, 2100, 3000\n                        </div>\n                    </div>\n                </div>\n\n            </div>\n            <!-- end s1 tab pane -->\n\n            <div class=\"tab-pane fade\" id=\"s2\">\n                <div class=\"widget-body-toolbar bg-color-white\">\n\n                    <form class=\"form-inline\" role=\"form\">\n\n                        <div class=\"form-group\">\n                            <label class=\"sr-only\" for=\"s123\">Show From</label>\n                            <input type=\"email\" class=\"form-control input-sm\" id=\"s123\" placeholder=\"Show From\">\n                        </div>\n                        <div class=\"form-group\">\n                            <input type=\"email\" class=\"form-control input-sm\" id=\"s124\" placeholder=\"To\">\n                        </div>\n\n                        <div class=\"btn-group hidden-phone pull-right\">\n                            <a class=\"btn dropdown-toggle btn-xs btn-default\" data-toggle=\"dropdown\"><i\n                                    class=\"fa fa-cog\"></i> More <span class=\"caret\"> </span> </a>\n                            <ul class=\"dropdown-menu pull-right\">\n                                <li>\n                                    <a href-void><i class=\"fa fa-file-text-alt\"></i> Export to PDF</a>\n                                </li>\n                                <li>\n                                    <a href-void><i class=\"fa fa-question-sign\"></i> Help</a>\n                                </li>\n                            </ul>\n                        </div>\n\n                    </form>\n\n                </div>\n                <div class=\"padding-10\">\n                    <div id=\"statsChart\" class=\"chart-large has-legend-unique\" flot-basic flot-data=\"statsData\" flot-options=\"statsDisplayOptions\"></div>\n                </div>\n\n            </div>\n            <!-- end s2 tab pane -->\n\n            <div class=\"tab-pane fade\" id=\"s3\">\n\n                <div class=\"widget-body-toolbar bg-color-white smart-form\" id=\"rev-toggles\">\n\n                    <div class=\"inline-group\">\n\n                        <label for=\"gra-0\" class=\"checkbox\">\n                            <input type=\"checkbox\" id=\"gra-0\" ng-model=\"targetsShow\">\n                            <i></i> Target </label>\n                        <label for=\"gra-1\" class=\"checkbox\">\n                            <input type=\"checkbox\" id=\"gra-1\" ng-model=\"actualsShow\">\n                            <i></i> Actual </label>\n                        <label for=\"gra-2\" class=\"checkbox\">\n                            <input type=\"checkbox\" id=\"gra-2\" ng-model=\"signupsShow\">\n                            <i></i> Signups </label>\n                    </div>\n\n                    <div class=\"btn-group hidden-phone pull-right\">\n                        <a class=\"btn dropdown-toggle btn-xs btn-default\" data-toggle=\"dropdown\"><i\n                                class=\"fa fa-cog\"></i> More <span class=\"caret\"> </span> </a>\n                        <ul class=\"dropdown-menu pull-right\">\n                            <li>\n                                <a href-void><i class=\"fa fa-file-text-alt\"></i> Export to PDF</a>\n                            </li>\n                            <li>\n                                <a href-void><i class=\"fa fa-question-sign\"></i> Help</a>\n                            </li>\n                        </ul>\n                    </div>\n\n                </div>\n\n                <div class=\"padding-10\">\n                    <div id=\"flotcontainer\" class=\"chart-large has-legend-unique\" flot-basic flot-data=\"revenewData\" flot-options=\"revenewDisplayOptions\" ></div>\n                </div>\n            </div>\n            <!-- end s3 tab pane -->\n        </div>\n\n        <!-- end content -->\n    </div>\n\n</div>\n<!-- end widget div -->\n</div>\n");
 $templateCache.put("app/layout/layout.tpl.html","<!-- HEADER -->\n<div data-smart-include=\"app/layout/partials/header.tpl.html\" class=\"placeholder-header\"></div>\n<!-- END HEADER -->\n\n\n<!-- Left panel : Navigation area -->\n<!-- Note: This width of the aside area can be adjusted through LESS variables -->\n<div data-smart-include=\"app/layout/partials/navigation.tpl.html\" class=\"placeholder-left-panel\"></div>\n\n<!-- END NAVIGATION -->\n\n<!-- MAIN PANEL -->\n<div id=\"main\" role=\"main\">\n    <demo-states></demo-states>\n    <!-- RIBBON -->\n    <!--<div id=\"ribbon\">-->\n\n        <!-- breadcrumb -->\n        <!--<state-breadcrumbs></state-breadcrumbs>-->\n        <!-- end breadcrumb -->\n\n\n    <!--</div>-->\n    <!-- END RIBBON -->\n\n\n    <div data-smart-router-animation-wrap=\"content content@app\" data-wrap-for=\"#content\">\n        <div data-ui-view=\"content\" data-autoscroll=\"false\"></div>\n    </div>\n\n</div>\n<!-- END MAIN PANEL -->\n\n<!-- PAGE FOOTER -->\n<div data-smart-include=\"app/layout/partials/footer.tpl.html\"></div>\n\n<div data-smart-include=\"app/layout/shortcut/shortcut.tpl.html\"></div>\n\n<!-- END PAGE FOOTER -->\n\n\n");
 $templateCache.put("app/auth/directives/login-info.tpl.html","<div class=\"login-info ng-cloak\">\n    <span> <!-- User image size is adjusted inside CSS, it should stay as it -->\n        <a  href=\"\" toggle-shortcut>\n            <img ng-src=\"{{user.picture}}\" alt=\"me\" class=\"online\">\n                <span>{{user.username}}\n                </span>\n            <i class=\"fa fa-angle-down\"></i>\n        </a>\n     </span>\n</div>");
@@ -2861,16 +2871,6 @@ $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-
 $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-profile-form.tpl.html","<form id=\"profileForm\">\n\n    <fieldset>\n        <legend>\n            Default Form Elements\n        </legend>\n        <div class=\"form-group\">\n            <label>Email address</label>\n            <input type=\"text\" class=\"form-control\" name=\"email\" />\n        </div>\n    </fieldset>\n    <fieldset>\n        <div class=\"form-group\">\n            <label>Password</label>\n            <input type=\"password\" class=\"form-control\" name=\"password\" />\n        </div>\n    </fieldset>\n\n    <div class=\"form-actions\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <button class=\"btn btn-default\" type=\"submit\">\n                    <i class=\"fa fa-eye\"></i>\n                    Validate\n                </button>\n            </div>\n        </div>\n    </div>\n</form>\n");
 $templateCache.put("app/_common/forms/directives/bootstrap-validation/bootstrap-toggling-form.tpl.html","<form id=\"togglingForm\" method=\"post\" class=\"form-horizontal\">\n\n    <fieldset>\n        <legend>\n            Default Form Elements\n        </legend>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Full name <sup>*</sup></label>\n            <div class=\"col-lg-4\">\n                <input type=\"text\" class=\"form-control\" name=\"firstName\" placeholder=\"First name\" />\n            </div>\n            <div class=\"col-lg-4\">\n                <input type=\"text\" class=\"form-control\" name=\"lastName\" placeholder=\"Last name\" />\n            </div>\n        </div>\n    </fieldset>\n\n    <fieldset>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Company <sup>*</sup></label>\n            <div class=\"col-lg-5\">\n                <input type=\"text\" class=\"form-control\" name=\"company\"\n                       required data-bv-notempty-message=\"The company name is required\" />\n            </div>\n            <div class=\"col-lg-2\">\n                <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"#jobInfo\">\n                    Add more info\n                </button>\n            </div>\n        </div>\n    </fieldset>\n\n    <!-- These fields will not be validated as long as they are not visible -->\n    <div id=\"jobInfo\" style=\"display: none;\">\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Job title <sup>*</sup></label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"job\" />\n                </div>\n            </div>\n        </fieldset>\n\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Department <sup>*</sup></label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"department\" />\n                </div>\n            </div>\n        </fieldset>\n    </div>\n\n    <fieldset>\n        <div class=\"form-group\">\n            <label class=\"col-lg-3 control-label\">Mobile phone <sup>*</sup></label>\n            <div class=\"col-lg-5\">\n                <input type=\"text\" class=\"form-control\" name=\"mobilePhone\" />\n            </div>\n            <div class=\"col-lg-2\">\n                <button type=\"button\" class=\"btn btn-info btn-sm\" data-toggle=\"#phoneInfo\">\n                    Add more phone numbers\n                </button>\n            </div>\n        </div>\n    </fieldset>\n    <!-- These fields will not be validated as long as they are not visible -->\n    <div id=\"phoneInfo\" style=\"display: none;\">\n\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Home phone</label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"homePhone\" />\n                </div>\n            </div>\n        </fieldset>\n        <fieldset>\n            <div class=\"form-group\">\n                <label class=\"col-lg-3 control-label\">Office phone</label>\n                <div class=\"col-lg-5\">\n                    <input type=\"text\" class=\"form-control\" name=\"officePhone\" />\n                </div>\n            </div>\n        </fieldset>\n    </div>\n\n    <div class=\"form-actions\">\n        <div class=\"row\">\n            <div class=\"col-md-12\">\n                <button class=\"btn btn-default\" type=\"submit\">\n                    <i class=\"fa fa-eye\"></i>\n                    Validate\n                </button>\n            </div>\n        </div>\n    </div>\n</form>");
 $templateCache.put("app/_common/layout/directives/demo/demo-states.tpl.html","<div class=\"demo\"><span id=\"demo-setting\"><i class=\"fa fa-cog txt-color-blueDark\"></i></span>\n\n    <form>\n        <legend class=\"no-padding margin-bottom-10\">Layout Options</legend>\n        <section>\n            <label><input type=\"checkbox\" ng-model=\"fixedHeader\"\n                          class=\"checkbox style-0\"><span>Fixed Header</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedNavigation\"\n                          class=\"checkbox style-0\"><span>Fixed Navigation</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedRibbon\"\n                          class=\"checkbox style-0\"><span>Fixed Ribbon</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"fixedPageFooter\"\n                          class=\"checkbox style-0\"><span>Fixed Footer</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"insideContainer\"\n                          class=\"checkbox style-0\"><span>Inside <b>.container</b></span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"rtl\"\n                          class=\"checkbox style-0\"><span>RTL</span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"menuOnTop\"\n                          class=\"checkbox style-0\"><span>Menu on <b>top</b></span></label>\n            <label><input type=\"checkbox\"\n                          ng-model=\"colorblindFriendly\"\n                          class=\"checkbox style-0\"><span>For Colorblind <div\n                    class=\"font-xs text-right\">(experimental)\n            </div></span>\n            </label><span id=\"smart-bgimages\"></span></section>\n        <section><h6 class=\"margin-top-10 semi-bold margin-bottom-5\">Clear Localstorage</h6><a\n                ng-click=\"factoryReset()\" class=\"btn btn-xs btn-block btn-primary\" id=\"reset-smart-widget\"><i\n                class=\"fa fa-refresh\"></i> Factory Reset</a></section>\n\n        <h6 class=\"margin-top-10 semi-bold margin-bottom-5\">SmartAdmin Skins</h6>\n\n\n        <section id=\"smart-styles\">\n            <a ng-repeat=\"skin in skins\" ng-click=\"setSkin(skin)\" class=\"{{skin.class}}\" style=\"{{skin.style}}\"><i ng-if=\"skin.name == $parent.smartSkin\" class=\"fa fa-check fa-fw\"></i> {{skin.label}} <sup ng-if=\"skin.beta\">beta</sup></a>\n        </section>\n    </form>\n</div>");}]);
-'use strict';
-
-angular.module('app').controller('MainController', function ($interval) {
-    var vm = this;
-    vm.dateTime = moment().format("dddd, MMMM Do YYYY, hh:mm:ss");
-    $interval(function () {
-        vm.dateTime = moment().format("dddd, MMMM Do YYYY, hh:mm:ss");
-    }, 1000);
-});
-
 "use strict";
 
 
@@ -8706,7 +8706,7 @@ angular.module('app.biz').controller('SocialFacebookController', function ($stat
         {title: 'Social Posts', state: 'socialFacebook.socialPosts', active: true},
         {title: 'Metrics', state: 'socialFacebook.metrics'},
         {title: 'Landscape Comparison', state: 'socialFacebook.landscapeComparison'},
-        {title: 'Bios', state: 'socialFacebook.bios'},
+        // {title: 'Bios', state: 'socialFacebook.bios'},
         {title: 'My Rankings', state: 'socialFacebook.myRankings'}
     ];
 
@@ -8730,7 +8730,7 @@ angular.module('app.biz').controller('SocialGoogleplusController', function ($st
         {title: 'Social Posts', state: 'socialGoogleplus.socialPosts', active: true},
         {title: 'Metrics', state: 'socialGoogleplus.metrics'},
         {title: 'Landscape Comparison', state: 'socialGoogleplus.landscapeComparison'},
-        {title: 'Bios', state: 'socialGoogleplus.bios'},
+        // {title: 'Bios', state: 'socialGoogleplus.bios'},
         {title: 'My Rankings', state: 'socialGoogleplus.myRankings'}
     ];
 
@@ -8754,7 +8754,7 @@ angular.module('app.biz').controller('SocialInstagramController', function ($sta
         {title: 'Social Posts', state: 'socialInstagram.socialPosts', active: true},
         {title: 'Metrics', state: 'socialInstagram.metrics'},
         {title: 'Landscape Comparison', state: 'socialInstagram.landscapeComparison'},
-        {title: 'Bios', state: 'socialInstagram.bios'},
+        // {title: 'Bios', state: 'socialInstagram.bios'},
         {title: 'My Rankings', state: 'socialInstagram.myRankings'}
     ];
 
@@ -8778,7 +8778,7 @@ angular.module('app.biz').controller('SocialLinkedinController', function ($stat
         {title: 'Social Posts', state: 'socialLinkedin.socialPosts', active: true},
         {title: 'Metrics', state: 'socialLinkedin.metrics'},
         {title: 'Landscape Comparison', state: 'socialLinkedin.landscapeComparison'},
-        {title: 'Bios', state: 'socialLinkedin.bios'},
+        // {title: 'Bios', state: 'socialLinkedin.bios'},
         {title: 'My Rankings', state: 'socialLinkedin.myRankings'}
     ];
 
@@ -8802,7 +8802,7 @@ angular.module('app.biz').controller('SocialPinterestController', function ($sta
         {title: 'Social Posts', state: 'socialPinterest.socialPosts', active: true},
         {title: 'Metrics', state: 'socialPinterest.metrics'},
         {title: 'Landscape Comparison', state: 'socialPinterest.landscapeComparison'},
-        {title: 'Bios', state: 'socialPinterest.bios'},
+        // {title: 'Bios', state: 'socialPinterest.bios'},
         {title: 'My Rankings', state: 'socialPinterest.myRankings'}
     ];
 
@@ -8826,7 +8826,7 @@ angular.module('app.biz').controller('SocialTwitterController', function ($state
         {title: 'Social Posts', state: 'socialTwitter.socialPosts', active: true},
         {title: 'Metrics', state: 'socialTwitter.metrics'},
         {title: 'Landscape Comparison', state: 'socialTwitter.landscapeComparison'},
-        {title: 'Bios', state: 'socialTwitter.bios'},
+        // {title: 'Bios', state: 'socialTwitter.bios'},
         {title: 'My Rankings', state: 'socialTwitter.myRankings'}
     ];
 
@@ -8850,7 +8850,7 @@ angular.module('app.biz').controller('SocialYoutubeController', function ($state
         {title: 'Social Posts', state: 'socialYoutube.socialPosts', active: true},
         {title: 'Metrics', state: 'socialYoutube.metrics'},
         {title: 'Landscape Comparison', state: 'socialYoutube.landscapeComparison'},
-        {title: 'Bios', state: 'socialYoutube.bios'},
+        // {title: 'Bios', state: 'socialYoutube.bios'},
         {title: 'My Rankings', state: 'socialYoutube.myRankings'}
     ];
 
@@ -14375,40 +14375,212 @@ angular.module('app.biz').controller('FacebookMetricsController', function ($sta
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('FacebookMyRankingsController', function () {
@@ -14919,40 +15091,212 @@ angular.module('app.biz').controller('GoogleplusMetricsController', function ($s
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('GoogleplusMyRankingsController', function () {
@@ -15463,40 +15807,212 @@ angular.module('app.biz').controller('InstagramMetricsController', function ($st
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('InstagramMyRankingsController', function () {
@@ -16007,40 +16523,212 @@ angular.module('app.biz').controller('LinkedinMetricsController', function ($sta
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('LinkedinMyRankingsController', function () {
@@ -16551,40 +17239,212 @@ angular.module('app.biz').controller('PinterestMetricsController', function ($st
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('PinterestMyRankingsController', function () {
@@ -17095,40 +17955,212 @@ angular.module('app.biz').controller('TwitterMetricsController', function ($stat
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('TwitterMyRankingsController', function () {
@@ -17639,40 +18671,212 @@ angular.module('app.biz').controller('YoutubeMetricsController', function ($stat
     vm.go = function (state, params) {
         $state.go('app.biz.' + state, params);
     };
-    vm.data1 = {
+    vm.data11 = {
         chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
         credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: ''},
+        subtitle: {text: 'As of Aug 18, 2015'},
         xAxis: {
             lineColor: 'black', categories: [
-                'Ooredoo',
-                'DJEZZY',
-                'Mobilis'
+                'Mercedes-Benz',
+                'BMW',
+                'Ferrari',
+                'Nissan USA',
+                'Lamborghini',
+                'MINI USA',
+                'Porsche(North America)',
+                'Audi USA',
+                'Mazda USA',
+                'Hyundai USA',
+                'Tesla Motors',
+                'Fiat USA',
+                'Chrysler',
+                'Scion'
+            ]
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td></tr>' +
+            '<tr><td style="padding:0"><b>{point.y}</b></td></tr>'+
+            '<tr><td style="padding:0"><button>View Content</button></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: 'Twitter',
+            data: [19, 19, 16, 13, 12, 11, 10, 9, 1.9, 1.7, 1, 0.8, 0.851, 0.23]
+        }]
+    };
+    vm.data12 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Nissan USA',
+                'Chevrolet',
+                'Toyota',
+                'Honda',
+                'Mercedes-Benz',
+                'Mazda USA',
+                'Chrysler',
+                'Ford',
+                'Cadillac',
+                'Jeep',
+                'Porsche(North America)',
+                'Lamborghini',
+                'Dodge'
             ]
         },
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#69788d'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 60]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 13]
-        }, {
-            name: 'YouTube',
-            data: [7, 4, 12]
-        }, {
-            name: 'Instagram',
-            data: [20, 10, 14]
+            showInLegend: false,
+            name: '',
+            data: [5, 2.15, 1.32, 1.0, 0.96, 0.93, 0.82, 0.74, 0.65, 0.53, 0.51, 0.51, 0.5, 0.46]
         }]
     };
+    vm.data13 = {
+        chart: {type: 'bar', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Dodge',
+                'Jeep',
+                'Mercedes-Benz',
+                'Fiat USA',
+                'Ferrari',
+                'BMW',
+                'Tesla Motors',
+                'Audi USA',
+                'Scion',
+                'Nissan USA',
+                'Chrysler',
+                'Lamborghini',
+                'Honda',
+                'Toyota',
+            ]
+        },
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#69788d'],
+        series: [{
+            showInLegend: false,
+            name: '',
+            data: [2.97, 2.73, 2.63, 2.43, 2.07, 1.93, 1.87, 1.8, 1.57, 1.53, 1.47, 1.47, 1.33, 1.3]
+        }]
+    };
+    vm.data14 = vm.data13;
+    vm.data15 = {
+        chart: {
+            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
+        },
+        title: {text: ''},
+        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
+        xAxis: {
+            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
+        },
+        yAxis: {
+            title: {
+                text: 'Facebook Post Engagement Rate'
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [
+            {
+                name: 'Audi USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Cadillac',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Chrysler',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Dodge',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Flat USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Honda',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Jeep',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Kia',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mazda USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Mercedes-Benz',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Nissan USA',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Scion',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Subaru',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Tesla Motors',
+                data: getRandomArray(12),
+                dataLabels: false
+            }, {
+                name: 'Volkswagen USA',
+                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
+                dataLabels: false
+            }
+        ]
+    };
+    vm.data16 = vm.data15;
+    vm.data17 = vm.data13;
 });
+
+function getRandomArray(cnt) {
+    var ary = [];
+    for (var i = 0; i < cnt; i++) {
+        ary[ary.length] = Math.random();
+    }
+    return ary;
+};
 'use strict';
 
 angular.module('app.biz').controller('YoutubeMyRankingsController', function () {
