@@ -4,7 +4,6 @@
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/auth/views/forgot-password.html" afterPath="$PROJECT_DIR$/app/auth/views/forgot-password.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/auth/views/login.html" afterPath="$PROJECT_DIR$/app/auth/views/login.html" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,21 +32,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/auth/views/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+            <state relative-caret-position="398">
+              <caret line="24" column="98" lean-forward="true" selection-start-line="24" selection-start-column="98" selection-end-line="25" selection-end-column="67" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="forgot-password.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="forgot-password.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/auth/views/forgot-password.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <state relative-caret-position="544">
+              <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -205,8 +204,8 @@
         <option value="$PROJECT_DIR$/app/layout/module.js" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
         <option value="$PROJECT_DIR$/app/auth/login/LoginCtrl.js" />
-        <option value="$PROJECT_DIR$/app/auth/views/forgot-password.html" />
         <option value="$PROJECT_DIR$/app/auth/views/login.html" />
+        <option value="$PROJECT_DIR$/app/auth/views/forgot-password.html" />
       </list>
     </option>
   </component>
@@ -566,12 +565,12 @@
       <workItem from="1492023466205" duration="594000" />
       <workItem from="1492054730545" duration="17072000" />
       <workItem from="1492098772189" duration="995000" />
-      <workItem from="1492110040292" duration="2620000" />
+      <workItem from="1492110040292" duration="2761000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="441069000" />
+    <option name="totallyTimeSpent" value="441210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -992,18 +991,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/views/forgot-password.html">
+    <entry file="file://$PROJECT_DIR$/app/auth/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="61" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        <state relative-caret-position="398">
+          <caret line="24" column="98" lean-forward="true" selection-start-line="24" selection-start-column="98" selection-end-line="25" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/auth/views/login.html">
+    <entry file="file://$PROJECT_DIR$/app/auth/views/forgot-password.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="55" lean-forward="true" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
+        <state relative-caret-position="544">
+          <caret line="44" column="32" lean-forward="true" selection-start-line="44" selection-start-column="32" selection-end-line="44" selection-end-column="32" />
           <folding />
         </state>
       </provider>
