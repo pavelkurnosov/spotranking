@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus/social-posts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram/social-posts.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin/social-posts.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin/social-posts.html" />
@@ -40,8 +42,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="89" column="43" lean-forward="true" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -50,8 +52,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -60,8 +62,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="71" column="129" lean-forward="false" selection-start-line="71" selection-start-column="129" selection-end-line="71" selection-end-column="129" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -70,8 +72,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -80,8 +82,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="71" column="126" lean-forward="false" selection-start-line="71" selection-start-column="126" selection-end-line="71" selection-end-column="126" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -90,8 +92,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -100,8 +102,8 @@
       <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="71" column="125" lean-forward="false" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
+            <state relative-caret-position="544">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -111,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="544">
-              <caret line="71" column="125" lean-forward="false" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -1016,12 +1018,12 @@
       <workItem from="1492016017205" duration="217000" />
       <workItem from="1492016923936" duration="1385000" />
       <workItem from="1492023466205" duration="594000" />
-      <workItem from="1492054730545" duration="8041000" />
+      <workItem from="1492054730545" duration="8709000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="428423000" />
+    <option name="totallyTimeSpent" value="429091000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1545,56 +1547,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="89" column="43" lean-forward="true" selection-start-line="89" selection-start-column="43" selection-end-line="89" selection-end-column="43" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="1" selection-start-column="38" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="45" column="36" lean-forward="false" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="71" column="129" lean-forward="false" selection-start-line="71" selection-start-column="129" selection-end-line="71" selection-end-column="129" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="71" column="126" lean-forward="false" selection-start-line="71" selection-start-column="126" selection-end-line="71" selection-end-column="126" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="71" column="127" lean-forward="false" selection-start-line="71" selection-start-column="127" selection-end-line="71" selection-end-column="127" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="71" column="125" lean-forward="false" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
+        <state relative-caret-position="544">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1602,7 +1604,7 @@
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/social-posts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="71" column="125" lean-forward="false" selection-start-line="71" selection-start-column="125" selection-end-line="71" selection-end-column="125" />
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
           <folding />
         </state>
       </provider>
