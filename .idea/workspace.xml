@@ -3,25 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/SocialLinkedin.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/SocialLinkedin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/SocialTwitterCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/SocialTwitterCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/twitter/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html" afterPath="$PROJECT_DIR$/app/biz/views/social/youtube/landscape-comparison.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/googleplus/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/googleplus/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/instagram/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/instagram/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/linkedin/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/linkedin/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/pinterest/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/pinterest/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/twitter/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/twitter/insights.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/youtube/insights.html" afterPath="$PROJECT_DIR$/app/biz/views/social/youtube/insights.html" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,101 +38,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="landscape-comparison.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/landscape-comparison.html">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="72" column="58" lean-forward="true" selection-start-line="72" selection-start-column="58" selection-end-line="72" selection-end-column="58" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="landscape-comparison.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="twitter.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter.html">
+      <file leaf-file-name="metrics.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/metrics.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="17">
+              <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialTwitterCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialTwitterCtrl.js">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialLinkedin.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialLinkedin.js">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="77" lean-forward="true" selection-start-line="18" selection-start-column="77" selection-end-line="18" selection-end-column="77" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialFacebookCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialFacebookCtrl.js">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialGoogleplusCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialGoogleplusCtrl.js">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialInstagramCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialInstagramCtrl.js">
+      <file leaf-file-name="insights.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/insights.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="738">
+              <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SocialPinterestCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialPinterestCtrl.js">
+      <file leaf-file-name="social-posts.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocialYoutubeCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialYoutubeCtrl.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+            <state relative-caret-position="823">
+              <caret line="131" column="36" lean-forward="false" selection-start-line="90" selection-start-column="59" selection-end-line="131" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -223,13 +201,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestInsightsCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterInsightsCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialGoogleplusCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialInstagramCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialPinterestCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialYoutubeCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusSocialPostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramSocialPostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinSocialPostsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestSocialPostsCtrl.js" />
@@ -274,6 +245,13 @@
         <option value="$PROJECT_DIR$/app/biz/views/social/linkedin/landscape-comparison.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialTwitterCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/SocialLinkedin.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/facebook/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/twitter/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/linkedin/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/googleplus/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/instagram/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/pinterest/insights.html" />
+        <option value="$PROJECT_DIR$/app/biz/views/social/youtube/insights.html" />
       </list>
     </option>
   </component>
@@ -1079,12 +1057,12 @@
       <workItem from="1492016017205" duration="217000" />
       <workItem from="1492016923936" duration="1385000" />
       <workItem from="1492023466205" duration="594000" />
-      <workItem from="1492054730545" duration="13586000" />
+      <workItem from="1492054730545" duration="14323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="433968000" />
+    <option name="totallyTimeSpent" value="434705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1153,106 +1131,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinSocialPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="199" column="6" lean-forward="false" selection-start-line="199" selection-start-column="6" selection-end-line="199" selection-end-column="6" />
-          <folding>
-            <element signature="e#2391#2887#0" expanded="false" />
-            <element signature="e#2904#3394#0" expanded="false" />
-            <element signature="e#3411#4526#0" expanded="false" />
-            <element signature="e#4543#5273#0" expanded="false" />
-            <element signature="e#5290#6377#0" expanded="false" />
-            <element signature="e#6394#7044#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestSocialPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="199" column="6" lean-forward="false" selection-start-line="199" selection-start-column="6" selection-end-line="199" selection-end-column="6" />
-          <folding>
-            <element signature="e#2392#2888#0" expanded="false" />
-            <element signature="e#2905#3395#0" expanded="false" />
-            <element signature="e#3412#4527#0" expanded="false" />
-            <element signature="e#4544#5274#0" expanded="false" />
-            <element signature="e#5291#6378#0" expanded="false" />
-            <element signature="e#6395#7045#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterSocialPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="199" column="6" lean-forward="false" selection-start-line="199" selection-start-column="6" selection-end-line="199" selection-end-column="6" />
-          <folding>
-            <element signature="e#2390#2886#0" expanded="false" />
-            <element signature="e#2903#3393#0" expanded="false" />
-            <element signature="e#3410#4525#0" expanded="false" />
-            <element signature="e#4542#5272#0" expanded="false" />
-            <element signature="e#5289#6376#0" expanded="false" />
-            <element signature="e#6393#7043#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeSocialPostsCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="18" column="6" lean-forward="true" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#2390#2886#0" expanded="false" />
-            <element signature="e#2903#3393#0" expanded="false" />
-            <element signature="e#3410#4525#0" expanded="false" />
-            <element signature="e#4542#5272#0" expanded="false" />
-            <element signature="e#5289#6376#0" expanded="false" />
-            <element signature="e#6393#7043#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/metrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding>
-            <element signature="e#13566#13573#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/metrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="181" column="0" lean-forward="false" selection-start-line="181" selection-start-column="0" selection-end-line="181" selection-end-column="0" />
-          <folding>
-            <element signature="e#13580#13587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/metrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-271">
-          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding>
-            <element signature="e#13573#13580#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/metrics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
-          <folding>
-            <element signature="e#13580#13587#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/metrics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1325,14 +1203,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="439" column="69" lean-forward="false" selection-start-line="439" selection-start-column="64" selection-end-line="439" selection-end-column="69" />
           <folding />
         </state>
       </provider>
@@ -1660,8 +1530,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/SocialYoutubeCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        <state relative-caret-position="357">
+          <caret line="21" column="3" lean-forward="true" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/social-posts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="823">
+          <caret line="131" column="36" lean-forward="false" selection-start-line="90" selection-start-column="59" selection-end-line="131" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/facebook/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/twitter/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/metrics.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="212" column="0" lean-forward="false" selection-start-line="212" selection-start-column="0" selection-end-line="212" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/linkedin/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/googleplus/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/instagram/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/pinterest/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/social/youtube/insights.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
           <folding />
         </state>
       </provider>
