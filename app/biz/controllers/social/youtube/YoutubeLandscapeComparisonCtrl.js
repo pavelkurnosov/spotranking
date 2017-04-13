@@ -50,4 +50,55 @@ angular.module('app.biz').controller('YoutubeLandscapeComparisonController', fun
             data: [7, 2.3, 3, 4, 5, 6]
         }]
     };
+    vm.data3 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: ''},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#67c0ec', '#2a5d78', '#b3e0f7'],
+        series: [{
+            name: 'Likes',
+            data: [40, 12]
+        },{
+            name: 'Shares',
+            data: [40, 12]
+        },{
+            name: 'Comment',
+            data: [40, 12]
+        }]
+    };
+    vm.data4 = {
+        chart: {type: 'bar', height: 170, backgroundColor: 'rgba(255, 255, 255, 0.5)'},
+        credits: {enabled: false},
+        title: {text: ''},
+        subtitle: {text: 'Engagement Total'},
+        xAxis: {
+            lineColor: 'black', categories: [
+                'Tesla Motors',
+                'Landscape Average'
+            ]
+        },
+        exporting: {enabled: false},
+        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+        legend: {reversed: false},
+        plotOptions: {series: {stacking: 'normal'}},
+        colors: ['#67c0ec', '#2a5d78'],
+        series: [{
+            name: 'Likes',
+            data: [40, 12]
+        },{
+            name: 'Shares',
+            data: [40, 12]
+        }]
+    };
 });
