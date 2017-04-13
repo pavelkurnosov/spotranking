@@ -43,90 +43,30 @@ angular.module('app.biz').controller('GoogleplusMetricsController', function ($s
     vm.data13 = vm.data11;
     vm.data14 = vm.data11;
     vm.data15 = {
-        chart: {
-            type: 'line', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'
-        },
+        chart: {type: 'spline', height: 300, backgroundColor: 'rgba(255, 255, 255, 0.8)'},
+        credits: {enabled: false},
         title: {text: ''},
-        subtitle: {text: 'Aug 18, 2015 vs. Jul 19, 2015'},
-        xAxis: {
-            categories: ['07/21', '07/24', '07/27', '07/30', '08/02', '08/05', '08/08', '08/11', '08/14', '08/14']
-        },
+        subtitle: {text: ''},
+        xAxis: {step: 3, categories: ['12am', '1am', '2am', '3am', '4am', '5am', '6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm', '8pm', '9pm', '10pm', '11pm']},
         yAxis: {
-            title: {
-                text: 'Facebook Post Engagement Rate'
+            title: {text: ''}, labels: {
+                formatter: function () {
+                    return this.value + '';
+                }
             }
         },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: false
-            }
-        },
-        series: [
-            {
-                name: 'Audi USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Cadillac',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Chrysler',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Dodge',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Flat USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Honda',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Jeep',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Kia',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mazda USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Mercedes-Benz',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Nissan USA',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Scion',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Subaru',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Tesla Motors',
-                data: getRandomArray(12),
-                dataLabels: false
-            }, {
-                name: 'Volkswagen USA',
-                data: [0, 1, 2, 4, 2, 6, 2, 0, 1, 2, 3, 2],
-                dataLabels: false
-            }
-        ]
+        tooltip: {crosshairs: true, shared: true},
+        plotOptions: {spline: {marker: {radius: 4, lineColor: '#666666', lineWidth: 1}}},
+        series: [{
+            name: 'Landscape Activity',
+            marker: {symbol: 'square'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0.05, 0.19, 0.38, 0.43, 0.43, 0.05, 0.05, 0.29, 0.67, 0.29, 0.38, 0.10, 0.05, 0.05, 0, 0]
+
+        }, {
+            name: 'Ooredoo Activity',
+            marker: {symbol: 'diamond'},
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.43, 0, 0.14, 0, 0, 0.71, 0, 0, 0.43, 0.14, 0, 0, 0, 0]
+        }]
     };
     vm.data16 = vm.data15;
     vm.data17 = vm.data13;

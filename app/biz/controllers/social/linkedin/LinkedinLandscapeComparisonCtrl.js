@@ -20,22 +20,10 @@ angular.module('app.biz').controller('LinkedinLandscapeComparisonController', fu
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#65c1ee'],
         series: [{
-            name: 'Twitter',
+            name: 'LinkedIn',
             data: [130, 100]
-        }, {
-            name: 'Facebook',
-            data: [40, 12]
-        }, {
-            name: 'Google+',
-            data: [5, 8]
-        }, {
-            name: 'YouTube',
-            data: [7, 0]
-        }, {
-            name: 'Instagram',
-            data: [20, 10]
         }]
     };
     vm.data2 = {
@@ -56,21 +44,9 @@ angular.module('app.biz').controller('LinkedinLandscapeComparisonController', fu
         yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
         legend: {reversed: false},
         plotOptions: {series: {stacking: 'normal'}},
-        colors: ['#65c1ee', '#294a83', '#b03b2f', '#eb4349', '#4d7ea3'],
+        colors: ['#65c1ee'],
         series: [{
-            name: 'Twitter',
-            data: [130, 100, 40, 23, 43, 10]
-        }, {
-            name: 'Facebook',
-            data: [40, 12, 20, 3, 45, 2]
-        }, {
-            name: 'Google+',
-            data: [5, 8, 9, 5, 6, 4]
-        }, {
-            name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
-        }, {
-            name: 'Instagram',
+            name: 'LinkedIn',
             data: [20, 10, 9, 8, 7, 7]
         }]
     };
