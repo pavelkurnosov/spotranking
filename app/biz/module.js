@@ -343,6 +343,16 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialFacebook.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/facebook/insights.html',
+                        controller: 'FacebookInsightsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
 
             //------------------------ Twitter ----------------------------------------------
             .state('app.biz.socialTwitter', {
@@ -454,6 +464,16 @@ angular.module('app.biz', ['ui.router'])
                     "tabContent": {
                         templateUrl: 'app/biz/views/social/twitter/details-bios.html',
                         controller: 'TwitterDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialTwitter.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/twitter/insights.html',
+                        controller: 'TwitterInsightsController',
                         controllerAs: 'vm'
                     }
                 }
@@ -573,6 +593,16 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialYoutube.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/youtube/insights.html',
+                        controller: 'YoutubeInsightsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
 
             //------------------------ Googleplus ----------------------------------------------
             .state('app.biz.socialGoogleplus', {
@@ -684,6 +714,16 @@ angular.module('app.biz', ['ui.router'])
                     "tabContent": {
                         templateUrl: 'app/biz/views/social/googleplus/details-bios.html',
                         controller: 'GoogleplusDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialGoogleplus.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/googleplus/insights.html',
+                        controller: 'GoogleplusInsightsController',
                         controllerAs: 'vm'
                     }
                 }
@@ -803,6 +843,16 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialLinkedin.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/linkedin/insights.html',
+                        controller: 'LinkedinInsightsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
                 
             //------------------------ Pinterest ----------------------------------------------
             .state('app.biz.socialPinterest', {
@@ -918,6 +968,16 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.socialPinterest.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/pinterest/insights.html',
+                        controller: 'PinterestInsightsController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
             
             //------------------------ Instagram ----------------------------------------------
             .state('app.biz.socialInstagram', {
@@ -1029,6 +1089,16 @@ angular.module('app.biz', ['ui.router'])
                     "tabContent": {
                         templateUrl: 'app/biz/views/social/instagram/details-bios.html',
                         controller: 'InstagramDetailsBiosController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.socialInstagram.insights', {
+                url: '/insights',
+                views: {
+                    "tabContent": {
+                        templateUrl: 'app/biz/views/social/instagram/insights.html',
+                        controller: 'InstagramInsightsController',
                         controllerAs: 'vm'
                     }
                 }

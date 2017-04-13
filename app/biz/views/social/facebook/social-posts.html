@@ -1,295 +1,20 @@
 <div class="container-fluid">
-    <div class="row margin-bottom-20">
-        <div class="col-xs-3">
-            <div class="smart-form">
-                <label class="input"> <i class="icon-append fa fa-search"></i>
-                    <input type="text" placeholder="">
-                    <b class="tooltip tooltip-bottom-right">
-                        <i class="fa fa-search txt-color-teal"></i>
-                        Search
-                    </b>
-                </label>
-            </div>
-            <div>Analyzing 6 matching posts</div>
+    <div class="row margin-bottom-10">
+        <div class="col-xs-6">
+            <h4>Landscape's Most Engaging Posts</h4>
         </div>
-        <div class="col-xs-4">
-            <div class="btn-group dropdown" data-dropdown>
-                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    All Media <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href-void>All Media (77)</a>
-                        <a href-void>Photo (57)</a>
-                        <a href-void>Link (19)</a>
-                        <a href-void>Video (1)</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-xs-5 text-right">
-            <export-button source="widget-grid-cross-channels-social-posts"></export-button>
+        <div class="col-xs-6 text-right">
+            <export-button></export-button>
         </div>
     </div>
-    <section id="widget-grid-cross-channels-social-posts" widget-grid>
+    <section id="widget-grid-facebook-top" widget-grid>
         <div class="row">
             <article class="col-sm-12 col-md-12 col-lg-12">
                 <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
                     <header>
-                        <h2>Ooredoo at a Glance <a><i class="fa fa-info-circle"></i></a></h2>
-                        <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button source="at_a_glance" class="btn-group-xs margin-top-5"></export-button>
-                        </div>
-                    </header>
-                    <div>
-                        <div class="widget-body" id="at_a_glance">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-3">
-                                        <div>YOUR POSTS PER DAY</div>
-                                        <h1 class="font-biggest font-bold">1.81</h1>
-                                        <div>Landscape Avg: 3.67</div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div>YOUR ENG. RATE / POST</div>
-                                        <h1 class="font-biggest font-bold">0.033%</h1>
-                                        <div>Landscape Avg: 0.030%</div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div>YOUR POSTS WITH HASHTAGS</div>
-                                        <h1 class="font-biggest font-bold">8.33%</h1>
-                                        <div>Landscape Avg: 36.4%</div>
-                                    </div>
-                                    <div class="col-xs-3">
-                                        <div>YOUR TOP HOUR OF DAY <a><i class="fa fa-info-circle"></i></a></div>
-                                        <h1 class="font-biggest font-bold">11 am CET</h1>
-                                        <div>Landscape Top: 5pm CET</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-sm-12 col-md-12 col-lg-12">
-                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
                         <h2>Landscape's Most Engaging Posts</h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button source="engaging_posts" class="btn-group-xs margin-top-5"></export-button>
-                            <div class="btn-group dropdown float-right btn-group-xs margin-top-5 margin-right-5">
-                                <button class="btn btn-primary dropdown-toggle" data-toggle="modal" data-target="#manageColumnsModal">Manage Columns...</button>
-                            </div>
-                        </div>
-                    </header>
-                    <div>
-                        <div class="widget-body" id="engaging_posts">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-12">
-                                        <table class="table table-responsive">
-                                            <thead>
-                                            <tr>
-                                                <th>Published At</th>
-                                                <th colspan="3">Post</th>
-                                                <th ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">{{col.acronym}}</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="r in [1,1,1] track by $index">
-                                                <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                                        <h4>Apr 2 2017</h4>
-                                                        <h5>8:59 AM</h5>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                                        <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png"><br/>
-                                                        <div class="width-40 badge bg-color-blue txt-color-white"><i class="fa fa-facebook"></i></div>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                                        <h4>DJEZZY</h4>
-                                                        <p>Apr 2 2017 8:59 AM UTC</p>
-                                                        <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
-                                                        <p>quelques instants le...</p>
-                                                        <a href="https://www.facebook.com/108951559158989/posts/1306587849395348" target="_blank" class="small text-muted"><i class="fa fa-fw fa-external-link"></i>View on Facebook</a>
-                                                    </a>
-                                                </td>
-                                                <td>
-                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                                        <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
-                                                    </a>
-                                                </td>
-                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>{{col.acronym}}</div><br/><h2>10</h2>">10</div></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsPosts')">View More</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="container-fluid">
-                    <div class="row">
-                        <article class="col-sm-12">
-                            <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                                <header>
-                                    <h2>Activity & Engagement <i class="fa fa-info-circle"></i></h2>
-                                    <div class="widget-toolbar hidden-phone" role="menu">
-                                        <export-button class="btn-group-xs margin-top-5"></export-button>
-                                    </div>
-                                </header>
-                                <div>
-                                    <div class="widget-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-xs-6">
-                                                    <p>YOUR POSTS IN PERIOD</p>
-                                                    <h1>15</h1>
-                                                    <p>Landscape Avg: 27.7</p>
-                                                </div>
-                                                <div class="col-xs-6">
-                                                    <p>YOUR ENG. RATE / POST</p>
-                                                    <h1>0.031%</h1>
-                                                    <p>Landscape Avg: 0.031%</p>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <table class="table table-response">
-                                                        <thead>
-                                                        <tr>
-                                                            <th colspan="2">Company</th>
-                                                            <th>Posts</th>
-                                                            <th colspan="2">Eng. Rate / Post</th>
-                                                        </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                        <tr ng-repeat="i in ['Mobilis', 'Ooredoo', 'DJEZZY'] track by $index">
-                                                            <td class="col-xs-1"><img class="width-30 margin-top-15" ng-src="./styles/img/temp/01.png"></td>
-                                                            <td class="col-xs-4"><a class="cursor-pointer">{{$index + 1}}. {{i}}</a></td>
-                                                            <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Posts</div><br/><h3>10</h3>">21</div></td>
-                                                            <td class="col-xs-4">
-                                                                <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Eng. Rate / Post</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
-                                                                    <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
-                                                                </div>
-                                                            </td>
-                                                            <td class="col-xs-2"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Eng. Rate / Post</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
-                                                        </tr>
-                                                        </tbody>
-                                                    </table>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-xs-12 text-right">
-                                                    <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsActivity')">View More</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="col-sm-12">
-                            <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                                <header>
-                                    <h2>Top # Hashtags <i class="fa fa-info-circle"></i></h2>
-                                    <div class="widget-toolbar hidden-phone" role="menu">
-                                        <export-button class="btn-group-xs margin-top-5"></export-button>
-                                    </div>
-                                </header>
-                                <div>
-                                    <div class="widget-body">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-xs-12">
-                                                    <ng-tag-cloud cloud-width="500" cloud-height="174" cloud-data="vm.couldData"></ng-tag-cloud>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <article class="col-sm-12">
-                    <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                        <header>
-                            <h2>Hashtags <i class="fa fa-info-circle"></i></h2>
-                            <div class="widget-toolbar hidden-phone" role="menu">
-                                <export-button class="btn-group-xs margin-top-5"></export-button>
-                            </div>
-                        </header>
-                        <div>
-                            <div class="widget-body">
-                                <div class="container-fluid">
-                                    <div class="row margin-top-10 margin-bottom-10 padding-top-10 padding-bottom-20">
-                                        <div class="col-xs-12">
-                                            <p>Of the 8 most broadly used hashtags, #جازي generates the most engagement per post. You didn't use any of these hashtags.</p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12">
-                                            <table class="table table-response">
-                                                <thead>
-                                                <tr>
-                                                    <th colspan="2">Hashtag</th>
-                                                    <th>Companies Using</th>
-                                                    <th colspan="2">Eng. Rate / Post</th>
-                                                </tr>
-                                                </thead>
-                                                <tbody>
-                                                <tr ng-repeat="i in ['djezzy4g', 'algerie', '4g', 'جازي', 'Djezzy', 'إتحاد_العاصمة', 'USMA', 'Football']">
-                                                    <td class="col-xs-4">#{{i}}</td>
-                                                    <td class="col-xs-2"><a href="#">Show Posts</a></td>
-                                                    <td class="col-xs-2"><span class="badge bg-color-blue txt-color-white">1</span></td>
-                                                    <td class="col-xs-3">
-                                                        <div class="progress progress-sm" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">
-                                                            <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
-                                                        </div>
-                                                    </td>
-                                                    <td class="col-xs-1"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>Engagement Total</div><br/><h3>{{0.04 * ($index + 1)}}%</h3>">{{0.04 * ($index + 1)}}%</div></td>
-                                                </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-xs-12 text-right">
-                                            <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsHashtags')">View More</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-        <div class="row">
-            <article class="col-xs-12">
-                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                    <header>
-                        <h2>Post Channels <i class="fa fa-info-circle"></i></h2>
-                        <div class="widget-toolbar hidden-phone" role="menu">
                             <export-button class="btn-group-xs margin-top-5"></export-button>
                         </div>
                     </header>
@@ -297,160 +22,13 @@
                         <div class="widget-body">
                             <div class="container-fluid">
                                 <div class="row">
-                                    <div class="col-xs-6">
-                                        <table class="table table-responsive">
-                                            <thead>
-                                            <tr>
-                                                <th>Post Ch.</th>
-                                                <th>Avg Posts / Day</th>
-                                                <th colspan="2">Eng. Rate / Post</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="media in vm.socialMedias">
-                                                <td class="col-xs-3"><i class="fa fa-{{media.icon}}"></i> {{media.title}}</td>
-                                                <td class="col-xs-4">0.14 / day</td>
-                                                <td class="col-xs-3">
-                                                    <div class="progress progress-sm margin-bottom-0">
-                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!--<div class="col-xs-2">
-                                        <div highchart data="vm.data1"></div>
-                                    </div>-->
-                                    <div class="col-xs-6">
-                                        <table class="table table-responsive">
-                                            <thead>
-                                            <tr>
-                                                <th>Post Ch.</th>
-                                                <th>Posts per Day per Company</th>
-                                                <th colspan="2">Eng. Rate / Post</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="media in vm.socialMedias">
-                                                <td class="col-xs-3">{{media.title}}</td>
-                                                <td class="col-xs-4">0.14 / day</td>
-                                                <td class="col-xs-3">
-                                                    <div class="progress progress-sm margin-bottom-0">
-                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-xs-12">
-                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                    <header>
-                        <h2>Post Types <i class="fa fa-info-circle"></i></h2>
-                        <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button class="btn-group-xs margin-top-5"></export-button>
-                        </div>
-                    </header>
-                    <div>
-                        <div class="widget-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <table class="table table-responsive">
-                                            <thead>
-                                            <tr>
-                                                <th>Post Type</th>
-                                                <th>Avg Posts / Day</th>
-                                                <th colspan="2">Eng. Rate / Post</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="i in ['Photo', 'Link', 'Video']">
-                                                <td class="col-xs-3"><i class="fa fa-photo"></i> {{i}}</td>
-                                                <td class="col-xs-4">0.14 / day</td>
-                                                <td class="col-xs-3">
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 16}}%;"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <table class="table table-responsive">
-                                            <thead>
-                                            <tr>
-                                                <th>Post Type</th>
-                                                <th>Posts per Day per Company</th>
-                                                <th colspan="2">Eng. Rate / Post</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr ng-repeat="i in ['Photo', 'Video', 'Link']">
-                                                <td class="col-xs-3">{{i}}</td>
-                                                <td class="col-xs-4">0.14 / day</td>
-                                                <td class="col-xs-3">
-                                                    <div class="progress progress-sm">
-                                                        <div class="progress-bar bg-color-blue" role="progressbar" style="width: {{($index + 1) * 20}}%;"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="col-xs-2">{{0.04 * ($index + 1)}}%</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </article>
-        </div>
-        <div class="row">
-            <article class="col-xs-12">
-                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
-                    <header>
-                        <h2>Post Times <i class="fa fa-info-circle"></i></h2>
-                        <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button class="btn-group-xs margin-top-5"></export-button>
-                            <div class="btn-group dropdown float-right btn-group-xs margin-top-5 margin-right-5">
-                                <button class="btn btn-primary dropdown-toggle" data-toggle="modal" data-target="#timezonesModal">Change Time Zone...</button>
-                            </div>
-                        </div>
-                    </header>
-                    <div>
-                        <div class="widget-body">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-6">
-                                        <div>AVERAGE ACTIVITY BY PUBLISHED HOUR (CET)</div>
-                                        <div highchart data="vm.data3"></div>
-                                    </div>
-                                    <div class="col-xs-6">
-                                        <div>AVERAGE ACTIVITY BY PUBLISHED DAY (CET)</div>
+                                    <div class="col-xs-4">
                                         <div highchart data="vm.data4"></div>
                                     </div>
-                                </div>
-                                <div class="row margin-top-20">
-                                    <div class="col-xs-6">
-                                        <div>AVERAGE ENGAGEMENT RATE BY PUBLISHED HOUR (CET)</div>
+                                    <div class="col-xs-4">
                                         <div highchart data="vm.data5"></div>
                                     </div>
-                                    <div class="col-xs-6">
-                                        <div>AVERAGE ENGAGEMENT RATE BY PUBLISHED DAY (CET)</div>
+                                    <div class="col-xs-4">
                                         <div highchart data="vm.data6"></div>
                                     </div>
                                 </div>
@@ -460,165 +38,48 @@
                 </div>
             </article>
         </div>
+        <div class="row">
+            <article class="col-sm-12 col-md-12 col-lg-12">
+                <div jarvis-widget data-widget-editbutton="false" data-widget-colorbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" role="widget">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+                        <h2>Landscape's Most Engaging Posts</h2>
+                        <div class="widget-toolbar hidden-phone" role="menu">
+                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                        </div>
+                    </header>
+                    <div>
+                        <div class="widget-body">
+                            <table class="table table-responsive">
+                                <thead>
+                                <tr ng-repeat="r in [1,1,1] track by $index">
+                                    <td>
+                                        <img ng-src="./styles/img/temp/1.jpg">
+                                    </td>
+                                    <td>
+                                        <h4>Munchery</h4>
+                                        <p>Jun 15, 2015</p>
+                                        <p>#MuncheryMonday means menu browsing! Options sure to make you hungry await. cred@asideofsweet</p>
+                                    </td>
+                                    <td>
+                                        <img class="width-120" ng-src="./styles/img/superbox/superbox-thumb-17.jpg">
+                                    </td>
+                                    <td>
+                                        <p>ENGAGEMENT RATE</p>
+                                        <h3>3.40%</h3>
+                                    </td>
+                                    <td>
+                                        <p>ENGAGEMENT TOTAL</p>
+                                        <h3>355</h3>
+                                    </td>
+                                </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
     </section>
-</div>
 
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Post Details</h4>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-1">
-                            <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
-                        </div>
-                        <div class="col-xs-7">
-                            <h4>DJEZZY</h4>
-                            <p>Apr 2 2017 8:59 AM UTC</p>
-                            <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
-                            <p>quelques instants le...</p>
-                            <p>Suivez avec nous dans quelques instants le live direct de la cérémonie de signature du contrat de sponsoring #Djezzy / #USMA qui aura lieu au stade Omar Hammadi, Bouloughine ».</p>
-                            <p>#Djezzy #USMA #Football</p>
-                            <div><img class="max-width-400" ng-src="./styles/img/temp/10.jpg"></div>
-                            <a href="https://www.facebook.com/108951559158989/posts/1306587849395348" target="_blank" class="small text-muted margin-top-5"><i class="fa fa-fw fa-external-link"></i>View on Facebook</a>
-                        </div>
-                        <div class="col-xs-4">
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-xs-4 text-right font-bold font-bigger">
-                                        <p class="">33</p>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <p>
-                                            <small>ENGAGEMENT TOTAL <i class="fa fa-info-circle"></i></small>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-4 text-right">
-                                        <p>32</p>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <p>LIKES <i class="fa fa-info-circle"></i></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-4 text-right">
-                                        <p>1</p>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <p>COMMENTS <i class="fa fa-info-circle"></i></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-4 text-right font-bold font-bigger">
-                                        <p>4.51K</p>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <p>FOLLOWED BY <i class="fa fa-info-circle"></i></p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-xs-4 text-right font-bold font-bigger">
-                                        <p>0.73%</p>
-                                    </div>
-                                    <div class="col-xs-8">
-                                        <p>ENGAGEMENT RATE <i class="fa fa-info-circle"></i></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-<div class="modal fade" id="manageColumnsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="manageColumnsModalLabel">Manage Columns</h4>
-            </div>
-            <div class="modal-body smart-form">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-2">
-
-                        </div>
-                        <div class="col-xs-10">
-                            <div class="padding-bottom-10" ng-repeat="col in vm.gridColumns">
-                                <label class="checkbox">
-                                    <input type="checkbox" name="checkbox" ng-model="col.visible">
-                                    <i></i> {{col.title}}
-                                </label>
-                                <div class="padding-left-10">
-                                    <label class="checkbox" ng-repeat="c in col.columns">
-                                        <input type="checkbox" name="checkbox" ng-model="c.visible">
-                                        <i></i> {{c.title}}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div>
-
-
-<div class="modal fade" id="timezonesModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="timezonesModalLabel">Time Zone Display for Post Times Analysis</h4>
-            </div>
-            <div class="modal-body smart-form">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-10">
-                            <p>Choose a location to set the time zone you wish to use for your Post Times analysis.</p>
-                        </div>
-                        <div class="col-xs-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-10 margin-top-20">
-                            <select data-smart-select2 style="width:100%" class="select2">
-                                <option ng-repeat="timezone in vm.timezones" value="{{timezone.value}}">{{timezone.utc[0]}}</option>
-                            </select>
-                        </div>
-                        <div class="col-xs-1"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-1"></div>
-                        <div class="col-xs-10 margin-top-20">
-                            <p>Please note that changing this setting only affects the display in the Post Times panel. Also, changing this setting only affects your current landscape.</p>
-                        </div>
-                        <div class="col-xs-1"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
 </div>

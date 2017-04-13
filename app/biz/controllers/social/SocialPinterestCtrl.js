@@ -10,9 +10,7 @@ angular.module('app.biz').controller('SocialPinterestController', function ($sta
     vm.tabs = [
         {title: 'Social Posts', state: 'socialPinterest.socialPosts', active: true},
         {title: 'Metrics', state: 'socialPinterest.metrics'},
-        {title: 'Landscape Comparison', state: 'socialPinterest.landscapeComparison'},
-        // {title: 'Bios', state: 'socialPinterest.bios'},
-        {title: 'My Rankings', state: 'socialPinterest.myRankings'}
+        {title: 'Landscape Comparison', state: 'socialPinterest.landscapeComparison'}
     ];
 
     vm.selectTab = function (tab) {

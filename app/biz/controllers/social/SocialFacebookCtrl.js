@@ -12,7 +12,7 @@ angular.module('app.biz').controller('SocialFacebookController', function ($stat
         {title: 'Metrics', state: 'socialFacebook.metrics'},
         {title: 'Landscape Comparison', state: 'socialFacebook.landscapeComparison'},
         // {title: 'Bios', state: 'socialFacebook.bios'},
-        {title: 'My Rankings', state: 'socialFacebook.myRankings'}
+        {title: 'Insights', state: 'socialFacebook.insights'}
     ];
 
     vm.selectTab = function (tab) {

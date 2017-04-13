@@ -10,9 +10,7 @@ angular.module('app.biz').controller('SocialGoogleplusController', function ($st
     vm.tabs = [
         {title: 'Social Posts', state: 'socialGoogleplus.socialPosts', active: true},
         {title: 'Metrics', state: 'socialGoogleplus.metrics'},
-        {title: 'Landscape Comparison', state: 'socialGoogleplus.landscapeComparison'},
-        // {title: 'Bios', state: 'socialGoogleplus.bios'},
-        {title: 'My Rankings', state: 'socialGoogleplus.myRankings'}
+        {title: 'Landscape Comparison', state: 'socialGoogleplus.landscapeComparison'}
     ];
 
     vm.selectTab = function (tab) {
