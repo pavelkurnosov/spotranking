@@ -23,7 +23,7 @@ angular.module('app.biz').controller('YoutubeLandscapeComparisonController', fun
         colors: ['#eb4349'],
         series: [{
             name: 'YouTube',
-            data: [7, 0]
+            data: [7, 5.6]
         }]
     };
     vm.data2 = {
@@ -47,7 +47,7 @@ angular.module('app.biz').controller('YoutubeLandscapeComparisonController', fun
         colors: ['#eb4349'],
         series: [{
             name: 'YouTube',
-            data: [7, 0, 3, 4, 5, 6]
+            data: [7, 2.3, 3, 4, 5, 6]
         }]
     };
 });

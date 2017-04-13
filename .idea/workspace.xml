@@ -3,21 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/facebook/FacebookMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterMetricsCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMetricsCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMetricsCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/facebook/metrics.html" afterPath="$PROJECT_DIR$/app/biz/views/social/facebook/metrics.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
@@ -149,7 +135,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="YoutubeMetricsCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="YoutubeMetricsCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMetricsCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="373">
@@ -161,6 +147,18 @@
                 <marker date="1492081161701" expanded="true" signature="874:904" ph="..." />
                 <marker date="1492081161701" expanded="true" signature="963:972" ph="..." />
                 <marker date="1492081161701" expanded="true" signature="1031:1040" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YoutubeLandscapeComparisonCtrl.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="628">
+              <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding>
+                <marker date="1492081713288" expanded="true" signature="1322:1354" ph="..." />
               </folding>
             </state>
           </provider>
@@ -289,7 +287,6 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/googleplus/GoogleplusLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/instagram/InstagramLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/linkedin/LinkedinLandscapeComparisonCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestLandscapeComparisonCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/facebook/metrics.html" />
@@ -300,6 +297,7 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/pinterest/PinterestMetricsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterMetricsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeMetricsCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js" />
       </list>
     </option>
   </component>
@@ -1105,12 +1103,12 @@
       <workItem from="1492016017205" duration="217000" />
       <workItem from="1492016923936" duration="1385000" />
       <workItem from="1492023466205" duration="594000" />
-      <workItem from="1492054730545" duration="11704000" />
+      <workItem from="1492054730545" duration="12233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="432086000" />
+    <option name="totallyTimeSpent" value="432615000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1506,16 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="26" selection-end-line="46" selection-end-column="26" />
-          <folding>
-            <marker date="1492080704895" expanded="true" signature="1320:1352" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/twitter/TwitterLandscapeComparisonCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -1701,6 +1689,16 @@
             <marker date="1492081161701" expanded="true" signature="874:904" ph="..." />
             <marker date="1492081161701" expanded="true" signature="963:972" ph="..." />
             <marker date="1492081161701" expanded="true" signature="1031:1040" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/youtube/YoutubeLandscapeComparisonCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding>
+            <marker date="1492081713288" expanded="true" signature="1322:1354" ph="..." />
           </folding>
         </state>
       </provider>
