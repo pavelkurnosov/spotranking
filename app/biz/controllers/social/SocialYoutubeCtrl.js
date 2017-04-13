@@ -10,7 +10,8 @@ angular.module('app.biz').controller('SocialYoutubeController', function ($state
     vm.tabs = [
         {title: 'Social Posts', state: 'socialYoutube.socialPosts', active: true},
         {title: 'Metrics', state: 'socialYoutube.metrics'},
-        {title: 'Landscape Comparison', state: 'socialYoutube.landscapeComparison'}
+        {title: 'Landscape Comparison', state: 'socialYoutube.landscapeComparison'},
+        {title: 'Insights', state: 'socialYoutube.insights'}
     ];
 
     vm.selectTab = function (tab) {

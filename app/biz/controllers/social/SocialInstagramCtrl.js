@@ -10,7 +10,8 @@ angular.module('app.biz').controller('SocialInstagramController', function ($sta
     vm.tabs = [
         {title: 'Social Posts', state: 'socialInstagram.socialPosts', active: true},
         {title: 'Metrics', state: 'socialInstagram.metrics'},
-        {title: 'Landscape Comparison', state: 'socialInstagram.landscapeComparison'}
+        {title: 'Landscape Comparison', state: 'socialInstagram.landscapeComparison'},
+        {title: 'Insights', state: 'socialInstagram.insights'}
     ];
 
     vm.selectTab = function (tab) {
