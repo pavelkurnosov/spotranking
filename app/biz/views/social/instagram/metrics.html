@@ -23,7 +23,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Audience, with % Change'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Posts'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -85,7 +85,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Engagement Total'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -116,7 +116,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Engagement Rate / Post'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -147,7 +147,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Applause'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -178,7 +178,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Conversation'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -209,7 +209,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-xs-12 text-right">
-                                        <button class="btn btn-primary" ng-click="vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Amplification'})">View More</button>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">View More</button>
                                     </div>
                                 </div>
                             </div>
@@ -219,4 +219,47 @@
             </article>
         </div>
     </section>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Top Content on Twitter during Jun 21 2015 for Eat24</h4>
+            </div>
+            <div class="modal-body table-responsive">
+                <table class="table">
+                    <thead>
+                    <tr ng-repeat="r in [1,1,1] track by $index">
+                        <td>
+                            <img ng-src="./styles/img/temp/1.jpg">
+                        </td>
+                        <td>
+                            <h4>Eat24(@EAT24)</h4>
+                            <p>Jun 15, 2015</p>
+                            <p>@Athousandmorgie @tyleroakley @gracehelbig @mametown Use the code 'conair' for delicious savings. Or try the code 'rambo' to fight hunger</p>
+                            <a class="cursor-pointer">
+                                <i class="fa fa-link"></i> View on Twitter
+                            </a>
+                        </td>
+                        <td>
+                            <p>ENGAGEMENT RATE 0</p>
+                            <h3>0.06%</h3>
+                            <p><i class="fa fa-info-circle"></i> This is a reply</p>
+                        </td>
+                        <td>
+                            <p>ENGAGEMENT TOTAL</p>
+                            <h3>27</h3>
+                        </td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>

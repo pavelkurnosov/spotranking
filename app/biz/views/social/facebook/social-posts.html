@@ -15,11 +15,11 @@
                         <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
                         <h2>Landscape's Most Engaging Posts</h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                            <export-button target="engaging_post_charts" class="btn-group-xs margin-top-5"></export-button>
                         </div>
                     </header>
                     <div>
-                        <div class="widget-body">
+                        <div class="widget-body" id="engaging_post_charts">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-xs-4">
@@ -45,11 +45,11 @@
                         <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
                         <h2>Landscape's Most Engaging Posts</h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
-                            <export-button class="btn-group-xs margin-top-5"></export-button>
+                            <export-button target="engaging_post_table" class="btn-group-xs margin-top-5"></export-button>
                         </div>
                     </header>
                     <div>
-                        <div class="widget-body">
+                        <div class="widget-body" id="engaging_post_table">
                             <table class="table table-responsive">
                                 <thead>
                                 <tr ng-repeat="r in [1,1,1] track by $index">
