@@ -4,9 +4,9 @@ angular.module('app.biz').controller('MediaOutletController', function (DTOption
     var vm = this;
 
     vm.medias = [
-        { title: "Print Media", image: "./styles/img/temp/1.jpg"},
-        { title: "TV Channel", image: "./styles/img/temp/2.jpg"},
-        { title: "FM Radio", image: "./styles/img/temp/3.jpg"}
+        { title: "Print Media", image: "./styles/img/temp/icons/01.png"},
+        { title: "TV Channel", image: "./styles/img/temp/icons/02.png"},
+        { title: "FM Radio", image: "./styles/img/temp/icons/03.png"}
     ];
 
     vm.standardOptions = DTOptionsBuilder
@@ -31,14 +31,17 @@ angular.module('app.biz').controller('MediaOutletController', function (DTOption
         .withBootstrap();
 
     vm.standardColumns = [
-        DTColumnBuilder.newColumn('newspapers')/*.withClass('text-danger')*/,
-        DTColumnBuilder.newColumn('country'),
+        DTColumnBuilder.newColumn('country')/*.withClass('text-danger')*/,
         DTColumnBuilder.newColumn('lang'),
         DTColumnBuilder.newColumn('ymd'),
-        DTColumnBuilder.newColumn('circulation'),
-        DTColumnBuilder.newColumn('np_subject'),
-        DTColumnBuilder.newColumn('ads_no'),
-        DTColumnBuilder.newColumn('ad_np_section'),
-        DTColumnBuilder.newColumn('ad_location')
+        DTColumnBuilder.newColumn('landing_page'),
+        DTColumnBuilder.newColumn('creative_type'),
+        DTColumnBuilder.newColumn('times_seen'),
+        DTColumnBuilder.newColumn('days_seen'),
+        DTColumnBuilder.newColumn('first_seen'),
+        DTColumnBuilder.newColumn('last_seen'),
+        DTColumnBuilder.newColumn('ads_size'),
+        DTColumnBuilder.newColumn('creative_type'),
+        DTColumnBuilder.newColumn('ads_forum')
     ];
 });
