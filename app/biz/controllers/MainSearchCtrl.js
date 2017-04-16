@@ -18,6 +18,7 @@ angular.module('app.biz').controller('MainSearchController', function ($window) 
 
     vm.backToTop = function () {
         document.body.scrollTop = 0;
+        angular.element('.main-search-result')[0].scrollTop = 0;
     };
 
 
