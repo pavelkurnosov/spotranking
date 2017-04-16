@@ -124,10 +124,10 @@
                                     <input type="daterange" ng-model="vm.dates4" ranges="vm.ranges" placeholder="Period">
                                 </label>
                             </div>
-<!--
-                            <a href-void class="btn btn-primary float-left margin-left-5">
-                                <i class="fa fa-calendar"></i>
-                            </a>-->
+                            <!--
+                                                        <a href-void class="btn btn-primary float-left margin-left-5">
+                                                            <i class="fa fa-calendar"></i>
+                                                        </a>-->
                             <a href-void class="btn btn-primary float-left margin-left-20">Search</a>
                         </div>
                     </div>
@@ -158,11 +158,9 @@
                     </h2>
                 </header>
 
-                <!-- widget div-->
                 <div>
-
                     <div class="content-fluid">
-                        <div class="row" ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1] track by $index">
+                        <div class="row" ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1] track by $index">
                             <div class="col-md-12">
                                 <div class="well">
                                     <div class="container-fluid">
@@ -279,11 +277,16 @@
                                                         <div class="col-xs-5">
                                                             <div class="margin-bottom-10">
                                                                 <a data-toggle="modal" data-target="#myModal" class="cursor-pointer">
-                                                                    <img class="img-responsive" src="./styles/img/cover.png">
+                                                                    <img class="img-responsive cursor-zoom-in" src="./styles/img/cover.png">
                                                                 </a>
                                                             </div>
                                                             <!--<div class="margin-bottom-10"><img class="img-responsive margin-auto" src="./styles/img/temp/9.jpg"></div>-->
-                                                            <page-locator></page-locator>
+                                                            <div class="text-center">
+                                                                <page-locator></page-locator>
+                                                            </div>
+                                                            <div class="text-center">
+                                                                <button class="btn btn-primary">Generate CMT Report</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -317,7 +320,8 @@
                             <div class="col-xs-8">
                                 <a href-void class="btn btn-primary"> Download Report</a>
                                 <a href-void class="btn btn-primary">Generate E-Report</a>
-                                <a href-void class="btn btn-primary">Export Report</a>
+                                <!--<a href-void class="btn btn-primary">Export Report</a>-->
+                                <export-button class="dropup float-none"></export-button>
                             </div>
                             <div class="col-xs-4 smart-form">
                                 <label class="checkbox text-left">
@@ -329,28 +333,20 @@
                         </div>
                     </div>
                 </div>
-                <!-- end widget content -->
-
             </div>
-
         </div>
         <div class="col-md-3">
             <div ng-class="{'fixed-main-search-summary': vm.fixedSummaryDiv}">
                 <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                     <header>
                         <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                        <h2>Campaigns Messages</h2>
+                        <h2>Search Summary</h2>
                     </header>
 
                     <!-- widget div-->
                     <div>
                         <!-- widget content -->
                         <div class="widget-body">
-                            <p>A Whopper for Gignac</p>
-                            <p>World famous Fries The proud Whopper The friendship is strong but the Whopper is strong 100% British and BEEF</p>
-
-                            <br/>
-                            <h6>Search Summary</h6>
                             <div class="table-responsive">
                                 <table class="table table-bordered table-striped">
                                     <tr>
