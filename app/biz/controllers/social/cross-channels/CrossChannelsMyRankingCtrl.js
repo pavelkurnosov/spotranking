@@ -4,12 +4,12 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
     var vm = this;
 
     /* yOUTUBE : HEX: bb0000.
-    Facebook:#3b5998
-    twitter :  #55ACEE
-    Google +"#dd4b39
-    Pinterest: C92228
-    Linkedin: #0077B5
-    Instagram: #8a3ab9 */
+     Facebook:#3b5998
+     twitter :  #55ACEE
+     Google +"#dd4b39
+     Pinterest: C92228
+     Linkedin: #0077B5
+     Instagram: #8a3ab9 */
 
     vm.medias = [
         {id: 1, title: 'Facebook', icon: 'facebook', color: '#3b5998'},
@@ -19,63 +19,65 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
         {id: 5, title: 'YouTube', icon: 'youtube', color: '#bb0000'}
     ];
 
-    vm.sortType = 'total'; // set the default sort type
-    vm.sortReverse = false;  // set the default sort order
+    vm.sortType = 'total';
+    vm.sortReverse = false;
 
     vm.panes = [
         {id: 'audience', title: 'Audience', active: 'active'},
         {id: 'activity', title: 'Activity'},
         {id: 'engagement', title: 'Engagement'}
-    ]
-    vm.sources = [];
+    ];
+    vm.currTab = 'audience';
 
-    var websites = ['', 'www.orange.tn', 'www.ooredoo.dz', 'Djezzy', 'www.mobilis.dz'];
-    for (var s = 1; s <= 4; s++) {
-        var colors = [];
-        var series = [];
-        for (var m in vm.medias) {
-            series[series.length] = {
-                showInLegend: false,
-                name: [vm.medias[m].title],
-                data: [Math.round(Math.random() * 100, 2) * (vm.medias[m].title == 'Facebook' ? 50 : 1)]
-            };
-            colors[colors.length] = vm.medias[m].color;
+    vm.totalData = [{
+        company: 'Djezzy',
+        values: {
+            audience: {total: 4162412, change: 855, growth: 0.02},
+            activity: {total: 37, change: -11, growth: -22.92},
+            engagement: {total: 10646, change: -5268, growth: -33.1}
         }
-        vm.sources[vm.sources.length] = {
-            id: s,
-            title: websites[s],
+    }, {
+        company: 'www.mobilis.dz',
+        values: {
+            audience: {total: 2522924, change: 12164, growth: 0.48},
+            activity: {total: 11, change: -5, growth: -31.25},
+            engagement: {total: 20556, change: -3309, growth: -13.87}
+        }
+    }, {
+        company: 'www.ooredoo.dz',
+        values: {
+            audience: {total: 4496831, change: 42194, growth: 0.95},
+            activity: {total: 16, change: -5, growth: -23.81},
+            engagement: {total: 636610, change: 154003, growth: 31.91}
+        }
+    }, {
+        company: 'www.orange.tn',
+        values: {
+            audience: {total: 23768879, change: 79714, growth: 0.34},
+            activity: {total: 20, change: -2, growth: -9.09},
+            engagement: {total: 641, change: -104, growth: -13.96}
+        }
+    }];
 
-            total: Math.round(Math.random() * 100 - Math.random() * 100),
-            change: Math.round(Math.random() * 100 - Math.random() * 100),
-            growth: Math.round(Math.random() * 100),
-
-            chart: {
+    for (var d in vm.totalData) {
+        for (var v in vm.totalData[d].values) {
+            vm.totalData[d].values[v].chart = {
                 chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
                 credits: {enabled: false},
                 title: {text: ''},
                 subtitle: {text: ''},
-                xAxis: {lineColor: 'black', categories: ['']},
                 exporting: {enabled: false},
-                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
+                xAxis: {lineColor: 'black', categories: ['']},
+                yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', title: {text: ''}},
                 legend: {reversed: false},
                 plotOptions: {series: {stacking: 'normal'}},
-                colors: colors,
-                series: series
-            }
-        };
+                colors: ['#3b5998'],
+                series: [{
+                    showInLegend: false,
+                    name: vm.totalData[d]['company'] + ' ' + v,
+                    data: [vm.totalData[d].values[v].change]
+                }]
+            };
+        }
     }
-
-    vm.legend = {
-        chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
-        credits: {enabled: false},
-        title: {text: ''},
-        subtitle: {text: ''},
-        xAxis: {lineColor: 'black', categories: ['']},
-        exporting: {enabled: false},
-        yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', min: 0, title: {text: ''}},
-        legend: {reversed: false},
-        plotOptions: {series: {stacking: 'normal'}},
-        colors: colors,
-            series: series
-    };
 });

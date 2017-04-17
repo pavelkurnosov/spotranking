@@ -98,6 +98,67 @@
                                     <div class="col-xs-12">
                                         <ul id="crossChannelTab" class="nav nav-tabs bordered">
                                             <li ng-repeat="pane in vm.panes" class="{{pane.active}}">
+                                                <a href="#{{pane.id}}_pane" data-toggle="tab" ng-click="vm.currTab = pane.id">{{pane.title}}</a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="tab-content padding-10">
+                                            <div class="tab-pane fade{{pane.active == 'active' ? ' in active' : ''}}" ng-repeat="pane in vm.panes" id="{{pane.id}}_pane">
+                                                <table class="table table-responsive table-text-center">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>Sources</th>
+                                                        <th>Charts</th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'values.total'; vm.sortReverse = !vm.sortReverse">
+                                                            Total {{pane.title}}
+                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'values.change'; vm.sortReverse = !vm.sortReverse">
+                                                            Change
+                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                        <th class="cursor-pointer" ng-click="vm.sortType = 'values.growth'; vm.sortReverse = !vm.sortReverse">
+                                                            Growth(%)
+                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                        </th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr ng-repeat="row in vm.totalData | orderBy:vm.sortType:vm.sortReverse"
+                                                        class="height-70"
+                                                        ng-class="{'text-grey':row.visible}">
+                                                        <td class="text-left vertical-middle">
+                                                            <a class="cursor-pointer" ng-class="{'text-grey':row.visible}" ng-click="row.visible = !row.visible">
+                                                                <i class="fa fa-eye{{row.visible ? '-slash' : ''}}"></i> {{row.company}}
+                                                            </a>
+                                                        </td>
+                                                        <td class="vertical-middle padding-0" style="padding:0;">{{vm.aaaaa}}
+                                                            <div highchart data="row.values[vm.currTab].chart" ng-model="vm.aaaaa" ng-if="!row.visible"></div>
+                                                        </td>
+                                                        <td class="vertical-middle">
+                                                            <h4>{{row.values[vm.currTab].total}}</h4>
+                                                        </td>
+                                                        <td class="vertical-middle {{row.values[vm.currTab].change > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4 ng-class="{'text-grey':row.visible}">
+                                                                <span ng-if="row.values[vm.currTab].change > 0">+</span>{{row.values[vm.currTab].change}}
+                                                            </h4>
+                                                        </td>
+                                                        <td class="vertical-middle {{row.values[vm.currTab].growth > 0 ? 'text-green' : 'text-red'}}">
+                                                            <h4 ng-class="{'text-grey':row.visible}">
+                                                                <span ng-if="row.values[vm.currTab].growth > 0">+</span>{{row.values[vm.currTab].growth}}
+                                                            </h4>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <ul id="crossChannelTab" class="nav nav-tabs bordered">
+                                            <li ng-repeat="pane in vm.panes" class="{{pane.active}}">
                                                 <a href="#{{pane.id}}_pane" data-toggle="tab">{{pane.title}}</a>
                                             </li>
                                         </ul>
@@ -155,7 +216,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>
