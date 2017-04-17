@@ -149,7 +149,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             vm.statData[division]['data'][c]['total_change'] = changeTotal;
             vm.statData[division]['data'][c]['total_growth'] = Math.round((amountTotal - vm.statData[division]['data'][c]['previous_amount']) / amountTotal * 10000) / 100;
 
-            amountsAry[amountsAry.length] = amountTotal;    // will used in calculating scale of the chart.
+            amountsAry[amountsAry.length] = changeTotal;    // will used in calculating scale of the chart.
 
             var categories = [];
             var colors = [];
@@ -161,7 +161,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 series[series.length] = {
                     showInLegend: false,
                     name: vm.medias[m].title,
-                    data: [vm.statData[division]['data'][c][vm.medias[m].id]['amount']]
+                    data: [vm.statData[division]['data'][c][vm.medias[m].id]['change']]
                 };
             }
 
