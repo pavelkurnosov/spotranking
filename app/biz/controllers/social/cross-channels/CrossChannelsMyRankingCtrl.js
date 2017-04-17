@@ -46,7 +46,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             }, {
                 company: 'www.ooredoo.dz',
                 previous_amount: 4454637,
-                facebook: {amount: 4479289, change: 42166, growth: 0.95},
+                facebook: {amount: 4479289, change: -8423, growth: 0.95},
                 twitter: {amount: 15841, change: 30, growth: 0.19},
                 googleplus: {amount: 1698, change: -2, growth: -0.12},
                 instagram: {amount: 0, change: 0, growth: 0},
@@ -55,10 +55,10 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 company: 'www.orange.tn',
                 previous_amount: 23689165,
                 facebook: {amount: 23173316, change: 79581, growth: 0.34},
-                twitter: {amount: 240472, change: 85, growth: 0.04},
-                googleplus: {amount: 324128, change: 4, growth: 0},
-                instagram: {amount: 27005, change: 43, growth: 0.16},
-                youtube: {amount: 3958, change: 1, growth: 0.03}
+                twitter: {amount: 240472, change: 850, growth: 0.04},
+                googleplus: {amount: 324128, change: 40, growth: 0},
+                instagram: {amount: 27005, change: 430, growth: 0.16},
+                youtube: {amount: 3958, change: 10, growth: 0.03}
             }]
         },
         activity: {
@@ -118,7 +118,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             }, {
                 company: 'www.ooredoo.dz',
                 previous_amount: 482607,
-                facebook: {amount: 636606, change: 154022, growth: 31.92},
+                facebook: {amount: 636606, change: 6022, growth: 31.92},
                 twitter: {amount: 4, change: -19, growth: -82.61},
                 googleplus: {amount: 0, change: 0, growth: 0},
                 instagram: {amount: 0, change: 0, growth: 0},
