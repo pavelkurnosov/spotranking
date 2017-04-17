@@ -8505,11 +8505,11 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
     };
 
     vm.tabs = [
-        {title: 'Social Posts', state: 'crossChannels.socialPosts'},
+        {title: 'Social Posts', state: 'crossChannels.socialPosts', active: true},
         {title: 'Metrics', state: 'crossChannels.metrics'},
         {title: 'Landscape Comparison', state: 'crossChannels.landscapeComparison'},
         {title: 'Bios', state: 'crossChannels.bios'},
-        {title: 'My Rankings', state: 'crossChannels.myRankings', active: true}
+        {title: 'My Rankings', state: 'crossChannels.myRankings'}
     ];
 
     vm.selectTab = function (tab) {
@@ -8518,6 +8518,7 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
         vm.go(tab.state);
     };
     vm.selectTab($filter('filter')(vm.tabs, {active:true}, true)[0]);
+
 });
 'use strict';
 
@@ -13869,6 +13870,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
 
 
     vm.calcTotal = function (division) {    // division : audience, activity or engagement.
+        var amountsAry = [];
         for (var c in vm.statData[division]['data']) {      // companies
             var amountTotal = 0, changeTotal = 0, growthTotal = 0;
             for (var m in vm.medias) {
@@ -13880,6 +13882,8 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             vm.statData[division]['data'][c]['total_change'] = changeTotal;
             vm.statData[division]['data'][c]['total_growth'] = Math.round((amountTotal - vm.statData[division]['data'][c]['previous_amount']) / amountTotal * 10000) / 100;
 
+            amountsAry[amountsAry.length] = amountTotal;    // will used in calculating scale of the chart.
+
             var categories = [];
             var colors = [];
             var series = [];
@@ -13887,8 +13891,13 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             for (var m in vm.medias) {
                 categories[categories.length] = '';
                 colors[colors.length] = vm.medias[m].color;
-                // series[series.length] = vm.statData[division]['data'][c]['total_amount'];
+                series[series.length] = {
+                    showInLegend: false,
+                    name: vm.medias[m].title,
+                    data: [vm.statData[division]['data'][c][vm.medias[m].id]['amount']]
+                };
             }
+
             vm.statData[division]['data'][c]['chart'] = {
                 chart: {type: 'bar', height: 70, backgroundColor: 'rgba(255, 255, 255, 0)'},
                 credits: {enabled: false},
@@ -13900,12 +13909,18 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 legend: {reversed: false},
                 plotOptions: {series: {stacking: 'normal'}},
                 colors: colors,
-                series: [{
-                    showInLegend: false,
-                    name: 'abcd',
-                    data: [12,32]
-                }]
+                series: series
             };     // to be inserted chart data.
+        }
+        var min = amountsAry.reduce(function (a, b) {
+            return Math.min(a, b);
+        });
+        var max = amountsAry.reduce(function (a, b) {
+            return Math.max(a, b);
+        });
+        for (var c in vm.statData[division]['data']) {
+            vm.statData[division]['data'][c]['chart']['yAxis']['min'] = min;
+            vm.statData[division]['data'][c]['chart']['yAxis']['max'] = max;
         }
     };
     vm.calcTotal('audience');
