@@ -97,7 +97,7 @@
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <ul id="crossChannelTab" class="nav nav-tabs bordered">
-                                            <li ng-repeat="pane in vm.panes" class="{{pane.active}}">
+                                            <li ng-repeat="pane in vm.panes" class="{{pane.active}}" ng-click="vm.tabSelect(pane.id);">
                                                 <a href="#{{pane.id}}_pane" data-toggle="tab" ng-click="vm.currTab = pane.id">{{pane.title}}</a>
                                             </li>
                                         </ul>
@@ -111,15 +111,15 @@
                                                         <th>Charts</th>
                                                         <th class="cursor-pointer" ng-click="vm.sortType = 'values.total'; vm.sortReverse = !vm.sortReverse">
                                                             Total {{pane.title}}
-                                                            <span ng-show="vm.sortType == 'total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                            <span ng-show="vm.sortType == 'values.total'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
                                                         </th>
                                                         <th class="cursor-pointer" ng-click="vm.sortType = 'values.change'; vm.sortReverse = !vm.sortReverse">
                                                             Change
-                                                            <span ng-show="vm.sortType == 'change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                            <span ng-show="vm.sortType == 'values.change'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
                                                         </th>
                                                         <th class="cursor-pointer" ng-click="vm.sortType = 'values.growth'; vm.sortReverse = !vm.sortReverse">
                                                             Growth(%)
-                                                            <span ng-show="vm.sortType == 'growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
+                                                            <span ng-show="vm.sortType == 'values.growth'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
                                                         </th>
                                                     </tr>
                                                     </thead>
@@ -132,8 +132,8 @@
                                                                 <i class="fa fa-eye{{row.visible ? '-slash' : ''}}"></i> {{row.company}}
                                                             </a>
                                                         </td>
-                                                        <td class="vertical-middle padding-0" style="padding:0;">{{vm.aaaaa}}
-                                                            <div highchart data="row.values[vm.currTab].chart" ng-model="vm.aaaaa" ng-if="!row.visible"></div>
+                                                        <td class="vertical-middle padding-0 col-xs-8" style="padding:0;" ng-if="vm.chartDisplay">
+                                                            <div highchart data="row.values[vm.currTab].chart" ng-if="!row.visible"></div>
                                                         </td>
                                                         <td class="vertical-middle">
                                                             <h4>{{row.values[vm.currTab].total}}</h4>

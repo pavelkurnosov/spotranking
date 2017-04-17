@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('CrossChannelsMyRankingsController', function () {
+angular.module('app.biz').controller('CrossChannelsMyRankingsController', function ($timeout) {
     var vm = this;
 
     /* yOUTUBE : HEX: bb0000.
@@ -58,6 +58,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             engagement: {total: 641, change: -104, growth: -13.96}
         }
     }];
+    vm.displayColumnInChart = 'growth';
 
     for (var d in vm.totalData) {
         for (var v in vm.totalData[d].values) {
@@ -75,9 +76,30 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 series: [{
                     showInLegend: false,
                     name: vm.totalData[d]['company'] + ' ' + v,
-                    data: [vm.totalData[d].values[v].change]
+                    data: [vm.totalData[d].values[v][vm.displayColumnInChart]]
                 }]
             };
         }
     }
+    vm.tabSelect = function () {
+        vm.chartDisplay = false;
+        var ary = [];
+        for (var d in vm.totalData) {
+            ary[ary.length] = vm.totalData[d].values[vm.currTab][vm.displayColumnInChart];
+        }
+        var min = ary.reduce(function (a, b) {
+            return Math.min(a, b);
+        });
+        var max = ary.reduce(function (a, b) {
+            return Math.max(a, b);
+        });
+        for (var d in vm.totalData) {
+            vm.totalData[d]['values'][vm.currTab]['chart']['yAxis']['min'] = min;
+            vm.totalData[d]['values'][vm.currTab]['chart']['yAxis']['max'] = max;
+        }
+        $timeout(function () {
+            vm.chartDisplay = true;
+        }, 500);
+    };
+    vm.tabSelect();
 });
