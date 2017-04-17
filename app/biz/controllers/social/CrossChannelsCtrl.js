@@ -8,11 +8,11 @@ angular.module('app.biz').controller('CrossChannelsController', function ($state
     };
 
     vm.tabs = [
-        {title: 'Social Posts', state: 'crossChannels.socialPosts', active: true},
+        {title: 'Social Posts', state: 'crossChannels.socialPosts'},
         {title: 'Metrics', state: 'crossChannels.metrics'},
         {title: 'Landscape Comparison', state: 'crossChannels.landscapeComparison'},
         {title: 'Bios', state: 'crossChannels.bios'},
-        {title: 'My Rankings', state: 'crossChannels.myRankings'}
+        {title: 'My Rankings', state: 'crossChannels.myRankings', active: true}
     ];
 
     vm.selectTab = function (tab) {
