@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/main-search.html" afterPath="$PROJECT_DIR$/app/biz/views/main-search.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/dashboard.html" afterPath="$PROJECT_DIR$/app/biz/views/dashboard.html" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,18 +79,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainSearchCtrl.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainSearchCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="206" column="69" lean-forward="false" selection-start-line="206" selection-start-column="69" selection-end-line="206" selection-end-column="69" />
+            <state relative-caret-position="235">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
               <folding>
                 <element signature="e#144#345#0" expanded="false" />
                 <element signature="e#405#547#0" expanded="false" />
-                <element signature="e#609#861#0" expanded="false" />
                 <element signature="e#925#8389#0" expanded="false" />
                 <element signature="e#8772#8926#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/biz/views/dashboard.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="22" column="146" lean-forward="false" selection-start-line="22" selection-start-column="146" selection-end-line="22" selection-end-column="146" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -146,8 +153,8 @@
       <find>Algeria</find>
       <find>medias</find>
       <find>main</find>
-      <find>dates4</find>
       <find>currM</find>
+      <find>dates4</find>
     </findStrings>
     <replaceStrings>
       <replace>width-</replace>
@@ -215,7 +222,6 @@
         <option value="$PROJECT_DIR$/app/auth/login/LoginCtrl.js" />
         <option value="$PROJECT_DIR$/app/auth/views/login.html" />
         <option value="$PROJECT_DIR$/app/auth/views/forgot-password.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/dashboard.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/MediaOutletCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/outlet_data.json" />
         <option value="$PROJECT_DIR$/app/biz/views/media-outlet.html" />
@@ -232,6 +238,7 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/dashboard.html" />
       </list>
     </option>
   </component>
@@ -649,7 +656,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
-    <property name="SearchEverywhereHistoryKey" value="rtv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/rtv-report.html&#10;rt&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/RtvReportCtrl.js&#10;your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;mainsea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/MainSearchCtrl.js&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;crossch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;highch&#9;null&#9;null&#10;myrankingscontroll&#9;null&#9;null&#10;my-ran&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;mainsear&#9;null&#9;null&#10;export&#9;null&#9;null&#10;layout.t&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/layout.tpl.html&#10;app&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;outlet&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/MediaOutletCtrl.js&#10;my-ranking&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;json&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/outlet_data.json&#10;outlet.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/media-outlet.html&#10;outlet.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/outlet_data.json&#10;mediaout&#9;null&#9;null&#10;mediaou&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/media-outlet.html&#10;log&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/auth/views/login.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;landscapecompari&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/landscape-comparison.html&#10;metric&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/metrics.html&#10;insightctr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/twitter/TwitterInsightsCtrl.js&#10;insightctrl&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/googleplus/GoogleplusInsightsCtrl.js&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;insights&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/insights.html&#10;metric.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/metrics.html&#10;module.j&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;twittersoci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/twitter/TwitterSocialPostsCtrl.js&#10;socialgoogle&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialGoogleplusCtrl.js&#10;linked&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialLinkedin.js&#10;socialpin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialPinterestCtrl.js&#10;socialinsta&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialInstagramCtrl.js&#10;socialyou&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialYoutubeCtrl.js&#10;socialtwit&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialTwitterCtrl.js&#10;socialface&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialFacebookCtrl.js&#10;landscape&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js&#10;googlepl&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialGooglePlusCtrl.js&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;landscape-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/landscape-comparison.html&#10;socialfaceboo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialFacebookCtrl.js&#10;modules&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/.idea/modules.xml&#10;facebooksoci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/facebook/FacebookSocialPostsCtrl.js&#10;social-post&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/social-posts.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;bower.json&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/bower.json&#10;cons&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/constants.js" />
+    <property name="SearchEverywhereHistoryKey" value="dashbo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/dashboard.html&#10;rtv&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/rtv-report.html&#10;rt&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/RtvReportCtrl.js&#10;your&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/styles/css/your_style.css&#10;mainsea&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/MainSearchCtrl.js&#10;main&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/main-search.html&#10;crossch&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/CrossChannelsCtrl.js&#10;highch&#9;null&#9;null&#10;myrankingscontroll&#9;null&#9;null&#10;my-ran&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;mainsear&#9;null&#9;null&#10;export&#9;null&#9;null&#10;layout.t&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/layout.tpl.html&#10;app&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;outlet&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/MediaOutletCtrl.js&#10;my-ranking&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/cross-channels/my-rankings.html&#10;json&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/outlet_data.json&#10;outlet.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/media-outlet.html&#10;outlet.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/outlet_data.json&#10;mediaout&#9;null&#9;null&#10;mediaou&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/media-outlet.html&#10;log&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/auth/views/login.html&#10;navi&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;module&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;landscapecompari&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/landscape-comparison.html&#10;metric&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/metrics.html&#10;insightctr&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/twitter/TwitterInsightsCtrl.js&#10;insightctrl&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/googleplus/GoogleplusInsightsCtrl.js&#10;modul&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;insights&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/insights.html&#10;metric.h&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/metrics.html&#10;module.j&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/module.js&#10;twittersoci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/twitter/TwitterSocialPostsCtrl.js&#10;socialgoogle&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialGoogleplusCtrl.js&#10;linked&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialLinkedin.js&#10;socialpin&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialPinterestCtrl.js&#10;socialinsta&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialInstagramCtrl.js&#10;socialyou&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialYoutubeCtrl.js&#10;socialtwit&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialTwitterCtrl.js&#10;socialface&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialFacebookCtrl.js&#10;landscape&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/facebook/FacebookLandscapeComparisonCtrl.js&#10;googlepl&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialGooglePlusCtrl.js&#10;nav&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/layout/partials/navigation.tpl.html&#10;landscape-&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/landscape-comparison.html&#10;socialfaceboo&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/SocialFacebookCtrl.js&#10;modules&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/.idea/modules.xml&#10;facebooksoci&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/controllers/social/facebook/FacebookSocialPostsCtrl.js&#10;social-post&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/biz/views/social/facebook/social-posts.html&#10;app.js&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/app/app.js&#10;bower.json&#9;FILE&#9;file://C:/Users/Pavel/Documents/work/bruce_afruz/workspace/spotranking/bower.json" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js.buildTools.gulp.gulp_package_dir" value="C:\Users\Pavel\Documents\work\bruce_afruz\workspace\spotranking\node_modules\gulp" />
   </component>
@@ -775,12 +782,12 @@
       <workItem from="1492166228161" duration="2154000" />
       <workItem from="1492304192469" duration="37666000" />
       <workItem from="1492426544770" duration="1130000" />
-      <workItem from="1492437367755" duration="18297000" />
+      <workItem from="1492437367755" duration="18569000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="502277000" />
+    <option name="totallyTimeSpent" value="502549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1046,13 +1053,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="94" lean-forward="false" selection-start-line="32" selection-start-column="94" selection-end-line="32" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/auth/views/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
@@ -1200,6 +1200,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+          <folding>
+            <element signature="e#144#345#0" expanded="false" />
+            <element signature="e#405#547#0" expanded="false" />
+            <element signature="e#925#8389#0" expanded="false" />
+            <element signature="e#8772#8926#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1213,27 +1236,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
+    <entry file="file://$PROJECT_DIR$/app/biz/views/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="206" column="69" lean-forward="false" selection-start-line="206" selection-start-column="69" selection-end-line="206" selection-end-column="69" />
-          <folding>
-            <element signature="e#144#345#0" expanded="false" />
-            <element signature="e#405#547#0" expanded="false" />
-            <element signature="e#609#861#0" expanded="false" />
-            <element signature="e#925#8389#0" expanded="false" />
-            <element signature="e#8772#8926#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="22" column="146" lean-forward="false" selection-start-line="22" selection-start-column="146" selection-end-line="22" selection-end-column="146" />
+          <folding />
         </state>
       </provider>
     </entry>
