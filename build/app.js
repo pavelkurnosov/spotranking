@@ -5490,14 +5490,16 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     ];
     vm.currLanguage = vm.languages[0];
 
-    vm.medias = [
-        {id: 1, name: 'Facebook'},
-        {id: 2, name: 'Twitter'},
-        {id: 3, name: 'Youtube'},
-        {id: 4, name: 'Facebook'},
-        {id: 5, name: 'Facebook'},
+    vm.mediaTypes = [
+        {id: 1, name: 'All Medias'},
+        {id: 2, name: 'Newspapers'},
+        {id: 3, name: 'Magazine'},
+        {id: 4, name: 'TV'},
+        {id: 5, name: 'Radio'},
+        {id: 6, name: 'Web Display'},
+        {id: 7, name: 'OOH Display'}
     ];
-    vm.currMedia = vm.medias[0];
+    vm.currMediaType = vm.mediaTypes[0];
 
     vm.industries = [
         {
@@ -5645,10 +5647,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
 
     vm.brands = [
-        {id: 1, name: 'Brand1'},
-        {id: 2, name: 'Brand2'},
-        {id: 3, name: 'Brand3'},
-        {id: 4, name: 'Brand4'}
+        {id: 1, name: 'All Brands'},
+        {id: 2, name: 'MyCompany'},
+        {id: 3, name: 'Competitor name1'},
+        {id: 4, name: 'Competitor name2'},
+        {id: 5, name: 'Competitor name3'}
     ];
     vm.currBrand = vm.brands[0];
 
@@ -6008,14 +6011,16 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     ];
     vm.currLanguage = vm.languages[0];
 
-    vm.medias = [
-        {id: 1, name: 'Facebook'},
-        {id: 2, name: 'Twitter'},
-        {id: 3, name: 'Youtube'},
-        {id: 4, name: 'Facebook'},
-        {id: 5, name: 'Facebook'},
+    vm.mediaTypes = [
+        {id: 1, name: 'All Medias'},
+        {id: 2, name: 'Newspapers'},
+        {id: 3, name: 'Magazine'},
+        {id: 4, name: 'TV'},
+        {id: 5, name: 'Radio'},
+        {id: 6, name: 'Web Display'},
+        {id: 7, name: 'OOH Display'}
     ];
-    vm.currMedia = vm.medias[0];
+    vm.currMediaType = vm.mediaTypes[0];
 
     vm.industries = [
         {
@@ -6163,10 +6168,11 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
 
     vm.brands = [
-        {id: 1, name: 'Brand1'},
-        {id: 2, name: 'Brand2'},
-        {id: 3, name: 'Brand3'},
-        {id: 4, name: 'Brand4'}
+        {id: 1, name: 'All Brands'},
+        {id: 2, name: 'MyCompany'},
+        {id: 3, name: 'Competitor name1'},
+        {id: 4, name: 'Competitor name2'},
+        {id: 5, name: 'Competitor name3'}
     ];
     vm.currBrand = vm.brands[0];
 

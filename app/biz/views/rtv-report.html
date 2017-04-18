@@ -10,9 +10,9 @@
                 <div class="row text-left">
                     <select class="form-control margin-left-20" ng-options="item as item.name for item in vm.countries track by item.id" ng-model="vm.currCountry"></select>
                     <select class="form-control" ng-options="item as item.name for item in vm.languages track by item.id" ng-model="vm.currLanguage"></select>
-                    <select class="form-control" ng-options="item as item.name for item in vm.medias track by item.id" ng-model="vm.currMedia"></select>
-                    <select class="form-control max-width-250" ng-options="item as item.name for item in vm.industries track by item.id" ng-model="vm.currIndustry" ng-change="vm.currSubIndustry = vm.currIndustry['subIndustries'][0]"></select>
-                    <select class="form-control max-width-250" ng-options="item as item.name for item in vm.currIndustry['subIndustries'] track by item.id" ng-model="vm.currSubIndustry"></select>
+                    <select class="form-control" ng-options="item as item.name for item in vm.mediaTypes track by item.id" ng-model="vm.currMediaType"></select>
+                    <select class="form-control max-width-200" ng-options="item as item.name for item in vm.industries track by item.id" ng-model="vm.currIndustry" ng-change="vm.currSubIndustry = vm.currIndustry['subIndustries'][0]"></select>
+                    <select class="form-control max-width-200" ng-options="item as item.name for item in vm.currIndustry['subIndustries'] track by item.id" ng-model="vm.currSubIndustry"></select>
                     <select class="form-control" ng-options="item as item.name for item in vm.brands track by item.id" ng-model="vm.currBrand"></select>
                     <select class="form-control" ng-options="item as item.name for item in vm.products track by item.id" ng-model="vm.currProduct"></select>
                 </div>

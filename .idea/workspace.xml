@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/main-search.html" afterPath="$PROJECT_DIR$/app/biz/views/main-search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/rtv-report.html" afterPath="$PROJECT_DIR$/app/biz/views/rtv-report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +41,8 @@
         <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-              <folding>
-                <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-              </folding>
+              <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,8 +50,8 @@
       <file leaf-file-name="your_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="468" column="1" lean-forward="true" selection-start-line="468" selection-start-column="1" selection-end-line="468" selection-end-column="1" />
+            <state relative-caret-position="264">
+              <caret line="402" column="16" lean-forward="true" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -59,14 +60,13 @@
       <file leaf-file-name="RtvReportCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="190" column="36" lean-forward="true" selection-start-line="190" selection-start-column="36" selection-end-line="190" selection-end-column="36" />
+            <state relative-caret-position="680">
+              <caret line="197" column="72" lean-forward="true" selection-start-line="197" selection-start-column="72" selection-end-line="197" selection-end-column="72" />
               <folding>
                 <element signature="e#161#362#0" expanded="false" />
                 <element signature="e#422#564#0" expanded="false" />
-                <element signature="e#858#8322#0" expanded="false" />
-                <element signature="e#8443#8581#0" expanded="false" />
-                <element signature="e#8635#8789#0" expanded="false" />
+                <element signature="e#942#8406#0" expanded="false" />
+                <element signature="e#8789#8943#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -75,8 +75,8 @@
       <file leaf-file-name="rtv-report.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/rtv-report.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="100" lean-forward="false" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="100" />
+            <state relative-caret-position="238">
+              <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -85,15 +85,14 @@
       <file leaf-file-name="MainSearchCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="190" column="36" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="190" selection-end-column="36" />
+            <state relative-caret-position="304">
+              <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="184" selection-end-column="6" />
               <folding>
                 <element signature="e#144#345#0" expanded="false" />
                 <element signature="e#405#547#0" expanded="false" />
-                <element signature="e#605#785#0" expanded="false" />
-                <element signature="e#841#8305#0" expanded="false" />
-                <element signature="e#8426#8564#0" expanded="false" />
-                <element signature="e#8618#8772#0" expanded="false" />
+                <element signature="e#609#861#0" expanded="false" />
+                <element signature="e#925#8389#0" expanded="false" />
+                <element signature="e#8772#8926#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -120,7 +119,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;button class=&quot;btn btn-primary&quot; ng-click=&quot;vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Google+ Amplification'})&quot;&gt;View More&lt;/button&gt;</find>
       <find>&lt;button class=&quot;btn btn-primary&quot; ng-click=&quot;vm.go('crossChannels.detailsAnalyze', {pageTitle: 'Instagram Amplification'})&quot;&gt;View More&lt;/button&gt;</find>
       <find>&lt;button class=&quot;btn btn-primary&quot; ng-click=&quot;vm.go('crossChannels.detailsAnalyze', {pageTitle: 'LinkedIn Audience, with % Change'})&quot;&gt;View More&lt;/button&gt;</find>
       <find>table</find>
@@ -147,9 +145,10 @@
       <find>bar</find>
       <find>max-width</find>
       <find>Algeria</find>
+      <find>medias</find>
+      <find>currM</find>
       <find>main</find>
       <find>dates4</find>
-      <find>medias</find>
     </findStrings>
     <replaceStrings>
       <replace>width-</replace>
@@ -229,10 +228,10 @@
         <option value="$PROJECT_DIR$/app/biz/controllers/social/CrossChannelsCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
         <option value="$PROJECT_DIR$/app/biz/views/rtv-report.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js" />
       </list>
     </option>
@@ -777,12 +776,12 @@
       <workItem from="1492166228161" duration="2154000" />
       <workItem from="1492304192469" duration="37666000" />
       <workItem from="1492426544770" duration="1130000" />
-      <workItem from="1492437367755" duration="16912000" />
+      <workItem from="1492437367755" duration="17848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="500892000" />
+    <option name="totallyTimeSpent" value="501828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1186,57 +1185,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
+    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="468" column="1" lean-forward="true" selection-start-line="468" selection-start-column="1" selection-end-line="468" selection-end-column="1" />
+        <state relative-caret-position="255">
+          <caret line="15" column="62" lean-forward="false" selection-start-line="15" selection-start-column="62" selection-end-line="15" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
+    <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="58" lean-forward="false" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-          <folding>
-            <element signature="n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="190" column="36" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="190" selection-end-column="36" />
-          <folding>
-            <element signature="e#144#345#0" expanded="false" />
-            <element signature="e#405#547#0" expanded="false" />
-            <element signature="e#605#785#0" expanded="false" />
-            <element signature="e#841#8305#0" expanded="false" />
-            <element signature="e#8426#8564#0" expanded="false" />
-            <element signature="e#8618#8772#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="264">
+          <caret line="402" column="16" lean-forward="true" selection-start-line="402" selection-start-column="16" selection-end-line="402" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/rtv-report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="100" lean-forward="false" selection-start-line="12" selection-start-column="94" selection-end-line="12" selection-end-column="100" />
+        <state relative-caret-position="238">
+          <caret line="14" column="67" lean-forward="false" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="178" column="4" lean-forward="false" selection-start-line="178" selection-start-column="4" selection-end-line="184" selection-end-column="6" />
+          <folding>
+            <element signature="e#144#345#0" expanded="false" />
+            <element signature="e#405#547#0" expanded="false" />
+            <element signature="e#609#861#0" expanded="false" />
+            <element signature="e#925#8389#0" expanded="false" />
+            <element signature="e#8772#8926#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/RtvReportCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="190" column="36" lean-forward="true" selection-start-line="190" selection-start-column="36" selection-end-line="190" selection-end-column="36" />
+        <state relative-caret-position="680">
+          <caret line="197" column="72" lean-forward="true" selection-start-line="197" selection-start-column="72" selection-end-line="197" selection-end-column="72" />
           <folding>
             <element signature="e#161#362#0" expanded="false" />
             <element signature="e#422#564#0" expanded="false" />
-            <element signature="e#858#8322#0" expanded="false" />
-            <element signature="e#8443#8581#0" expanded="false" />
-            <element signature="e#8635#8789#0" expanded="false" />
+            <element signature="e#942#8406#0" expanded="false" />
+            <element signature="e#8789#8943#0" expanded="false" />
           </folding>
         </state>
       </provider>
