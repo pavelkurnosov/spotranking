@@ -5663,6 +5663,8 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     ];
     vm.currProduct = vm.products[0];
 
+    vm.currTag = 'Toyota'
+
     vm.fixedSummaryDiv = false;
     vm.checks = [];
     vm.extendTableVisible = [];

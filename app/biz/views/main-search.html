@@ -20,7 +20,7 @@
                 <div class="row margin-top-10">
                     <div class="smart-form float-left tag-box margin-left-20">
                         <label class="input">
-                            <input type="text" placeholder="Tag">
+                            <input type="text" placeholder="Tag" ng-model="vm.currTag">
                         </label>
                     </div>
 
@@ -253,11 +253,11 @@
                                 <table class="table table-bordered table-striped">
                                     <tr>
                                         <td>Access</td>
-                                        <td>Arabian PR</td>
+                                        <td>Pavel</td>
                                     </tr>
                                     <tr>
                                         <td>TAG Match</td>
-                                        <td>Toyota</td>
+                                        <td>{{vm.currTag}}</td>
                                     </tr>
                                     <tr>
                                         <td>Industry</td>
