@@ -250,6 +250,7 @@
 .float-right {
     float: right;
 }
+
 .float-none {
     float: none;
 }
@@ -398,9 +399,11 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .max-width-100 {
     max-width: 100px;
 }
+
 .max-width-250 {
     max-width: 250px;
 }
+
 .max-width-400 {
     max-width: 400px;
 }
@@ -460,8 +463,9 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 }
 
 .main-search-result {
-    height: calc(100vh - 80px);
-    overflow: scroll;
+    height: calc(100vh - 400px);
+    overflow: auto;
+    padding: 15px;
 }
 
 .text-green {

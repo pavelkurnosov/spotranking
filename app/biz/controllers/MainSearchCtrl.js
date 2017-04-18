@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('MainSearchController', function ($window) {
+angular.module('app.biz').controller('MainSearchController', function ($scope, $window) {
     var vm = this;
 
     vm.countries = [
@@ -194,11 +194,6 @@ angular.module('app.biz').controller('MainSearchController', function ($window) 
     vm.checks = [];
     vm.extendTableVisible = [];
 
-    vm.dateRange = {
-        startDate: moment().subtract(1, 'day'),
-        endDate: moment().subtract(1, 'day')
-    };
-
     vm.ranges = {
         'Today': [moment(), moment()],
         'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
@@ -207,11 +202,19 @@ angular.module('app.biz').controller('MainSearchController', function ($window) 
         'This month': [moment().startOf('month'), moment().endOf('month')]
     };
 
+    vm.dateRange = {
+        startDate: moment().subtract(1, 'day'),
+        endDate: moment().subtract(1, 'day')
+    };
+    $scope.$watch('vm.dateRange', function () {
+        vm.sdate = moment(vm.dateRange['startDate']).format('MM/DD/YYYY');
+        vm.edate = moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+    });
+
     vm.backToTop = function () {
         document.body.scrollTop = 0;
         angular.element('.main-search-result')[0].scrollTop = 0;
     };
-
 
     angular.element($window).bind("scroll", function () {
         vm.fixedSummaryDiv = document.body.scrollTop > 50;
