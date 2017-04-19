@@ -18,10 +18,8 @@
                     <select class="form-control" ng-options="item as item.name for item in vm.products track by item.id" ng-model="vm.currProduct"></select>
                 </div>
                 <div class="row margin-top-10">
-                    <div class="smart-form float-left tag-box margin-left-20">
-                        <label class="input">
-                            <input type="text" placeholder="Tag" ng-model="vm.currTag">
-                        </label>
+                    <div class="float-left margin-left-20">
+                        <input data-smart-tagsinput class="form-control tagsinput" value="unicef,nissan,sonic" ng-change="vm.aaa(this)" ng-model="vm.tags" data-role="tagsinput">
                     </div>
 
                     <div class="smart-form float-left search-box margin-left-5">

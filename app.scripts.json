@@ -38,6 +38,7 @@
       "angular-datatables.buttons",
       "bootstrap-daterangepicker",
       "ng-bs-daterangepicker",
+      "bootstrap-tagsinput",
 
       "highcharts",
       "highcharts-exporting",
