@@ -214,9 +214,9 @@
                 <div jarvis-widget
                      ng-repeat="media in vm.medias track by $index"
                      id="standard-datatable-widget{{$index}}"
-                     data-widget-color="orange"
+                     data-widget-color="blue"
                      data-widget-editbutton="false">
-                    <header>
+                    <header class="margin-bottom-10">
                         <span class="widget-icon"> <i class="fa fa-table"></i> </span>
                         <h2>{{media.title}}</h2>
                         <img class="media-logo" ng-src="{{media.image}}">

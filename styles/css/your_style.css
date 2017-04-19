@@ -463,7 +463,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 }
 
 .main-search-result {
-    height: calc(100vh - 400px);
+    height: calc(100vh - 430px);
     overflow: auto;
     padding: 15px;
 }
@@ -490,4 +490,10 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 
 .cursor-zoom-in {
     cursor: -webkit-zoom-in;
+}
+body:not(.menu-on-top).desktop-detected {
+    min-height: 100vh!important;
+}
+#main {
+    padding-bottom: 0;
 }
