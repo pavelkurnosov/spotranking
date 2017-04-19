@@ -231,4 +231,34 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         vm.fixedSummaryDiv = document.body.scrollTop > 50;
     });
 
+    vm.articles = [];
+
+    for (var a = 1; a <= 100; a ++) {
+        vm.articles[vm.articles.length] = {
+            ad_code: 'TOY/Print/130816/01----------' + a,
+            advertiser: 'Toyota',
+            product_name: '2017 Toyota Camry',
+            first_run: '17/07/2016',
+            last_run: '20/07/2016',
+            published: '25',
+            campaign_message: 'New Kind of Lunry, a head of its time. Introducing the all new Camry Hybrid',
+            country: 'United Arab Eliminate',
+            publication_name: 'EI Watan',
+            section: 'National',
+            page_number: '2',
+            image_specs: 'B&W',
+            advertising_form: 'xxxxxx',
+            ads_type: 'Banner advertising',
+            ads_size: '1/4 Vertical',
+            frequency: 'Daily',
+            language: 'Arabic',
+            format: 'Tabloid',
+            circulation: '30000',
+            image: 'cover.png'
+        };
+    }
+
+    //--------- Pagination ------------
+    vm.articlesPerPage = 10;
+
 });
