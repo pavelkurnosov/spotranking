@@ -205,11 +205,11 @@
                     <ul class="pagination margin-0 margin-bottom-20">
                         <li><a href-void><i class="fa fa-fast-backward"></i></a></li>
                         <li><a href-void><i class="fa fa-backward"></i></a></li>
-                        <li class="active"><a href-void>1</a></li>
-                        <li><a href-void>2</a></li>
-                        <li><a href-void>3</a></li>
-                        <li><a href-void>4</a></li>
-                        <li><a href-void>5</a></li>
+                        <li ng-class="{'active':vm.currPage == 1}"><a href-void ng-click="vm.currPage = 1">1</a></li>
+                        <li ng-class="{'active':vm.currPage == 2}"><a href-void ng-click="vm.currPage = 2">2</a></li>
+                        <li ng-class="{'active':vm.currPage == 3}"><a href-void ng-click="vm.currPage = 3">3</a></li>
+                        <li ng-class="{'active':vm.currPage == 4}"><a href-void ng-click="vm.currPage = 4">4</a></li>
+                        <li ng-class="{'active':vm.currPage == 5}"><a href-void ng-click="vm.currPage = 5">5</a></li>
                         <li><a href-void><i class="fa fa-forward"></i></a></li>
                         <li><a href-void><i class="fa fa-fast-forward"></i></a></li>
                     </ul>

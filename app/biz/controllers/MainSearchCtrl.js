@@ -199,6 +199,8 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         {text: 'sonic'}
     ];
 
+    vm.currPage = 2;
+
     vm.fixedSummaryDiv = false;
     vm.checks = [];
     vm.extendTableVisible = [];
