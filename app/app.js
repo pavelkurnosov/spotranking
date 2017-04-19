@@ -40,7 +40,8 @@ angular.module('app', [
     'app.home',
     'app.biz',
     'ngBootstrap',
-    'ngTagCloud'
+    'ngTagCloud',
+    'ngTagsInput'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 

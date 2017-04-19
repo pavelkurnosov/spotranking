@@ -5,7 +5,6 @@ angular.module('SmartAdmin.Forms').directive('smartTagsinput', function () {
         restrict: 'A',
         compile: function (tElement, tAttributes) {
             tElement.removeAttr('smart-tagsinput data-smart-tagsinput');
-            console.log(tElement.value);
             tElement.tagsinput();
         }
     }

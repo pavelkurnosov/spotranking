@@ -193,7 +193,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     ];
     vm.currProduct = vm.products[0];
 
-    vm.currTag = 'Toyota';
+    vm.tags = [
+        {text: 'unicef'},
+        {text: 'nissan'},
+        {text: 'sonic'}
+    ];
 
     vm.fixedSummaryDiv = false;
     vm.checks = [];

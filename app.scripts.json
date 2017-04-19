@@ -39,6 +39,7 @@
       "bootstrap-daterangepicker",
       "ng-bs-daterangepicker",
       "bootstrap-tagsinput",
+      "ng-tags-input",
 
       "highcharts",
       "highcharts-exporting",
@@ -176,6 +177,7 @@
     "bootstrap-daterangepicker": "bower_components/bootstrap-daterangepicker/daterangepicker.js",
     "ng-bs-daterangepicker": "bower_components/ng-bs-daterangepicker/dist/ng-bs-daterangepicker.min.js",
     "html2canvas": "bower_components/html2canvas/build/html2canvas.min.js",
-    "jspdf": "bower_components/jspdf/dist/jspdf.min.js"
+    "jspdf": "bower_components/jspdf/dist/jspdf.min.js",
+    "ng-tags-input": "bower_components/ng-tags-input/ng-tags-input.min.js"
   }
 }

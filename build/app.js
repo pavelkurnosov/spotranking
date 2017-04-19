@@ -331,7 +331,8 @@ angular.module('app', [
     'app.home',
     'app.biz',
     'ngBootstrap',
-    'ngTagCloud'
+    'ngTagCloud',
+    'ngTagsInput'
 ])
 .config(function ($provide, $httpProvider, RestangularProvider) {
 
@@ -5663,7 +5664,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     ];
     vm.currProduct = vm.products[0];
 
-    vm.currTag = 'Toyota';
+    vm.tags = [
+        {text: 'unicef'},
+        {text: 'nissan'},
+        {text: 'sonic'}
+    ];
 
     vm.fixedSummaryDiv = false;
     vm.checks = [];
@@ -20213,7 +20218,6 @@ angular.module('SmartAdmin.Forms').directive('smartTagsinput', function () {
         restrict: 'A',
         compile: function (tElement, tAttributes) {
             tElement.removeAttr('smart-tagsinput data-smart-tagsinput');
-            console.log(tElement.value);
             tElement.tagsinput();
         }
     }

@@ -19,7 +19,7 @@
                 </div>
                 <div class="row margin-top-10">
                     <div class="float-left margin-left-20">
-                        <input data-smart-tagsinput class="form-control tagsinput" value="unicef,nissan,sonic" ng-change="vm.aaa(this)" ng-model="vm.tags" data-role="tagsinput">
+                        <tags-input class="bootstrap" ng-model="vm.tags" style="width: 500px;"></tags-input>
                     </div>
 
                     <div class="smart-form float-left search-box margin-left-5">
@@ -251,11 +251,13 @@
                                 <table class="table table-bordered table-striped">
                                     <tr>
                                         <td>Access</td>
-                                        <td>Pavel</td>
+                                        <td>Toyota</td>
                                     </tr>
                                     <tr>
                                         <td>TAG Match</td>
-                                        <td>{{vm.currTag}}</td>
+                                        <td>
+                                            <span ng-repeat="t in vm.tags"><span ng-if="$index > 0">, </span>{{t.text}}</span>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <td>Industry</td>
