@@ -5698,9 +5698,9 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         angular.element('.main-search-result')[0].scrollTop = 0;
     };
 
-    angular.element($window).bind("scroll", function () {
+    /*angular.element($window).bind("scroll", function () {
         vm.fixedSummaryDiv = document.body.scrollTop > 50;
-    });
+    });*/
 
     vm.articles = [];
 
