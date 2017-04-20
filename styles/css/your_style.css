@@ -415,6 +415,9 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .max-height-100 {
     max-height: 100px;
 }
+.max-height-80 {
+    max-height: 80px;
+}
 
 .demo {
     top: 50px !important;
@@ -458,8 +461,8 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 }
 
 .position_table td {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     text-align: center;
     vertical-align: middle;
     background-color: #ccc;
@@ -509,5 +512,5 @@ body:not(.menu-on-top).desktop-detected {
 }
 
 .table-no-padding > tbody > tr > td {
-    padding: 4px 10px;
+    padding: 1px 10px;
 }
