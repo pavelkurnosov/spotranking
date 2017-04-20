@@ -5733,6 +5733,8 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.articlesPerPage = 10;
 
 });
+
+
 'use strict';
 
 angular.module('app.biz').controller('MeasuringOutputController', function () {
