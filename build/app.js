@@ -6384,12 +6384,12 @@ angular
 
         var html = '<div id="positions">';
         html += '<table cellpadding="0" cellspacing="0" class="position_table" id="position_table">';
-        html += '<tr><td data="a1"></td><td data="a2"></td><td data="a3"></td><td data="a4"></td><td data="a5"></td><td data="a6"></td><td data="a7"></td><td data="a8"></td><td data="a9"></td><td data="a10"></td><td data="a11"></td><td data="a12"></td></tr>';
-        html += '<tr><td data="b1"></td><td data="b2"></td><td data="b3"></td><td data="b4"></td><td data="b5"></td><td data="b6"></td><td data="b7"></td><td data="b8"></td><td data="b9"></td><td data="b10"></td><td data="b11"></td><td data="b12"></td></tr>';
-        html += '<tr><td data="c1"></td><td data="c2"></td><td data="c3"></td><td data="c4"></td><td data="c5"></td><td data="c6"></td><td data="c7"></td><td data="c8"></td><td data="c9"></td><td data="c10"></td><td data="c11"></td><td data="c12"></td></tr>';
-        html += '<tr><td data="d1"></td><td data="d2"></td><td data="d3"></td><td data="d4"></td><td data="d5"></td><td data="d6"></td><td data="d7"></td><td data="d8"></td><td data="d9"></td><td data="d10"></td><td data="d11"></td><td data="d12"></td></tr>';
-        html += '<tr><td data="e1"></td><td data="e2"></td><td data="e3"></td><td data="e4"></td><td data="e5"></td><td data="e6"></td><td data="e7"></td><td data="e8"></td><td data="e9"></td><td data="e10"></td><td data="e11"></td><td data="e12"></td></tr>';
-        html += '<tr><td data="f1"></td><td data="f2"></td><td data="f3"></td><td data="f4"></td><td data="f5"></td><td data="f6"></td><td data="f7"></td><td data="f8"></td><td data="f9"></td><td data="f10"></td><td data="f11"></td><td data="f12"></td></tr>';
+        html += '<tr><td data="a1"></td><td data="a2"></td><td data="a3"></td><td data="a4"></td><td data="a5"></td><td data="a6"></td></tr>';
+        html += '<tr><td data="b1"></td><td data="b2"></td><td data="b3"></td><td data="b4"></td><td data="b5"></td><td data="b6"></td></tr>';
+        html += '<tr><td data="c1"></td><td data="c2"></td><td data="c3"></td><td data="c4"></td><td data="c5"></td><td data="c6"></td></tr>';
+        html += '<tr><td data="d1"></td><td data="d2"></td><td data="d3"></td><td data="d4"></td><td data="d5"></td><td data="d6"></td></tr>';
+        html += '<tr><td data="e1"></td><td data="e2"></td><td data="e3"></td><td data="e4"></td><td data="e5"></td><td data="e6"></td></tr>';
+        html += '<tr><td data="f1"></td><td data="f2"></td><td data="f3"></td><td data="f4"></td><td data="f5"></td><td data="f6"></td></tr>';
         html += '</table>';
         html += '<table cellpadding="0" cellspacing="0" class="position_table" style="float: left; display:none" id="position_table_2">';
         html += '<tr><td data="g1"></td><td data="g2"></td><td data="g3"></td><td data="g4"></td><td data="g5"></td><td data="g6"></td></tr>';

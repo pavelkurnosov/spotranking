@@ -4,11 +4,7 @@
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/directives/page-locator.js" afterPath="$PROJECT_DIR$/app/biz/directives/page-locator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/main-search.html" afterPath="$PROJECT_DIR$/app/biz/views/main-search.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vendor.datatables.js" afterPath="$PROJECT_DIR$/build/vendor.datatables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/vendor.js" afterPath="$PROJECT_DIR$/build/vendor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,10 +46,10 @@
       <file leaf-file-name="page-locator.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/directives/page-locator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="111" lean-forward="true" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+            <state relative-caret-position="187">
+              <caret line="11" column="135" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="135" />
               <folding>
-                <marker date="1492842876435" expanded="true" signature="1969:1994" ph="..." />
+                <marker date="1492843354668" expanded="true" signature="1267:1292" ph="..." />
               </folding>
             </state>
           </provider>
@@ -567,12 +563,12 @@
       <workItem from="1492426544770" duration="1130000" />
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
-      <workItem from="1492718181943" duration="7856000" />
+      <workItem from="1492718181943" duration="8322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="549303000" />
+    <option name="totallyTimeSpent" value="549769000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1021,10 +1017,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/directives/page-locator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="111" lean-forward="true" selection-start-line="21" selection-start-column="111" selection-end-line="21" selection-end-column="111" />
+        <state relative-caret-position="187">
+          <caret line="11" column="135" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="135" />
           <folding>
-            <marker date="1492842876435" expanded="true" signature="1969:1994" ph="..." />
+            <marker date="1492843354668" expanded="true" signature="1267:1292" ph="..." />
           </folding>
         </state>
       </provider>
