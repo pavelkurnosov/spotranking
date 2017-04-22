@@ -523,7 +523,7 @@ body:not(.menu-on-top).desktop-detected {
 }
 
 .table-no-padding > tbody > tr > td:last-child {
-    text-align: left;
+    text-align: center;
     padding-top: 3px;
     font-size: smaller;
 }
