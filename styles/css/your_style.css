@@ -519,7 +519,7 @@ body:not(.menu-on-top).desktop-detected {
 
 .table-no-padding > tbody > tr > td:first-child {
     font-weight: bold;
-    text-align: right;
+    text-align: center;
 }
 
 .table-no-padding > tbody > tr > td:last-child {
