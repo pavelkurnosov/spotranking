@@ -30,7 +30,7 @@
                             Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.mediaTypes"><a ng-click="vm.currMediaType = item"><input type="checkbox"> {{item.name}}</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="vm.currMediaType = item"><input type="checkbox" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -112,7 +112,7 @@
                                                         <div class="col-xs-12 text-right">
                                                             <div class="smart-form">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" id="checkbox{{$index}}" ng-model="vm.checks[$index]" name="checkbox">
+                                                                    <input type="checkbox" id="checkbox{{$index}}" ng-model="article.checked" name="checkbox">
                                                                     <i></i>
                                                                 </label>
                                                             </div>
@@ -138,11 +138,11 @@
                                                                         <td>{{article.product_name}}</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>First Run:</td>
+                                                                        <td>First Run</td>
                                                                         <td>{{article.first_run}}</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Last Run:</td>
+                                                                        <td>Last Run</td>
                                                                         <td>{{article.last_run}}</td>
                                                                     </tr>
                                                                     <tr>
@@ -150,12 +150,12 @@
                                                                         <td>{{article.published}}</td>
                                                                     </tr>
                                                                     <tr>
-                                                                        <td>Campaign Message:</td>
+                                                                        <td>Campaign Message</td>
                                                                         <td>{{article.campaign_message}}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Country</td>
-                                                                        <td>{{vm.country}}</td>
+                                                                        <td>{{vm.currCountry.name}}</td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td>Publication Name</td>
@@ -268,7 +268,7 @@
                 </div>
                 <div class="col-xs-4 smart-form">
                     <label class="checkbox text-left">
-                        <input type="checkbox" name="checkbox">
+                        <input type="checkbox" name="checkbox" ng-change="vm.checkAll(this)" ng-model="vm.allCheckArticles">
                         <i></i>
                         Select / Deselect all Articles
                     </label>

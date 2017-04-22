@@ -5732,6 +5732,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     //--------- Pagination ------------
     vm.articlesPerPage = 10;
 
+    vm.checkAll = function () {
+        for (var a in vm.articles) {
+            vm.articles[a]['checked'] = vm.allCheckArticles;
+        }
+    };
 });
 
 
