@@ -332,31 +332,31 @@
                                     </tr>
                                     <tr>
                                         <td>Search Result</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">76 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Television</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">20 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Newspaper</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">4 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.newspaper">{{vm.searchCounts.newspaper}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Magazine</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">5 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.magazine">{{vm.searchCounts.magazine}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Radio</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">33 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.radio">{{vm.searchCounts.radio}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Online Display</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">6 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.online_display">{{vm.searchCounts.online_display}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Outdoor</td>
-                                        <td><a data-ui-sref="app.biz.mainSearch">8 Spots</a></td>
+                                        <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.outdoor">{{vm.searchCounts.outdoor}} Spots</a></td>
                                     </tr>
                                 </table>
                             </div>

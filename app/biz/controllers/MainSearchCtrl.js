@@ -254,6 +254,15 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     image: 'cover.png'
                 };
             }
+            vm.searchCounts = {
+                total: 76,
+                television: 20,
+                newspaper: 4,
+                magazine: 5,
+                radio: 33,
+                online_display: 6,
+                outdoor: 8
+            };
         } else {
             vm.articles = [];
             vm.currCountry = {};
@@ -266,10 +275,20 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             for (var m in vm.mediaTypes) {
                 vm.mediaTypes[m]['checked'] = false;
             }
+            vm.searchCounts = {
+                total: 0,
+                television: 0,
+                newspaper: 0,
+                magazine: 0,
+                radio: 0,
+                online_display: 0,
+                outdoor: 0
+            };
         }
         vm.searchFlag = !vm.searchFlag;
     }
     vm.search();
+
 
     //--------- Pagination ------------
     vm.articlesPerPage = 10;

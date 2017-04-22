@@ -37,8 +37,8 @@
       <file leaf-file-name="main-search.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="332" column="40" lean-forward="true" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
+            <state relative-caret-position="179">
+              <caret line="338" column="114" lean-forward="false" selection-start-line="338" selection-start-column="114" selection-end-line="338" selection-end-column="114" />
               <folding />
             </state>
           </provider>
@@ -57,8 +57,8 @@
       <file leaf-file-name="MainSearchCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+            <state relative-caret-position="475">
+              <caret line="258" column="31" lean-forward="true" selection-start-line="258" selection-start-column="31" selection-end-line="258" selection-end-column="31" />
               <folding>
                 <element signature="e#144#345#0" expanded="false" />
                 <element signature="e#405#547#0" expanded="false" />
@@ -567,12 +567,12 @@
       <workItem from="1492426544770" duration="1130000" />
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
-      <workItem from="1492718181943" duration="15852000" />
+      <workItem from="1492718181943" duration="16486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="557299000" />
+    <option name="totallyTimeSpent" value="557933000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1012,16 +1012,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="332" column="40" lean-forward="true" selection-start-line="332" selection-start-column="40" selection-end-line="332" selection-end-column="40" />
+        <state relative-caret-position="179">
+          <caret line="338" column="114" lean-forward="false" selection-start-line="338" selection-start-column="114" selection-end-line="338" selection-end-column="114" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="226" column="0" lean-forward="true" selection-start-line="226" selection-start-column="0" selection-end-line="226" selection-end-column="0" />
+        <state relative-caret-position="475">
+          <caret line="258" column="31" lean-forward="true" selection-start-line="258" selection-start-column="31" selection-end-line="258" selection-end-column="31" />
           <folding>
             <element signature="e#144#345#0" expanded="false" />
             <element signature="e#405#547#0" expanded="false" />
