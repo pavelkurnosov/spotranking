@@ -132,20 +132,19 @@
                                                         <div class="col-xs-9">
                                                             <div class="table-responsive">
                                                                 <table class="table table-bordered table-striped table-no-padding">
-                                                                    <tr ng-repeat="articleType in vm.articleTypes[article.type]">
+                                                                    <tr ng-repeat="articleType in vm.articleTypes[article.type]" ng-show="!($index >= 8 && !article.extendTableVisible)">
                                                                         <td>{{articleType|camelCase}}</td>
                                                                         <td>
                                                                             {{article[articleType]}}
-                                                                            <!--<div class="smart-form">
+                                                                            <div class="smart-form" ng-if="$index == 7" style="margin-top: -6px;">
                                                                                 <label class="toggle">
-                                                                                    <input type="checkbox" name="checkbox-toggle" ng-click="vm.extendTableVisible[$index] = !vm.extendTableVisible[$index]">
+                                                                                    <input type="checkbox" name="checkbox-toggle" ng-click="article.extendTableVisible = !article.extendTableVisible">
                                                                                     <i data-swchon-text="ON" data-swchoff-text="OFF"></i>{{article.publication_name}}
                                                                                 </label>
-                                                                            </div>-->
+                                                                            </div>
                                                                         </td>
                                                                     </tr>
                                                                 </table>
-
 
                                                                 <table class="table table-bordered table-striped table-no-padding hide">
                                                                     <tr>
@@ -409,7 +408,7 @@
                 <h4 class="modal-title" id="myModalLabel">Article Post</h4>
             </div>-->
             <div class="modal-body">
-                <img class="img-responsive width-full" src="./styles/img/{{vm.currArticle.image}}" ng-if="vm.currArticle.type == 'newspaper'">
+                <img class="img-responsive width-full" ng-src="./styles/img/{{vm.currArticle.image}}" ng-if="vm.currArticle.type == 'newspaper'">
                 <video class="width-full" controls ng-if="vm.currArticle.type == 'tv_radio'">
                     <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.

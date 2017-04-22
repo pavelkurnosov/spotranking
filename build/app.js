@@ -5740,7 +5740,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     };
     vm.search = function () {
         if (vm.searchFlag) {
-            for (var a = 1; a <= 20; a++) {
+            for (var a = 1; a <= 2; a++) {
                 vm.articles[vm.articles.length] = {
                     'type': 'newspaper',
                     'country': 'country' + a,
@@ -5872,6 +5872,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         }
         return mediaNames.join(', ');
     }
+    vm.extendTableVisible = [];
 });
 
 
