@@ -5688,18 +5688,13 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         endDate: moment().subtract(1, 'day')
     };
     $scope.$watch('vm.dateRange', function () {
-        vm.sdate = moment(vm.dateRange['startDate']).format('MM/DD/YYYY');
-        vm.edate = moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+        vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
     });
 
     vm.backToTop = function () {
         document.body.scrollTop = 0;
         angular.element('.main-search-result')[0].scrollTop = 0;
     };
-
-    /*angular.element($window).bind("scroll", function () {
-        vm.fixedSummaryDiv = document.body.scrollTop > 50;
-    });*/
 
     vm.articles = [];
 
@@ -5738,8 +5733,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             vm.currBrand = {};
             vm.currProduct = {};
             vm.tags = [];
-            vm.sdate = '';
-            vm.edate = '';
+            vm.dateString = '';
             for (var m in vm.mediaTypes) {
                 vm.mediaTypes[m]['checked'] = false;
             }
