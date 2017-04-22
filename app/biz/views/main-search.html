@@ -83,8 +83,7 @@
                             <input type="text" placeholder="Campaign message">
                         </label>
                     </div>
-                    <a href-void class="btn btn-primary float-left margin-left-5">Search</a>
-                    <a href-void class="btn btn-primary float-left margin-left-5">New Search</a>
+                    <a href-void class="btn btn-primary float-left margin-left-5" ng-click="vm.search()">{{vm.searchFlag ? 'Search' : 'Reset Search'}}</a>
                 </div>
             </div>
             <div jarvis-widget data-widget-color="blueDark" class="margin-bottom-10" id="search-result" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
@@ -102,6 +101,13 @@
 
                 <div class="padding-0">
                     <div class="content-fluid main-search-result custom-scroll">
+                        <div class="row" ng-if="vm.searchFlag">
+                            <div class="col-md-12">
+                                <div class="well">
+                                    There is no search result.
+                                </div>
+                            </div>
+                        </div>
                         <div class="row" ng-repeat="article in vm.articles track by $index">
                             <div class="col-md-12">
                                 <div class="well padding-0">
