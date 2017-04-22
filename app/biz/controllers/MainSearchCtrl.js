@@ -21,7 +21,6 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.currLanguage = vm.languages[0];
 
     vm.mediaTypes = [
-        {id: 1, name: 'All Medias'},
         {id: 2, name: 'Newspapers'},
         {id: 3, name: 'Magazine'},
         {id: 4, name: 'TV'},
@@ -261,9 +260,15 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     //--------- Pagination ------------
     vm.articlesPerPage = 10;
 
-    vm.checkAll = function () {
+    vm.checkAllMediaTypes = function () {
+        vm.allMediaCheck = !vm.allMediaCheck
+        for (var m in vm.mediaTypes) {
+            vm.mediaTypes[m]['checked'] = vm.allMediaCheck;
+        }
+    };
+    vm.checkAllArticles = function () {
         for (var a in vm.articles) {
-            vm.articles[a]['checked'] = vm.allCheckArticles;
+            vm.articles[a]['checked'] = vm.allArticlesCheck;
         }
     };
 

@@ -37,8 +37,8 @@
       <file leaf-file-name="main-search.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="120" column="116" lean-forward="true" selection-start-line="120" selection-start-column="116" selection-end-line="120" selection-end-column="116" />
+            <state relative-caret-position="289">
+              <caret line="32" column="151" lean-forward="true" selection-start-line="32" selection-start-column="151" selection-end-line="32" selection-end-column="151" />
               <folding />
             </state>
           </provider>
@@ -47,13 +47,13 @@
       <file leaf-file-name="MainSearchCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state relative-caret-position="441">
+              <caret line="263" column="44" lean-forward="false" selection-start-line="263" selection-start-column="44" selection-end-line="263" selection-end-column="44" />
               <folding>
                 <element signature="e#144#345#0" expanded="false" />
                 <element signature="e#405#547#0" expanded="false" />
-                <element signature="e#925#8389#0" expanded="false" />
-                <element signature="e#8772#8926#0" expanded="false" />
+                <element signature="e#888#8352#0" expanded="false" />
+                <element signature="e#8735#8889#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -70,9 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>bar</find>
-      <find>max-width</find>
-      <find>Algeria</find>
       <find>medias</find>
       <find>main</find>
       <find>currM</find>
@@ -100,6 +97,9 @@
       <find>height-1</find>
       <find>height: 15px</find>
       <find>select all Articles</find>
+      <find>checkall</find>
+      <find>checkAllMediaTypes</find>
+      <find>allarticle</find>
     </findStrings>
     <replaceStrings>
       <replace>width-</replace>
@@ -557,12 +557,12 @@
       <workItem from="1492426544770" duration="1130000" />
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
-      <workItem from="1492718181943" duration="11570000" />
+      <workItem from="1492718181943" duration="12193000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="553017000" />
+    <option name="totallyTimeSpent" value="553640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1002,21 +1002,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="120" column="116" lean-forward="true" selection-start-line="120" selection-start-column="116" selection-end-line="120" selection-end-column="116" />
+        <state relative-caret-position="289">
+          <caret line="32" column="151" lean-forward="true" selection-start-line="32" selection-start-column="151" selection-end-line="32" selection-end-column="151" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state relative-caret-position="441">
+          <caret line="263" column="44" lean-forward="false" selection-start-line="263" selection-start-column="44" selection-end-line="263" selection-end-column="44" />
           <folding>
             <element signature="e#144#345#0" expanded="false" />
             <element signature="e#405#547#0" expanded="false" />
-            <element signature="e#925#8389#0" expanded="false" />
-            <element signature="e#8772#8926#0" expanded="false" />
+            <element signature="e#888#8352#0" expanded="false" />
+            <element signature="e#8735#8889#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -30,6 +30,7 @@
                             Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
+                            <li><a href-void ng-click="vm.checkAllMediaTypes()"><input type="checkbox" ng-model="vm.allMediaCheck"> All Medias</a></li>
                             <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
@@ -268,7 +269,7 @@
                 </div>
                 <div class="col-xs-4 smart-form">
                     <label class="checkbox text-left">
-                        <input type="checkbox" name="checkbox" ng-change="vm.checkAll(this)" ng-model="vm.allCheckArticles">
+                        <input type="checkbox" name="checkbox" ng-change="vm.checkAllArticles()" ng-model="vm.allArticlesCheck">
                         <i></i>
                         Select / Deselect all Articles
                     </label>
