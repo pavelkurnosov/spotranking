@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('MainSearchController', function ($scope, $filter) {
+angular.module('app.biz').controller('MainSearchController', function ($scope, $filter, $state) {
     var vm = this;
 
     vm.countries = [
@@ -392,5 +392,9 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         return mediaNames.join(', ');
     }
     vm.extendTableVisible = [];
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    };
 });
 
