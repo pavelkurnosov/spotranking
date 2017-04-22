@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/main-search.html" afterPath="$PROJECT_DIR$/app/biz/views/main-search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
@@ -34,8 +37,8 @@
       <file leaf-file-name="main-search.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="32" column="151" lean-forward="true" selection-start-line="32" selection-start-column="151" selection-end-line="32" selection-end-column="151" />
+            <state relative-caret-position="425">
+              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -44,8 +47,8 @@
       <file leaf-file-name="your_style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="588">
-              <caret line="524" column="48" lean-forward="true" selection-start-line="524" selection-start-column="48" selection-end-line="524" selection-end-column="48" />
+            <state relative-caret-position="568">
+              <caret line="522" column="1" lean-forward="true" selection-start-line="522" selection-start-column="1" selection-end-line="522" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -188,8 +191,8 @@
         <option value="$PROJECT_DIR$/app/MainCtrl.js" />
         <option value="$PROJECT_DIR$/app/biz/directives/page-locator.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
+        <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
         <option value="$PROJECT_DIR$/styles/css/your_style.css" />
       </list>
     </option>
@@ -564,12 +567,12 @@
       <workItem from="1492426544770" duration="1130000" />
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
-      <workItem from="1492718181943" duration="13015000" />
+      <workItem from="1492718181943" duration="14274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="554462000" />
+    <option name="totallyTimeSpent" value="555721000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -999,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="32" column="151" lean-forward="true" selection-start-line="32" selection-start-column="151" selection-end-line="32" selection-end-column="151" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="322">
@@ -1020,10 +1015,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/views/main-search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="524" column="48" lean-forward="true" selection-start-line="524" selection-start-column="48" selection-end-line="524" selection-end-column="48" />
+        <state relative-caret-position="568">
+          <caret line="522" column="1" lean-forward="true" selection-start-line="522" selection-start-column="1" selection-end-line="522" selection-end-column="1" />
           <folding />
         </state>
       </provider>

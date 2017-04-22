@@ -31,7 +31,7 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a href-void ng-click="vm.checkAllMediaTypes()"><input type="checkbox" ng-model="vm.allMediaCheck"> All Medias</a></li>
-                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-model="item.checked"> {{item.name}}</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
