@@ -334,60 +334,70 @@ angular.module('app', [
     'ngTagCloud',
     'ngTagsInput'
 ])
-.config(function ($provide, $httpProvider, RestangularProvider) {
+    .config(function ($provide, $httpProvider, RestangularProvider) {
 
 
-    // Intercept http calls.
-    $provide.factory('ErrorHttpInterceptor', function ($q) {
-        var errorCounter = 0;
-        function notifyError(rejection){
-            console.log(rejection);
-            $.bigBox({
-                title: rejection.status + ' ' + rejection.statusText,
-                content: rejection.data,
-                color: "#C46A69",
-                icon: "fa fa-warning shake animated",
-                number: ++errorCounter,
-                timeout: 6000
-            });
-        }
+        // Intercept http calls.
+        $provide.factory('ErrorHttpInterceptor', function ($q) {
+            var errorCounter = 0;
 
-        return {
-            // On request failure
-            requestError: function (rejection) {
-                // show notification
-                notifyError(rejection);
-
-                // Return the promise rejection.
-                return $q.reject(rejection);
-            },
-
-            // On response failure
-            responseError: function (rejection) {
-                // show notification
-                notifyError(rejection);
-                // Return the promise rejection.
-                return $q.reject(rejection);
+            function notifyError(rejection) {
+                console.log(rejection);
+                $.bigBox({
+                    title: rejection.status + ' ' + rejection.statusText,
+                    content: rejection.data,
+                    color: "#C46A69",
+                    icon: "fa fa-warning shake animated",
+                    number: ++errorCounter,
+                    timeout: 6000
+                });
             }
+
+            return {
+                // On request failure
+                requestError: function (rejection) {
+                    // show notification
+                    notifyError(rejection);
+
+                    // Return the promise rejection.
+                    return $q.reject(rejection);
+                },
+
+                // On response failure
+                responseError: function (rejection) {
+                    // show notification
+                    notifyError(rejection);
+                    // Return the promise rejection.
+                    return $q.reject(rejection);
+                }
+            };
+        });
+
+        // Add the interceptor to the $httpProvider.
+        $httpProvider.interceptors.push('ErrorHttpInterceptor');
+
+        RestangularProvider.setBaseUrl(location.pathname.replace(/[^\/]+?$/, ''));
+
+    })
+    .constant('APP_CONFIG', window.appConfig)
+
+    .filter('camelCase', function () {
+        return function (input) {
+            input = input || '';
+            input = input.replace(/_/g, " ");
+            return input.replace(/\w\S*/g, function (txt) {
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
         };
+    })
+
+    .run(function ($rootScope
+        , $state, $stateParams) {
+        $rootScope.$state = $state;
+        $rootScope.$stateParams = $stateParams;
+        // editableOptions.theme = 'bs3';
+
     });
-
-    // Add the interceptor to the $httpProvider.
-    $httpProvider.interceptors.push('ErrorHttpInterceptor');
-
-    RestangularProvider.setBaseUrl(location.pathname.replace(/[^\/]+?$/, ''));
-
-})
-.constant('APP_CONFIG', window.appConfig)
-
-.run(function ($rootScope
-    , $state, $stateParams
-    ) {
-    $rootScope.$state = $state;
-    $rootScope.$stateParams = $stateParams;
-    // editableOptions.theme = 'bs3';
-
-});
 
 
 "use strict";
@@ -5492,12 +5502,12 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.currLanguage = vm.languages[0];
 
     vm.mediaTypes = [
-        {id: 2, name: 'Newspapers'},
-        {id: 3, name: 'Magazine'},
-        {id: 4, name: 'TV'},
-        {id: 5, name: 'Radio'},
-        {id: 6, name: 'Web Display'},
-        {id: 7, name: 'OOH Display'}
+        {id: 2, name: 'Newspapers', articleType: 'newspaper'},
+        {id: 3, name: 'Magazine', articleType: 'newspaper'},
+        {id: 4, name: 'TV', articleType: 'tv_radio'},
+        {id: 5, name: 'Radio', articleType: 'tv_radio'},
+        {id: 6, name: 'Web Display', articleType: 'web'},
+        {id: 7, name: 'OOH Display', articleType: 'ooh'}
     ];
     vm.currMediaType = vm.mediaTypes[0];
 
@@ -5699,30 +5709,108 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.articles = [];
 
     vm.searchFlag = true;
+    /*vm.articles[vm.articles.length] = {
+     type: 'tv',
+     ad_code: 'TOY/Print/130816/01----------' + a,
+     advertiser: 'Toyota',
+     product_name: '2017 Toyota Camry',
+     first_run: '17/07/2016',
+     last_run: '20/07/2016',
+     published: '25',
+     campaign_message: 'New Kind of Lunry, a head of its time. Introducing the all new Camry Hybrid',
+     country: 'United Arab Eliminate',
+     publication_name: 'EI Watan',
+     section: 'National',
+     page_number: '2',
+     image_specs: 'B&W',
+     advertising_form: 'xxxxxx',
+     ads_type: 'Banner advertising',
+     ads_size: '1/4 Vertical',
+     frequency: 'Daily',
+     language: 'Arabic',
+     format: 'Tabloid',
+     circulation: '30000',
+     image: 'cover.png'
+     };*/
+    vm.articleTypes = {
+        'newspaper': ['country', 'language', 'date', 'publication_name', 'geographical_scope', 'number_of_ads', 'published_section', 'page_number', 'image_specification', 'advertiser', 'product_name', 'advertising_forum', 'campaign_message', 'camp_id'],
+        'tv_radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
+        'ooh': ['ooh_supplier', 'country', 'city', 'street_name', 'language', 'first_run', 'last_run', 'ooh_media_category', 'ooh_media_format', 'circuit_distance', 'geo_location', 'ooh_display_number', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id'],
+        'web': ['country', 'language', 'date', 'landing_page', 'creative_type', 'time_seen', 'days_seen', 'first_seen', 'last_seen', 'ad_size', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id']
+    };
     vm.search = function () {
         if (vm.searchFlag) {
-            for (var a = 1; a <= 100; a ++) {
+            for (var a = 1; a <= 20; a++) {
                 vm.articles[vm.articles.length] = {
-                    ad_code: 'TOY/Print/130816/01----------' + a,
-                    advertiser: 'Toyota',
-                    product_name: '2017 Toyota Camry',
-                    first_run: '17/07/2016',
-                    last_run: '20/07/2016',
-                    published: '25',
-                    campaign_message: 'New Kind of Lunry, a head of its time. Introducing the all new Camry Hybrid',
-                    country: 'United Arab Eliminate',
-                    publication_name: 'EI Watan',
-                    section: 'National',
-                    page_number: '2',
-                    image_specs: 'B&W',
-                    advertising_form: 'xxxxxx',
-                    ads_type: 'Banner advertising',
-                    ads_size: '1/4 Vertical',
-                    frequency: 'Daily',
-                    language: 'Arabic',
-                    format: 'Tabloid',
-                    circulation: '30000',
-                    image: 'cover.png'
+                    'type': 'newspaper',
+                    'country': 'country' + a,
+                    'language': '',
+                    'date': '',
+                    'publication_name': '',
+                    'geographical_scope': '',
+                    'number_of_ads': '',
+                    'published_section': '',
+                    'page_number': '',
+                    'image_specification': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'advertising_forum': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'image': 'cover.png'
+                };
+                vm.articles[vm.articles.length] = {
+                    'type': 'tv_radio',
+                    'country': 'country' + a,
+                    'language': '',
+                    'broadcast_source': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'spot_length': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'advertising_form': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'video': 'video.mp4'
+                };
+                vm.articles[vm.articles.length] = {
+                    'type': 'ooh',
+                    'ooh_supplier': '',
+                    'country': 'country' + a,
+                    'city': '',
+                    'street_name': '',
+                    'language': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'ooh_media_category': '',
+                    'ooh_media_format': '',
+                    'circuit_distance': '',
+                    'geo_location': '',
+                    'ooh_display_number': '',
+                    'advertising_forum': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'campaign_message': '',
+                    'camp_id': ''
+                };
+                vm.articles[vm.articles.length] = {
+                    'type': 'web',
+                    'country': 'country' + a,
+                    'language': '',
+                    'date': '',
+                    'landing_page': '',
+                    'creative_type': '',
+                    'time_seen': '',
+                    'days_seen': '',
+                    'first_seen': '',
+                    'last_seen': '',
+                    'ad_size': '',
+                    'advertising_forum': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'campaign_message': '',
+                    'camp_id': ''
                 };
             }
             vm.searchCounts = {
@@ -5777,7 +5865,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     };
 
     vm.getMediaNames = function () {
-        var medias = $filter('filter')(vm.mediaTypes, {checked:true});
+        var medias = $filter('filter')(vm.mediaTypes, {checked: true});
         var mediaNames = [];
         for (var m in medias) {
             mediaNames[mediaNames.length] = medias[m]['name'];
