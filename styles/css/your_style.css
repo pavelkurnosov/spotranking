@@ -481,6 +481,10 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
     padding: 15px;
 }
 
+.smart-style-5 .main-search-result {
+    background: transparent;
+}
+
 .text-green {
     color: green !important;
 }
@@ -527,3 +531,5 @@ body:not(.menu-on-top).desktop-detected {
     padding-top: 3px;
     font-size: smaller;
 }
+
+
