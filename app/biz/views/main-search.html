@@ -30,7 +30,7 @@
                             Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="vm.currMediaType = item"><input type="checkbox" ng-model="item.checked"> {{item.name}}</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -117,8 +117,8 @@
                                                                 </label>
                                                             </div>
                                                             <a href-void class="btn btn-warning btn-xs">Share</a>
-                                                            <a href-void class="btn btn-xs btn-danger"> <i class="glyphicon glyphicon-download-alt"></i> Click to Download</a>
-                                                            <a href-void class="btn btn-warning btn-xs" ng-click="vm.checks[$index] = true">+ Report</a>
+                                                            <a href-void class="btn btn-xs btn-danger">Click to Download</a>
+                                                            <a href-void class="btn btn-warning btn-xs">+ Report</a>
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -309,7 +309,7 @@
                                     </tr>
                                     <tr>
                                         <td>Media Vehicle</td>
-                                        <td>{{vm.currMediaType.name}}</td>
+                                        <td>{{vm.getMediaNames()}}</td>
                                     </tr>
                                     <tr>
                                         <td>Country</td>

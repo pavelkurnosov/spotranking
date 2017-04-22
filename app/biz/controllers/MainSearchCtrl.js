@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('MainSearchController', function ($scope, $window) {
+angular.module('app.biz').controller('MainSearchController', function ($scope, $filter) {
     var vm = this;
 
     vm.countries = [
@@ -266,5 +266,14 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             vm.articles[a]['checked'] = vm.allCheckArticles;
         }
     };
+
+    vm.getMediaNames = function () {
+        var medias = $filter('filter')(vm.mediaTypes, {checked:true});
+        var mediaNames = [];
+        for (var m in medias) {
+            mediaNames[mediaNames.length] = medias[m]['name'];
+        }
+        return mediaNames.join(', ');
+    }
 });
 
