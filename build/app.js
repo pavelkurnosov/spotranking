@@ -14458,12 +14458,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
 
             amountsAry[amountsAry.length] = changeTotal;    // will used in calculating scale of the chart.
 
-            var categories = [];
+            var categories = [''];
             var colors = [];
             var series = [];
 
             for (var m in vm.medias) {
-                categories[categories.length] = '';
                 colors[colors.length] = vm.medias[m].color;
                 series[series.length] = {
                     showInLegend: false,
