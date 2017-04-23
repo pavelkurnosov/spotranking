@@ -544,3 +544,6 @@ body:not(.menu-on-top).desktop-detected {
 .opacity-half {
     opacity: 0.5;
 }
+.opacity-02 {
+    opacity: 0.2;
+}
