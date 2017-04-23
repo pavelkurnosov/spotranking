@@ -14319,11 +14319,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
      Instagram: #8a3ab9 */
 
     vm.medias = [
-        {id: 'facebook', title: 'Facebook', icon: 'facebook', color: '#3b5998'},
-        {id: 'twitter', title: 'Twitter', icon: 'twitter', color: '#55acee'},
-        {id: 'googleplus', title: 'Google+', icon: 'google-plus', color: '#dd4b39'},
-        {id: 'instagram', title: 'Instagram', icon: 'instagram', color: '#8a3ab9'},
-        {id: 'youtube', title: 'YouTube', icon: 'youtube', color: '#bb0000'}
+        {id: 'facebook', title: 'Facebook', icon: 'facebook', color: '#3b5998', audience: 4002698, activity: 16, engagement: 12478, pre_audience: 1, pre_activity: 15, pre_engagement:1},
+        {id: 'twitter', title: 'Twitter', icon: 'twitter', color: '#55acee', audience: 123298, activity: 15, engagement: 305, pre_audience: 1, pre_activity: 15, pre_engagement:1},
+        {id: 'googleplus', title: 'Google+', icon: 'google-plus', color: '#dd4b39', audience: 2138, activity: 10, engagement: 305, pre_audience: 3000, pre_activity: 7, pre_engagement:400},
+        {id: 'instagram', title: 'Instagram', icon: 'instagram', color: '#8a3ab9', audience: 4533, activity: 3, engagement: 68, pre_audience: 1, pre_activity: 20, pre_engagement:1},
+        {id: 'youtube', title: 'YouTube', icon: 'youtube', color: '#bb0000', audience: 28681, activity: 4, engagement: 1582, pre_audience: 1, pre_activity: 3, pre_engagement:2000}
     ];
 
     vm.sortType = 'total';
@@ -14500,13 +14500,14 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
     vm.calcTotal('audience');
     vm.calcTotal('activity');
     vm.calcTotal('engagement');
-    console.log(vm.statData);
 
     vm.columnClick = function (colId) {
         vm.sortType = 'total_' + colId;
         vm.displayColumnInChart = colId;
         vm.sortReverse = !vm.sortReverse;
     };
+
+    vm.sortChannelReverse = true;
 });
 'use strict';
 
