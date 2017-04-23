@@ -104,19 +104,19 @@
                                                     {{media.title}}
                                                 </td>
                                                 <td class="text-right">
-                                                    <h4 class="font-bold">{{media.audience}}
+                                                    <h4 class="font-bold">{{media.audience|number}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.audience >= media.pre_audience"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.audience < media.pre_audience"></i>
                                                     </h4>
                                                 </td>
                                                 <td class="text-right">
-                                                    <h4 class="font-bold">{{media.activity}}
+                                                    <h4 class="font-bold">{{media.activity|number}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.activity >= media.pre_activity"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.activity < media.pre_activity"></i>
                                                     </h4>
                                                 </td>
                                                 <td class="text-right">
-                                                    <h4 class="font-bold">{{media.engagement}}
+                                                    <h4 class="font-bold">{{media.engagement|number}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.engagement >= media.pre_engagement"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.engagement < media.pre_engagement"></i>
                                                     </h4>
@@ -167,17 +167,17 @@
                                                         <td class="vertical-middle padding-0 col-xs-8" style="padding:0;">
                                                             <div highchart data="row.chart" ng-if="!row.visible"></div>
                                                         </td>
-                                                        <td class="vertical-middle">
-                                                            <h4>{{row.total_amount}}</h4>
+                                                        <td class="vertical-middle text-right">
+                                                            <h4>{{row.total_amount|number}}</h4>
                                                         </td>
-                                                        <td class="vertical-middle {{row.total_change > 0 ? 'text-green' : 'text-red'}}">
+                                                        <td class="vertical-middle text-right {{row.total_change > 0 ? 'text-green' : 'text-red'}}">
                                                             <h4 ng-class="{'text-grey':row.visible}">
-                                                                <span ng-if="row.total_change > 0">+</span>{{row.total_change}}
+                                                                <span ng-if="row.total_change > 0">+</span>{{row.total_change|number}}
                                                             </h4>
                                                         </td>
-                                                        <td class="vertical-middle {{row.total_growth > 0 ? 'text-green' : 'text-red'}}">
+                                                        <td class="vertical-middle text-right {{row.total_growth > 0 ? 'text-green' : 'text-red'}}">
                                                             <h4 ng-class="{'text-grey':row.visible}">
-                                                                <span ng-if="row.total_growth > 0">+</span>{{row.total_growth}}
+                                                                <span ng-if="row.total_growth > 0">+</span>{{row.total_growth|number}}
                                                             </h4>
                                                         </td>
                                                     </tr>

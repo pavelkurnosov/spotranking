@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +49,8 @@
       <file leaf-file-name="my-rankings.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="104" column="53" lean-forward="true" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
+            <state relative-caret-position="478">
+              <caret line="177" column="93" lean-forward="false" selection-start-line="177" selection-start-column="93" selection-end-line="177" selection-end-column="93" />
               <folding />
             </state>
           </provider>
@@ -568,12 +566,12 @@
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
       <workItem from="1492718181943" duration="31570000" />
-      <workItem from="1492937729657" duration="5520000" />
+      <workItem from="1492937729657" duration="5958000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578537000" />
+    <option name="totallyTimeSpent" value="578975000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -1018,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="104" column="53" lean-forward="true" selection-start-line="104" selection-start-column="53" selection-end-line="104" selection-end-column="53" />
+        <state relative-caret-position="478">
+          <caret line="177" column="93" lean-forward="false" selection-start-line="177" selection-start-column="93" selection-end-line="177" selection-end-column="93" />
           <folding />
         </state>
       </provider>
