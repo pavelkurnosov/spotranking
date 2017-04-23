@@ -88,7 +88,7 @@
             </div>
             <div jarvis-widget data-widget-color="blueDark" class="margin-bottom-10" id="search-result" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <span class="widget-icon"><i class="fa fa-align-justify"></i></span>
                     <h2>
                         <div class="float-left">Search Result</div>
                         <div class="float-left margin-left-10">
@@ -122,6 +122,9 @@
                                                                     <input type="checkbox" id="checkbox{{$index}}" ng-model="article.checked" name="checkbox">
                                                                     <i></i>
                                                                 </label>
+                                                            </div>
+                                                            <div>
+                                                                <img class="media-article-icon" ng-src="./styles/img/temp/icons/{{article.icon}}">
                                                             </div>
                                                             <a href-void class="btn btn-warning btn-xs">Share</a>
                                                             <a href-void class="btn btn-xs btn-danger">Click to Download</a>
@@ -240,7 +243,7 @@
                                                         <div class="col-xs-3">
                                                             <div class="margin-bottom-10">
                                                                 <a data-toggle="modal" data-target="#myModal" class="cursor-zoom-in" ng-click="vm.currArticle = article">
-                                                                    <img class="img-responsive max-height-100 margin-auto" ng-src="./styles/img/{{article.image}}" ng-if="article.type == 'newspaper'">
+                                                                    <img class="img-responsive max-height-100 margin-auto" ng-src="./styles/img/{{article.image}}" ng-if="article.type == 'newspaper' || article.type == 'web' || article.type == 'ooh'">
                                                                     <video class="width-full" controls ng-if="article.type == 'tv_radio'">{{article.type}}
                                                                         <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
                                                                         Your browser does not support the video tag.
@@ -408,7 +411,7 @@
                 <h4 class="modal-title" id="myModalLabel">Article Post</h4>
             </div>-->
             <div class="modal-body">
-                <img class="img-responsive width-full" ng-src="./styles/img/{{vm.currArticle.image}}" ng-if="vm.currArticle.type == 'newspaper'">
+                <img class="img-responsive width-full" ng-src="./styles/img/{{vm.currArticle.image}}" ng-if="vm.currArticle.type == 'newspaper' || vm.currArticle.type == 'web' || vm.currArticle.type == 'ooh'">
                 <video class="width-full" controls ng-if="vm.currArticle.type == 'tv_radio'">
                     <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.

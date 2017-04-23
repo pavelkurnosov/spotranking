@@ -261,6 +261,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         if (vm.searchFlag) {
             for (var a = 1; a <= 2; a++) {
                 vm.articles[vm.articles.length] = {
+                    'icon': '01.png',
                     'type': 'newspaper',
                     'country': 'country' + a,
                     'language': '',
@@ -279,6 +280,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     'image': 'cover.png'
                 };
                 vm.articles[vm.articles.length] = {
+                    'icon': '03.png',
                     'type': 'tv_radio',
                     'country': 'country' + a,
                     'language': '',
@@ -294,6 +296,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     'video': 'video.mp4'
                 };
                 vm.articles[vm.articles.length] = {
+                    'icon': '06.png',
                     'type': 'ooh',
                     'ooh_supplier': '',
                     'country': 'country' + a,
@@ -311,9 +314,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     'advertiser': '',
                     'product_name': '',
                     'campaign_message': '',
-                    'camp_id': ''
+                    'camp_id': '',
+                    'image': 'cover.png'
                 };
                 vm.articles[vm.articles.length] = {
+                    'icon': '05.png',
                     'type': 'web',
                     'country': 'country' + a,
                     'language': '',
@@ -329,7 +334,8 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     'advertiser': '',
                     'product_name': '',
                     'campaign_message': '',
-                    'camp_id': ''
+                    'camp_id': '',
+                    'image': 'cover.png'
                 };
             }
             vm.searchCounts = {
