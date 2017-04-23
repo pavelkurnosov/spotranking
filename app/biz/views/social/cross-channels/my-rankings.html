@@ -77,17 +77,19 @@
                                         <table class="table table-responsive table-text-center">
                                             <thead>
                                             <tr>
-                                                <th>Social Media {{vm.sortChannelReverse}}</th>
+                                                <th>
+                                                    <h4 class="font-bold">Social Media {{vm.sortChannelReverse}}</h4>
+                                                </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'audience'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    Audience
+                                                    <h4 class="font-bold">Audience</h4>
                                                     <span ng-show="vm.sortChannelType == 'audience'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
                                                 </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'activity'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    Activity
+                                                    <h4 class="font-bold">Activity</h4>
                                                     <span ng-show="vm.sortChannelType == 'activity'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
                                                 </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'engagement'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    Engagement
+                                                    <h4 class="font-bold">Engagement</h4>
                                                     <span ng-show="vm.sortChannelType == 'engagement'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
                                                 </th>
                                             </tr>
@@ -96,19 +98,19 @@
                                             <tr ng-repeat="media in vm.medias | orderBy:vm.sortChannelType:vm.sortChannelReverse">
                                                 <td class="text-left"><i class="fa fa-{{media.icon}}"></i> {{media.title}}</td>
                                                 <td>
-                                                    <h4>{{media.audience}}
+                                                    <h4 class="font-bold">{{media.audience}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.audience >= media.pre_audience"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.audience < media.pre_audience"></i>
                                                     </h4>
                                                 </td>
                                                 <td>
-                                                    <h4>{{media.activity}}
+                                                    <h4 class="font-bold">{{media.activity}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.activity >= media.pre_activity"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.activity < media.pre_activity"></i>
                                                     </h4>
                                                 </td>
                                                 <td>
-                                                    <h4>{{media.engagement}}
+                                                    <h4 class="font-bold">{{media.engagement}}
                                                         <i class="fa fa-long-arrow-up text-green" ng-if="media.engagement >= media.pre_engagement"></i>
                                                         <i class="fa fa-long-arrow-down text-red" ng-if="media.engagement < media.pre_engagement"></i>
                                                     </h4>
