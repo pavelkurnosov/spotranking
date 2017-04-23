@@ -81,16 +81,19 @@
                                                     <h4 class="font-bold">Social Media {{vm.sortChannelReverse}}</h4>
                                                 </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'audience'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    <h4 class="font-bold">Audience</h4>
-                                                    <span ng-show="vm.sortChannelType == 'audience'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    <h4 class="font-bold">Audience
+                                                        <span ng-show="vm.sortChannelType == 'audience'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    </h4>
                                                 </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'activity'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    <h4 class="font-bold">Activity</h4>
-                                                    <span ng-show="vm.sortChannelType == 'activity'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    <h4 class="font-bold">Activity
+                                                        <span ng-show="vm.sortChannelType == 'activity'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    </h4>
                                                 </th>
                                                 <th class="cursor-pointer" ng-click="vm.sortChannelType = 'engagement'; vm.sortChannelReverse = !vm.sortChannelReverse">
-                                                    <h4 class="font-bold">Engagement</h4>
-                                                    <span ng-show="vm.sortChannelType == 'engagement'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    <h4 class="font-bold">Engagement
+                                                        <span ng-show="vm.sortChannelType == 'engagement'" class="fa fa-caret-{{vm.sortChannelReverse ? 'down' : 'up'}}"></span>
+                                                    </h4>
                                                 </th>
                                             </tr>
                                             </thead>

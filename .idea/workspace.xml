@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
     </list>
     <ignored path="spotranking.iws" />
@@ -45,8 +44,8 @@
       <file leaf-file-name="my-rankings.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="91" column="89" lean-forward="false" selection-start-line="91" selection-start-column="89" selection-end-line="91" selection-end-column="89" />
+            <state relative-caret-position="255">
+              <caret line="87" column="61" lean-forward="true" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -552,12 +551,12 @@
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
       <workItem from="1492718181943" duration="31570000" />
-      <workItem from="1492937729657" duration="3664000" />
+      <workItem from="1492937729657" duration="3964000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="576681000" />
+    <option name="totallyTimeSpent" value="576981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="385" y="181" width="1419" height="652" extended-state="0" />
@@ -998,8 +997,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="91" column="89" lean-forward="false" selection-start-line="91" selection-start-column="89" selection-end-line="91" selection-end-column="89" />
+        <state relative-caret-position="255">
+          <caret line="87" column="61" lean-forward="true" selection-start-line="87" selection-start-column="61" selection-end-line="87" selection-end-column="61" />
           <folding />
         </state>
       </provider>
