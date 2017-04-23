@@ -537,3 +537,10 @@ body:not(.menu-on-top).desktop-detected {
     float: left;
     margin-left: 30px;
 }
+.td-on-chart {
+    position: relative;
+    margin-top: -30px;
+}
+.opacity-half {
+    opacity: 0.5;
+}

@@ -14,7 +14,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
     vm.medias = [
         {id: 'facebook', title: 'Facebook', icon: 'facebook.png', color: '#3b5998', audience: 4002698, activity: 16, engagement: 12478, pre_audience: 1, pre_activity: 15, pre_engagement:1},
         {id: 'twitter', title: 'Twitter', icon: 'twitter.png', color: '#55acee', audience: 123298, activity: 15, engagement: 305, pre_audience: 1, pre_activity: 15, pre_engagement:1},
-        {id: 'googleplus', title: 'Google+', icon: 'googleplus.png', color: '#dd4b39', audience: 2138, activity: 10, engagement: 305, pre_audience: 3000, pre_activity: 7, pre_engagement:400},
+        {id: 'googleplus', title: 'Google+', icon: 'googleplus.png', color: '#dd4b39', audience: 2138, activity: 10, engagement: 306, pre_audience: 3000, pre_activity: 7, pre_engagement:400},
         {id: 'instagram', title: 'Instagram', icon: 'instagram.png', color: '#8a3ab9', audience: 4533, activity: 3, engagement: 68, pre_audience: 1, pre_activity: 20, pre_engagement:1},
         {id: 'youtube', title: 'YouTube', icon: 'youtube.png', color: '#bb0000', audience: 28681, activity: 4, engagement: 1582, pre_audience: 1, pre_activity: 3, pre_engagement:2000}
     ];

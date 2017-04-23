@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e4432812-9370-4b70-996a-daa03bf583bc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" afterPath="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" afterPath="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/app.js" afterPath="$PROJECT_DIR$/build/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/your_style.css" afterPath="$PROJECT_DIR$/styles/css/your_style.css" />
     </list>
     <ignored path="spotranking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CrossChannelsMyRankingCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CrossChannelsMyRankingCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="323">
+              <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               <folding>
                 <element signature="e#1388#3262#0" expanded="false" />
                 <element signature="e#3282#4984#0" expanded="false" />
@@ -46,12 +49,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="my-rankings.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="my-rankings.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="177" column="93" lean-forward="false" selection-start-line="177" selection-start-column="93" selection-end-line="177" selection-end-column="93" />
-              <folding />
+            <state relative-caret-position="393">
+              <caret line="118" column="91" lean-forward="false" selection-start-line="118" selection-start-column="91" selection-end-line="118" selection-end-column="91" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,8 +64,8 @@
       <file leaf-file-name="your_style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="382" column="9" lean-forward="false" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="9" />
+            <state relative-caret-position="644">
+              <caret line="543" column="13" lean-forward="false" selection-start-line="543" selection-start-column="1" selection-end-line="543" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -187,11 +192,11 @@
         <option value="$PROJECT_DIR$/app/biz/directives/page-locator.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/app.js" />
-        <option value="$PROJECT_DIR$/styles/css/your_style.css" />
         <option value="$PROJECT_DIR$/app/biz/views/main-search.html" />
         <option value="$PROJECT_DIR$/app/biz/controllers/MainSearchCtrl.js" />
-        <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
+        <option value="$PROJECT_DIR$/styles/css/your_style.css" />
         <option value="$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html" />
+        <option value="$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js" />
       </list>
     </option>
   </component>
@@ -566,12 +571,12 @@
       <workItem from="1492437367755" duration="18843000" />
       <workItem from="1492580250299" duration="38624000" />
       <workItem from="1492718181943" duration="31570000" />
-      <workItem from="1492937729657" duration="5958000" />
+      <workItem from="1492937729657" duration="7609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578975000" />
+    <option name="totallyTimeSpent" value="580626000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="959" extended-state="6" />
@@ -994,31 +999,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          <folding>
-            <element signature="e#1388#3262#0" expanded="false" />
-            <element signature="e#3282#4984#0" expanded="false" />
-            <element signature="e#5006#6766#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/styles/css/your_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="382" column="9" lean-forward="false" selection-start-line="382" selection-start-column="1" selection-end-line="382" selection-end-column="9" />
+        <state relative-caret-position="644">
+          <caret line="543" column="13" lean-forward="false" selection-start-line="543" selection-start-column="1" selection-end-line="543" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/biz/views/social/cross-channels/my-rankings.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="177" column="93" lean-forward="false" selection-start-line="177" selection-start-column="93" selection-end-line="177" selection-end-column="93" />
-          <folding />
+        <state relative-caret-position="393">
+          <caret line="118" column="91" lean-forward="false" selection-start-line="118" selection-start-column="91" selection-end-line="118" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#article#0;n#div#2;n#section#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/biz/controllers/social/cross-channels/CrossChannelsMyRankingCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <folding>
+            <element signature="e#1388#3262#0" expanded="false" />
+            <element signature="e#3282#4984#0" expanded="false" />
+            <element signature="e#5006#6766#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

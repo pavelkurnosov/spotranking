@@ -100,8 +100,13 @@
                                             <tbody>
                                             <tr ng-repeat="media in vm.medias | orderBy:vm.sortChannelType:vm.sortChannelReverse">
                                                 <td class="text-left">
-                                                    <img class="width-30" ng-src="./styles/img/temp/icons/{{media.icon}}">
-                                                    {{media.title}}
+                                                    <div class="progress progress-lg bg-color-darken margin-0 opacity-half">
+                                                        <div class="progress-bar" role="progressbar" style="width: {{media.activity/16 * 100}}%"></div>
+                                                    </div>
+                                                    <div class="td-on-chart">
+                                                        <img class="width-30" ng-src="./styles/img/temp/icons/{{media.icon}}">
+                                                        {{media.title}}
+                                                    </div>
                                                 </td>
                                                 <td class="text-right">
                                                     <h4 class="font-bold">{{media.audience|number}}
