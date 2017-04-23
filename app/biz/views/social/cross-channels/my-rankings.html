@@ -95,17 +95,23 @@
                                             <tbody>
                                             <tr ng-repeat="media in vm.medias | orderBy:vm.sortChannelType:vm.sortChannelReverse">
                                                 <td class="text-left"><i class="fa fa-{{media.icon}}"></i> {{media.title}}</td>
-                                                <td>{{media.audience}}
-                                                    <i class="fa fa-long-arrow-up text-green" ng-if="media.audience >= media.pre_audience"></i>
-                                                    <i class="fa fa-long-arrow-down text-red" ng-if="media.audience < media.pre_audience"></i>
+                                                <td>
+                                                    <h4>{{media.audience}}
+                                                        <i class="fa fa-long-arrow-up text-green" ng-if="media.audience >= media.pre_audience"></i>
+                                                        <i class="fa fa-long-arrow-down text-red" ng-if="media.audience < media.pre_audience"></i>
+                                                    </h4>
                                                 </td>
-                                                <td>{{media.activity}}
-                                                    <i class="fa fa-long-arrow-up text-green" ng-if="media.activity >= media.pre_activity"></i>
-                                                    <i class="fa fa-long-arrow-down text-red" ng-if="media.activity < media.pre_activity"></i>
+                                                <td>
+                                                    <h4>{{media.activity}}
+                                                        <i class="fa fa-long-arrow-up text-green" ng-if="media.activity >= media.pre_activity"></i>
+                                                        <i class="fa fa-long-arrow-down text-red" ng-if="media.activity < media.pre_activity"></i>
+                                                    </h4>
                                                 </td>
-                                                <td>{{media.engagement}}
-                                                    <i class="fa fa-long-arrow-up text-green" ng-if="media.engagement >= media.pre_engagement"></i>
-                                                    <i class="fa fa-long-arrow-down text-red" ng-if="media.engagement < media.pre_engagement"></i>
+                                                <td>
+                                                    <h4>{{media.engagement}}
+                                                        <i class="fa fa-long-arrow-up text-green" ng-if="media.engagement >= media.pre_engagement"></i>
+                                                        <i class="fa fa-long-arrow-down text-red" ng-if="media.engagement < media.pre_engagement"></i>
+                                                    </h4>
                                                 </td>
                                             </tr>
                                             </tbody>
@@ -126,7 +132,7 @@
                                                     <thead>
                                                     <tr>
                                                         <th>Sources</th>
-                                                        <th> </th>
+                                                        <th></th>
                                                         <th class="cursor-pointer" ng-click="vm.columnClick('amount')">
                                                             Total {{pane.title}}
                                                             <span ng-show="vm.sortType == 'total_amount'" class="fa fa-caret-{{vm.sortReverse ? 'down' : 'up'}}"></span>
