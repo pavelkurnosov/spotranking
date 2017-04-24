@@ -12,11 +12,11 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
      Instagram: #8a3ab9 */
 
     vm.medias = [
-        {id: 'facebook', title: 'Facebook', icon: 'facebook.png', color: '#3b5998', audience: 4002698, activity: 16, engagement: 12478, pre_audience: 1, pre_activity: 15, pre_engagement:1},
+        {id: 'facebook', title: 'Facebook', icon: 'facebook.png', color: '#3b5998', audience: 4002698, activity: 26, engagement: 12478, pre_audience: 1, pre_activity: 15, pre_engagement:1},
         {id: 'twitter', title: 'Twitter', icon: 'twitter.png', color: '#55acee', audience: 123298, activity: 15, engagement: 305, pre_audience: 1, pre_activity: 15, pre_engagement:1},
-        {id: 'googleplus', title: 'Google+', icon: 'googleplus.png', color: '#dd4b39', audience: 2138, activity: 10, engagement: 306, pre_audience: 3000, pre_activity: 7, pre_engagement:1},
-        {id: 'instagram', title: 'Instagram', icon: 'instagram.png', color: '#8a3ab9', audience: 4533, activity: 3, engagement: 68, pre_audience: 1, pre_activity: 20, pre_engagement:5000},
-        {id: 'youtube', title: 'YouTube', icon: 'youtube.png', color: '#bb0000', audience: 28681, activity: 4, engagement: 1582, pre_audience: 1, pre_activity: 3, pre_engagement:1}
+        {id: 'googleplus', title: 'Google+', icon: 'googleplus.png', color: '#dd4b39', audience: 2138, activity: 3, engagement: 306, pre_audience: 3000, pre_activity: 12, pre_engagement:1},
+        {id: 'instagram', title: 'Instagram', icon: 'instagram.png', color: '#8a3ab9', audience: 4533, activity: 4, engagement: 68, pre_audience: 1, pre_activity: 1, pre_engagement:5000},
+        {id: 'youtube', title: 'YouTube', icon: 'youtube.png', color: '#bb0000', audience: 28681, activity: 10, engagement: 1582, pre_audience: 1, pre_activity: 6, pre_engagement:1}
     ];
 
     vm.sortType = 'total';
@@ -31,8 +31,8 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 company: 'Djezzy',
                 previous_amount: 4161557,
                 facebook: {amount: 4003329, change: 902, growth: 0.02},
-                twitter: {amount: 123776, change: -104, growth: -0.08},
-                googleplus: {amount: 2135, change: -2, growth: -0.09},
+                twitter: {amount: 123776, change: 104, growth: -0.08},
+                googleplus: {amount: 2135, change: 2, growth: -0.09},
                 instagram: {amount: 4529, change: 9, growth: 0.2},
                 youtube: {amount: 28643, change: 50, growth: 0.17}
             }, {
@@ -46,9 +46,9 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             }, {
                 company: 'www.ooredoo.dz',
                 previous_amount: 4454637,
-                facebook: {amount: 4479289, change: -8423, growth: 0.95},
+                facebook: {amount: 4479289, change: 8423, growth: 0.95},
                 twitter: {amount: 15841, change: 30, growth: 0.19},
-                googleplus: {amount: 1698, change: -2, growth: -0.12},
+                googleplus: {amount: 1698, change: 2, growth: -0.12},
                 instagram: {amount: 0, change: 0, growth: 0},
                 youtube: {amount: 3, change: 0, growth: 0}
             }, {
@@ -66,15 +66,15 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             data: [{
                 company: 'Djezzy',
                 previous_amount: 48,
-                facebook: {amount: 10, change: -4, growth: -28.57},
-                twitter: {amount: 16, change: -7, growth: -30.43},
+                facebook: {amount: 10, change: 4, growth: -28.57},
+                twitter: {amount: 16, change: 7, growth: -30.43},
                 googleplus: {amount: 9, change: 1, growth: 12.5},
-                instagram: {amount: 0, change: -3, growth: 0},
+                instagram: {amount: 0, change: 3, growth: 0},
                 youtube: {amount: 2, change: 2, growth: 0}
             }, {
                 company: 'www.mobilis.dz',
                 previous_amount: 16,
-                facebook: {amount: 10, change: -6, growth: -37.5},
+                facebook: {amount: 10, change: 6, growth: -37.5},
                 twitter: {amount: 1, change: 1, growth: 0},
                 googleplus: {amount: 0, change: 0, growth: 0},
                 instagram: {amount: 0, change: 0, growth: 0},
@@ -82,8 +82,8 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             }, {
                 company: 'www.ooredoo.dz',
                 previous_amount: 21,
-                facebook: {amount: 13, change: -2, growth: -13.33},
-                twitter: {amount: 3, change: -3, growth: -50},
+                facebook: {amount: 13, change: 2, growth: -13.33},
+                twitter: {amount: 3, change: 3, growth: -50},
                 googleplus: {amount: 0, change: 0, growth: 0},
                 instagram: {amount: 0, change: 0, growth: 0},
                 youtube: {amount: 0, change: 0, growth: 0}
@@ -92,7 +92,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 previous_amount: 22,
                 facebook: {amount: 3, change: 1, growth: 50},
                 twitter: {amount: 11, change: 0, growth: 0},
-                googleplus: {amount: 6, change: -3, growth: -33.33},
+                googleplus: {amount: 6, change: 3, growth: -33.33},
                 instagram: {amount: 0, change: 0, growth: 0},
                 youtube: {amount: 0, change: 0, growth: 0}
             }]
@@ -102,15 +102,15 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
             data: [{
                 company: 'Djezzy',
                 previous_amount: 15914,
-                facebook: {amount: 9904, change: -5492, growth: -35.67},
-                twitter: {amount: 189, change: -193, growth: -50.52},
+                facebook: {amount: 9904, change: 5492, growth: -35.67},
+                twitter: {amount: 189, change: 193, growth: -50.52},
                 googleplus: {amount: 45, change: 6, growth: 15.38},
-                instagram: {amount: 0, change: -97, growth: 0},
+                instagram: {amount: 0, change: 97, growth: 0},
                 youtube: {amount: 508, change: 508, growth: 0}
             }, {
                 company: 'www.mobilis.dz',
                 previous_amount: 23865,
-                facebook: {amount: 20528, change: -3337, growth: -13.98},
+                facebook: {amount: 20528, change: 3337, growth: -13.98},
                 twitter: {amount: 28, change: 28, growth: 0},
                 googleplus: {amount: 0, change: 0, growth: 0},
                 instagram: {amount: 0, change: 0, growth: 0},
@@ -119,7 +119,7 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 company: 'www.ooredoo.dz',
                 previous_amount: 482607,
                 facebook: {amount: 636606, change: 6022, growth: 31.92},
-                twitter: {amount: 4, change: -19, growth: -82.61},
+                twitter: {amount: 4, change: 19, growth: -82.61},
                 googleplus: {amount: 0, change: 0, growth: 0},
                 instagram: {amount: 0, change: 0, growth: 0},
                 youtube: {amount: 0, change: 0, growth: 0}
@@ -127,8 +127,8 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 company: 'www.orange.tn',
                 previous_amount: 745,
                 facebook: {amount: 63, change: 6, growth: 10.53},
-                twitter: {amount: 569, change: -102, growth: -15.2},
-                googleplus: {amount: 9, change: -8, growth: -47.06},
+                twitter: {amount: 569, change: 102, growth: -15.2},
+                googleplus: {amount: 9, change: 8, growth: -47.06},
                 instagram: {amount: 0, change: 0, growth: 0},
                 youtube: {amount: 0, change: 0, growth: 0}
             }]
