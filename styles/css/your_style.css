@@ -562,3 +562,7 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 #mobile-profile-img {
     display: inline !important;
 }
+
+.activate #demo-setting {
+    display: inline !important;
+}
