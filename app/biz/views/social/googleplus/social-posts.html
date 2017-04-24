@@ -77,46 +77,57 @@
                     </header>
                     <div>
                         <div class="widget-body">
-                            <table class="table table-responsive">
-                                <thead>
-                                <tr>
-                                    <th>Published At</th>
-                                    <th colspan="3">Post</th>
-                                    <th ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">{{col.acronym}}</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr ng-repeat="r in [1,1,1] track by $index">
-                                    <td>
-                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                            <h4>Apr 2 2017</h4>
-                                            <h5>8:59 AM</h5>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                            <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png"><br/>
-                                            <div class="width-40 badge bg-color-blue txt-color-white"><i class="fa fa-google-plus"></i></div>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                            <h4>DJEZZY</h4>
-                                            <p>Apr 2 2017 8:59 AM UTC</p>
-                                            <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
-                                            <p>quelques instants le...</p>
-                                            <a href="https://www.facebook.com/108951559158989/posts/1306587849395348" target="_blank" class="small text-muted"><i class="fa fa-fw fa-external-link"></i>View on Facebook</a>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
-                                            <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
-                                        </a>
-                                    </td>
-                                    <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>{{col.acronym}}</div><br/><h2>10</h2>">10</div></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-12">
+                                        <table class="table table-responsive">
+                                            <thead>
+                                            <tr>
+                                                <th>Published At</th>
+                                                <th colspan="3">Post</th>
+                                                <th ng-repeat="col in vm.columnsForGrid" ng-if="col.visible">{{col.acronym}}</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr ng-repeat="r in [1,1,1] track by $index">
+                                                <td>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
+                                                        <h4>Apr 2 2017</h4>
+                                                        <h5>8:59 AM</h5>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
+                                                        <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png"><br/>
+                                                        <div class="width-40 badge bg-color-blue txt-color-white"><i class="fa fa-facebook"></i></div>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
+                                                        <h4>DJEZZY</h4>
+                                                        <p>Apr 2 2017 8:59 AM UTC</p>
+                                                        <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
+                                                        <p>quelques instants le...</p>
+                                                        <a href="https://www.facebook.com/108951559158989/posts/1306587849395348" target="_blank" class="small text-muted"><i class="fa fa-fw fa-external-link"></i>View on Facebook</a>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a class="cursor-pointer" data-toggle="modal" data-target="#myModal">
+                                                        <img class="width-80 margin-top-10" ng-src="./styles/img/temp/10.jpg">
+                                                    </a>
+                                                </td>
+                                                <td ng-repeat="col in vm.columnsForGrid" ng-if="col.visible"><div class="text-center" data-tooltip-placement="top" data-smart-tooltip-html="<div>{{col.acronym}}</div><br/><h2>10</h2>">10</div></td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 text-right">
+                                        <button class="btn btn-primary" ng-click="vm.go('socialGoogleplus.detailsPosts')">View More</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
