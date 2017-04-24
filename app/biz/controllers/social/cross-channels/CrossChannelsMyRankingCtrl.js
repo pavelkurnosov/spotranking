@@ -172,6 +172,22 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 exporting: {enabled: false},
                 xAxis: {lineColor: 'black', categories: [categories]},
                 yAxis: {reversedStacks: false, visible: false, gridLineColor: 'transparent', title: {text: ''}},
+                tooltip: {
+                    formatter: function() {
+                        var total = 0;
+                        for (var p in this.points) {
+                            total += this.points[p].y * 1;
+                        }
+                        var s = ['<span style="font-weight:bold;">Total : <span>' + total +'<span>'];
+
+                        $.each(this.points, function(i, point) {
+                            s.push('<span style="color:' + point.series.color + ';">o </span><span style="font-weight:bold;">'+ point.series.name + '</span> : <span>' + point.y +'<span>');
+                        });
+
+                        return s.join('<br/>');
+                    },
+                    shared: true
+                },
                 legend: {reversed: false},
                 plotOptions: {series: {stacking: 'normal'}},
                 colors: colors,
