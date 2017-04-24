@@ -537,16 +537,24 @@ body:not(.menu-on-top).desktop-detected {
     float: left;
     margin-left: 30px;
 }
+
 .td-on-chart {
     position: relative;
     margin-top: -30px;
 }
+
 .opacity-half {
     opacity: 0.5;
 }
+
 .opacity-02 {
     opacity: 0.2;
 }
+
 .easy-pie-title {
     overflow: initial;
+}
+
+div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
+    font-family: "Calibri light" !important;
 }

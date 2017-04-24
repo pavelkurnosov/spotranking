@@ -6474,14 +6474,14 @@ angular
         html += '</button>';
         html += '<ul class="dropdown-menu pull-right">';
         html += '<li>';
-        html += '<a href-void="" href="#" ng-click="generatePPT()">Download a PPT</a>';
-        html += '<a href-void="" href="#" ng-click="generatePDF()">Download a PDF</a>';
-        html += '<a href-void="" href="#" ng-click="generatePNG()">Download a PNG</a>';
+        html += '<a href="#" ng-click="generatePPT()">Download a PPT</a>';
+        html += '<a href="#" ng-click="generatePDF()">Download a PDF</a>';
+        html += '<a href="#" ng-click="generatePNG()">Download a PNG</a>';
         html += '<hr class="margin-top-5 margin-bottom-5"/>';
-        html += '<a href-void="" href="#">Email...</a>';
-        html += '<a href-void="" href="#">Schedule...</a>';
+        html += '<a href="#">Email...</a>';
+        html += '<a href="#">Schedule...</a>';
         html += '<hr class="margin-top-5 margin-bottom-5"/>';
-        html += '<a href-void="" href="#">Customize Branding</a>';
+        html += '<a href="#">Customize Branding</a>';
         html += '</li>';
         html += '</ul>';
         html += '</div>';
@@ -6496,7 +6496,6 @@ angular
         directive.link = function (scope, element, attrs) {
             scope.generatePPT = function () {
 
-                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
             };
             scope.generatePDF = function () {
                 html2canvas(document.getElementById(scope.source), {
@@ -6507,7 +6506,6 @@ angular
                         doc.save('SpotRanking.pdf');       // used the file name as current time.
                     }
                 });
-                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
             };
             scope.generatePNG = function () {
                 html2canvas(document.getElementById(scope.source), {
@@ -6518,7 +6516,6 @@ angular
                         a.click();
                     }
                 });
-                $('.dropdown.open .dropdown-toggle').dropdown('toggle');
             };
         };
         return directive;
