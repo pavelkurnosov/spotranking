@@ -70,6 +70,9 @@
                         <h2>Youtube Most Engaging Posts</h2>
                         <div class="widget-toolbar hidden-phone" role="menu">
                             <export-button class="btn-group-xs margin-top-5"></export-button>
+                            <div class="btn-group dropdown float-right btn-group-xs margin-top-5 margin-right-5">
+                                <button class="btn btn-primary dropdown-toggle" data-toggle="modal" data-target="#manageColumnsModal">Manage Columns...</button>
+                            </div>
                         </div>
                     </header>
                     <div>
@@ -121,4 +124,123 @@
         </div>
     </section>
 
+</div>
+
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Post Details</h4>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-1">
+                            <img class="width-40 margin-top-15" ng-src="./styles/img/temp/01.png">
+                        </div>
+                        <div class="col-xs-7">
+                            <h4>DJEZZY</h4>
+                            <p>Apr 2 2017 8:59 AM UTC</p>
+                            <p>تابعوا معنا على المباشر بعد لحظات حفل توقيع إتفاق رعاية #جازي لنادي #إتحاد_العاصمة بملعب عمر حمادي ببولوغين</p>
+                            <p>quelques instants le...</p>
+                            <p>Suivez avec nous dans quelques instants le live direct de la cérémonie de signature du contrat de sponsoring #Djezzy / #USMA qui aura lieu au stade Omar Hammadi, Bouloughine ».</p>
+                            <p>#Djezzy #USMA #Football</p>
+                            <div><img class="max-width-400" ng-src="./styles/img/temp/10.jpg"></div>
+                            <a href="https://www.facebook.com/108951559158989/posts/1306587849395348" target="_blank" class="small text-muted margin-top-5"><i class="fa fa-fw fa-external-link"></i>View on Facebook</a>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p class="">33</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>
+                                            <small>ENGAGEMENT TOTAL <i class="fa fa-info-circle"></i></small>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>32</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>LIKES <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>COMMENTS <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p>4.51K</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>FOLLOWED BY <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 text-right font-bold font-bigger">
+                                        <p>0.73%</p>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <p>ENGAGEMENT RATE <i class="fa fa-info-circle"></i></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+
+<div class="modal fade" id="manageColumnsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="manageColumnsModalLabel">Manage Columns</h4>
+            </div>
+            <div class="modal-body smart-form">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-2">
+
+                        </div>
+                        <div class="col-xs-10">
+                            <div class="padding-bottom-10" ng-repeat="col in vm.gridColumns">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="checkbox" ng-model="col.visible">
+                                    <i></i> {{col.title}}
+                                </label>
+                                <div class="padding-left-10">
+                                    <label class="checkbox" ng-repeat="c in col.columns">
+                                        <input type="checkbox" name="checkbox" ng-model="c.visible">
+                                        <i></i> {{c.title}}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Save</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
 </div>
