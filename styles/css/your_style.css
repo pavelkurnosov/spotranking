@@ -559,23 +559,6 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
     font-family: "Calibri light" !important;
 }
 
-#logo-group {
-    width: 240px !important;
-}
-
-#shortcut {
-    top: 40px;
-    left: 40px;
-    width: auto;
-    border: 1px solid white;
-}
-
-#shortcut .jarvismetro-tile.big-cubes {
-    width: 40px;
-    height: 40px;
-}
-
-#shortcut .jarvismetro-tile .iconbox i {
-    margin: 0 !important;
-    height: 0 !important;
+#mobile-profile-img {
+    display: inline !important;
 }
