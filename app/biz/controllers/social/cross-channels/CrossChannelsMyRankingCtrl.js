@@ -175,16 +175,15 @@ angular.module('app.biz').controller('CrossChannelsMyRankingsController', functi
                 tooltip: {
                     formatter: function() {
                         var total = 0;
+                        var s = "";
                         for (var p in this.points) {
                             total += this.points[p].y * 1;
+                            // s += ', <span style="color:' + this.points[p].series.color + ';">o </span><span style="font-weight:bold;">'+ this.points[p].series.name + '</span> : <span>' + this.points[p].y +'<span>';
+                            s += ', <span style="font-weight:bold;color:' + this.points[p].series.color + ';">'+ this.points[p].series.name + '</span>:<span>' + this.points[p].y +'<span>';
                         }
-                        var s = ['<span style="font-weight:bold;">Total : <span>' + total +'<span>'];
-
-                        $.each(this.points, function(i, point) {
-                            s.push('<span style="color:' + point.series.color + ';">o </span><span style="font-weight:bold;">'+ point.series.name + '</span> : <span>' + point.y +'<span>');
-                        });
-
-                        return s.join('<br/>');
+                        var str = '<span style="font-weight:bold;">Total : <span>' + total +'<span>';
+                        str += s;
+                        return str;
                     },
                     shared: true
                 },
