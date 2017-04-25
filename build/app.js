@@ -1821,8 +1821,21 @@ angular.module('app.biz', ['ui.router'])
                 },
                 views: {
                     "content@app": {
-                        templateUrl: 'app/biz/views/manage-profile.html',
+                        templateUrl: 'app/biz/views/settings/manage-profile.html',
                         controller: 'ManageProfileController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.changeBilling', {
+                url: '/change_billing',
+                data: {
+                    title: 'Change Billing Information'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/settings/change-billing.html',
+                        controller: 'ChangeBillingController',
                         controllerAs: 'vm'
                     }
                 }
@@ -5910,12 +5923,6 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
 
 'use strict';
 
-angular.module('app.biz').controller('ManageProfileController', function () {
-    var vm = this;
-    vm.abc = 23;
-});
-'use strict';
-
 angular.module('app.biz').controller('MeasuringOutputController', function () {
     var vm = this;
 
@@ -9094,6 +9101,22 @@ angular.module('app.auth').directive('googleSignin', function ($rootScope, Googl
     };
 });
 
+'use strict';
+
+angular.module('app.biz').controller('ChangeBillingController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    }
+});
+'use strict';
+
+angular.module('app.biz').controller('ManageProfileController', function ($state) {
+    var vm = this;
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    }
+});
 'use strict';
 
 angular.module('app.biz').controller('CrossChannelsController', function ($state, $filter, SocialPages) {

@@ -1179,8 +1179,21 @@ angular.module('app.biz', ['ui.router'])
                 },
                 views: {
                     "content@app": {
-                        templateUrl: 'app/biz/views/manage-profile.html',
+                        templateUrl: 'app/biz/views/settings/manage-profile.html',
                         controller: 'ManageProfileController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.changeBilling', {
+                url: '/change_billing',
+                data: {
+                    title: 'Change Billing Information'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/settings/change-billing.html',
+                        controller: 'ChangeBillingController',
                         controllerAs: 'vm'
                     }
                 }
