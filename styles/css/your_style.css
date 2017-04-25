@@ -18,6 +18,9 @@
  * - CUSTOM STYLES
  */
 
+.smart-style-5 {
+    background: url(../img/glass2.jpg) no-repeat center top fixed;
+}
 .smart-style-5 #header {
     background: black !important;
 }
