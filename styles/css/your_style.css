@@ -520,10 +520,12 @@ body:not(.menu-on-top).desktop-detected {
 .table-no-padding > tbody > tr > td:first-child {
     font-weight: bold;
     text-align: left;
+    padding: 0 10px !important;
 }
 
 .table-no-padding > tbody > tr > td:last-child {
     text-align: center;
+    padding: 0 10px !important;
     padding-top: 3px;
     font-size: smaller;
 }
