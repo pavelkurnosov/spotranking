@@ -19,7 +19,7 @@
  */
 
 .smart-style-5 {
-    background: url(../img/glass.jpg) no-repeat center top fixed;
+    background: url(../img/glass.jpg?v=1) no-repeat center top fixed;
 }
 .smart-style-5 #header {
     background: black !important;
