@@ -1172,6 +1172,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.manageProfile', {
+                url: '/manage_profile',
+                data: {
+                    title: 'Manage Profile'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/manage-profile.html',
+                        controller: 'ManageProfileController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
