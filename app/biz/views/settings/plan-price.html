@@ -22,7 +22,7 @@
                     <div class="widget-body container-fluid">
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <h1>999 Euro</h1>
+                                <h1>{{vm.sums[0]}} Euro</h1>
                             </div>
                             <div class="col-xs-12 text-center">
                                 <button class="btn btn-primary">Current Subscription</button>
@@ -31,7 +31,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Monitoring Input
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_input'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['monitoring_input'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -61,7 +61,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Broadcast Content Detection 24/7
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['content_detection'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['content_detection'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -87,7 +87,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Digital Media
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['digital_media'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['digital_media'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -144,7 +144,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Out of Home Monitoring OOH
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_ooh'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['monitoring_ooh'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -173,7 +173,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Measuring Output/Insight
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['measuring_output'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['measuring_output'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -183,7 +183,7 @@
                                             <strong>Campaign Breakdown</strong> Traditional Media *<br/>
                                             <strong>Over Time Trends</strong> 3 Months Archive *<br/>
                                             <strong>Comparing the performance across multiple campaigns</strong><br/>
-                                            <strong>Geographical_coverage</strong> Only Regional, International Campaign *
+                                            <strong>Geographical_coverage</strong> Only Regional, International Campaign *<br/><br/><br/>
                                         </td>
                                     </tr>
                                 </table>
@@ -192,7 +192,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Other Service
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['other_service'][0]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['other_service'][0]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -219,7 +219,7 @@
                     <div class="widget-body container-fluid">
                         <div class="row">
                             <div class="col-xs-12 text-center">
-                                <h1>2999 Euro</h1>
+                                <h1>{{vm.sums[1]}} Euro</h1>
                             </div>
                             <div class="col-xs-12 text-center">
                                 <button class="btn btn-primary">Upgrade</button>
@@ -228,7 +228,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Monitoring Input
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_input'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['monitoring_input'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -258,7 +258,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Broadcast Content Detection 24/7
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['content_detection'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['content_detection'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -284,7 +284,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Digital Media
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['digital_media'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['digital_media'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -341,7 +341,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Out of Home Monitoring OOH
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_ooh'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['monitoring_ooh'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -370,7 +370,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Measuring Output/Insight
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['measuring_output'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['measuring_output'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -391,7 +391,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Other Service
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['other_service'][1]}}</div>
+                                <div class="padding-5 margin-0 border-gray float-right">€{{vm.prices[vm.plan_type]['other_service'][1]}}</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -427,7 +427,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Monitoring Input
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_input'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -457,7 +457,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Broadcast Content Detection 24/7
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['content_detection'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -483,7 +483,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Digital Media
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['digital_media'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -540,7 +540,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Out of Home Monitoring OOH
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['monitoring_ooh'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
@@ -569,13 +569,13 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Measuring Output/Insight
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['measuring_output'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <strong>A Custom Report</strong>
+                                            <strong>A Custom Report</strong><br/><br/><br/><br/><br/><br/><br/><br/>
                                         </td>
                                     </tr>
                                 </table>
@@ -584,7 +584,7 @@
                         <div class="row">
                             <div class="col-xs-12 h3">
                                 Other Service
-                                <div class="padding-5 margin-0 border-gray float-right">${{vm.prices[vm.plan_type]['other_service'][2]}}</div>
+                                <div class="padding-5 margin-0 float-right border-transparent">&nbsp;</div>
                             </div>
                             <div class="col-xs-12">
                                 <table class="table">
