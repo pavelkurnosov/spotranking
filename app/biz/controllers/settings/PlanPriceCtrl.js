@@ -19,9 +19,12 @@ angular.module('app.biz').controller('PlanPriceController', function ($state) {
         other_service: [121, 142]
     }];
     vm.sums = [0, 0];
-    for (var p in vm.prices[vm.plan_type]) {
-        vm.sums[0] += vm.prices[vm.plan_type][p][0] * 1;
-        vm.sums[1] += vm.prices[vm.plan_type][p][1] * 1;
+    vm.getSums = function () {
+        vm.sums = [0, 0];
+        for (var p in vm.prices[vm.plan_type]) {
+            vm.sums[0] += vm.prices[vm.plan_type][p][0] * 1;
+            vm.sums[1] += vm.prices[vm.plan_type][p][1] * 1;
+        }
     }
-
+    vm.getSums();
 });

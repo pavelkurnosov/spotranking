@@ -2,11 +2,11 @@
     <div class="row form-horizontal">
         <div class="col-xs-12 form-group text-center">
             <label class="radio radio-inline">
-                <input type="radio" class="radiobox" ng-model="vm.plan_type" ng-value="0">
+                <input type="radio" class="radiobox" ng-model="vm.plan_type" ng-value="0" ng-click="vm.getSums()">
                 <span>Monthly Plans</span>
             </label>
             <label class="radio radio-inline">
-                <input type="radio" class="radiobox" ng-model="vm.plan_type" ng-value="1">
+                <input type="radio" class="radiobox" ng-model="vm.plan_type" ng-value="1" ng-click="vm.getSums()">
                 <span>Annual Plans, save up to $800</span>
             </label>
         </div>
