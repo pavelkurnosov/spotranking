@@ -228,29 +228,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.articles = [];
 
     vm.searchFlag = true;
-    /*vm.articles[vm.articles.length] = {
-     type: 'tv',
-     ad_code: 'TOY/Print/130816/01----------' + a,
-     advertiser: 'Toyota',
-     product_name: '2017 Toyota Camry',
-     first_run: '17/07/2016',
-     last_run: '20/07/2016',
-     published: '25',
-     campaign_message: 'New Kind of Lunry, a head of its time. Introducing the all new Camry Hybrid',
-     country: 'United Arab Eliminate',
-     publication_name: 'EI Watan',
-     section: 'National',
-     page_number: '2',
-     image_specs: 'B&W',
-     advertising_form: 'xxxxxx',
-     ads_type: 'Banner advertising',
-     ads_size: '1/4 Vertical',
-     frequency: 'Daily',
-     language: 'Arabic',
-     format: 'Tabloid',
-     circulation: '30000',
-     image: 'cover.png'
-     };*/
+
     vm.articleTypes = {
         'newspaper': ['country', 'language', 'date', 'publication_name', 'geographical_scope', 'number_of_ads', 'published_section', 'page_number', 'image_specification', 'advertiser', 'product_name', 'advertising_forum', 'campaign_message', 'camp_id'],
         'tv_radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],

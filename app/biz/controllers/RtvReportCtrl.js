@@ -21,8 +21,12 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     vm.currLanguage = vm.languages[0];
 
     vm.mediaTypes = [
-        {id: 4, name: 'TV'},
-        {id: 5, name: 'Radio'}
+        {id: 2, name: 'Newspapers', articleType: 'newspaper'},
+        {id: 3, name: 'Magazine', articleType: 'newspaper'},
+        {id: 4, name: 'TV', articleType: 'tv_radio'},
+        {id: 5, name: 'Radio', articleType: 'tv_radio'},
+        {id: 6, name: 'Web Display', articleType: 'web'},
+        {id: 7, name: 'OOH Display', articleType: 'ooh'}
     ];
     vm.currMediaType = vm.mediaTypes[0];
 
@@ -188,11 +192,11 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     ];
     vm.currProduct = vm.products[0];
 
-    /*vm.medias = [
-        { title: "Print Media", image: "./styles/img/temp/icons/01.png"},
-        { title: "TV Channel", image: "./styles/img/temp/icons/02.png"},
-        { title: "FM Radio", image: "./styles/img/temp/icons/03.png"}
-    ];*/
+    vm.tags = [
+        {text: 'unicef'},
+        {text: 'nissan'},
+        {text: 'sonic'}
+    ];
 
     vm.standardOptions = DTOptionsBuilder
         .fromSource('app/biz/outlet_data.json')
