@@ -6230,12 +6230,8 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     vm.currLanguage = vm.languages[0];
 
     vm.mediaTypes = [
-        {id: 2, name: 'Newspapers', articleType: 'newspaper'},
-        {id: 3, name: 'Magazine', articleType: 'newspaper'},
         {id: 4, name: 'TV', articleType: 'tv_radio'},
-        {id: 5, name: 'Radio', articleType: 'tv_radio'},
-        {id: 6, name: 'Web Display', articleType: 'web'},
-        {id: 7, name: 'OOH Display', articleType: 'ooh'}
+        {id: 5, name: 'Radio', articleType: 'tv_radio'}
     ];
     vm.currMediaType = vm.mediaTypes[0];
 
