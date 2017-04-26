@@ -6401,11 +6401,6 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     ];
     vm.currProduct = vm.products[0];
 
-    vm.tags = [
-        {text: 'unicef'},
-        {text: 'nissan'},
-        {text: 'sonic'}
-    ];
 
     vm.standardOptions = DTOptionsBuilder
         .fromSource('app/biz/outlet_data.json')

@@ -67,19 +67,9 @@
                     </div>
                 </div>
                 <div class="row margin-top-10">
-                    <div class="float-left margin-left-20">
-                        <tags-input class="bootstrap" ng-model="vm.tags" style="width: 300px;"></tags-input>
-                    </div>
-
                     <div class="smart-form float-left date-range-box margin-left-5">
                         <label class="input">
                             <input type="daterange" ng-model="vm.dateRange" ranges="vm.ranges" placeholder="Period">
-                        </label>
-                    </div>
-
-                    <div class="smart-form float-left search-box margin-left-5">
-                        <label class="input">
-                            <input type="text" placeholder="Campaign message">
                         </label>
                     </div>
                     <a href-void class="btn btn-primary float-left margin-left-5" ng-click="vm.search()">{{vm.searchFlag ? 'Search' : 'Reset Search'}}</a>
