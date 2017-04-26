@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class="row margin-top-10">
-                    <div class="smart-form float-left date-range-box margin-left-5">
+                    <div class="smart-form float-left date-range-box margin-left-20">
                         <label class="input">
                             <input type="daterange" ng-model="vm.dateRange" ranges="vm.ranges" placeholder="Period">
                         </label>
@@ -92,13 +92,13 @@
                      data-widget-color="orange"
                      data-widget-editbutton="false"
                      data-widget-deletebutton="false">
-                    <header class="margin-bottom-10">
+                    <header>
                         <span class="widget-icon"> <i class="fa fa-table"></i> </span>
                         <h2>AdSpot - Automatic Content Detection</h2>
                         <img class="media-logo" ng-src="{{media.image}}">
                     </header>
                     <div>
-                        <div class="widget-body no-padding table-responsive">
+                        <div class="widget-body padding-top-10 table-responsive">
                             <table datatable dt-options="vm.standardOptions" dt-columns="vm.standardColumns" class="table table-striped table-bordered table-hover" width="100%">
                                 <thead>
                                 <tr>
