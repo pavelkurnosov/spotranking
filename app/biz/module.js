@@ -1198,6 +1198,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.planPrice', {
+                url: '/plan_price',
+                data: {
+                    title: 'Plan & Price'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/settings/plan-price.html',
+                        controller: 'PlanPriceController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
