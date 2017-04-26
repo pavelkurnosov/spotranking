@@ -29,7 +29,6 @@
                             Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a href-void ng-click="vm.checkAllMediaTypes()"><input type="checkbox" ng-model="vm.allMediaCheck"> All Medias</a></li>
                             <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
@@ -65,8 +64,6 @@
                             <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item">{{item.name}}</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row margin-top-10">
                     <div class="smart-form float-left date-range-box margin-left-20">
                         <label class="input">
                             <input type="daterange" ng-model="vm.dateRange" ranges="vm.ranges" placeholder="Period">

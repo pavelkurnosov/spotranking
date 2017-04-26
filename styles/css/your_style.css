@@ -403,6 +403,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .max-width-80 {
     max-width: 80px;
 }
+
 .max-width-100 {
     max-width: 100px;
 }
@@ -492,12 +493,46 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
     color: green !important;
 }
 
+.text-chocolate {
+    color: chocolate;
+}
+
 .text-red {
     color: red !important;
 }
 
 .text-grey {
     color: grey !important;
+}
+.text-white {
+    color: white;
+}
+
+.text-facebook {
+    color: #646e70;
+}
+
+.text-instagram {
+    color: #787882;
+}
+
+.text-twitter {
+    color: #70bbe2;
+}
+
+.text-pinterest {
+    color: #96353e;
+}
+
+.text-youtube {
+    color: #cd5153;
+}
+
+.text-google-plus {
+    color: #a23f39;
+}
+.text-small {
+    font-size: small;
 }
 
 .vertical-middle {
@@ -575,9 +610,17 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 .activate #demo-setting {
     display: inline !important;
 }
+
 .border-gray {
     border: 1px solid gray;
 }
-.border-transparent{
+
+.border-transparent {
     border: 1px solid transparent;
+}
+
+.plan-price-sub-header {
+    background: #96aab5;
+    font-weight: bold;
+    padding: 5px;
 }
