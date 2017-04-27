@@ -504,6 +504,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .text-grey {
     color: grey !important;
 }
+
 .text-white {
     color: white;
 }
@@ -531,6 +532,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .text-google-plus {
     color: #a23f39;
 }
+
 .text-small {
     font-size: small;
 }
@@ -615,6 +617,10 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
     border: 1px solid gray;
 }
 
+.border-lightgrey {
+    border: 1px solid lightgrey;
+}
+
 .border-transparent {
     border: 1px solid transparent;
 }
@@ -623,4 +629,32 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
     background: #96aab5;
     font-weight: bold;
     padding: 5px;
+}
+
+.plan-price-section-header1 {
+    padding: 10px 0;
+    font-size: x-large;
+    background-color: #65787e;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.plan-price-section-header2 {
+    font-size: xx-large;
+    padding-top: 40px;
+    background-color: #65787e;
+    padding-bottom: 20px;
+    color: white;
+    margin-bottom: -18px;
+}
+
+.active .plan-price-section-header1, .active .plan-price-section-header2 {
+    background-color: #485365;
+}
+.best-choice {
+    margin-top: -30px;
+    margin-right: 10px;
+    float: right;
 }
