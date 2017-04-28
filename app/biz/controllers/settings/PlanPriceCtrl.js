@@ -2,6 +2,7 @@
 
 angular.module('app.biz').controller('PlanPriceController', function ($state) {
     var vm = this;
+    vm.pdfPath = 'https://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/library/public/vancouver.pdf';
     vm.plan_type = 0;
     vm.prices = [{
         monitoring_input: [12, 14],
