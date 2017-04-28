@@ -24,7 +24,7 @@
                                 {{vm.sums[0]}} Euro
                             </div>
                             <div class="col-xs-12 text-center">
-                                <button class="btn btn-success">Current Subscription</button>
+                                <button class="btn btn-success" ng-click="vm.go('myPackage')">Current Subscription</button>
                             </div>
                         </div>
                         <div class="row">
@@ -221,7 +221,7 @@
                                 {{vm.sums[1]}} Euro
                             </div>
                             <div class="col-xs-12 text-center">
-                                <button class="btn btn-success">Upgrade</button>
+                                <button class="btn btn-success" ng-click="vm.go('invoice')">Upgrade</button>
                             </div>
                         </div>
                         <div class="row">
@@ -420,7 +420,7 @@
                                 Call US
                             </div>
                             <div class="col-xs-12 text-center">
-                                <button class="btn btn-success">Email us</button>
+                                <a class="btn btn-success" href="mailto:info@spotranking.com?Subject=Spotranking" target="_blank">Email us</a>
                             </div>
                         </div>
                         <div class="row">
@@ -608,17 +608,17 @@
             <div class="well text-center">
                 <h2>Need a custom plan / One off project?</h2>
                 <p>Just let us know and we'll provide you with a plan designed to suit your needs</p>
-                <button class="btn btn-default">Request Your Custom Plan</button>
+                <a class="btn btn-default" href="mailto:info@spotranking.com?Subject=Spotranking" target="_blank">Request Your Custom Plan</a>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
-            <img class="max-width-80" ng-src="./styles/img/payment-cards/visa.jpg">
-            <img class="max-width-80" ng-src="./styles/img/payment-cards/master_card.jpg">
-            <img class="max-width-80" ng-src="./styles/img/payment-cards/discover.jpg">
-            <img class="max-width-80" ng-src="./styles/img/payment-cards/american_express.jpg">
-            <img class="max-width-80" ng-src="./styles/img/payment-cards/paypal.jpg">
+            <img ng-click="vm.go('invoice')" class="max-width-80 cursor-pointer" ng-src="./styles/img/payment-cards/visa.jpg">
+            <img ng-click="vm.go('invoice')" class="max-width-80 cursor-pointer" ng-src="./styles/img/payment-cards/master_card.jpg">
+            <img ng-click="vm.go('invoice')" class="max-width-80 cursor-pointer" ng-src="./styles/img/payment-cards/discover.jpg">
+            <img ng-click="vm.go('invoice')" class="max-width-80 cursor-pointer" ng-src="./styles/img/payment-cards/american_express.jpg">
+            <img ng-click="vm.go('invoice')" class="max-width-80 cursor-pointer" ng-src="./styles/img/payment-cards/paypal.jpg">
         </div>
     </div>
     <div class="row margin-bottom-40">

@@ -1211,6 +1211,32 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.myPackage', {
+                url: '/my_package',
+                data: {
+                    title: 'My Package'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/settings/my-package.html',
+                        controller: 'MyPackageController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
+            .state('app.biz.invoice', {
+                url: '/invoice',
+                data: {
+                    title: 'Invoice'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/settings/invoice.html',
+                        controller: 'InvoiceController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

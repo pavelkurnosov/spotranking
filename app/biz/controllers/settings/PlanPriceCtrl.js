@@ -27,4 +27,8 @@ angular.module('app.biz').controller('PlanPriceController', function ($state) {
         }
     }
     vm.getSums();
+
+    vm.go = function (state) {
+        $state.go('app.biz.' + state);
+    }
 });
