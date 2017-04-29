@@ -21,7 +21,8 @@ angular.module('app.biz').controller('OohSearchController', function () {
     vm.currCity = vm.cities[0];
 
     vm.mediaTypes = [
-        {id: 1, name: 'Billboards', formats: [
+        {
+            id: 1, name: 'Billboards', formats: [
             {id: 1, name: 'Bulletins'},
             {id: 2, name: 'Mupis'},
             {id: 3, name: 'Megacoms'},
@@ -34,8 +35,10 @@ angular.module('app.biz').controller('OohSearchController', function () {
             {id: 10, name: 'Spectacular'},
             {id: 11, name: 'Double Decker double sided'},
             {id: 12, name: 'Double Decker single-sided'}
-        ]},
-        {id: 2, name: 'Street Furniture', formats: [
+        ]
+        },
+        {
+            id: 2, name: 'Street Furniture', formats: [
             {id: 13, name: 'Bus Shelter'},
             {id: 14, name: 'Bus Shelter Wraps'},
             {id: 15, name: 'Bus Bench'},
@@ -44,8 +47,10 @@ angular.module('app.biz').controller('OohSearchController', function () {
             {id: 18, name: 'Newsstand Kiosks'},
             {id: 19, name: 'Bicycles and Bicycle Racks'},
             {id: 20, name: 'Urban Panels'}
-        ]},
-        {id: 3, name: 'Transit and Transportation', formats: [
+        ]
+        },
+        {
+            id: 3, name: 'Transit and Transportation', formats: [
             {id: 21, name: 'Digital Airport Screens'},
             {id: 22, name: 'Baggage Claim LCDs'},
             {id: 23, name: 'Baggage Cart Sponsorship'},
@@ -65,34 +70,36 @@ angular.module('app.biz').controller('OohSearchController', function () {
             {id: 37, name: 'Airport Preferred Parking'},
             {id: 38, name: 'AirTrain'},
             /*{id: 1, name: 'Airport Exhibition & Promotion AreasÂ'},
-            {id: 1, name: 'Airport Digital Screens'},
-            {id: 1, name: 'Airport Dioramas'},
-            {id: 1, name: 'Airport Wraps'},
-            {id: 1, name: 'Airport Posters'},
-            {id: 1, name: 'Airport Bus Shelters'},
-            {id: 1, name: 'AirTrain'},
-            {id: 1, name: 'Airport Preferred Parking'},
-            {id: 1, name: 'Bus Rears & Mega Rears'},
-            {id: 1, name: 'Bus Superside'},
-            {id: 1, name: 'Bus T-Side'},
-            {id: 1, name: 'Bus Full Wraps'},
-            {id: 1, name: 'Bus Handle Ads'},
-            {id: 1, name: 'Bus Posters Ads'},
-            {id: 1, name: 'Subway & Railway Interior Display'},
-            {id: 1, name: 'Subway & Railway Backbit Diorama'},
-            {id: 1, name: 'Subway & Railway Transit Station'},
-            {id: 1, name: 'Train wrapped exterior'},
-            {id: 1, name: 'Turnstile Ads'},
-            {id: 1, name: 'Directional and Commuter Clocks'},
-            {id: 1, name: 'Station Posters'},
-            {id: 1, name: 'Taxi Top'},
-            {id: 1, name: 'Taxi Trunk Ads'},
-            {id: 1, name: 'Taxi Full Wrap Ads'},
-            {id: 1, name: 'Taxi TV'},
-            {id: 1, name: 'Gas Pump Ads'},
-            {id: 1, name: 'Fillboard stations ads'}*/
-        ]},
-        {id: 4, name: 'Mall Scape', formats: [
+             {id: 1, name: 'Airport Digital Screens'},
+             {id: 1, name: 'Airport Dioramas'},
+             {id: 1, name: 'Airport Wraps'},
+             {id: 1, name: 'Airport Posters'},
+             {id: 1, name: 'Airport Bus Shelters'},
+             {id: 1, name: 'AirTrain'},
+             {id: 1, name: 'Airport Preferred Parking'},
+             {id: 1, name: 'Bus Rears & Mega Rears'},
+             {id: 1, name: 'Bus Superside'},
+             {id: 1, name: 'Bus T-Side'},
+             {id: 1, name: 'Bus Full Wraps'},
+             {id: 1, name: 'Bus Handle Ads'},
+             {id: 1, name: 'Bus Posters Ads'},
+             {id: 1, name: 'Subway & Railway Interior Display'},
+             {id: 1, name: 'Subway & Railway Backbit Diorama'},
+             {id: 1, name: 'Subway & Railway Transit Station'},
+             {id: 1, name: 'Train wrapped exterior'},
+             {id: 1, name: 'Turnstile Ads'},
+             {id: 1, name: 'Directional and Commuter Clocks'},
+             {id: 1, name: 'Station Posters'},
+             {id: 1, name: 'Taxi Top'},
+             {id: 1, name: 'Taxi Trunk Ads'},
+             {id: 1, name: 'Taxi Full Wrap Ads'},
+             {id: 1, name: 'Taxi TV'},
+             {id: 1, name: 'Gas Pump Ads'},
+             {id: 1, name: 'Fillboard stations ads'}*/
+        ]
+        },
+        {
+            id: 4, name: 'Mall Scape', formats: [
             {id: 1, name: 'Shopping Mall Free Standing Displays'},
             {id: 1, name: ' Shopping Mall POP displays'},
             {id: 1, name: 'Mall Escalators'},
@@ -112,8 +119,10 @@ angular.module('app.biz').controller('OohSearchController', function () {
             {id: 1, name: 'Digital Cinema Screens'},
             {id: 1, name: 'Blimps & Custom Inflatables'},
             {id: 1, name: 'Aerial Banners'}
-        ]},
-        {id: 5, name: 'Arena & Stadiums', formats: [
+        ]
+        },
+        {
+            id: 5, name: 'Arena & Stadiums', formats: [
             {id: 1, name: 'Scoreboards'},
             {id: 1, name: 'Dioramas'},
             {id: 1, name: 'Facade Units'},
@@ -121,7 +130,8 @@ angular.module('app.biz').controller('OohSearchController', function () {
             {id: 1, name: 'Dashers'},
             {id: 1, name: 'Courtside'},
             {id: 1, name: 'Replay Screen Spots'}
-        ]}
+        ]
+        }
     ];
     vm.currMediaType = vm.mediaTypes[0];
 
@@ -291,92 +301,68 @@ angular.module('app.biz').controller('OohSearchController', function () {
     vm.searchFlag = true;
     vm.articles = [];
     vm.articleTypes = {
-        'newspaper': ['country', 'language', 'date', 'publication_name', 'geographical_scope', 'number_of_ads', 'published_section', 'page_number', 'image_specification', 'advertiser', 'product_name', 'advertising_forum', 'campaign_message', 'camp_id'],
-        'tv_radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
-        'ooh': ['ooh_supplier', 'country', 'city', 'street_name', 'language', 'first_run', 'last_run', 'ooh_media_category', 'ooh_media_format', 'circuit_distance', 'geo_location', 'ooh_display_number', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id'],
-        'web': ['country', 'language', 'date', 'landing_page', 'creative_type', 'time_seen', 'days_seen', 'first_seen', 'last_seen', 'ad_size', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id']
+        'cinema': ['country', 'language', 'broadcast_source', 'first_run', 'spot_length', 'advertiser', 'product_name'],
+        'billboard': ['ooh_supplier', 'country', 'city', 'street_name', 'language', 'first_run', 'last_run', 'ooh_media_category']
     };
     vm.search = function () {
         if (vm.searchFlag) {
-            for (var a = 1; a <= 2; a++) {
-                vm.articles[vm.articles.length] = {
-                    'icon': '01.png',
-                    'type': 'newspaper',
-                    'country': 'country' + a,
-                    'language': '',
-                    'date': '',
-                    'publication_name': '',
-                    'geographical_scope': '',
-                    'number_of_ads': '',
-                    'published_section': '',
-                    'page_number': '',
-                    'image_specification': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'advertising_forum': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
-                };
-                vm.articles[vm.articles.length] = {
-                    'icon': '03.png',
-                    'type': 'tv_radio',
-                    'country': 'country' + a,
+            vm.articles = [
+                {
+                    'icon': '13.png',
+                    'type': 'cinema',
+                    'country': '',
                     'language': '',
                     'broadcast_source': '',
                     'first_run': '',
-                    'last_run': '',
                     'spot_length': '',
                     'advertiser': '',
-                    'product_name': '',
-                    'advertising_form': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'video': 'video.mp4'
-                };
-                vm.articles[vm.articles.length] = {
-                    'icon': '06.png',
-                    'type': 'ooh',
+                    'product_name': ''
+                }, {
+                    'icon': '14.png',
+                    'type': 'billboard',
                     'ooh_supplier': '',
-                    'country': 'country' + a,
+                    'country': '',
                     'city': '',
                     'street_name': '',
                     'language': '',
                     'first_run': '',
                     'last_run': '',
-                    'ooh_media_category': '',
-                    'ooh_media_format': '',
-                    'circuit_distance': '',
-                    'geo_location': '',
-                    'ooh_display_number': '',
-                    'advertising_forum': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
-                };
-                vm.articles[vm.articles.length] = {
-                    'icon': '05.png',
-                    'type': 'web',
-                    'country': 'country' + a,
+                    'ooh_media_category': ''
+                }, {
+                    'icon': '15.png',
+                    'type': 'billboard',
+                    'ooh_supplier': '',
+                    'country': '',
+                    'city': '',
+                    'street_name': '',
                     'language': '',
-                    'date': '',
-                    'landing_page': '',
-                    'creative_type': '',
-                    'time_seen': '',
-                    'days_seen': '',
-                    'first_seen': '',
-                    'last_seen': '',
-                    'ad_size': '',
-                    'advertising_forum': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
-                };
-            }
+                    'first_run': '',
+                    'last_run': '',
+                    'ooh_media_category': ''
+                }, {
+                    'icon': '16.png',
+                    'type': 'billboard',
+                    'ooh_supplier': '',
+                    'country': '',
+                    'city': '',
+                    'street_name': '',
+                    'language': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'ooh_media_category': ''
+                }, {
+                    'icon': '17.png',
+                    'type': 'billboard',
+                    'ooh_supplier': '',
+                    'country': '',
+                    'city': '',
+                    'street_name': '',
+                    'language': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'ooh_media_category': ''
+                }
+            ];
             vm.searchCounts = {
                 total: 76,
                 television: 20,
