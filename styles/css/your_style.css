@@ -276,6 +276,10 @@
     height: 300px !important;
 }
 
+.height-200px {
+    height: 200px !important;
+}
+
 .height-70 {
     height: 70px !important;
 }
@@ -509,27 +513,30 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
     color: white;
 }
 
-.text-facebook {
-    color: #646e70;
+.color-facebook {
+    color: #3955a1;
 }
 
-.text-instagram {
+.color-instagram {
     color: #787882;
 }
 
-.text-twitter {
+.color-twitter {
     color: #70bbe2;
 }
 
-.text-pinterest {
+.color-pinterest {
     color: #96353e;
 }
 
-.text-youtube {
+.color-youtube {
     color: #cd5153;
 }
+.color-linkedin {
+    color: #037cb5;
+}
 
-.text-google-plus {
+.color-google-plus {
     color: #a23f39;
 }
 
@@ -653,8 +660,13 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 .active .plan-price-section-header1, .active .plan-price-section-header2 {
     background-color: #485365;
 }
+
 .best-choice {
     margin-top: -40px;
     margin-right: 10px;
     float: right;
+}
+
+.overflow-auto {
+    overflow: auto !important;
 }

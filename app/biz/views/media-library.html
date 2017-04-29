@@ -5,7 +5,7 @@
 
     <!-- content -->
     <div class="row">
-        <div class="col-xs-3">
+        <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
@@ -13,7 +13,7 @@
                 </header>
 
                 <!-- widget div-->
-                <div>
+                <div class="height-200px overflow-auto">
                     <!-- widget content -->
                     <div class="widget-body">
                         <div class="smart-form" ng-repeat="f in ['French', 'United Arab', 'Turkey', 'Ukraine', 'Russia', 'Germany', 'Netherlands', '... ...'] track by $index">
@@ -30,22 +30,22 @@
                 <!-- end widget content -->
             </div>
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Advertiser</h2>
+                    <h2>OOH Media Type</h2>
                 </header>
 
                 <!-- widget div-->
-                <div>
+                <div class="height-200px overflow-auto">
                     <!-- widget content -->
                     <div class="widget-body">
-                        <div class="smart-form" ng-repeat="a in ['Arabian Outdoor','24 Media','6 Degrees Group','Al Shuala Media', '...', '...', '...', '...'] track by $index">
+                        <div class="smart-form" ng-repeat="a in vm.mediaTypes">
                             <label class="checkbox">
                                 <input type="checkbox" name="checkbox">
                                 <i></i>
-                                {{a}}
+                                {{a.name}}
                             </label>
                         </div>
                     </div>
@@ -56,22 +56,22 @@
             </div>
 
         </div>
-        <div class="col-xs-3">
+        <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Categories</h2>
+                    <h2>OOH Media Format</h2>
                 </header>
 
                 <!-- widget div-->
-                <div>
+                <div class="height-200px overflow-auto">
                     <!-- widget content -->
                     <div class="widget-body">
-                        <div class="smart-form" ng-repeat="c in ['Billboards', 'Street Furniture', 'Transit', 'Alternative OOH', 'Select all OOH Categories', '...', '...', '...'] track by $index">
+                        <div class="smart-form" ng-repeat="m in vm.currMediaType.formats">
                             <label class="checkbox">
                                 <input type="checkbox" name="checkbox">
                                 <i></i>
-                                {{c}}
+                                {{m.name}}
                             </label>
                         </div>
                     </div>
@@ -81,31 +81,6 @@
                 <!-- end widget content -->
             </div>
 
-        </div>
-        <div class="col-xs-3">
-            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Choose Format</h2>
-                </header>
-
-                <!-- widget div-->
-                <div>
-                    <!-- widget content -->
-                    <div class="widget-body">
-                        <div class="smart-form" ng-repeat="f in ['Digital Bulletins', 'Digital Posters', 'Digital Spectaculars', 'Printed Bulletins', 'Printed Junior Posters', 'Printed Posters', 'Printed Spectaculars', 'Printed Wass Murals'] track by $index">
-                            <label class="checkbox">
-                                <input type="checkbox" name="checkbox">
-                                <i></i>
-                                {{f}}
-                            </label>
-                        </div>
-                    </div>
-                    <!-- end widget body-->
-
-                </div>
-                <!-- end widget content -->
-            </div>
         </div>
     </div>
     <div class="row">
@@ -124,7 +99,7 @@
             </label>-->
         </div>
         <div class="col-xs-12">
-            <h5 class="text-center">Total Result: 6</h5>
+            <h5 class="text-center">Total Result: 2</h5>
         </div>
     </div>
     <div class="row">
@@ -152,9 +127,24 @@
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-xs-4">
-                                        <h4>Clear Channel Outdoor</h4>
-                                        <p>Clear Channel Outdoor</p>
-                                        <p>Visit Website</p>
+                                        <div class="well display-inline-block">
+                                            <div class="col-xs-5">
+                                                <img class="img-responsive" ng-src="./styles/img/temp/kn.png">
+                                            </div>
+                                            <div class="col-xs-7">
+                                                <p><strong>Phone</strong> (312)346-3771</p>
+                                                <p><strong>Fax</strong> (312)346-0991</p>
+                                                <p>
+                                                    <i class="fa fa-2x fa-twitter color-twitter"></i>
+                                                    <i class="fa fa-2x fa-facebook-square color-facebook"></i>
+                                                    <i class="fa fa-2x fa-linkedin-square color-linkedin"></i>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <p><strong>Kubin-Nicholson</strong></p>
+                                        <p>333 North Michigan Avenue Suite 704 Chicago, IL 60601</p><br>
+                                        <p>Kubin-Nicholson, a trailblazer and leader in the Out-of-Home industry for over 85 years offers seasoned employees, state-of-the-art technology and turkey outdoor advertising programs to.</p>
+                                        <p><a class="cursor-pointer">http://www.kubin.com</a></p>
                                     </div>
                                     <div class="col-xs-8">
                                         <div jarvis-widget data-widget-color="blueDark"
@@ -185,8 +175,8 @@
                                                             </tr>
                                                             </thead>
                                                             <tr>
-                                                                <td>Digital Bulletins</td>
-                                                                <td>Digital Posters</td>
+                                                                <td>Digital Bulletins <button class="btn btn-default float-right">Street View</button></td>
+                                                                <td>Digital Posters <button class="btn btn-default float-right">Street View</button></td>
                                                                 <td></td>
                                                             </tr>
                                                         </table>

@@ -1,0 +1,340 @@
+<div id="content">
+    <!--<div class="row">
+        <big-breadcrumbs items="['My Campaign', 'Main Search']" icon="home" class="col-xs-12 col-sm-7 col-md-7 col-lg-4"></big-breadcrumbs>
+    </div>-->
+
+    <!-- content -->
+    <div class="row">
+        <div class="col-xs-12 text-center margin-bottom-10">
+            <div class="form-horizontal form-inline margin-bottom-10">
+                <div class="row text-left">
+                    <div class="smart-form float-left date-range-box margin-left-20">
+                        <label class="input">
+                            <input type="daterange" ng-model="vm.dateRange" ranges="vm.ranges" placeholder="Period">
+                        </label>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Country <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            City <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.cities"><a ng-click="vm.currCity = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            OOH Media Type <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.mediaTypes"><a ng-click="vm.currMediaType = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            OOH Media Format <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.currMediaType['formats']"><a ng-click="">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Industry <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.industries"><a ng-click="vm.currIndustry = item;vm.currSubIndustry = vm.currIndustry['subIndustries'][0];">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Sub Industry <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.currIndustry['subIndustries']"><a ng-click="vm.currSubIndustry = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Brands <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.brands"><a ng-click="vm.currBrand = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                        <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                            Product <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item">{{item.name}}</a></li>
+                        </ul>
+                    </div>
+                    <a href-void class="btn btn-success float-left margin-left-5">Search</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div jarvis-widget data-widget-color="blueDark" class="margin-bottom-10" id="search-result" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"><i class="fa fa-align-justify"></i></span>
+                    <h2>
+                        <div class="float-left">Search Result</div>
+                        <div class="float-left margin-left-10">
+                            <select class="form-control input-xs margin-top-5" ng-model="vm.articlesPerPage">
+                                <option ng-repeat="a in [10, 20, 50, 100] track by $index" value="{{a}}">{{a}}</option>
+                            </select>
+                        </div>
+                    </h2>
+                </header>
+
+                <div class="padding-0">
+                    <div class="content-fluid main-search-result custom-scroll">
+                        <div class="row" ng-if="vm.searchFlag">
+                            <div class="col-md-12">
+                                <div class="well">
+                                    There is no search result.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" ng-repeat="article in vm.articles track by $index">
+                            <div class="col-md-12">
+                                <div class="well padding-0">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xs-12 padding-bottom-10 padding-top-10">
+                                                <div class="container-fluid">
+                                                    <div class="row margin-bottom-10">
+                                                        <div class="col-xs-12 text-right">
+                                                            <div class="smart-form">
+                                                                <label class="checkbox">
+                                                                    <input type="checkbox" id="checkbox{{$index}}" ng-model="article.checked" name="checkbox">
+                                                                    <i></i>
+                                                                </label>
+                                                            </div>
+                                                            <div>
+                                                                <img class="media-article-icon" ng-src="./styles/img/temp/icons/{{article.icon}}">
+                                                            </div>
+                                                            <a href-void class="btn btn-warning btn-xs">Share</a>
+                                                            <a href-void class="btn btn-xs btn-danger">Click to Download</a>
+                                                            <a href-void class="btn btn-warning btn-xs">+ Report</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-9">
+                                                            <div class="table-responsive">
+                                                                <table class="table table-bordered table-striped table-no-padding">
+                                                                    <tr ng-repeat="articleType in vm.articleTypes[article.type]" ng-show="!($index >= 8 && !article.extendTableVisible)">
+                                                                        <td>{{articleType|camelCase}}</td>
+                                                                        <td>
+                                                                            {{article[articleType]}}
+                                                                            <div class="smart-form" ng-if="$index == 7" style="margin-top: -6px;">
+                                                                                <label class="toggle">
+                                                                                    <input type="checkbox" name="checkbox-toggle" ng-click="article.extendTableVisible = !article.extendTableVisible">
+                                                                                    <i data-swchon-text="ON" data-swchoff-text="OFF"></i>{{article.publication_name}}
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+
+                                                                <table class="table table-bordered table-striped table-no-padding hide">
+                                                                    <tr>
+                                                                        <td>Ad Code</td>
+                                                                        <td>{{article.ad_code}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Advertiser</td>
+                                                                        <td>{{article.advertiser}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Product Name</td>
+                                                                        <td>{{article.product_name}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>First Run</td>
+                                                                        <td>{{article.first_run}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Last Run</td>
+                                                                        <td>{{article.last_run}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Has been Published</td>
+                                                                        <td>{{article.published}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Campaign Message</td>
+                                                                        <td>{{article.campaign_message}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Country</td>
+                                                                        <td>{{vm.currCountry.name}}</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>Publication Name</td>
+                                                                        <td>
+                                                                            <div class="smart-form">
+                                                                                <label class="toggle">
+                                                                                    <input type="checkbox" id="demo-switch-to-pills" name="checkbox-toggle" ng-click="vm.extendTableVisible[$index] = !vm.extendTableVisible[$index]">
+                                                                                    <i data-swchon-text="ON" data-swchoff-text="OFF"></i>{{article.publication_name}}
+                                                                                </label>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Section</td>
+                                                                        <td>{{article.section}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Page Number</td>
+                                                                        <td>{{article.page_number}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Image Specs</td>
+                                                                        <td>{{article.image_specs}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Advertising Form</td>
+                                                                        <td>{{article.advertising_form}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Ads Type</td>
+                                                                        <td>{{article.ads_type}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Ads Size</td>
+                                                                        <td>{{article.ads_size}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <th colspan="2">Source Profile</th>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Frequency</td>
+                                                                        <td>{{article.frequency}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Language</td>
+                                                                        <td>{{article.language}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Format</td>
+                                                                        <td>{{article.format}}</td>
+                                                                    </tr>
+                                                                    <tr ng-show="vm.extendTableVisible[$index]">
+                                                                        <td>Circulation</td>
+                                                                        <td>{{article.circulation}}</td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-3">
+                                                            <div class="margin-bottom-10">
+                                                                <a data-toggle="modal" data-target="#myModal" class="cursor-zoom-in" ng-click="vm.currArticle = article">
+                                                                    <img class="img-responsive max-height-100 margin-auto" ng-src="./styles/img/{{article.image}}" ng-if="article.type == 'newspaper' || article.type == 'web' || article.type == 'ooh'">
+                                                                    <video class="width-full" controls ng-if="article.type == 'tv_radio'">{{article.type}}
+                                                                        <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
+                                                                        Your browser does not support the video tag.
+                                                                    </video>
+                                                                </a>
+                                                            </div>
+                                                            <!--<div class="margin-bottom-10"><img class="img-responsive margin-auto" src="./styles/img/temp/9.jpg"></div>-->
+                                                            <div class="text-center display-inline-block" ng-if="article.type == 'newspaper'">
+                                                                <page-locator></page-locator>
+                                                            </div>
+                                                            <div class="text-center margin-top-5" ng-if="article.type == 'tv_radio'">
+                                                                <button class="btn btn-primary" ng-click="vm.go('rtvReport')">Generate CMT Report</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-sm-3">
+            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+                <header>
+                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
+                    <h2>Search Summary</h2>
+                </header>
+
+                <!-- widget div-->
+                <div class="padding-0">
+                    <!-- widget content -->
+                    <div class="widget-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-no-padding table-bordered">
+                                <tr>
+                                    <td>Access</td>
+                                    <td>Toyota</td>
+                                </tr>
+                                <tr>
+                                    <td>TAG Match</td>
+                                    <td>
+                                        <span ng-repeat="t in vm.tags"><span ng-if="$index > 0">, </span>{{t.text}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Industry</td>
+                                    <td>{{vm.currSubIndustry.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Product List</td>
+                                    <td>{{vm.currProduct.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Media Vehicle</td>
+                                    <td>{{vm.getMediaNames()}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Country</td>
+                                    <td>{{vm.currCountry.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Language</td>
+                                    <td>{{vm.currLanguage.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Date Period</td>
+                                    <td>{{vm.dateString}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Search Result</td>
+                                    <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Billboards</td>
+                                    <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Street Furniture</td>
+                                    <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.newspaper">{{vm.searchCounts.newspaper}} Spots</a></td>
+                                </tr>
+                                <tr>
+                                    <td>Transit and Transportation</td>
+                                    <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.magazine">{{vm.searchCounts.magazine}} Spots</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

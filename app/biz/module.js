@@ -1237,6 +1237,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.oohSearch', {
+                url: '/ooh_search',
+                data: {
+                    title: 'OOH Search'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/ooh-search.html',
+                        controller: 'OohSearchController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

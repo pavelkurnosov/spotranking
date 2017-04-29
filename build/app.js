@@ -1879,6 +1879,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.oohSearch', {
+                url: '/ooh_search',
+                data: {
+                    title: 'OOH Search'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/ooh-search.html',
+                        controller: 'OohSearchController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;
@@ -3010,7 +3023,7 @@ $templateCache.put("app/dashboard/todo/todo-widget.tpl.html","<div id=\"todo-wid
 $templateCache.put("app/layout/language/language-selector.tpl.html","<ul class=\"header-dropdown-list hidden-xs ng-cloak\" ng-controller=\"LanguagesCtrl\">\n    <li class=\"dropdown\" dropdown>\n        <a class=\"dropdown-toggle\"  data-toggle=\"dropdown\" href> <img src=\"styles/img/blank.gif\" class=\"flag flag-{{currentLanguage.key}}\" alt=\"{{currentLanguage.alt}}\"> <span> {{currentLanguage.title}} </span>\n            <i class=\"fa fa-angle-down\"></i> </a>\n        <ul class=\"dropdown-menu pull-right\">\n            <li ng-class=\"{active: language==currentLanguage}\" ng-repeat=\"language in languages\">\n                <a ng-click=\"selectLanguage(language)\" ><img src=\"styles/img/blank.gif\" class=\"flag flag-{{language.key}}\"\n                                                   alt=\"{{language.alt}}\"> {{language.title}}</a>\n            </li>\n        </ul>\n    </li>\n</ul>");
 $templateCache.put("app/layout/partials/footer.tpl.html","<div class=\"page-footer\">\n    <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-6\">\n            <span class=\"txt-color-white\">SpotRanking © 2017</span>\n        </div>\n\n        <div class=\"col-xs-6 col-sm-6 text-right hidden-xs\">\n            <div class=\"txt-color-white inline-block\">\n                <i class=\"txt-color-blueLight hidden-mobile\">Last account activity <i class=\"fa fa-clock-o\"></i>\n                    <strong>52 mins ago &nbsp;</strong> </i>\n\n                <div class=\"btn-group dropup\">\n                    <button class=\"btn btn-xs dropdown-toggle bg-color-blue txt-color-white\" data-toggle=\"dropdown\">\n                        <i class=\"fa fa-link\"></i> <span class=\"caret\"></span>\n                    </button>\n                    <ul class=\"dropdown-menu pull-right text-left\">\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Download Progress</p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-success\" style=\"width: 50%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Server Load</p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-success\" style=\"width: 20%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <p class=\"txt-color-darken font-sm no-margin\">Memory Load <span class=\"text-danger\">*critical*</span>\n                                </p>\n\n                                <div class=\"progress progress-micro no-margin\">\n                                    <div class=\"progress-bar progress-bar-danger\" style=\"width: 70%;\"></div>\n                                </div>\n                            </div>\n                        </li>\n                        <li class=\"divider\"></li>\n                        <li>\n                            <div class=\"padding-5\">\n                                <button class=\"btn btn-block btn-default\">refresh</button>\n                            </div>\n                        </li>\n                    </ul>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>");
 $templateCache.put("app/layout/partials/header.tpl.html","<header id=\"header\">\n    <div id=\"logo-group\">\n\n        <!-- PLACE YOUR LOGO HERE -->\n        <span id=\"logo\"> <img src=\"styles/img/logo.png\" alt=\"Spot Ranking\"> </span>\n        <!-- END LOGO PLACEHOLDER -->\n\n        <!-- Note: The activity badge color changes when clicked and resets the number to 0\n        Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->\n        <!--<span id=\"activity\" class=\"activity-dropdown\" activities-dropdown-toggle>\n            <i class=\"fa fa-user\"></i>\n            <b class=\"badge bg-color-red\">21</b>\n        </span>\n        <div smart-include=\"app/dashboard/activities/activities.html\"></div>-->\n    </div>\n\n\n    <div class=\"margin-top-10 padding-left-10\">\n        <h4>Welcome Pavel</h4>\n        <p>{{vm.dateTime}}</p>\n    </div>\n\n    <!--<recent-projects></recent-projects>-->\n\n\n    <!-- pulled right: nav area -->\n    <div class=\"pull-right\">\n\n        <!-- collapse menu button -->\n        <div id=\"hide-menu\" class=\"btn-header pull-right\">\n            <span> <a toggle-menu title=\"Collapse Menu\"><i class=\"fa fa-reorder cursor-pointer\"></i></a> </span>\n        </div>\n        <!-- end collapse menu -->\n\n        <!-- #MOBILE -->\n        <!-- Top menu profile link : this shows only when top menu is active -->\n        <ul id=\"mobile-profile-img\" class=\"header-dropdown-list hidden-xs padding-5\">\n            <li class=\"padding-10\">\n                <a href=\"#\" class=\"dropdown-toggle no-margin userdropdown\" data-toggle=\"dropdown\">\n                    <i class=\"fa fa-user\"></i>\n                    <!--<img src=\"styles/img/avatars/sunny.png\" alt=\"John Doe\" class=\"online\"/>-->\n                </a>\n                <ul class=\"dropdown-menu pull-right\">\n                    <li>\n                        <a class=\"padding-10 padding-top-5 padding-bottom-5\" ng-click=\"vm.toggleLayoutOptions();\">\n                            <i class=\"fa fa-th-large\"></i> Layout Preference\n                        </a>\n                    </li>\n                    <li>\n                        <a class=\"padding-10 padding-top-5 padding-bottom-5\" ng-click=\"vm.go(\'manageProfile\');\">\n                            <i class=\"fa fa-briefcase\"></i> Manage Profiles\n                        </a>\n                    </li>\n                    <li>\n                        <a class=\"padding-10 padding-top-5 padding-bottom-5\" ng-click=\"vm.go(\'planPrice\');\">\n                            <i class=\"fa fa-ticket\"></i> Plan & Price\n                        </a>\n                    </li>\n                    <li>\n                        <a class=\"padding-10 padding-top-5 padding-bottom-5\" ng-click=\"vm.go(\'myPackage\');\">\n                            <i class=\"fa fa-inbox\"></i> My Package\n                        </a>\n                    </li>\n                    <li>\n                        <a class=\"padding-10 padding-top-5 padding-bottom-5\" ng-click=\"vm.go(\'invoice\');\">\n                            <i class=\"fa fa-money\"></i> Invoices\n                        </a>\n                    </li>\n                    <!--<li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"><i\n                                class=\"fa fa-cog\"></i> Setting</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a ui-sref=\"app.appViews.profileDemo\" class=\"padding-10 padding-top-0 padding-bottom-0\"> <i class=\"fa fa-user\"></i>\n                            <u>P</u>rofile</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"\n                           data-action=\"toggleShortcut\"><i class=\"fa fa-arrow-down\"></i> <u>S</u>hortcut</a>\n                    </li>\n                    <li class=\"divider\"></li>\n                    <li>\n                        <a href-void class=\"padding-10 padding-top-0 padding-bottom-0\"\n                           data-action=\"launchFullscreen\"><i class=\"fa fa-arrows-alt\"></i> Full <u>S</u>creen</a>\n                    </li>\n                    <li class=\"divider\"></li>-->\n                    <li>\n                        <hr class=\"margin-0\"/>\n                    </li>\n                    <li>\n                        <a href=\"#/login\" class=\"padding-10 padding-top-5 padding-bottom-5\" data-action=\"userLogout\"><i\n                                class=\"fa fa-sign-out fa-lg\"></i> <strong><u>L</u>ogout</strong></a>\n                    </li>\n                </ul>\n            </li>\n        </ul>\n\n        <!-- logout button -->\n        <!--<div id=\"logout\" class=\"btn-header transparent pull-right\">\n        <span> <a ui-sref=\"login\" title=\"Sign Out\" data-action=\"userLogout\"\n                  data-logout-msg=\"You can improve your security further after logging out by closing this opened browser\"><i\n                class=\"fa fa-sign-out\"></i></a> </span>\n        </div>-->\n        <!-- end logout button -->\n\n        <!-- search mobile button (this is hidden till mobile view port) -->\n        <!--<div id=\"search-mobile\" class=\"btn-header transparent pull-right\" data-search-mobile>\n            <span> <a href=\"#\" title=\"Search\"><i class=\"fa fa-search\"></i></a> </span>\n        </div>-->\n        <!-- end search mobile button -->\n\n        <!-- input: search field -->\n        <!--<form action=\"#/search\" class=\"header-search pull-right\">\n            <input id=\"search-fld\" type=\"text\" name=\"param\" placeholder=\"Find reports and more\" data-autocomplete=\'[\n                        \"ActionScript\",\n                        \"AppleScript\",\n                        \"Asp\",\n                        \"BASIC\",\n                        \"C\",\n                        \"C++\",\n                        \"Clojure\",\n                        \"COBOL\",\n                        \"ColdFusion\",\n                        \"Erlang\",\n                        \"Fortran\",\n                        \"Groovy\",\n                        \"Haskell\",\n                        \"Java\",\n                        \"JavaScript\",\n                        \"Lisp\",\n                        \"Perl\",\n                        \"PHP\",\n                        \"Python\",\n                        \"Ruby\",\n                        \"Scala\",\n                        \"Scheme\"]\'>\n            <button type=\"submit\">\n                <i class=\"fa fa-search\"></i>\n            </button>\n            <a href=\"$\" id=\"cancel-search-js\" title=\"Cancel Search\"><i class=\"fa fa-times\"></i></a>\n        </form>-->\n        <!-- end input: search field -->\n\n        <!-- fullscreen button -->\n        <div id=\"fullscreen\" class=\"btn-header transparent pull-right\">\n        <span> <a full-screen title=\"Full Screen\"><i\n                class=\"fa fa-arrows-alt cursor-pointer\"></i></a> </span>\n        </div>\n        <!-- end fullscreen button -->\n\n\n        <!-- multiple lang dropdown : find all flags in the flags page -->\n        <language-selector></language-selector>\n        <!-- end multiple lang -->\n\n    </div>\n    <!-- end pulled right: nav area -->\n\n</header>");
-$templateCache.put("app/layout/partials/navigation.tpl.html","<aside id=\"left-panel\">\n\n    <!-- User info -->\n    <!--<div login-info></div>-->\n    <!-- end user info -->\n\n    <nav>\n        <img class=\"col-xs-12 img-responsive logo-img margin-bottom-20\" src=\"./styles/img/temp/6.jpg\">\n        <!-- NOTE: Notice the gaps after each icon usage <i></i>..\n        Please note that these links work a bit different than\n        traditional href=\"\" links. See documentation for details.\n        -->\n        <ul data-smart-menu>\n            <li data-ui-sref-active=\"active\">\n                <a data-ui-sref=\"app.biz.dashboard\" title=\"Dashboard\">\n                    <i class=\"fa fa-lg fa-fw fa-dashboard\"></i> <span class=\"menu-item-parent\">{{getWord(\'Dashboard\')}}</span></a>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"My Campaigns\"><i class=\"fa fa-lg fa-fw fa-cogs\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Campaigns\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mainSearch\">{{getWord(\'Main Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.rtvReport\">{{getWord(\'RTV AD Airing Certificate\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialMedia\">{{getWord(\'Social Media engagement\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"\'My Insight\"><i class=\"fa fa-lg fa-fw fa-globe\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Insight\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaOutlet\">{{getWord(\'Media Outlet Listing\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.campaignBreakdown\">{{getWord(\'Campaign Breakdown\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.GeographicalCoverage\">{{getWord(\'Geographic Coverage\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.MeasuringOutput\">{{getWord(\'Measuring Output 360º Over time trends\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.ComparingPerform\">{{getWord(\'Comparing the performance across multiple campaigns\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Organization Perform\"><i class=\"fa fa-lg fa-fw fa-signal\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Organization Perform\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.BrandCompetition\">{{getWord(\'Brand Size VS Competition\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.Opportunity\">{{getWord(\'Opportunity to See\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Social LANDSCAPE\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Social LANDSCAPE\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.crossChannels\"><i class=\"fa fa-lg fa-fw fa-random\"></i> {{getWord(\'Cross Channels\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialFacebook\"><i class=\"fa fa-lg fa-fw fa-facebook\"></i> {{getWord(\'Facebook\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialTwitter\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> {{getWord(\'Twitter\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialYoutube\"><i class=\"fa fa-lg fa-fw fa-youtube\"></i> {{getWord(\'YouTube\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialGoogleplus\"><i class=\"fa fa-lg fa-fw fa-google-plus\"></i> {{getWord(\'Google+\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialInstagram\"><i class=\"fa fa-lg fa-fw fa-instagram\"></i> {{getWord(\'Instagram\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialPinterest\"><i class=\"fa fa-lg fa-fw fa-pinterest\"></i> {{getWord(\'Pinterest\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialLinkedin\"><i class=\"fa fa-lg fa-fw fa-linkedin\"></i> {{getWord(\'LinkedIn\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.favourites\"><i class=\"fa fa-lg fa-fw fa-star\"></i> {{getWord(\'My Favorites\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"OOH\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'OOH\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"#\">{{getWord(\'OOH Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaLibrary\">{{getWord(\'OOH Media Library\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.inventoryMap\">{{getWord(\'OOH Inventory Map\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <!--<li data-menu-collapse>\n                <a href=\"#\" title=\"Billing System\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Billing System\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.customers\">{{getWord(\'Customers\')}}</a>\n                    </li>\n                </ul>\n            </li>-->\n        </ul>\n\n        <!-- NOTE: This allows you to pull menu items from server -->\n        <!-- <ul data-smart-menu-items=\"/api/menu-items.json\"></ul> -->\n    </nav>\n\n    <span class=\"minifyme\" data-action=\"minifyMenu\" minify-menu>\n    <i class=\"fa fa-arrow-circle-left hit\"></i>\n  </span>\n\n</aside>");
+$templateCache.put("app/layout/partials/navigation.tpl.html","<aside id=\"left-panel\">\n\n    <!-- User info -->\n    <!--<div login-info></div>-->\n    <!-- end user info -->\n\n    <nav>\n        <img class=\"col-xs-12 img-responsive logo-img margin-bottom-20\" src=\"./styles/img/temp/6.jpg\">\n        <!-- NOTE: Notice the gaps after each icon usage <i></i>..\n        Please note that these links work a bit different than\n        traditional href=\"\" links. See documentation for details.\n        -->\n        <ul data-smart-menu>\n            <li data-ui-sref-active=\"active\">\n                <a data-ui-sref=\"app.biz.dashboard\" title=\"Dashboard\">\n                    <i class=\"fa fa-lg fa-fw fa-dashboard\"></i> <span class=\"menu-item-parent\">{{getWord(\'Dashboard\')}}</span></a>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"My Campaigns\"><i class=\"fa fa-lg fa-fw fa-cogs\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Campaigns\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mainSearch\">{{getWord(\'Main Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.rtvReport\">{{getWord(\'RTV AD Airing Certificate\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialMedia\">{{getWord(\'Social Media engagement\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"\'My Insight\"><i class=\"fa fa-lg fa-fw fa-globe\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'My Insight\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaOutlet\">{{getWord(\'Media Outlet Listing\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.campaignBreakdown\">{{getWord(\'Campaign Breakdown\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.GeographicalCoverage\">{{getWord(\'Geographic Coverage\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.MeasuringOutput\">{{getWord(\'Measuring Output 360º Over time trends\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.ComparingPerform\">{{getWord(\'Comparing the performance across multiple campaigns\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Organization Perform\"><i class=\"fa fa-lg fa-fw fa-signal\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Organization Perform\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.BrandCompetition\">{{getWord(\'Brand Size VS Competition\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.Opportunity\">{{getWord(\'Opportunity to See\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"Social LANDSCAPE\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Social LANDSCAPE\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.crossChannels\"><i class=\"fa fa-lg fa-fw fa-random\"></i> {{getWord(\'Cross Channels\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialFacebook\"><i class=\"fa fa-lg fa-fw fa-facebook\"></i> {{getWord(\'Facebook\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialTwitter\"><i class=\"fa fa-lg fa-fw fa-twitter\"></i> {{getWord(\'Twitter\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialYoutube\"><i class=\"fa fa-lg fa-fw fa-youtube\"></i> {{getWord(\'YouTube\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialGoogleplus\"><i class=\"fa fa-lg fa-fw fa-google-plus\"></i> {{getWord(\'Google+\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialInstagram\"><i class=\"fa fa-lg fa-fw fa-instagram\"></i> {{getWord(\'Instagram\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialPinterest\"><i class=\"fa fa-lg fa-fw fa-pinterest\"></i> {{getWord(\'Pinterest\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.socialLinkedin\"><i class=\"fa fa-lg fa-fw fa-linkedin\"></i> {{getWord(\'LinkedIn\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.favourites\"><i class=\"fa fa-lg fa-fw fa-star\"></i> {{getWord(\'My Favorites\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <li data-menu-collapse>\n                <a href=\"#\" title=\"OOH\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'OOH\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.oohSearch\">{{getWord(\'OOH Search\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.mediaLibrary\">{{getWord(\'OOH Media Library\')}}</a>\n                    </li>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.inventoryMap\">{{getWord(\'OOH Inventory Map\')}}</a>\n                    </li>\n                </ul>\n            </li>\n            <!--<li data-menu-collapse>\n                <a href=\"#\" title=\"Billing System\"><i class=\"fa fa-lg fa-fw fa-th\"></i> <span\n                        class=\"menu-item-parent\">{{getWord(\'Billing System\')}}</span></a>\n                <ul>\n                    <li data-ui-sref-active=\"active\">\n                        <a data-ui-sref=\"app.biz.customers\">{{getWord(\'Customers\')}}</a>\n                    </li>\n                </ul>\n            </li>-->\n        </ul>\n\n        <!-- NOTE: This allows you to pull menu items from server -->\n        <!-- <ul data-smart-menu-items=\"/api/menu-items.json\"></ul> -->\n    </nav>\n\n    <span class=\"minifyme\" data-action=\"minifyMenu\" minify-menu>\n    <i class=\"fa fa-arrow-circle-left hit\"></i>\n  </span>\n\n</aside>");
 $templateCache.put("app/layout/partials/sub-header.tpl.html","<div class=\"col-xs-12 col-sm-5 col-md-5 col-lg-8\" data-sparkline-container>\n    <ul id=\"sparks\" class=\"\">\n        <li class=\"sparks-info\">\n            <h5> My Income <span class=\"txt-color-blue\">$47,171</span></h5>\n            <div class=\"sparkline txt-color-blue hidden-mobile hidden-md hidden-sm\">\n                1300, 1877, 2500, 2577, 2000, 2100, 3000, 2700, 3631, 2471, 2700, 3631, 2471\n            </div>\n        </li>\n        <li class=\"sparks-info\">\n            <h5> Site Traffic <span class=\"txt-color-purple\"><i class=\"fa fa-arrow-circle-up\"></i>&nbsp;45%</span></h5>\n            <div class=\"sparkline txt-color-purple hidden-mobile hidden-md hidden-sm\">\n                110,150,300,130,400,240,220,310,220,300, 270, 210\n            </div>\n        </li>\n        <li class=\"sparks-info\">\n            <h5> Site Orders <span class=\"txt-color-greenDark\"><i class=\"fa fa-shopping-cart\"></i>&nbsp;2447</span></h5>\n            <div class=\"sparkline txt-color-greenDark hidden-mobile hidden-md hidden-sm\">\n                110,150,300,130,400,240,220,310,220,300, 270, 210\n            </div>\n        </li>\n    </ul>\n</div>\n			");
 $templateCache.put("app/layout/partials/voice-commands.tpl.html","<!-- TRIGGER BUTTON:\n<a href=\"/my-ajax-page.html\" data-toggle=\"modal\" data-target=\"#remoteModal\" class=\"btn btn-default\">Open Modal</a>  -->\n\n<!-- MODAL PLACE HOLDER\n<div class=\"modal fade\" id=\"remoteModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"remoteModalLabel\" aria-hidden=\"true\">\n<div class=\"modal-dialog\">\n<div class=\"modal-content\"></div>\n</div>\n</div>   -->\n<!--////////////////////////////////////-->\n\n<!--<div class=\"modal-header\">\n<button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\">\n&times;\n</button>\n<h4 class=\"modal-title\" id=\"myModalLabel\">Command List</h4>\n</div>-->\n<div class=\"modal-body\">\n\n	<h1><i class=\"fa fa-microphone text-muted\"></i>&nbsp;&nbsp; SmartAdmin Voice Command</h1>\n	<hr class=\"simple\">\n	<h5>Instruction</h5>\n\n	Click <span class=\"text-success\">\"Allow\"</span> to access your microphone and activate Voice Command.\n	You will notice a <span class=\"text-primary\"><strong>BLUE</strong> Flash</span> on the microphone icon indicating activation.\n	The icon will appear <span class=\"text-danger\"><strong>RED</strong></span> <span class=\"label label-danger\"><i class=\"fa fa-microphone fa-lg\"></i></span> if you <span class=\"text-danger\">\"Deny\"</span> access or don\'t have any microphone installed.\n	<br>\n	<br>\n	As a security precaution, your browser will disconnect the microphone every 60 to 120 seconds (sooner if not being used). In which case Voice Command will prompt you again to <span class=\"text-success\">\"Allow\"</span> or <span class=\"text-danger\">\"Deny\"</span> access to your microphone.\n	<br>\n	<br>\n	If you host your page over <strong>http<span class=\"text-success\">s</span></strong> (secure socket layer) protocol you can wave this security measure and have an unintrupted Voice Command.\n	<br>\n	<br>\n	<h5>Commands</h5>\n	<ul>\n		<li>\n			<strong>\'show\' </strong> then say the <strong>*page*</strong> you want to go to. For example <strong>\"show inbox\"</strong> or <strong>\"show calendar\"</strong>\n		</li>\n		<li>\n			<strong>\'mute\' </strong> - mutes all sound effects for the theme.\n		</li>\n		<li>\n			<strong>\'sound on\'</strong> - unmutes all sound effects for the theme.\n		</li>\n		<li>\n			<span class=\"text-danger\"><strong>\'stop\'</strong></span> - deactivates voice command.\n		</li>\n		<li>\n			<span class=\"text-primary\"><strong>\'help\'</strong></span> - brings up the command list\n		</li>\n		<li>\n			<span class=\"text-danger\"><strong>\'got it\'</strong></span> - closes help modal\n		</li>\n		<li>\n			<strong>\'hide navigation\'</strong> - toggle navigation collapse\n		</li>\n		<li>\n			<strong>\'show navigation\'</strong> - toggle navigation to open (can be used again to close)\n		</li>\n		<li>\n			<strong>\'scroll up\'</strong> - scrolls to the top of the page\n		</li>\n		<li>\n			<strong>\'scroll down\'</strong> - scrollts to the bottom of the page\n		</li>\n		<li>\n			<strong>\'go back\' </strong> - goes back in history (history -1 click)\n		</li>\n		<li>\n			<strong>\'logout\'</strong> - logs you out\n		</li>\n	</ul>\n	<br>\n	<h5>Adding your own commands</h5>\n	Voice Command supports up to 80 languages. Adding your own commands is extreamly easy. All commands are stored inside <strong>app.config.js</strong> file under the <code>var commands = {...}</code>. \n\n	<hr class=\"simple\">\n	<div class=\"text-right\">\n		<button type=\"button\" class=\"btn btn-success btn-lg\" data-dismiss=\"modal\">\n			Got it!\n		</button>\n	</div>\n\n</div>\n<!--<div class=\"modal-footer\">\n<button type=\"button\" class=\"btn btn-primary\" data-dismiss=\"modal\">Got it!</button>\n</div> -->");
 $templateCache.put("app/layout/shortcut/shortcut.tpl.html","<div id=\"shortcut\" class=\"display-inline-block\">\n	<ul>\n		<li class=\"padding-5\">\n			<a href=\"#/dashboard/\"><i class=\"fa fa-briefcase\"></i> Manage Profiles</a>\n		</li>\n		<li class=\"padding-5\">\n			<a href=\"#/dashboard/\"><i class=\"fa fa-ticket\"></i> Plan & Price</a>\n		</li>\n		<li class=\"padding-5\">\n			<a href=\"#/dashboard/\"><i class=\"fa fa-inbox\"></i> My Package</a>\n		</li>\n		<li class=\"padding-5\">\n			<a href=\"#/dashboard/\"><i class=\"fa fa-money\"></i> Invoices</a>\n		</li>\n	</ul>\n	<!--<ul>\n		<li>\n			<a href=\"#/inbox/\" class=\"jarvismetro-tile big-cubes bg-color-blue\"> <span class=\"iconbox\"> <i class=\"fa fa-envelope fa-4x\"></i> <span>Mail <span class=\"label pull-right bg-color-darken\">14</span></span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/calendar\" class=\"jarvismetro-tile big-cubes bg-color-orangeDark\"> <span class=\"iconbox\"> <i class=\"fa fa-calendar fa-4x\"></i> <span>Calendar</span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/maps\" class=\"jarvismetro-tile big-cubes bg-color-purple\"> <span class=\"iconbox\"> <i class=\"fa fa-map-marker fa-4x\"></i> <span>Maps</span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/invoice\" class=\"jarvismetro-tile big-cubes bg-color-blueDark\"> <span class=\"iconbox\"> <i class=\"fa fa-book fa-4x\"></i> <span>Invoice <span class=\"label pull-right bg-color-darken\">99</span></span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/gallery\" class=\"jarvismetro-tile big-cubes bg-color-greenLight\"> <span class=\"iconbox\"> <i class=\"fa fa-picture-o fa-4x\"></i> <span>Gallery </span> </span> </a>\n		</li>\n		<li>\n			<a href=\"#/profile\" class=\"jarvismetro-tile big-cubes selected bg-color-pinkDark\"> <span class=\"iconbox\"> <i class=\"fa fa-user fa-4x\"></i> <span>My Profile </span> </span> </a>\n		</li>\n	</ul>-->\n</div>");
@@ -5908,7 +5921,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
 
 
     //--------- Pagination ------------
-    vm.articlesPerPage = 10;
+    vm.articlesPerPage = "100";
 
     vm.checkAllMediaTypes = function () {
         vm.allMediaCheck = !vm.allMediaCheck
@@ -6069,7 +6082,111 @@ angular.module('app.biz').controller('MeasuringOutputController', function () {
 'use strict';
 
 angular.module('app.biz').controller('MediaLibraryController', function ($scope) {
-
+    var vm = this;
+    vm.mediaTypes = [
+        {id: 1, name: 'Billboards', formats: [
+            {id: 1, name: 'Bulletins'},
+            {id: 2, name: 'Mupis'},
+            {id: 3, name: 'Megacoms'},
+            {id: 4, name: 'Lamp posts'},
+            {id: 5, name: 'Unipoles'},
+            {id: 6, name: 'Rooftops'},
+            {id: 7, name: 'Building wrap'},
+            {id: 8, name: 'Bridge'},
+            {id: 9, name: 'Hoarding'},
+            {id: 10, name: 'Spectacular'},
+            {id: 11, name: 'Double Decker double sided'},
+            {id: 12, name: 'Double Decker single-sided'}
+        ]},
+        {id: 2, name: 'Street Furniture', formats: [
+            {id: 13, name: 'Bus Shelter'},
+            {id: 14, name: 'Bus Shelter Wraps'},
+            {id: 15, name: 'Bus Bench'},
+            {id: 16, name: 'City Information Panels'},
+            {id: 17, name: 'Kiosks'},
+            {id: 18, name: 'Newsstand Kiosks'},
+            {id: 19, name: 'Bicycles and Bicycle Racks'},
+            {id: 20, name: 'Urban Panels'}
+        ]},
+        {id: 3, name: 'Transit and Transportation', formats: [
+            {id: 21, name: 'Digital Airport Screens'},
+            {id: 22, name: 'Baggage Claim LCDs'},
+            {id: 23, name: 'Baggage Cart Sponsorship'},
+            {id: 24, name: 'Door Wraps'},
+            {id: 25, name: 'Courtesy Phone Centers'},
+            {id: 26, name: 'Airport Posters'},
+            {id: 27, name: 'POP displays'},
+            {id: 28, name: 'Secure Tray Advertising"'},
+            {id: 29, name: 'Airports Panels'},
+            {id: 30, name: 'KiosksÂ'},
+            {id: 31, name: 'ShowcasesÂ'},
+            {id: 32, name: 'Courtesy Phone CentersÂ'},
+            {id: 33, name: 'Airport Charging Stations"'},
+            {id: 34, name: 'Airport Bus Shelters'},
+            {id: 35, name: 'Airport Jet Bridges'},
+            {id: 36, name: 'Airport Spectaculars'},
+            {id: 37, name: 'Airport Preferred Parking'},
+            {id: 38, name: 'AirTrain'},
+            /*{id: 1, name: 'Airport Exhibition & Promotion AreasÂ'},
+             {id: 1, name: 'Airport Digital Screens'},
+             {id: 1, name: 'Airport Dioramas'},
+             {id: 1, name: 'Airport Wraps'},
+             {id: 1, name: 'Airport Posters'},
+             {id: 1, name: 'Airport Bus Shelters'},
+             {id: 1, name: 'AirTrain'},
+             {id: 1, name: 'Airport Preferred Parking'},
+             {id: 1, name: 'Bus Rears & Mega Rears'},
+             {id: 1, name: 'Bus Superside'},
+             {id: 1, name: 'Bus T-Side'},
+             {id: 1, name: 'Bus Full Wraps'},
+             {id: 1, name: 'Bus Handle Ads'},
+             {id: 1, name: 'Bus Posters Ads'},
+             {id: 1, name: 'Subway & Railway Interior Display'},
+             {id: 1, name: 'Subway & Railway Backbit Diorama'},
+             {id: 1, name: 'Subway & Railway Transit Station'},
+             {id: 1, name: 'Train wrapped exterior'},
+             {id: 1, name: 'Turnstile Ads'},
+             {id: 1, name: 'Directional and Commuter Clocks'},
+             {id: 1, name: 'Station Posters'},
+             {id: 1, name: 'Taxi Top'},
+             {id: 1, name: 'Taxi Trunk Ads'},
+             {id: 1, name: 'Taxi Full Wrap Ads'},
+             {id: 1, name: 'Taxi TV'},
+             {id: 1, name: 'Gas Pump Ads'},
+             {id: 1, name: 'Fillboard stations ads'}*/
+        ]},
+        {id: 4, name: 'Mall Scape', formats: [
+            {id: 1, name: 'Shopping Mall Free Standing Displays'},
+            {id: 1, name: ' Shopping Mall POP displays'},
+            {id: 1, name: 'Mall Escalators'},
+            {id: 1, name: 'Malls Posters'},
+            {id: 1, name: 'In store Ads'},
+            {id: 1, name: 'Shopping Cart'},
+            {id: 1, name: 'Table Top Displays'},
+            {id: 1, name: 'Elevator Wrap'},
+            {id: 1, name: 'Checkout Divider Advertising'},
+            {id: 1, name: 'School Campus Screens'},
+            {id: 1, name: 'School Campus Panels'},
+            {id: 1, name: 'Sampling Teams'},
+            {id: 1, name: 'Projection Media'},
+            {id: 1, name: 'Arena / Stadium Panels'},
+            {id: 1, name: 'Marine Vessels'},
+            {id: 1, name: 'In-Store Screens'},
+            {id: 1, name: 'Digital Cinema Screens'},
+            {id: 1, name: 'Blimps & Custom Inflatables'},
+            {id: 1, name: 'Aerial Banners'}
+        ]},
+        {id: 5, name: 'Arena & Stadiums', formats: [
+            {id: 1, name: 'Scoreboards'},
+            {id: 1, name: 'Dioramas'},
+            {id: 1, name: 'Facade Units'},
+            {id: 1, name: 'Out-of-Town Scoreboards'},
+            {id: 1, name: 'Dashers'},
+            {id: 1, name: 'Courtside'},
+            {id: 1, name: 'Replay Screen Spots'}
+        ]}
+    ];
+    vm.currMediaType = vm.mediaTypes[0];
 
 });
 'use strict';
@@ -6118,6 +6235,420 @@ angular.module('app.biz').controller('MediaOutletController', function (DTOption
         DTColumnBuilder.newColumn('creative_type'),
         DTColumnBuilder.newColumn('ads_forum')
     ];
+});
+'use strict';
+
+angular.module('app.biz').controller('OohSearchController', function () {
+    var vm = this;
+
+    vm.countries = [
+        {id: "UA", name: "United Arab Eliminate"},
+        {id: "GE", name: "Germany"},
+        {id: "TK", name: "Turkey"},
+        {id: "FR", name: "France"},
+        {id: "IN", name: "India"}
+    ];
+    vm.currCountry = vm.countries[0];
+
+    vm.cities = [
+        {id: 1, name: 'Los Angels'},
+        {id: 2, name: 'London'},
+        {id: 3, name: 'Berlin'},
+        {id: 4, name: 'Amsterdam'}
+    ];
+    vm.currCity = vm.cities[0];
+
+    vm.mediaTypes = [
+        {id: 1, name: 'Billboards', formats: [
+            {id: 1, name: 'Bulletins'},
+            {id: 2, name: 'Mupis'},
+            {id: 3, name: 'Megacoms'},
+            {id: 4, name: 'Lamp posts'},
+            {id: 5, name: 'Unipoles'},
+            {id: 6, name: 'Rooftops'},
+            {id: 7, name: 'Building wrap'},
+            {id: 8, name: 'Bridge'},
+            {id: 9, name: 'Hoarding'},
+            {id: 10, name: 'Spectacular'},
+            {id: 11, name: 'Double Decker double sided'},
+            {id: 12, name: 'Double Decker single-sided'}
+        ]},
+        {id: 2, name: 'Street Furniture', formats: [
+            {id: 13, name: 'Bus Shelter'},
+            {id: 14, name: 'Bus Shelter Wraps'},
+            {id: 15, name: 'Bus Bench'},
+            {id: 16, name: 'City Information Panels'},
+            {id: 17, name: 'Kiosks'},
+            {id: 18, name: 'Newsstand Kiosks'},
+            {id: 19, name: 'Bicycles and Bicycle Racks'},
+            {id: 20, name: 'Urban Panels'}
+        ]},
+        {id: 3, name: 'Transit and Transportation', formats: [
+            {id: 21, name: 'Digital Airport Screens'},
+            {id: 22, name: 'Baggage Claim LCDs'},
+            {id: 23, name: 'Baggage Cart Sponsorship'},
+            {id: 24, name: 'Door Wraps'},
+            {id: 25, name: 'Courtesy Phone Centers'},
+            {id: 26, name: 'Airport Posters'},
+            {id: 27, name: 'POP displays'},
+            {id: 28, name: 'Secure Tray Advertising"'},
+            {id: 29, name: 'Airports Panels'},
+            {id: 30, name: 'KiosksÂ'},
+            {id: 31, name: 'ShowcasesÂ'},
+            {id: 32, name: 'Courtesy Phone CentersÂ'},
+            {id: 33, name: 'Airport Charging Stations"'},
+            {id: 34, name: 'Airport Bus Shelters'},
+            {id: 35, name: 'Airport Jet Bridges'},
+            {id: 36, name: 'Airport Spectaculars'},
+            {id: 37, name: 'Airport Preferred Parking'},
+            {id: 38, name: 'AirTrain'},
+            /*{id: 1, name: 'Airport Exhibition & Promotion AreasÂ'},
+            {id: 1, name: 'Airport Digital Screens'},
+            {id: 1, name: 'Airport Dioramas'},
+            {id: 1, name: 'Airport Wraps'},
+            {id: 1, name: 'Airport Posters'},
+            {id: 1, name: 'Airport Bus Shelters'},
+            {id: 1, name: 'AirTrain'},
+            {id: 1, name: 'Airport Preferred Parking'},
+            {id: 1, name: 'Bus Rears & Mega Rears'},
+            {id: 1, name: 'Bus Superside'},
+            {id: 1, name: 'Bus T-Side'},
+            {id: 1, name: 'Bus Full Wraps'},
+            {id: 1, name: 'Bus Handle Ads'},
+            {id: 1, name: 'Bus Posters Ads'},
+            {id: 1, name: 'Subway & Railway Interior Display'},
+            {id: 1, name: 'Subway & Railway Backbit Diorama'},
+            {id: 1, name: 'Subway & Railway Transit Station'},
+            {id: 1, name: 'Train wrapped exterior'},
+            {id: 1, name: 'Turnstile Ads'},
+            {id: 1, name: 'Directional and Commuter Clocks'},
+            {id: 1, name: 'Station Posters'},
+            {id: 1, name: 'Taxi Top'},
+            {id: 1, name: 'Taxi Trunk Ads'},
+            {id: 1, name: 'Taxi Full Wrap Ads'},
+            {id: 1, name: 'Taxi TV'},
+            {id: 1, name: 'Gas Pump Ads'},
+            {id: 1, name: 'Fillboard stations ads'}*/
+        ]},
+        {id: 4, name: 'Mall Scape', formats: [
+            {id: 1, name: 'Shopping Mall Free Standing Displays'},
+            {id: 1, name: ' Shopping Mall POP displays'},
+            {id: 1, name: 'Mall Escalators'},
+            {id: 1, name: 'Malls Posters'},
+            {id: 1, name: 'In store Ads'},
+            {id: 1, name: 'Shopping Cart'},
+            {id: 1, name: 'Table Top Displays'},
+            {id: 1, name: 'Elevator Wrap'},
+            {id: 1, name: 'Checkout Divider Advertising'},
+            {id: 1, name: 'School Campus Screens'},
+            {id: 1, name: 'School Campus Panels'},
+            {id: 1, name: 'Sampling Teams'},
+            {id: 1, name: 'Projection Media'},
+            {id: 1, name: 'Arena / Stadium Panels'},
+            {id: 1, name: 'Marine Vessels'},
+            {id: 1, name: 'In-Store Screens'},
+            {id: 1, name: 'Digital Cinema Screens'},
+            {id: 1, name: 'Blimps & Custom Inflatables'},
+            {id: 1, name: 'Aerial Banners'}
+        ]},
+        {id: 5, name: 'Arena & Stadiums', formats: [
+            {id: 1, name: 'Scoreboards'},
+            {id: 1, name: 'Dioramas'},
+            {id: 1, name: 'Facade Units'},
+            {id: 1, name: 'Out-of-Town Scoreboards'},
+            {id: 1, name: 'Dashers'},
+            {id: 1, name: 'Courtside'},
+            {id: 1, name: 'Replay Screen Spots'}
+        ]}
+    ];
+    vm.currMediaType = vm.mediaTypes[0];
+
+    vm.industries = [
+        {
+            id: 1, name: "Accounting & Consulting / Comptabilité et Conseil", subIndustries: [
+            {id: 101, name: "Human Resource Services and Outsourcing"},
+            {id: 102, name: "Management Consulting / Conseil en Gestion"},
+            {id: 103, name: "Real Estate Consulting"},
+            {id: 104, name: "Recruitment"},
+            {id: 105, name: "Tax and Audit Service"},
+            {id: 106, name: "E-Business/Online Consulting Services"}
+        ]
+        }, {
+            id: 2, name: "Advisory / Consultatif", subIndustries: [
+                {id: 108, name: "Financial Planning"},
+                {id: 109, name: "Portfolio Management Service"},
+                {id: 110, name: "Seminar"},
+                {id: 111, name: "Consulting agency"}
+            ]
+        }, {
+            id: 3, name: "Aerospace Defense Contractors / Aéronautique and Défense", subIndustries: [
+                {id: 112, name: "Civil Aircraft Manufacturers"},
+                {id: 113, name: "Aircraft Engine Manufacturers"},
+                {id: 114, name: "Defence security & Aerospace Company"},
+                {id: 115, name: "Business Jet"},
+                {id: 116, name: "Cargo Aircrafts"}
+            ]
+        }, {
+            id: 4, name: "Airlines / Compagnie Aérienne", subIndustries: [
+                {id: 117, name: "Airline Vacation Packages & Promotion"},
+                {id: 118, name: "Airline Frequent Flyer Programs"},
+                {id: 119, name: "Airlines Alliance Program"},
+                {id: 120, name: "Airlines New Destination"},
+                {id: 121, name: "Low-cost Carrier"},
+                {id: 122, name: "In-flight Entertainment"},
+                {id: 123, name: "Airlines Services"}
+            ]
+        }, {
+            id: 5, name: "Amusement Parks / Parcs D'attractions", subIndustries: [
+                {id: 124, name: "Aquarium"},
+                {id: 125, name: "Theme Parks / Parc à Thèmes"},
+                {id: 126, name: "Wildlife Park"},
+                {id: 127, name: "Zoo Park"},
+                {id: 128, name: "Aquatic"}
+            ]
+        }, {
+            id: 6, name: "Associations", subIndustries: [
+                {id: 129, name: "Humanitarian Organizations"},
+                {id: 130, name: "Political Party"},
+                {id: 131, name: "Business organizations"},
+                {id: 132, name: "promoteurs immobiliers"}
+            ]
+        }, {
+            id: 7, name: "Automobile Industry / Industrie de l'automobile", subIndustries: [
+                {id: 133, name: "Domestic Cars"},
+                {id: 134, name: "Domestic cars / Voiture Touristique"},
+                {id: 135, name: "Hybrid Cars / Voitures Hybrides"},
+                {id: 136, name: "SUV Cars"},
+                {id: 137, name: "Trucks / Poids Lourd"},
+                {id: 138, name: "Sport Cars / Voiture de Sport"},
+                {id: 139, name: "Manufacturer subsidiary / Filiale"},
+                {id: 140, name: "Car Dealer  / Concessionnaire"},
+                {id: 141, name: "Tires Manufacturers / Fabricants de Pneumatiques"},
+                {id: 142, name: "Auto parts / Pièces Auto"},
+                {id: 143, name: "Motorbike / Motocyclette"},
+                {id: 144, name: "Battery / Batterie"},
+                {id: 145, name: "Automobile Manufacturer"},
+                {id: 146, name: "Motorcycle"},
+                {id: 147, name: "Commercial Vehicles / Véhicules Utilitaires"}
+            ]
+        }, {
+            id: 8, name: "Baby & Toys / Bébé & Jouets", subIndustries: [
+                {id: 148, name: "Diapering /  Les Couches"},
+                {id: 149, name: "Baby Food / L'alimentation de Bébé"},
+                {id: 150, name: "Baby Gear /  Puériculture"},
+                {id: 151, name: "Baby Bath & Skin Care /  Bain de bébé et soins de la peau"},
+                {id: 152, name: "Maternity & Breastfeeding / Maternité & Allaitement"}
+            ]
+        }, {
+            id: 9, name: "Clothing Industry  / Industrie du Vêtement", subIndustries: [
+                {id: 153, name: "Athletic Clothing / Vêtements de Sport"},
+                {id: 154, name: "Underwear / Sous-Vêtements"},
+                {id: 155, name: "Children's Underwear / Sous-vêtements Enfants"},
+                {id: 156, name: "Men's Clothing / Vêtements pour Hommes"},
+                {id: 157, name: "Women's Clothing / Vêtements pour Femmes"},
+                {id: 158, name: "Children's Clothing / Vêtements pour Enfants"},
+                {id: 159, name: "Socks / Chaussettes"}
+            ]
+        }, {
+            id: 10, name: "Conference and Exhibition", subIndustries: [
+                {id: 160, name: "Complex for Events and Exhibitions"},
+                {id: 161, name: "Professional conference organiser"},
+                {id: 162, name: "Trade Show / Salon professionnel"},
+                {id: 163, name: "Trade Show Attendee / Participant au salon"}
+            ]
+        }, {
+            id: 11, name: "Consumer Computer & Electronics / Électronique Grand Public", subIndustries: [
+                {id: 164, name: "Entertainment Equipment"},
+                {id: 165, name: "Communications Equipment"},
+                {id: 166, name: "Home Furniture & Appliance / Meubles & électroménager"},
+                {id: 167, name: "Hardware and Electronics"},
+                {id: 168, name: "Computer Software"},
+                {id: 169, name: "Gaming"}
+            ]
+        }, {
+            id: 12, name: "Cosmetic Industry / Cosmétique", subIndustries: [
+                {id: 170, name: "Fragrances/ Parfums"},
+                {id: 171, name: "Makeup / Maquillage"},
+                {id: 172, name: "Hair Care / Soin des Cheveux"},
+                {id: 173, name: "Men's Grooming / Toilettage pour hommes"},
+                {id: 174, name: "Bath & Body / Corps & Bain"},
+                {id: 175, name: "Skincare / Soin Visage"},
+                {id: 176, name: "Nails-Makeup / Soins des Ongles"}
+            ]
+        }, {
+            id: 13, name: "E-commerce", subIndustries: [
+                {id: 177, name: "e-commerce Platform"},
+                {id: 178, name: "Free Classifieds Platform/ sites d'annonces gratuites"}
+            ]
+        }, {
+            id: 14, name: "Education / Éducation", subIndustries: [
+                {id: 179, name: "Private schools"}
+            ]
+        }, {
+            id: 15, name: "Energy / Énergie", subIndustries: [
+                {id: 180, name: "Electrical Components & Equipment / Composants électriques"},
+                {id: 181, name: "Producer and Supplier of Electricity/ Producteur et Fournisseur D'électricité"},
+                {id: 182, name: "Petrochemical"},
+                {id: 183, name: "Oil & Gas Exploration & Production"}
+            ]
+        }, {
+            id: 16, name: "Financial services / Services Financiers", subIndustries: [
+                {id: 184, name: "General Bank Services"},
+                {id: 185, name: "Credit Card"},
+                {id: 186, name: "Insurance Company"},
+                {id: 187, name: "Financial Market"},
+                {id: 188, name: "Wealth Management"},
+                {id: 189, name: "Credit Rating Agencies"},
+                {id: 190, name: "Islamic Banking"},
+                {id: 191, name: "Merchant services"},
+                {id: 192, name: "Funding Agency / Organisme de Financement"}
+            ]
+        }
+    ];
+    vm.currIndustry = vm.industries[0];
+    vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
+
+    vm.brands = [
+        {id: 1, name: 'All Brands'},
+        {id: 2, name: 'MyCompany'},
+        {id: 3, name: 'Competitor name1'},
+        {id: 4, name: 'Competitor name2'},
+        {id: 5, name: 'Competitor name3'}
+    ];
+    vm.currBrand = vm.brands[0];
+
+    vm.products = [
+        {id: 1, name: 'CAMRY 2016'},
+        {id: 2, name: 'CAMRY 2017'},
+        {id: 3, name: 'CAMRY 2018'},
+        {id: 4, name: 'CAMRY 2019'}
+    ];
+    vm.currProduct = vm.products[0];
+
+    vm.articlesPerPage = "100";
+    vm.searchFlag = true;
+    vm.articles = [];
+    vm.articleTypes = {
+        'newspaper': ['country', 'language', 'date', 'publication_name', 'geographical_scope', 'number_of_ads', 'published_section', 'page_number', 'image_specification', 'advertiser', 'product_name', 'advertising_forum', 'campaign_message', 'camp_id'],
+        'tv_radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
+        'ooh': ['ooh_supplier', 'country', 'city', 'street_name', 'language', 'first_run', 'last_run', 'ooh_media_category', 'ooh_media_format', 'circuit_distance', 'geo_location', 'ooh_display_number', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id'],
+        'web': ['country', 'language', 'date', 'landing_page', 'creative_type', 'time_seen', 'days_seen', 'first_seen', 'last_seen', 'ad_size', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id']
+    };
+    vm.search = function () {
+        if (vm.searchFlag) {
+            for (var a = 1; a <= 2; a++) {
+                vm.articles[vm.articles.length] = {
+                    'icon': '01.png',
+                    'type': 'newspaper',
+                    'country': 'country' + a,
+                    'language': '',
+                    'date': '',
+                    'publication_name': '',
+                    'geographical_scope': '',
+                    'number_of_ads': '',
+                    'published_section': '',
+                    'page_number': '',
+                    'image_specification': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'advertising_forum': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'image': 'cover.png'
+                };
+                vm.articles[vm.articles.length] = {
+                    'icon': '03.png',
+                    'type': 'tv_radio',
+                    'country': 'country' + a,
+                    'language': '',
+                    'broadcast_source': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'spot_length': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'advertising_form': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'video': 'video.mp4'
+                };
+                vm.articles[vm.articles.length] = {
+                    'icon': '06.png',
+                    'type': 'ooh',
+                    'ooh_supplier': '',
+                    'country': 'country' + a,
+                    'city': '',
+                    'street_name': '',
+                    'language': '',
+                    'first_run': '',
+                    'last_run': '',
+                    'ooh_media_category': '',
+                    'ooh_media_format': '',
+                    'circuit_distance': '',
+                    'geo_location': '',
+                    'ooh_display_number': '',
+                    'advertising_forum': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'image': 'cover.png'
+                };
+                vm.articles[vm.articles.length] = {
+                    'icon': '05.png',
+                    'type': 'web',
+                    'country': 'country' + a,
+                    'language': '',
+                    'date': '',
+                    'landing_page': '',
+                    'creative_type': '',
+                    'time_seen': '',
+                    'days_seen': '',
+                    'first_seen': '',
+                    'last_seen': '',
+                    'ad_size': '',
+                    'advertising_forum': '',
+                    'advertiser': '',
+                    'product_name': '',
+                    'campaign_message': '',
+                    'camp_id': '',
+                    'image': 'cover.png'
+                };
+            }
+            vm.searchCounts = {
+                total: 76,
+                television: 20,
+                newspaper: 4,
+                magazine: 5,
+                radio: 33,
+                online_display: 6,
+                outdoor: 8
+            };
+        } else {
+            vm.articles = [];
+            vm.currCountry = {};
+            vm.currLanguage = {};
+            vm.currSubIndustry = {};
+            vm.currBrand = {};
+            vm.currProduct = {};
+            vm.tags = [];
+            vm.dateString = '';
+            for (var m in vm.mediaTypes) {
+                vm.mediaTypes[m]['checked'] = false;
+            }
+            vm.searchCounts = {
+                total: 0,
+                television: 0,
+                newspaper: 0,
+                magazine: 0,
+                radio: 0,
+                online_display: 0,
+                outdoor: 0
+            };
+        }
+        vm.searchFlag = !vm.searchFlag;
+    }
+    vm.search();
 });
 'use strict';
 
