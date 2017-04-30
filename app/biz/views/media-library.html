@@ -5,16 +5,24 @@
 
     <!-- content -->
     <div class="row">
-        <div class="col-xs-4">
-            <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
+        <div class="col-xs-4 text-center">
+            <div class="btn-group dropdown-left" data-dropdown>
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Country <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                </ul>
+            </div>
+            <!--<div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
                     <h2>Choose Country</h2>
                 </header>
 
-                <!-- widget div-->
+                &lt;!&ndash; widget div&ndash;&gt;
                 <div class="height-200px overflow-auto">
-                    <!-- widget content -->
+                    &lt;!&ndash; widget content &ndash;&gt;
                     <div class="widget-body">
                         <div class="smart-form" ng-repeat="f in ['French', 'United Arab', 'Turkey', 'Ukraine', 'Russia', 'Germany', 'Netherlands', '... ...'] track by $index">
                             <label class="checkbox">
@@ -24,11 +32,11 @@
                             </label>
                         </div>
                     </div>
-                    <!-- end widget body-->
+                    &lt;!&ndash; end widget body&ndash;&gt;
 
                 </div>
-                <!-- end widget content -->
-            </div>
+                &lt;!&ndash; end widget content &ndash;&gt;
+            </div>-->
         </div>
         <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
@@ -42,8 +50,8 @@
                     <!-- widget content -->
                     <div class="widget-body">
                         <div class="smart-form" ng-repeat="a in vm.mediaTypes">
-                            <label class="checkbox">
-                                <input type="checkbox" name="checkbox">
+                            <label class="checkbox"> dff
+                                <input type="radio" name="radio" ng-model="vm.currMediaType">
                                 <i></i>
                                 {{a.name}}
                             </label>

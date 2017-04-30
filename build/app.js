@@ -6203,6 +6203,14 @@ angular.module('app.biz').controller('MediaLibraryController', function ($scope)
     ];
     vm.currMediaType = vm.mediaTypes[0];
 
+    vm.countries = [
+        {id: "UA", name: "United Arab Eliminate"},
+        {id: "GE", name: "Germany"},
+        {id: "TK", name: "Turkey"},
+        {id: "FR", name: "France"},
+        {id: "IN", name: "India"}
+    ];
+
 });
 'use strict';
 
