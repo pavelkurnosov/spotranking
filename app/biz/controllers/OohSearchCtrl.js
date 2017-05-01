@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('OohSearchController', function ($filter) {
+angular.module('app.biz').controller('OohSearchController', function ($scope, $filter) {
     var vm = this;
 
     vm.countries = [
@@ -344,6 +344,10 @@ angular.module('app.biz').controller('OohSearchController', function ($filter) {
         {id: 4, name: 'CAMRY 2019'}
     ];
     vm.currProduct = vm.products[0];
+
+    $scope.$watch('vm.dateRange', function () {
+        vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+    });
 
     vm.articlesPerPage = "100";
     vm.searchFlag = true;
