@@ -33,7 +33,7 @@
                             <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
-                    <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
+                    <!--<div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             OOH Media Format <span class="caret"></span>
                         </button>
@@ -41,7 +41,7 @@
                             <li><a href-void ng-click="vm.checkAllMediaFormats()"><input type="checkbox" ng-model="vm.allMediaFormatCheck"> All Medias Format</a></li>
                             <li ng-repeat="item in vm.getMediaFormats()"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
-                    </div>
+                    </div>-->
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             Industry <span class="caret"></span>
@@ -74,9 +74,7 @@
                             <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item">{{item.name}}</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="row margin-top-10">
-                    <div class="smart-form float-left date-range-box margin-left-20">
+                    <div class="smart-form float-left date-range-box margin-left-5">
                         <label class="input">
                             <input type="daterange" ng-model="vm.dateRange" ranges="vm.ranges" placeholder="Period">
                         </label>
@@ -202,10 +200,10 @@
                                     <td>Media Type</td>
                                     <td>{{vm.getCheckedMediaTypeNames()}}</td>
                                 </tr>
-                                <tr>
+                                <!--<tr>
                                     <td>Media Format</td>
                                     <td>{{vm.getCheckedMediaFormatNames()}}</td>
-                                </tr>
+                                </tr>-->
                                 <tr>
                                     <td>Industry</td>
                                     <td>{{vm.currSubIndustry.name}}</td>
