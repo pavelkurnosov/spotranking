@@ -29,17 +29,17 @@
                             OOH Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a ng-click>All Medias</a></li>
-                            <li ng-repeat="item in vm.mediaTypes"><a ng-click="vm.currMediaType = item">{{item.name}}</a></li>
+                            <li><a href-void ng-click="vm.checkAllMediaTypes()"><input type="checkbox" ng-model="vm.allMediaTypeCheck"> All Medias</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
                         <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
                             OOH Media Format <span class="caret"></span>
                         </button>
-                        <ul class="dropdown-menu">
-                            <li><a ng-click>All Medias Format</a></li>
-                            <li ng-repeat="item in vm.currMediaType['formats']"><a ng-click="vm.currMediaFormat = item">{{item.name}}</a></li>
+                        <ul class="dropdown-menu max-height-300 overflow-auto">
+                            <li><a href-void ng-click="vm.checkAllMediaFormats()"><input type="checkbox" ng-model="vm.allMediaFormatCheck"> All Medias Format</a></li>
+                            <li ng-repeat="item in vm.getMediaFormats()"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -200,11 +200,15 @@
                                 </tr>
                                 <tr>
                                     <td>Media Type</td>
-                                    <td>{{vm.currMediaType.name}}</td>
+                                    <td>{{vm.getCheckedMediaTypeNames()}}</td>
                                 </tr>
                                 <tr>
                                     <td>Media Format</td>
-                                    <td>{{vm.currMediaFormat.name}}</td>
+                                    <td>{{vm.getCheckedMediaFormatNames()}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Industry</td>
+                                    <td>{{vm.currSubIndustry.name}}</td>
                                 </tr>
                                 <tr>
                                     <td>Product List</td>
