@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('RtvReportController', function ($scope, DTOptionsBuilder, DTColumnBuilder) {
+angular.module('app.biz').controller('RtvReportController', function ($scope, $timeout, DTOptionsBuilder, DTColumnBuilder) {
     var vm = this;
 
     vm.countries = [
@@ -179,6 +179,12 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, DT
         vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
     });
 
+    vm.highlightCSS = false;
+    vm.changePeriod = function () {
+        if (vm.highlightCSS) vm.highlight = 'date_period';
+        vm.highlightCSS = true;
+    };
+
     vm.brands = [
         {id: 1, name: 'All Brands'},
         {id: 2, name: 'MyCompany'},
@@ -204,7 +210,7 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, DT
             /*'columnsToggle',*/
             'colvis',
             /*'print',
-            'copy',*/
+             'copy',*/
             'pdf',
             'excel',
             'csv',
