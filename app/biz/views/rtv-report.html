@@ -29,7 +29,7 @@
                             Media Type <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked;vm.highlight = 'media_type'"><input type="checkbox" ng-change="item.checked = !item.checked;vm.highlight = 'media_type'" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -45,7 +45,7 @@
                             Sub Industry <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.currIndustry['subIndustries']"><a ng-click="vm.currSubIndustry = item;vm.highlight = 'industry'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.currIndustry['subIndustries']"><a ng-click="vm.currSubIndustry = item;vm.highlight = 'sub_industry'">{{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -61,7 +61,7 @@
                             Product <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item;vm.highlight = 'product_name'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item;vm.highlight = 'product_list'">{{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="smart-form float-left date-range-box margin-left-5">
@@ -107,9 +107,16 @@
 
                                     <tr>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'industry'}">Industry</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'industry'}">{{vm.currSubIndustry.name}}</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'industry'}">{{vm.currIndustry.name}}</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'date_period'}">Date Period</td>
                                         <td ng-class="{'highlight-right':vm.highlight == 'date_period'}">{{vm.dateString}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'sub_industry'}">Sub Industry</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'sub_industry'}">{{vm.currSubIndustry.name}}</td>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'brand'}">Brand</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'brand'}"><a data-ui-sref="app.biz.mainSearch">{{vm.currBrand.name}}</a></td>
                                     </tr>
 
                                     <tr>
@@ -119,8 +126,8 @@
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'media_vehicle'}">Media Vehicle</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'media_vehicle'}">{{vm.getMediaNames()}}</td>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'media_type'}">Media Type</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'media_type'}">{{vm.getMediaNames()}}</td>
                                         <td class="font-bold">Television</td>
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
                                     </tr>

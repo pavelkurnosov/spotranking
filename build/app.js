@@ -6831,7 +6831,7 @@ angular.module('app.biz').controller('OpportunityController', function () {
 });
 'use strict';
 
-angular.module('app.biz').controller('RtvReportController', function ($scope, $timeout, DTOptionsBuilder, DTColumnBuilder) {
+angular.module('app.biz').controller('RtvReportController', function ($scope, $timeout, $filter, DTOptionsBuilder, DTColumnBuilder) {
     var vm = this;
 
     vm.countries = [
@@ -7032,6 +7032,14 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, $t
         {id: 4, name: 'CAMRY 2019'}
     ];
     vm.currProduct = vm.products[0];
+
+    vm.getMediaNames = function () {
+        var names = [];
+        angular.forEach($filter('filter')(vm.mediaTypes, {checked:true}), function (val, key) {
+            names.push(val.name);
+        });
+        return names.join(', ');
+    };
 
 
     vm.standardOptions = DTOptionsBuilder
