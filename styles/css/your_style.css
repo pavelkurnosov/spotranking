@@ -427,6 +427,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .max-height-100 {
     max-height: 100px;
 }
+
 .max-height-300 {
     max-height: 300px;
 }
@@ -535,6 +536,7 @@ div.dt-button-collection button.dt-button:active:not(.disabled), div.dt-button-c
 .color-youtube {
     color: #cd5153;
 }
+
 .color-linkedin {
     color: #037cb5;
 }
@@ -672,4 +674,20 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 
 .overflow-auto {
     overflow: auto !important;
+}
+
+.daterangepicker.dropdown-menu {
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 1) !important;
+}
+.daterangepicker .calendar-date{
+    background: white;
+}
+.smart-style-5 .daterangepicker .calendar-date{
+    background: black;
+}
+
+.smart-style-5 .daterangepicker.dropdown-menu {
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 1) !important;
 }

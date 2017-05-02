@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('app.biz').controller('RtvReportController', function (DTOptionsBuilder, DTColumnBuilder) {
+angular.module('app.biz').controller('RtvReportController', function ($scope, DTOptionsBuilder, DTColumnBuilder) {
     var vm = this;
 
     vm.countries = [
@@ -170,6 +170,14 @@ angular.module('app.biz').controller('RtvReportController', function (DTOptionsB
     ];
     vm.currIndustry = vm.industries[0];
     vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
+
+    vm.dateRange = {
+        startDate: moment().subtract(1, 'day'),
+        endDate: moment().subtract(1, 'day')
+    };
+    $scope.$watch('vm.dateRange', function () {
+        vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+    });
 
     vm.brands = [
         {id: 1, name: 'All Brands'},

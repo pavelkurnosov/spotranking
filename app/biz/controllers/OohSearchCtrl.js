@@ -345,6 +345,10 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
     ];
     vm.currProduct = vm.products[0];
 
+    vm.dateRange = {
+        startDate: moment().subtract(1, 'day'),
+        endDate: moment().subtract(1, 'day')
+    };
     $scope.$watch('vm.dateRange', function () {
         vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
     });
