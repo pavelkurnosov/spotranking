@@ -101,39 +101,39 @@
                                     <tr>
                                         <td class="col-xs-3 font-bold">Access</td>
                                         <td class="col-xs-3">Toyota</td>
-                                        <td class="col-xs-3 font-bold" ng-class="{'highlight-left':vm.highlight == 'language'}">Language</td>
-                                        <td class="col-xs-3" ng-class="{'highlight-right':vm.highlight == 'language'}">{{vm.currLanguage.name}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'industry'}">Industry</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'industry'}">{{vm.currIndustry.name}}</td>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'date_period'}">Date Period</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'date_period'}">{{vm.dateString}}</td>
-                                    </tr>
-
-                                    <tr>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'sub_industry'}">Sub Industry</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'sub_industry'}">{{vm.currSubIndustry.name}}</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'brand'}">Brand</td>
                                         <td ng-class="{'highlight-right':vm.highlight == 'brand'}"><a data-ui-sref="app.biz.mainSearch">{{vm.currBrand.name}}</a></td>
                                     </tr>
 
                                     <tr>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'country'}">Country</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'country'}">{{vm.currCountry.name}}</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'product_list'}">Product List</td>
                                         <td ng-class="{'highlight-right':vm.highlight == 'product_list'}">{{vm.currProduct.name}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="col-xs-3 font-bold" ng-class="{'highlight-left':vm.highlight == 'language'}">Language</td>
+                                        <td class="col-xs-3" ng-class="{'highlight-right':vm.highlight == 'language'}">{{vm.currLanguage.name}}</td>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'date_period'}">Date Period</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'date_period'}">{{vm.dateString}}</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'media_type'}">Media Type</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'media_type'}">{{vm.getMediaNames()}}</td>
                                         <td class="font-bold">Search Result</td>
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'media_type'}">Media Type</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'media_type'}">{{vm.getMediaNames()}}</td>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'industry'}">Industry</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'industry'}">{{vm.currIndustry.name}}</td>
                                         <td class="font-bold">Television</td>
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
                                     </tr>
                                     <tr>
-                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'country'}">Country</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'country'}">{{vm.currCountry.name}}</td>
+                                        <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'sub_industry'}">Sub Industry</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'sub_industry'}">{{vm.currSubIndustry.name}}</td>
                                         <td class="font-bold">Radio</td>
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.radio">{{vm.searchCounts.radio}} Spots</a></td>
                                     </tr>
