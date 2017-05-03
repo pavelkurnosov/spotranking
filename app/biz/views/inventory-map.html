@@ -16,18 +16,18 @@
             </div>
             <div class="btn-group dropdown-left margin-left-5" data-dropdown>
                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    OOH Supplier <span class="caret"></span>
+                    City <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="item in vm.suppliers"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                    <li ng-repeat="item in vm.cities"><a ng-click="vm.currCity = item">{{item.name}}</a></li>
                 </ul>
             </div>
             <div class="btn-group dropdown-left margin-left-5" data-dropdown>
                 <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-                    City <span class="caret"></span>
+                    OOH Supplier <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="item in vm.cities"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                    <li ng-repeat="item in vm.suppliers"><a ng-click="vm.currSupplier = item">{{item.name}}</a></li>
                 </ul>
             </div>
         </div>
