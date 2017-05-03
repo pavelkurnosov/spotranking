@@ -93,9 +93,10 @@
     </div>
     <div class="row">
         <div class="col-xs-6 text-center">
-            <a href-void class="btn btn-danger">Search</a>
+            <a href-void class="btn btn-primary" ng-click="vm.search()">{{vm.searchFlag ? 'Search' : 'Reset Search'}}</a>
             <a href-void class="btn btn-primary">Clear Filters</a>
-            <a href-void class="btn btn-danger">Export</a>
+            <a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>
+
         </div>
         <div class="col-xs-6 text-center">
             <a href-void class="btn btn-primary" ng-click="vm.checkAllMedias(true)">Select all OOH Categories and Formats</a>
@@ -107,7 +108,7 @@
             </label>-->
         </div>
         <div class="col-xs-12">
-            <h5 class="text-center">Total Result: 2</h5>
+            <h5 class="text-center">Total Result: {{vm.searchResult.length}}</h5>
         </div>
     </div>
     <div class="row">
@@ -122,10 +123,11 @@
                      data-widget-deletebutton="false"
                      data-widget-fullscreenbutton="false"
                      data-widget-custombutton="false"
-                     data-widget-sortable="false" ng-repeat="r in ['Albuquerque / Santa Fe NM', 'Amarillo TX']">
+                     data-widget-sortable="false"
+                     ng-repeat="r in vm.searchResult">
                     <header>
                         <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                        <h2>{{r}}</h2>
+                        <h2>{{r.title}}</h2>
                     </header>
 
                     <!-- widget div-->

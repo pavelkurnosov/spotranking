@@ -145,6 +145,23 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         angular.forEach(vm.mediaTypes, function (val, key) {
             val.checked = flag;
         });
-    }
+    };
 
+    vm.searchFlag = false;
+    vm.searchResult = [];
+    vm.search = function () {
+        if (vm.searchFlag) {
+            vm.searchResult = [
+                {
+                    title: 'Albuquerque / Santa Fe NM'
+                }, {
+                    title: 'Amarillo TX'
+                }
+            ]
+        } else {
+            vm.searchResult = [];
+        }
+        vm.searchFlag = !vm.searchFlag;
+    };
+    vm.search();
 });
