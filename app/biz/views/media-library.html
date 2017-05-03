@@ -49,11 +49,11 @@
                 <div class="height-200px overflow-auto">
                     <!-- widget content -->
                     <div class="widget-body">
-                        <div class="smart-form" ng-repeat="a in vm.mediaTypes">
-                            <label class="checkbox"> dff
-                                <input type="radio" name="radio" ng-model="vm.currMediaType">
+                        <div class="smart-form" ng-repeat="item in vm.mediaTypes">
+                            <label class="checkbox">
+                                <input type="checkbox" name="radio" ng-model="item.checked">
                                 <i></i>
-                                {{a.name}}
+                                {{item.name}}
                             </label>
                         </div>
                     </div>
@@ -75,11 +75,11 @@
                 <div class="height-200px overflow-auto">
                     <!-- widget content -->
                     <div class="widget-body">
-                        <div class="smart-form" ng-repeat="m in vm.currMediaType.formats">
+                        <div class="smart-form" ng-repeat="item in vm.getMediaFormats()">
                             <label class="checkbox">
-                                <input type="checkbox" name="checkbox">
+                                <input type="checkbox" name="checkbox" ng-model="item.checked">
                                 <i></i>
-                                {{m.name}}
+                                {{item.name}}
                             </label>
                         </div>
                     </div>
@@ -98,8 +98,8 @@
             <a href-void class="btn btn-danger">Export</a>
         </div>
         <div class="col-xs-6 text-center">
-            <a href-void class="btn btn-primary">Select all OOH Categories and Formats</a>
-            <a href-void class="btn btn-info">Deselect All</a>
+            <a href-void class="btn btn-primary" ng-click="vm.checkAllMedias(true)">Select all OOH Categories and Formats</a>
+            <a href-void class="btn btn-info" ng-click="vm.checkAllMedias(false)">Deselect All</a>
             <!--<label class="checkbox">
                 <input type="checkbox" name="checkbox">
                 <i></i>
