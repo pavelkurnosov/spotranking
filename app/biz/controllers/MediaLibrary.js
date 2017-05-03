@@ -140,6 +140,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         {id: "FR", name: "France"},
         {id: "IN", name: "India"}
     ];
+    vm.currCountry = vm.countries[0];
 
     vm.checkAllMedias = function (flag) {
         angular.forEach(vm.mediaTypes, function (val, key) {

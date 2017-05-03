@@ -14,29 +14,8 @@
                     <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
                 </ul>
             </div>
-            <!--<div jarvis-widget data-widget-color="blueDark" id="campaigns-messages2" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
-                <header>
-                    <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Choose Country</h2>
-                </header>
-
-                &lt;!&ndash; widget div&ndash;&gt;
-                <div class="height-200px overflow-auto">
-                    &lt;!&ndash; widget content &ndash;&gt;
-                    <div class="widget-body">
-                        <div class="smart-form" ng-repeat="f in ['French', 'United Arab', 'Turkey', 'Ukraine', 'Russia', 'Germany', 'Netherlands', '... ...'] track by $index">
-                            <label class="checkbox">
-                                <input type="checkbox" name="checkbox">
-                                <i></i>
-                                {{f}}
-                            </label>
-                        </div>
-                    </div>
-                    &lt;!&ndash; end widget body&ndash;&gt;
-
-                </div>
-                &lt;!&ndash; end widget content &ndash;&gt;
-            </div>-->
+            <br/>
+            <div class="padding-top-10">{{vm.currCountry.name}}</div>
         </div>
         <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
