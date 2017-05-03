@@ -4,7 +4,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     var vm = this;
     vm.mediaTypes = [
         {
-            id: 1, name: 'Billboards',
+            id: 1, name: 'Billboards', checked: true,
             formats: [
                 {id: 1, name: 'Bulletins'},
                 {id: 2, name: 'Mupis'},
