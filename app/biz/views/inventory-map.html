@@ -11,7 +11,7 @@
                     Country <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                    <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item; vm.currCity = item.cities[0]; vm.showCountryOnMap()">{{item.name}}</a></li>
                 </ul>
             </div>
             <div class="btn-group dropdown-left margin-left-5" data-dropdown>
@@ -19,7 +19,7 @@
                     City <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="item in vm.cities"><a ng-click="vm.currCity = item">{{item.name}}</a></li>
+                    <li ng-repeat="item in vm.currCountry.cities"><a ng-click="vm.currCity = item; vm.showCityOnMap()">{{item.name}}</a></li>
                 </ul>
             </div>
             <div class="btn-group dropdown-left margin-left-5" data-dropdown>
