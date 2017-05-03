@@ -5606,7 +5606,7 @@ angular.module('app.biz').controller('InventoryMapController', function () {
     };
     vm.showCityOnMap = function (flag) {
         vm.centerMap();
-        vm.map.zoom = 8;
+        vm.map.zoom = 11;
     };
     vm.centerMap = function () {
         vm.map.center.latitude = vm.currCity.pos.lat;
