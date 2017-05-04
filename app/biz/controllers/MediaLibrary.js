@@ -141,7 +141,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     };
 
     vm.countries = [
-        {id: "UA", name: "United Arab Eliminate"},
+        {id: "UA", name: "United Arab Eliminate", checked: true},
         {id: "GE", name: "Germany"},
         {id: "TK", name: "Turkey"},
         {id: "FR", name: "France"},
@@ -184,7 +184,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     };
     vm.checkedCountryNames = function () {
         var names = [];
-        angular.forEach($filter('filter')(vm.countries, {checked:true}), function (val) {
+        angular.forEach($filter('filter')(vm.countries, {checked: true}), function (val) {
             names.push(val.name);
         });
         return names.join(', ');
@@ -201,11 +201,11 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
                         title: 'Billboard',
                         headers: ['Mupis', 'Rooftops', 'Spectacular'],
                         contents: ['Lamp posts', '', '']
-                    },{
+                    }, {
                         title: 'Transit and Transportation',
                         headers: ['Digital Airport Screens', 'Airport Posters', 'Baggage Claim'],
                         contents: ['Jet Bridges', '', '']
-                    },{
+                    }, {
                         title: 'Street Furniture',
                         headers: ['Bus Shelter Wraps', '', ''],
                         contents: ['', '', '']
@@ -216,11 +216,11 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
                         title: 'Billboard',
                         headers: ['Mupis', 'Rooftops', 'Spectacular'],
                         contents: ['Lamp posts', '', '']
-                    },{
+                    }, {
                         title: 'Transit and Transportation',
                         headers: ['Digital Airport Screens', 'Airport Posters', 'Baggage Claim'],
                         contents: ['Jet Bridges', '', '']
-                    },{
+                    }, {
                         title: 'Street Furniture',
                         headers: ['Bus Shelter Wraps', '', ''],
                         contents: ['', '', '']
