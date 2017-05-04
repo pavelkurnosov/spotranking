@@ -196,7 +196,20 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         if (vm.searchFlag) {
             vm.searchResult = [
                 {
-                    title: 'Albuquerque / Santa Fe NM'
+                    title: 'Albuquerque / Santa Fe NM',
+                    formats: [{
+                        title: 'Billboard',
+                        headers: ['Mupis', 'Rooftops', 'Spectacular'],
+                        contents: ['Lamp posts', '', '']
+                    },{
+                        title: 'Transit and Transportation',
+                        headers: ['Digital Airport Screens', 'Airport Posters', 'Baggage Claim'],
+                        contents: ['Jet Bridges', '', '']
+                    },{
+                        title: 'Street Furniture',
+                        headers: ['Bus Shelter Wraps', '', ''],
+                        contents: ['', '', '']
+                    }]
                 }, {
                     title: 'Amarillo TX'
                 }

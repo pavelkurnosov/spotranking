@@ -152,10 +152,10 @@
                                              data-widget-fullscreenbutton="false"
                                              data-widget-custombutton="false"
                                              data-widget-sortable="false"
-                                             ng-repeat="b in [1, 1] track by $index">
+                                             ng-repeat="b in r.formats track by $index">
                                             <header>
                                                 <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                                                <h2>Hide / Show Formats</h2>
+                                                <h2>{{b.title}}</h2>
                                             </header>
 
                                             <!-- widget div-->
@@ -166,39 +166,23 @@
                                                         <table class="table table-bordered table-striped">
                                                             <thead>
                                                             <tr>
-                                                                <th>Bulletins</th>
-                                                                <th>Posters</th>
-                                                                <th>Junior Posters</th>
+                                                                <th ng-repeat="header in b.headers track by $index">{{header}}</th>
                                                             </tr>
                                                             </thead>
                                                             <tr>
-                                                                <td>Digital Bulletins
-                                                                    <button class="btn btn-default float-right">Street View</button>
-                                                                </td>
-                                                                <td>Digital Posters
-                                                                    <button class="btn btn-default float-right">Street View</button>
-                                                                </td>
-                                                                <td></td>
+                                                                <th ng-repeat="content in b.contents track by $index">{{content}}</th>
                                                             </tr>
                                                         </table>
                                                     </div>
-
                                                 </div>
-                                                <!-- end widget body-->
-
                                             </div>
-                                            <!-- end widget content -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- end widget body-->
-
                     </div>
-                    <!-- end widget content -->
                 </div>
-
             </div>
         </div>
     </div>
