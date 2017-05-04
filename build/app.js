@@ -6279,11 +6279,16 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
 
     vm.allFormatCheck = true;
     vm.checkAllMediaFormats = function () {
-        // vm.checkAllMediaTypes(true);
         angular.forEach(vm.mediaFormats, function (val) {
             val.checked = vm.allFormatCheck;
         });
         vm.allFormatCheck = !vm.allFormatCheck;
+    };
+    vm.uncheckAllMediaFormats = function () {
+        angular.forEach(vm.mediaFormats, function (val) {
+            val.checked = false;
+        });
+        vm.allFormatCheck = true;
     };
 
     vm.searchFlag = false;
