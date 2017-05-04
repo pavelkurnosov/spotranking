@@ -6337,9 +6337,10 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     vm.searchResult = [];
     vm.search = function () {
         if (vm.searchFlag) {
-            vm.searchResult = [
-                {
-                    title: 'Emirates United Arab',
+            vm.searchResult = [];
+            angular.forEach($filter('filter')(vm.countries, {checked: true}), function (val) {
+                vm.searchResult[vm.searchResult.length] = {
+                    title: val.name,
                     formats: [{
                         title: 'Billboard',
                         headers: ['Mupis', 'Rooftops', 'Spectacular'],
@@ -6353,23 +6354,8 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
                         headers: ['Bus Shelter Wraps', '', ''],
                         contents: ['', '', '']
                     }]
-                }, {
-                    title: 'Amarillo TX',
-                    formats: [{
-                        title: 'Billboard',
-                        headers: ['Mupis', 'Rooftops', 'Spectacular'],
-                        contents: ['Lamp posts', '', '']
-                    }, {
-                        title: 'Transit and Transportation',
-                        headers: ['Digital Airport Screens', 'Airport Posters', 'Baggage Claim'],
-                        contents: ['Jet Bridges', '', '']
-                    }, {
-                        title: 'Street Furniture',
-                        headers: ['Bus Shelter Wraps', '', ''],
-                        contents: ['', '', '']
-                    }]
-                }
-            ]
+                };
+            });
         } else {
             vm.searchResult = [];
         }
