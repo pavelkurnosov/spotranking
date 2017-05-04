@@ -146,11 +146,12 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         angular.forEach(vm.mediaTypes, function (val) {
             val.checked = flag;
         });
+        vm.checkAllMediaFormats();
     };
 
     vm.allFormatCheck = true;
     vm.checkAllMediaFormats = function () {
-        vm.checkAllMediaTypes(true);
+        // vm.checkAllMediaTypes(true);
         angular.forEach(vm.mediaFormats, function (val) {
             val.checked = vm.allFormatCheck;
         });
