@@ -175,6 +175,21 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         vm.uncheckAllMediaTypes();
     };
 
+    vm.allCountryCheck = false;
+    vm.checkAllCountries = function () {
+        vm.allCountryCheck = !vm.allCountryCheck;
+        angular.forEach(vm.countries, function (val) {
+            val.checked = vm.allCountryCheck;
+        });
+    };
+    vm.checkedCountryNames = function () {
+        var names = [];
+        angular.forEach($filter('filter')(vm.countries, {checked:true}), function (val) {
+            names.push(val.name);
+        });
+        return names.join(', ');
+    };
+
     vm.searchFlag = false;
     vm.searchResult = [];
     vm.search = function () {

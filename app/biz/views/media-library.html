@@ -11,11 +11,20 @@
                     Country <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                    <li>
+                        <a href-void ng-click="vm.checkAllCountries()">
+                            <input type="checkbox" ng-model="vm.allCountryCheck"> All Countries
+                        </a>
+                    </li>
+                    <li ng-repeat="item in vm.countries">
+                        <a href-void ng-click="item.checked = !item.checked">
+                            <input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}
+                        </a>
+                    </li>
                 </ul>
             </div>
             <br/>
-            <div class="padding-top-10">{{vm.currCountry.name}}</div>
+            <div class="padding-top-10">{{vm.checkedCountryNames()}}</div>
         </div>
         <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
