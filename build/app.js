@@ -6258,6 +6258,13 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
                 vm.mediaFormats[vm.mediaFormats.length] = v;
             });
         });
+        if (!vm.mediaFormats.length) {
+            angular.forEach(vm.mediaTypes, function (val) {
+                angular.forEach(val.formats, function (v) {
+                    vm.mediaFormats[vm.mediaFormats.length] = v;
+                });
+            });
+        }
         return vm.mediaFormats;
     };
 
@@ -6283,6 +6290,11 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
             val.checked = vm.allFormatCheck;
         });
         vm.allFormatCheck = !vm.allFormatCheck;
+    };
+    vm.uncheckAllMediaTypes = function () {
+        angular.forEach(vm.mediaTypes, function (val) {
+            val.checked = false;
+        });
     };
     vm.uncheckAllMediaFormats = function () {
         angular.forEach(vm.mediaFormats, function (val) {
