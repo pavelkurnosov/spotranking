@@ -141,11 +141,11 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     };
 
     vm.countries = [
-        {id: "UA", name: "United Arab Eliminate", checked: true},
-        {id: "GE", name: "Germany"},
-        {id: "TK", name: "Turkey"},
-        {id: "FR", name: "France"},
-        {id: "IN", name: "India"}
+        {id: "UA", name: "United Arab Eliminate", ooh_supplier: "Clear Channel Outdoor", website: "http://clearchanneloutdoor.com/where-we-are/albuquerque/", phone: "(505) 345-3589", format: "Digital Posters", checked: true},
+        {id: "GE", name: "Germany", ooh_supplier: "AD display", website: "http://clearchanneloutdoor.com/where-we-are/el-paso/", phone: "(915) 566-9380", format: "Digital Posters"},
+        {id: "TK", name: "Turkey", ooh_supplier: "Clear Channel Outdoor", website: "http://clearchanneloutdoor.com/where-we-are/abc/", phone: "(505) 345-3589", format: "Digital Posters"},
+        {id: "FR", name: "France", ooh_supplier: "AD display", website: "http://clearchanneloutdoor.com/where-we-are/def/", phone: "(915) 566-9380", format: "Digital Posters"},
+        {id: "IN", name: "India", ooh_supplier: "AD display", website: "http://clearchanneloutdoor.com/where-we-are/fgh/", phone: "(915) 566-9380", format: "Digital Posters"}
     ];
     vm.currCountry = vm.countries[0];
 
@@ -187,7 +187,22 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         angular.forEach($filter('filter')(vm.countries, {checked: true}), function (val) {
             names.push(val.name);
         });
-        return names.join(', ');
+        return names;
+    };
+
+    vm.exportExcel = function () {
+        var html = '';
+        angular.forEach($filter('filter')(vm.countries, {checked: true}), function (val) {
+            html += '<tr>';
+            html += '<td>' + val.name + '</td>';
+            html += '<td>' + val.ooh_supplier + '</td>';
+            html += '<td>' + val.website + '</td>';
+            html += '<td>' + val.phone + '</td>';
+            html += '<td>' + val.format + '</td>';
+            html += '</tr>';
+        });
+        document.getElementById('exportBody').innerHTML = html;
+        window.open('data:application/vnd.ms-excel,' + document.getElementById('exportDiv').innerHTML);
     };
 
     vm.searchFlag = false;
