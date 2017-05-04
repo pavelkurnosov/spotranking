@@ -67,14 +67,11 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-xs-6 text-center">
+        <div class="col-xs-12 text-center">
             <a href-void class="btn btn-primary" ng-click="vm.search()">{{vm.searchFlag ? 'Search' : 'Reset Search'}}</a>
-            <a href-void class="btn btn-primary" ng-click="vm.uncheckAllMediaTypes()">Clear Filters</a>
             <a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>
-
-        </div>
-        <div class="col-xs-6 text-center">
-            <a href-void class="btn btn-primary float-left" ng-click="vm.checkAllMediaTypes(true)">Select all OOH Categories</a>
+            <a href-void class="btn btn-primary margin-left-10" ng-click="vm.uncheckAllMediaTypes()">Clear Filters</a>
+            <a href-void class="btn btn-primary" ng-click="vm.checkAllMediaTypes(true)">Select all OOH Categories</a>
             <a href-void class="btn btn-info" ng-click="vm.uncheckAllMediaFormats()">Deselect All</a>
             <!--<label class="checkbox">
                 <input type="checkbox" name="checkbox">

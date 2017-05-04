@@ -172,7 +172,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         angular.forEach(vm.mediaFormats, function (val) {
             val.checked = false;
         });
-        vm.allFormatCheck = true;
+        vm.uncheckAllMediaTypes();
     };
 
     vm.searchFlag = false;
