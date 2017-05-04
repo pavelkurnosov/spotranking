@@ -36,6 +36,10 @@
                             </label>
                         </div>
                     </div>
+                    <div class="text-center">
+                        <a href-void class="btn btn-xs btn-primary" ng-click="vm.checkAllMediaTypes(true)">Select all OOH Categories</a>
+                        <a href-void class="btn btn-xs btn-info" ng-click="vm.uncheckAllMediaFormats()">Deselect All</a>
+                    </div>
                     <!-- end widget body-->
                 </div>
                 <!-- end widget content -->
@@ -62,6 +66,7 @@
                     </div>
                     <!-- end widget body-->
                 </div>
+
                 <!-- end widget content -->
             </div>
         </div>
@@ -69,10 +74,8 @@
     <div class="row">
         <div class="col-xs-12 text-center">
             <a href-void class="btn btn-primary" ng-click="vm.search()">{{vm.searchFlag ? 'Search' : 'Reset Search'}}</a>
-            <a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>
-            <a href-void class="btn btn-primary margin-left-10" ng-click="vm.uncheckAllMediaTypes()">Clear Filters</a>
-            <a href-void class="btn btn-primary" ng-click="vm.checkAllMediaTypes(true)">Select all OOH Categories</a>
-            <a href-void class="btn btn-info" ng-click="vm.uncheckAllMediaFormats()">Deselect All</a>
+            <!--<a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>-->
+            <a href-void class="btn btn-primary" ng-click="vm.uncheckAllMediaTypes()">Clear Filters</a>
             <!--<label class="checkbox">
                 <input type="checkbox" name="checkbox">
                 <i></i>
@@ -86,6 +89,9 @@
     <div class="row">
         <div class="col-xs-12">
             <div class="well">
+                <div class="text-right margin-bottom-10">
+                    <a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>
+                </div>
                 <div jarvis-widget
                      data-widget-color="blueDark"
                      id="campaigns-messages4"
@@ -157,8 +163,12 @@
                                                             </tr>
                                                             </thead>
                                                             <tr>
-                                                                <td>Digital Bulletins <button class="btn btn-default float-right">Street View</button></td>
-                                                                <td>Digital Posters <button class="btn btn-default float-right">Street View</button></td>
+                                                                <td>Digital Bulletins
+                                                                    <button class="btn btn-default float-right">Street View</button>
+                                                                </td>
+                                                                <td>Digital Posters
+                                                                    <button class="btn btn-default float-right">Street View</button>
+                                                                </td>
                                                                 <td></td>
                                                             </tr>
                                                         </table>
