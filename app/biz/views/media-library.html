@@ -99,7 +99,7 @@
         <div class="col-xs-12">
             <div class="well">
                 <div class="text-right margin-bottom-10">
-                    <a href="javascript:window.open('data:application/vnd.ms-excel,'+document.documentElement.innerHTML);" class="btn btn-danger">Export</a>
+                    <a href="javascript:window.open('data:application/vnd.ms-excel,' + document.getElementById('exportDiv').innerHTML);" class="btn btn-danger">Export</a>
                 </div>
                 <div jarvis-widget
                      data-widget-color="blueDark"
@@ -170,7 +170,7 @@
                                                             </tr>
                                                             </thead>
                                                             <tr>
-                                                                <th ng-repeat="content in b.contents track by $index">{{content}}</th>
+                                                                <td ng-repeat="content in b.contents track by $index">{{content}}</td>
                                                             </tr>
                                                         </table>
                                                     </div>
@@ -186,4 +186,33 @@
             </div>
         </div>
     </div>
+</div>
+<div class="hide" id="exportDiv">
+    <table>
+        <thead>
+        <tr>
+            <th>Country</th>
+            <th>OOH Supplier</th>
+            <th>Website</th>
+            <th>Phone</th>
+            <th>Format</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>United Arab Emirates</td>
+            <td>Clear Channel Outdoor</td>
+            <td>http://clearchanneloutdoor.com/where-we-are/albuquerque/</td>
+            <td>(505) 345-3589</td>
+            <td>Digital Posters</td>
+        </tr>
+        <tr>
+            <td>United Arab Emirates</td>
+            <td>AD display </td>
+            <td>http://clearchanneloutdoor.com/where-we-are/el-paso/</td>
+            <td>(915) 566-9380</td>
+            <td>Digital Posters</td>
+        </tr>
+        </tbody>
+    </table>
 </div>

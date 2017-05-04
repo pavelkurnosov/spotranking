@@ -196,7 +196,7 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
         if (vm.searchFlag) {
             vm.searchResult = [
                 {
-                    title: 'Albuquerque / Santa Fe NM',
+                    title: 'Emirates United Arab',
                     formats: [{
                         title: 'Billboard',
                         headers: ['Mupis', 'Rooftops', 'Spectacular'],
