@@ -211,7 +211,20 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
                         contents: ['', '', '']
                     }]
                 }, {
-                    title: 'Amarillo TX'
+                    title: 'Amarillo TX',
+                    formats: [{
+                        title: 'Billboard',
+                        headers: ['Mupis', 'Rooftops', 'Spectacular'],
+                        contents: ['Lamp posts', '', '']
+                    },{
+                        title: 'Transit and Transportation',
+                        headers: ['Digital Airport Screens', 'Airport Posters', 'Baggage Claim'],
+                        contents: ['Jet Bridges', '', '']
+                    },{
+                        title: 'Street Furniture',
+                        headers: ['Bus Shelter Wraps', '', ''],
+                        contents: ['', '', '']
+                    }]
                 }
             ]
         } else {
