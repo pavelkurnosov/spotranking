@@ -21,7 +21,7 @@
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages1" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>OOH Media Type</h2>
+                    <h2>OOH Media Categories</h2>
                 </header>
 
                 <!-- widget div-->
@@ -30,18 +30,16 @@
                     <div class="widget-body">
                         <div class="smart-form" ng-repeat="item in vm.mediaTypes">
                             <label class="checkbox">
-                                <input type="checkbox" name="radio" ng-model="item.checked">
+                                <input type="checkbox" name="radio" ng-model="item.checked" ng-click="checkMediaType(item)">
                                 <i></i>
                                 {{item.name}}
                             </label>
                         </div>
                     </div>
                     <!-- end widget body-->
-
                 </div>
                 <!-- end widget content -->
             </div>
-
         </div>
         <div class="col-xs-4">
             <div jarvis-widget data-widget-color="blueDark" id="campaigns-messages3" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
@@ -63,11 +61,9 @@
                         </div>
                     </div>
                     <!-- end widget body-->
-
                 </div>
                 <!-- end widget content -->
             </div>
-
         </div>
     </div>
     <div class="row">
@@ -78,8 +74,8 @@
 
         </div>
         <div class="col-xs-6 text-center">
-            <a href-void class="btn btn-primary" ng-click="vm.checkAllMedias(true)">Select all OOH Categories and Formats</a>
-            <a href-void class="btn btn-info" ng-click="vm.checkAllMedias(false)">Deselect All</a>
+            <a href-void class="btn btn-primary float-left" ng-click="vm.checkAllMediaTypes(true)">Select all OOH Categories</a>
+            <a href-void class="btn btn-info" ng-click="vm.checkAllMediaFormats()">Select / Deselect All</a>
             <!--<label class="checkbox">
                 <input type="checkbox" name="checkbox">
                 <i></i>

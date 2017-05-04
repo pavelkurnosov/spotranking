@@ -125,8 +125,8 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     vm.getMediaFormats = function () {
         var checkedMediaTypes = $filter('filter')(vm.mediaTypes, {checked: true});
         vm.mediaFormats = [];
-        angular.forEach(checkedMediaTypes, function (val, key) {
-            angular.forEach(val.formats, function (v, k) {
+        angular.forEach(checkedMediaTypes, function (val) {
+            angular.forEach(val.formats, function (v) {
                 vm.mediaFormats[vm.mediaFormats.length] = v;
             });
         });
@@ -142,10 +142,19 @@ angular.module('app.biz').controller('MediaLibraryController', function ($filter
     ];
     vm.currCountry = vm.countries[0];
 
-    vm.checkAllMedias = function (flag) {
-        angular.forEach(vm.mediaTypes, function (val, key) {
+    vm.checkAllMediaTypes = function (flag) {
+        angular.forEach(vm.mediaTypes, function (val) {
             val.checked = flag;
         });
+    };
+
+    vm.allFormatCheck = true;
+    vm.checkAllMediaFormats = function () {
+        vm.checkAllMediaTypes(true);
+        angular.forEach(vm.mediaFormats, function (val) {
+            val.checked = vm.allFormatCheck;
+        });
+        vm.allFormatCheck = !vm.allFormatCheck;
     };
 
     vm.searchFlag = false;
