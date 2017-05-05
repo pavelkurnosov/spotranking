@@ -3,7 +3,7 @@
 angular.module('app.biz').controller('DashboardController', function () {
     var vm = this;
 
-    vm.articles = [];
+    vm.articles = [1,2,3];
 
 
 
