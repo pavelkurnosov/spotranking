@@ -12,12 +12,12 @@ angular
         directive.template = html;
 
         directive.scope = {
-
+            dom: "@dom"
         };
 
         directive.link = function (scope, element, attrs) {
             scope.addToDashboard = function () {
-                console.log(element)
+                console.log(scope, element, attrs);
             };
         };
         return directive;

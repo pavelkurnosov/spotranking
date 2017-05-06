@@ -3,18 +3,10 @@
 angular.module('app.biz').controller('DashboardController', function () {
     var vm = this;
 
-    vm.articles = [1,2,3];
+    vm.articles = [1, 2, 3];
 
 
-
-
-
-
-
-
-
-
-    /*vm.barChartData = [
+    vm.barChartData = [
         {
             "data": [[0, 3]],
             "bars": {"show": true, "barWidth": 1, "order": 1}
@@ -31,5 +23,5 @@ angular.module('app.biz').controller('DashboardController', function () {
         {"label": "McDonald's", "data": 8},
         {"label": "Burger King", "data": 40},
         {"label": "Pizza Hut", "data": 15}
-    ];*/
+    ];
 });

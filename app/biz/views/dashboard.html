@@ -1,21 +1,127 @@
 <div id="content" class="container-fluid">
     <section id="widget-grid" widget-grid>
         <div class="row">
-            <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6" ng-repeat="article in vm.articles track by $index">
+            <article class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div jarvis-widget id="morris-sales-graph-widget" data-widget-editbutton="false">
                     <header>
-                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
-                        <h2>{{article}}</h2>
+                        <span class="widget-icon"> <i class="fa fa-table"></i> </span>
+
+                        <h2>Past 24 HRS</h2>
                     </header>
                     <div>
                         <div class="widget-body no-padding">
-
+                            <div class="table-responsive">
+                                <table class="table table-striped text-center">
+                                    <thead>
+                                    <tr>
+                                        <th colspan="2"></th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/01.png">Print Media</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/02.png">Newspaper</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/03.png">TV Channel</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/04.png">FM Radio</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/05.png">Outdoor</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/06.png">Magazine</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/07.png">Facebook</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/08.png">Twitter</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/09.png">YouTube</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/10.png">LinkedIn</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/11.png">Pinterest</th>
+                                        <th class="text-center"><img class="img-responsive margin-auto" src="./styles/img/temp/icons/12.png">Instagram</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td rowspan="2"><img class="img-responsive max-width-100" src="./styles/img/temp/6.jpg"></td>
+                                        <td>Campaign</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><img class="img-responsive max-width-100" src="./styles/img/temp/7.jpg"></td>
+                                        <td>Campaign</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2"><img class="img-responsive max-width-100" src="./styles/img/temp/8.jpg"></td>
+                                        <td>Campaign</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Post</td>
+                                        <td ng-repeat="i in [1,1,1,1,1,1,1,1,1,1,1,1] track by $index">2</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
             </article>
         </div>
-        <div class="row" ng-if="!vm.articles.length">
+        <div class="row">
+            <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div jarvis-widget id="morris-sales-graph-widget1" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+
+                        <h2>Static</h2>
+                    </header>
+
+                    <div>
+                        <div class="widget-body no-padding">
+                            <flot-bar-chart data="vm.barChartData"></flot-bar-chart>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="widget-body no-padding">
+                            <flot-pie-chart data="vm.pieChartData"></flot-pie-chart>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>A Whopper for Gignac</h4>
+                        <p>World famous Fries The proud Whopper </p>
+                        <p>The friendship is strong but The Whopper is stronger 100% British and Irish BEEF</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div jarvis-widget id="morris-sales-graph-widget2" data-widget-editbutton="false">
+                    <header>
+                        <span class="widget-icon"> <i class="fa fa-bar-chart-o"></i> </span>
+
+                        <h2>Static</h2>
+                    </header>
+
+                    <div>
+                        <div class="widget-body no-padding">
+                            <flot-bar-chart data="vm.barChartData"></flot-bar-chart>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="widget-body no-padding">
+                            <flot-pie-chart data="vm.pieChartData"></flot-pie-chart>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4>A Whopper for Gignac</h4>
+                        <p>World famous Fries The proud Whopper </p>
+                        <p>The friendship is strong but The Whopper is stronger 100% British and Irish BEEF</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!--<div class="row" ng-if="!vm.articles.length">
             <div class="col-xs-12 well text-center">
                 <br/>
                 <h2>This Dashboard is Empty.</h2>
@@ -24,6 +130,6 @@
                 <button class="btn btn-primary">ADD YOUR FIRST WIDGET</button>
                 <br/><br/><br/>
             </div>
-        </div>
+        </div>-->
     </section>
 </div>
