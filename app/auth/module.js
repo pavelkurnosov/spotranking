@@ -36,7 +36,9 @@ angular.module('app.auth', [
         url: '/login',
         views: {
             root: {
-                templateUrl: 'app/auth/views/login.html'
+                templateUrl: 'app/auth/views/login.html',
+                controller: 'LoginCtrl',
+                controllerAs: 'vm'
             }
         },
         data: {
