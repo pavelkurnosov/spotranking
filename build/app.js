@@ -3065,9 +3065,14 @@ $templateCache.put("app/_common/layout/directives/demo/demo-states.tpl.html","<d
                 p: password
             };
             var url = ServerURL + 'login';
-            var promise = $http.post(url, params), deferred = $q.defer();
+
+            var promise = $http({
+                method: 'POST',
+                url: url,
+                data: $.param(params),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }), deferred = $q.defer();
             promise.then(function (res) {
-                if (isDebug) console.log(res);
                 deferred.resolve(res);
             }, function (err) {
                 if (isDebug) console.error(err);
@@ -5089,14 +5094,14 @@ angular.module('app.auth').controller('LoginCtrl', function ($scope, $state, Use
         if (vm.form.signin.$invalid) return false;
         vm.submit = true;
 
-        UserService.Login(vm.email, vm.password)
-            .then(function (res) {
-                console.log(res)
+        UserService.Login(vm.email, vm.password).then(function (res) {
+            if (res.data.status == 'logged in') {
+                localStorage.token = res.data.token;
                 $state.go('app.biz.dashboard');
-            })
-            .catch(function (err) {
-                console.log(err);
-            });
+            } else {
+                alert(res.data.status);
+            }
+        });
     };
 })
 

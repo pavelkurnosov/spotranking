@@ -22,9 +22,14 @@
                 p: password
             };
             var url = ServerURL + 'login';
-            var promise = $http.post(url, params), deferred = $q.defer();
+
+            var promise = $http({
+                method: 'POST',
+                url: url,
+                data: $.param(params),
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+            }), deferred = $q.defer();
             promise.then(function (res) {
-                if (isDebug) console.log(res);
                 deferred.resolve(res);
             }, function (err) {
                 if (isDebug) console.error(err);

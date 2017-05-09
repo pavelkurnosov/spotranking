@@ -8,13 +8,13 @@ angular.module('app.auth').controller('LoginCtrl', function ($scope, $state, Use
         if (vm.form.signin.$invalid) return false;
         vm.submit = true;
 
-        UserService.Login(vm.email, vm.password)
-            .then(function (res) {
-                console.log(res)
+        UserService.Login(vm.email, vm.password).then(function (res) {
+            if (res.data.status == 'logged in') {
+                localStorage.token = res.data.token;
                 $state.go('app.biz.dashboard');
-            })
-            .catch(function (err) {
-                console.log(err);
-            });
+            } else {
+                alert(res.data.status);
+            }
+        });
     };
 })
