@@ -15,4 +15,9 @@ angular.module('app').controller('MainController', function ($interval, $state) 
     vm.go = function (state) {
         $state.go('app.biz.' + state);
     };
+
+    vm.logout = function () {
+        localStorage.token = '';
+        $state.go('login');
+    }
 });
