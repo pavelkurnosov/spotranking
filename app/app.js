@@ -100,11 +100,19 @@ angular.module('app', [
         };
     })
 
-    .run(function ($rootScope
-        , $state, $stateParams) {
+    .run(function ($rootScope, $state, $stateParams, $location, $timeout, UserService) {
         $rootScope.$state = $state;
         $rootScope.$stateParams = $stateParams;
         // editableOptions.theme = 'bs3';
 
-    });
+        $rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {
+            if (toState.name != 'login') {
+                if (!UserService.isLoggedIn()) {
+                    event.preventDefault();
+                    $state.go('login');
+                }
+            }
+        });
+    })
+;
 

@@ -13,6 +13,7 @@
 
         service.Login = Login;
         service.Activate = Activate;
+        service.isLoggedIn = isLoggedIn;
 
         return service;
 
@@ -37,7 +38,9 @@
             });
             return deferred.promise;
         }
-
+        function isLoggedIn (){
+            return localStorage.token != '';
+        }
         function Activate(token) {
             var params = {
                 token: token
