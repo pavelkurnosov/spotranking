@@ -39,7 +39,7 @@
             return deferred.promise;
         }
         function isLoggedIn (){
-            return !!localStorage.token || localStorage.token != '';
+            return !!localStorage.token && localStorage.token != '';
         }
         function Activate(token) {
             var params = {
