@@ -216,8 +216,13 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
         startDate: moment().subtract(1, 'day'),
         endDate: moment().subtract(1, 'day')
     };
+    var tempFlag = 0;
     $scope.$watch('vm.dateRange', function () {
         vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+        if (tempFlag > 1) {
+            vm.lastSearched = 'date_period';
+        }
+        tempFlag ++;
     });
 
     vm.backToTop = function () {
