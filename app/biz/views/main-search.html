@@ -14,7 +14,7 @@
                             Country <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.countries"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -22,7 +22,7 @@
                             Language <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.languages"><a ng-click="vm.currLanguage = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.languages"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -55,7 +55,7 @@
                             Brands <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.brands"><a ng-click="vm.currBrand = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.brands"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -63,7 +63,7 @@
                             Product <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.products"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                 </div>
