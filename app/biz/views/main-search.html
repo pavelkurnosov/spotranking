@@ -243,20 +243,24 @@
                                         <td>{{vm.currSubIndustry.name}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Product List</td>
-                                        <td>{{vm.currProduct.name}}</td>
+                                        <td>Products</td>
+                                        <td>{{vm.getCheckedNames(vm.products)}}</td>
                                     </tr>
                                     <tr>
                                         <td>Media Vehicle</td>
-                                        <td>{{vm.getMediaNames()}}</td>
+                                        <td>{{vm.getCheckedNames(vm.mediaTypes)}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Country</td>
-                                        <td>{{vm.currCountry.name}}</td>
+                                        <td>Countries</td>
+                                        <td>{{vm.getCheckedNames(vm.countries)}}</td>
                                     </tr>
                                     <tr>
-                                        <td>Language</td>
-                                        <td>{{vm.currLanguage.name}}</td>
+                                        <td>Languages</td>
+                                        <td>{{vm.getCheckedNames(vm.languages)}}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Brands</td>
+                                        <td>{{vm.getCheckedNames(vm.brands)}}</td>
                                     </tr>
                                     <tr>
                                         <td>Date Period</td>

@@ -6365,8 +6365,17 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             mediaNames[mediaNames.length] = medias[m]['name'];
         }
         return mediaNames.join(', ');
-    }
+    };
+
     vm.extendTableVisible = [];
+
+    vm.getCheckedNames = function (obj) {
+        var names = [];
+        angular.forEach($filter('filter')(obj, {checked: true}), function (val) {
+            names[names.length] = val.name;
+        });
+        return names.join(', ');
+    };
 
     vm.go = function (state) {
         $state.go('app.biz.' + state);
