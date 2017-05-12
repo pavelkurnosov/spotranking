@@ -718,5 +718,8 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 .loading-sheath .icon {
     color: grey;
     margin-top: 150px;
-    /*margin-left: calc(50% - 23px);*/
+    margin-left: calc(50% - 23px);
+}
+.width-0 {
+    width: 0;
 }

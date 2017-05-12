@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('app.biz').controller('OohSearchController', function ($scope, $filter) {
+angular.module('app.biz').controller('OohSearchController', function ($scope, $filter, $timeout) {
     var vm = this;
 
+    vm.loading = true;
     vm.countries = [
         {id: "UA", name: "United Arab Eliminate"},
         {id: "GE", name: "Germany"},
@@ -367,72 +368,76 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
     };
     vm.search = function () {
         if (vm.searchFlag) {
-            vm.articles = [
-                {
-                    'icon': '13.png',
-                    'type': 'cinema',
-                    'country': '',
-                    'language': '',
-                    'broadcast_source': '',
-                    'first_run': '',
-                    'spot_length': '',
-                    'advertiser': '',
-                    'product_name': ''
-                }, {
-                    'icon': '14.png',
-                    'type': 'billboard',
-                    'ooh_supplier': '',
-                    'country': '',
-                    'city': '',
-                    'street_name': '',
-                    'language': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'ooh_media_category': ''
-                }, {
-                    'icon': '15.png',
-                    'type': 'billboard',
-                    'ooh_supplier': '',
-                    'country': '',
-                    'city': '',
-                    'street_name': '',
-                    'language': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'ooh_media_category': ''
-                }, {
-                    'icon': '16.png',
-                    'type': 'billboard',
-                    'ooh_supplier': '',
-                    'country': '',
-                    'city': '',
-                    'street_name': '',
-                    'language': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'ooh_media_category': ''
-                }, {
-                    'icon': '17.png',
-                    'type': 'billboard',
-                    'ooh_supplier': '',
-                    'country': '',
-                    'city': '',
-                    'street_name': '',
-                    'language': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'ooh_media_category': ''
-                }
-            ];
-            vm.searchCounts = {
-                total: 76,
-                television: 20,
-                newspaper: 4,
-                magazine: 5,
-                radio: 33,
-                online_display: 6,
-                outdoor: 8
-            };
+            vm.loading = true;
+            $timeout(function () {
+                vm.articles = [
+                    {
+                        'icon': '13.png',
+                        'type': 'cinema',
+                        'country': '',
+                        'language': '',
+                        'broadcast_source': '',
+                        'first_run': '',
+                        'spot_length': '',
+                        'advertiser': '',
+                        'product_name': ''
+                    }, {
+                        'icon': '14.png',
+                        'type': 'billboard',
+                        'ooh_supplier': '',
+                        'country': '',
+                        'city': '',
+                        'street_name': '',
+                        'language': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'ooh_media_category': ''
+                    }, {
+                        'icon': '15.png',
+                        'type': 'billboard',
+                        'ooh_supplier': '',
+                        'country': '',
+                        'city': '',
+                        'street_name': '',
+                        'language': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'ooh_media_category': ''
+                    }, {
+                        'icon': '16.png',
+                        'type': 'billboard',
+                        'ooh_supplier': '',
+                        'country': '',
+                        'city': '',
+                        'street_name': '',
+                        'language': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'ooh_media_category': ''
+                    }, {
+                        'icon': '17.png',
+                        'type': 'billboard',
+                        'ooh_supplier': '',
+                        'country': '',
+                        'city': '',
+                        'street_name': '',
+                        'language': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'ooh_media_category': ''
+                    }
+                ];
+                vm.searchCounts = {
+                    total: 76,
+                    television: 20,
+                    newspaper: 4,
+                    magazine: 5,
+                    radio: 33,
+                    online_display: 6,
+                    outdoor: 8
+                };
+                vm.loading = false;
+            }, 1000);
         } else {
             vm.articles = [];
             vm.currCountry = {};
@@ -454,6 +459,7 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
                 online_display: 0,
                 outdoor: 0
             };
+            vm.loading = false;
         }
         vm.searchFlag = !vm.searchFlag;
     }

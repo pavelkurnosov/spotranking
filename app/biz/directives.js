@@ -8,7 +8,7 @@ angular
         directive.restrict = 'E';
 
         var html = '<div class="loading-sheath {{visible?\'show\':\'hide\'}}">';
-        html += '<div class="icon">';
+        html += '<div class="icon width-0">';
         html += '<i class="fa fa-refresh fa-3x fa-spin"></i>';
         html += '</div>';
         html += '</div>';
