@@ -202,10 +202,10 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, $t
     ];
     vm.currProduct = vm.products[0];
 
-    vm.getMediaNames = function () {
+    vm.getCheckedNames = function (obj) {
         var names = [];
-        angular.forEach($filter('filter')(vm.mediaTypes, {checked:true}), function (val, key) {
-            names.push(val.name);
+        angular.forEach($filter('filter')(obj, {checked: true}), function (val) {
+            names[names.length] = val.name;
         });
         return names.join(', ');
     };
@@ -248,5 +248,6 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, $t
         DTColumnBuilder.newColumn('first_seen'),
         DTColumnBuilder.newColumn('days_seen')
     ];
+
 
 });

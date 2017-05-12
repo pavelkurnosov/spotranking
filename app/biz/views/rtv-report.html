@@ -13,7 +13,7 @@
                             Country <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item;vm.highlight = 'country'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.countries"><a href-void ng-click="item.checked = !item.checked;vm.highlight = 'country'"><input type="checkbox" ng-change="item.checked = !item.checked;" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -21,7 +21,7 @@
                             Language <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.languages"><a ng-click="vm.currLanguage = item;vm.highlight = 'language'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.languages"><a href-void ng-click="item.checked = !item.checked;vm.highlight = 'language'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -53,7 +53,7 @@
                             Brands <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.brands"><a ng-click="vm.currBrand = item;vm.highlight = 'brand'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.brands"><a href-void ng-click="item.checked = !item.checked;vm.highlight = 'brand'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -61,7 +61,7 @@
                             Product <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item;vm.highlight = 'product_list'">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.products"><a href-void ng-click="item.checked = !item.checked;vm.highlight = 'product_list'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="smart-form float-left date-range-box margin-left-5">
@@ -102,26 +102,26 @@
                                         <td class="col-xs-3 font-bold">Access</td>
                                         <td class="col-xs-3">Toyota</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'brand'}">Brand</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'brand'}"><a data-ui-sref="app.biz.mainSearch">{{vm.currBrand.name}}</a></td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'brand'}"><a data-ui-sref="app.biz.mainSearch">{{vm.getCheckedNames(vm.brands)}}</a></td>
                                     </tr>
 
                                     <tr>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'country'}">Country</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'country'}">{{vm.currCountry.name}}</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'country'}">{{vm.getCheckedNames(vm.countries)}}</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'product_list'}">Product List</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'product_list'}">{{vm.currProduct.name}}</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'product_list'}">{{vm.getCheckedNames(vm.products)}}</td>
                                     </tr>
 
                                     <tr>
                                         <td class="col-xs-3 font-bold" ng-class="{'highlight-left':vm.highlight == 'language'}">Language</td>
-                                        <td class="col-xs-3" ng-class="{'highlight-right':vm.highlight == 'language'}">{{vm.currLanguage.name}}</td>
+                                        <td class="col-xs-3" ng-class="{'highlight-right':vm.highlight == 'language'}">{{vm.getCheckedNames(vm.languages)}}</td>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'date_period'}">Date Period</td>
                                         <td ng-class="{'highlight-right':vm.highlight == 'date_period'}">{{vm.dateString}}</td>
                                     </tr>
 
                                     <tr>
                                         <td class="font-bold" ng-class="{'highlight-left':vm.highlight == 'media_type'}">Media Type</td>
-                                        <td ng-class="{'highlight-right':vm.highlight == 'media_type'}">{{vm.getMediaNames()}}</td>
+                                        <td ng-class="{'highlight-right':vm.highlight == 'media_type'}">{{vm.getCheckedNames(vm.mediaTypes)}}</td>
                                         <td class="font-bold">Search Result</td>
                                         <td><a data-ui-sref="app.biz.mainSearch" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
                                     </tr>
