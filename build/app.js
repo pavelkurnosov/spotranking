@@ -7363,7 +7363,7 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
     vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
 
     vm.brands = [
-        {id: 1, name: 'All Brands'},
+        // {id: 1, name: 'All Brands'},
         {id: 2, name: 'MyCompany'},
         {id: 3, name: 'Competitor name1'},
         {id: 4, name: 'Competitor name2'},
@@ -7383,8 +7383,13 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
         startDate: moment().subtract(1, 'day'),
         endDate: moment().subtract(1, 'day')
     };
+    var tempFlag = 0;
     $scope.$watch('vm.dateRange', function () {
         vm.dateString = moment(vm.dateRange['startDate']).format('MM/DD/YYYY') + ' ~ ' + moment(vm.dateRange['endDate']).format('MM/DD/YYYY');
+        if (tempFlag > 1) {
+            vm.lastSearched = 'date_period';
+        }
+        tempFlag ++;
     });
 
     vm.articlesPerPage = "100";
@@ -7487,6 +7492,14 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
         vm.searchFlag = !vm.searchFlag;
     }
     vm.search();
+
+    vm.getCheckedNames = function (obj) {
+        var names = [];
+        angular.forEach($filter('filter')(obj, {checked: true}), function (val) {
+            names[names.length] = val.name;
+        });
+        return names.join(', ');
+    };
 });
 'use strict';
 
@@ -7790,7 +7803,7 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, $t
     };
 
     vm.brands = [
-        {id: 1, name: 'All Brands'},
+        // {id: 1, name: 'All Brands'},
         {id: 2, name: 'MyCompany'},
         {id: 3, name: 'Competitor name1'},
         {id: 4, name: 'Competitor name2'},

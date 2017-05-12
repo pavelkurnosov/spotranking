@@ -13,7 +13,8 @@
                             Country <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>
+                            <!--<li ng-repeat="item in vm.countries"><a ng-click="vm.currCountry = item">{{item.name}}</a></li>-->
+                            <li ng-repeat="item in vm.countries"><a href-void ng-click="item.checked = !item.checked;vm.lastSearched = 'country'"><input type="checkbox" ng-change="item.checked = !item.checked;" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -30,7 +31,7 @@
                         </button>
                         <ul class="dropdown-menu">
                             <li><a href-void ng-click="vm.checkAllMediaTypes()"><input type="checkbox" ng-model="vm.allMediaTypeCheck"> All Medias</a></li>
-                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
+                            <li ng-repeat="item in vm.mediaTypes"><a href-void ng-click="item.checked = !item.checked;vm.lastSearched = 'media_type'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <!--<div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -47,7 +48,7 @@
                             Industry <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.industries"><a ng-click="vm.currIndustry = item;vm.currSubIndustry = vm.currIndustry['subIndustries'][0];">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.industries"><a ng-click="vm.currIndustry = item;vm.currSubIndustry = vm.currIndustry['subIndustries'][0];vm.lastSearched = 'industry'">{{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -55,7 +56,7 @@
                             Sub Industry <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.currIndustry['subIndustries']"><a ng-click="vm.currSubIndustry = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.currIndustry['subIndustries']"><a ng-click="vm.currSubIndustry = item;vm.lastSearched = 'sub_industry'">{{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -63,7 +64,7 @@
                             Brands <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.brands"><a ng-click="vm.currBrand = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.brands"><a href-void ng-click="item.checked = !item.checked;vm.lastSearched = 'brand';vm.lastSearched = 'brand'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -71,7 +72,7 @@
                             Product <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.products"><a ng-click="vm.currProduct = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.products"><a href-void ng-click="item.checked = !item.checked;vm.lastSearched = 'product';vm.lastSearched = 'product'"><input type="checkbox" ng-change="item.checked = !item.checked" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="smart-form float-left date-range-box margin-left-5">
@@ -197,36 +198,36 @@
                                     <td>Toyota</td>
                                 </tr>
                                 <tr>
-                                    <td>Media Type</td>
-                                    <td>{{vm.getCheckedMediaTypeNames()}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'country'}">Country</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'country'}">{{vm.getCheckedNames(vm.countries)}}</td>
+                                </tr>
+                                <tr>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'media_type'}">Media Type</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'media_type'}">{{vm.getCheckedMediaTypeNames()}}</td>
                                 </tr>
                                 <!--<tr>
                                     <td>Media Format</td>
                                     <td>{{vm.getCheckedMediaFormatNames()}}</td>
                                 </tr>-->
                                 <tr>
-                                    <td>Industry</td>
-                                    <td>{{vm.currSubIndustry.name}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'industry'}">Industry</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'industry'}">{{vm.currIndustry.name}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Product List</td>
-                                    <td>{{vm.currProduct.name}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'sub_industry'}">Sub Industry</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'sub_industry'}">{{vm.currSubIndustry.name}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Media Vehicle</td>
-                                    <td>{{vm.getMediaNames()}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'brand'}">Brands</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'brand'}">{{vm.getCheckedNames(vm.brands)}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Country</td>
-                                    <td>{{vm.currCountry.name}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'product'}">Product List</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'product'}">{{vm.getCheckedNames(vm.products)}}</td>
                                 </tr>
                                 <tr>
-                                    <td>Language</td>
-                                    <td>{{vm.currLanguage.name}}</td>
-                                </tr>
-                                <tr>
-                                    <td>Date Period</td>
-                                    <td>{{vm.dateString}}</td>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'date_period'}">Date Period</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'date_period'}">{{vm.dateString}}</td>
                                 </tr>
                                 <tr>
                                     <td>Search Result</td>

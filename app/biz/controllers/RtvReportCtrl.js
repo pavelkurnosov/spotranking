@@ -186,7 +186,7 @@ angular.module('app.biz').controller('RtvReportController', function ($scope, $t
     };
 
     vm.brands = [
-        {id: 1, name: 'All Brands'},
+        // {id: 1, name: 'All Brands'},
         {id: 2, name: 'MyCompany'},
         {id: 3, name: 'Competitor name1'},
         {id: 4, name: 'Competitor name2'},
