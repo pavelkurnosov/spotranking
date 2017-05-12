@@ -1,8 +1,8 @@
 'use strict';
 
-angular.module('app.biz').controller('MainSearchController', function ($scope, $filter, $state) {
+angular.module('app.biz').controller('MainSearchController', function ($scope, $filter, $timeout, $state) {
     var vm = this;
-
+    vm.loading = false;
     vm.countries = [
         {id: "UA", name: "United Arab Eliminate"},
         {id: "GE", name: "Germany"},
@@ -242,95 +242,100 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     };
     vm.search = function () {
         if (vm.searchFlag) {
-            for (var a = 1; a <= 2; a++) {
-                vm.articles[vm.articles.length] = {
-                    'icon': '01.png',
-                    'type': 'newspaper',
-                    'country': 'country' + a,
-                    'language': '',
-                    'date': '',
-                    'publication_name': '',
-                    'geographical_scope': '',
-                    'number_of_ads': '',
-                    'published_section': '',
-                    'page_number': '',
-                    'image_specification': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'advertising_forum': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
+            vm.loading = true;
+            $timeout(function () {
+                for (var a = 1; a <= 2; a++) {
+                    vm.articles[vm.articles.length] = {
+                        'icon': '01.png',
+                        'type': 'newspaper',
+                        'country': 'country' + a,
+                        'language': '',
+                        'date': '',
+                        'publication_name': '',
+                        'geographical_scope': '',
+                        'number_of_ads': '',
+                        'published_section': '',
+                        'page_number': '',
+                        'image_specification': '',
+                        'advertiser': '',
+                        'product_name': '',
+                        'advertising_forum': '',
+                        'campaign_message': '',
+                        'camp_id': '',
+                        'image': 'cover.png'
+                    };
+                    vm.articles[vm.articles.length] = {
+                        'icon': '03.png',
+                        'type': 'tv_radio',
+                        'country': 'country' + a,
+                        'language': '',
+                        'broadcast_source': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'spot_length': '',
+                        'advertiser': '',
+                        'product_name': '',
+                        'advertising_form': '',
+                        'campaign_message': '',
+                        'camp_id': '',
+                        'video': 'video.mp4'
+                    };
+                    vm.articles[vm.articles.length] = {
+                        'icon': '06.png',
+                        'type': 'ooh',
+                        'ooh_supplier': '',
+                        'country': 'country' + a,
+                        'city': '',
+                        'street_name': '',
+                        'language': '',
+                        'first_run': '',
+                        'last_run': '',
+                        'ooh_media_category': '',
+                        'ooh_media_format': '',
+                        'circuit_distance': '',
+                        'geo_location': '',
+                        'ooh_display_number': '',
+                        'advertising_forum': '',
+                        'advertiser': '',
+                        'product_name': '',
+                        'campaign_message': '',
+                        'camp_id': '',
+                        'image': 'cover.png'
+                    };
+                    vm.articles[vm.articles.length] = {
+                        'icon': '05.png',
+                        'type': 'web',
+                        'country': 'country' + a,
+                        'language': '',
+                        'date': '',
+                        'landing_page': '',
+                        'creative_type': '',
+                        'time_seen': '',
+                        'days_seen': '',
+                        'first_seen': '',
+                        'last_seen': '',
+                        'ad_size': '',
+                        'advertising_forum': '',
+                        'advertiser': '',
+                        'product_name': '',
+                        'campaign_message': '',
+                        'camp_id': '',
+                        'image': 'cover.png'
+                    };
+                }
+                vm.searchCounts = {
+                    total: 76,
+                    television: 20,
+                    newspaper: 4,
+                    magazine: 5,
+                    radio: 33,
+                    online_display: 6,
+                    outdoor: 8
                 };
-                vm.articles[vm.articles.length] = {
-                    'icon': '03.png',
-                    'type': 'tv_radio',
-                    'country': 'country' + a,
-                    'language': '',
-                    'broadcast_source': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'spot_length': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'advertising_form': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'video': 'video.mp4'
-                };
-                vm.articles[vm.articles.length] = {
-                    'icon': '06.png',
-                    'type': 'ooh',
-                    'ooh_supplier': '',
-                    'country': 'country' + a,
-                    'city': '',
-                    'street_name': '',
-                    'language': '',
-                    'first_run': '',
-                    'last_run': '',
-                    'ooh_media_category': '',
-                    'ooh_media_format': '',
-                    'circuit_distance': '',
-                    'geo_location': '',
-                    'ooh_display_number': '',
-                    'advertising_forum': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
-                };
-                vm.articles[vm.articles.length] = {
-                    'icon': '05.png',
-                    'type': 'web',
-                    'country': 'country' + a,
-                    'language': '',
-                    'date': '',
-                    'landing_page': '',
-                    'creative_type': '',
-                    'time_seen': '',
-                    'days_seen': '',
-                    'first_seen': '',
-                    'last_seen': '',
-                    'ad_size': '',
-                    'advertising_forum': '',
-                    'advertiser': '',
-                    'product_name': '',
-                    'campaign_message': '',
-                    'camp_id': '',
-                    'image': 'cover.png'
-                };
-            }
-            vm.searchCounts = {
-                total: 76,
-                television: 20,
-                newspaper: 4,
-                magazine: 5,
-                radio: 33,
-                online_display: 6,
-                outdoor: 8
-            };
+                vm.loading = false;
+            }, 1000);
         } else {
+            vm.loading = false;
             vm.articles = [];
             vm.uncheckAll(vm.countries);
             vm.uncheckAll(vm.languages);
