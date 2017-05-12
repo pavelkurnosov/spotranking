@@ -6322,11 +6322,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             vm.uncheckAll(vm.languages);
             vm.uncheckAll(vm.products);
             vm.uncheckAll(vm.brands);
-            vm.currCountry = {};
-            vm.currLanguage = {};
+            /*vm.currCountry = {};
+            vm.currLanguage = {};*/
             vm.currSubIndustry = {};
-            vm.currBrand = {};
-            vm.currProduct = {};
+            /*vm.currBrand = {};
+            vm.currProduct = {};*/
             vm.tags = [];
             vm.dateString = '';
             for (var m in vm.mediaTypes) {
