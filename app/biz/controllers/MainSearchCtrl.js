@@ -176,7 +176,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     vm.currSubIndustry = vm.currIndustry['subIndustries'][0];
 
     vm.brands = [
-        {id: 1, name: 'All Brands'},
+        // {id: 1, name: 'All Brands'},
         {id: 2, name: 'MyCompany'},
         {id: 3, name: 'Competitor name1'},
         {id: 4, name: 'Competitor name2'},
@@ -327,6 +327,10 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
             };
         } else {
             vm.articles = [];
+            vm.uncheckAll(vm.countries);
+            vm.uncheckAll(vm.languages);
+            vm.uncheckAll(vm.products);
+            vm.uncheckAll(vm.brands);
             vm.currCountry = {};
             vm.currLanguage = {};
             vm.currSubIndustry = {};
@@ -351,6 +355,11 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
     }
     vm.search();
 
+    vm.uncheckAll = function (obj) {
+        angular.forEach(obj, function (val) {
+            val.checked = false;
+        });
+    };
 
     //--------- Pagination ------------
     vm.articlesPerPage = "100";
