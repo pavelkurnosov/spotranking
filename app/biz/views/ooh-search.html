@@ -22,7 +22,7 @@
                             City <span class="caret"></span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li ng-repeat="item in vm.cities"><a ng-click="vm.currCity = item">{{item.name}}</a></li>
+                            <li ng-repeat="item in vm.cities"><a href-void ng-click="item.checked = !item.checked;vm.lastSearched = 'city'"><input type="checkbox" ng-change="item.checked = !item.checked;" ng-model="item.checked"> {{item.name}}</a></li>
                         </ul>
                     </div>
                     <div class="btn-group dropdown-left float-left margin-left-5" data-dropdown>
@@ -202,6 +202,10 @@
                                 <tr>
                                     <td ng-class="{'highlight-left': vm.lastSearched == 'country'}">Country</td>
                                     <td ng-class="{'highlight-right': vm.lastSearched == 'country'}">{{vm.getCheckedNames(vm.countries)}}</td>
+                                </tr>
+                                <tr>
+                                    <td ng-class="{'highlight-left': vm.lastSearched == 'city'}">City</td>
+                                    <td ng-class="{'highlight-right': vm.lastSearched == 'city'}">{{vm.getCheckedNames(vm.cities)}}</td>
                                 </tr>
                                 <tr>
                                     <td ng-class="{'highlight-left': vm.lastSearched == 'media_type'}">Media Type</td>

@@ -437,7 +437,7 @@ angular.module('app.biz').controller('OohSearchController', function ($scope, $f
                     outdoor: 8
                 };
                 vm.loading = false;
-            }, 1000);
+            }, 200);
         } else {
             vm.articles = [];
             vm.currCountry = {};
