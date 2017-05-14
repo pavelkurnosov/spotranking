@@ -236,7 +236,8 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
 
     vm.articleTypes = {
         'newspaper': ['country', 'language', 'date', 'publication_name', 'geographical_scope', 'number_of_ads', 'published_section', 'page_number', 'image_specification', 'advertiser', 'product_name', 'advertising_forum', 'campaign_message', 'camp_id'],
-        'tv_radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
+        'tv': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
+        'radio': ['country', 'language', 'broadcast_source', 'first_run', 'last_run', 'spot_length', 'advertiser', 'product_name', 'advertising_form', 'campaign_message', 'camp_id'],
         'ooh': ['ooh_supplier', 'country', 'city', 'street_name', 'language', 'first_run', 'last_run', 'ooh_media_category', 'ooh_media_format', 'circuit_distance', 'geo_location', 'ooh_display_number', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id'],
         'web': ['country', 'language', 'date', 'landing_page', 'creative_type', 'time_seen', 'days_seen', 'first_seen', 'last_seen', 'ad_size', 'advertising_forum', 'advertiser', 'product_name', 'campaign_message', 'camp_id']
     };
@@ -271,7 +272,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                     if (mediaType == 'tv' || mediaType == 'all') {
                         vm.articles[vm.articles.length] = {
                             'icon': '03.png',
-                            'type': 'tv_radio',
+                            'type': 'tv',
                             'country': 'country' + a,
                             'language': '',
                             'broadcast_source': '',
@@ -286,7 +287,25 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                             'video': 'video.mp4'
                         };
                     }
-                    if (mediaType == 'newspaper' || mediaType == 'all') {
+                    if (mediaType == 'radio' || mediaType == 'all') {
+                        vm.articles[vm.articles.length] = {
+                            'icon': '04.png',
+                            'type': 'radio',
+                            'country': 'country' + a,
+                            'language': '',
+                            'broadcast_source': '',
+                            'first_run': '',
+                            'last_run': '',
+                            'spot_length': '',
+                            'advertiser': '',
+                            'product_name': '',
+                            'advertising_form': '',
+                            'campaign_message': '',
+                            'camp_id': '',
+                            'audio': 'audio.mp3'
+                        };
+                    }
+                    if (mediaType == 'ooh' || mediaType == 'all') {
                         vm.articles[vm.articles.length] = {
                             'icon': '06.png',
                             'type': 'ooh',
@@ -307,10 +326,10 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                             'product_name': '',
                             'campaign_message': '',
                             'camp_id': '',
-                            'image': 'cover.png'
+                            'image': 'demo/m1.jpg'
                         };
                     }
-                    if (mediaType == 'newspaper' || mediaType == 'all') {
+                    if (mediaType == 'web' || mediaType == 'all') {
                         vm.articles[vm.articles.length] = {
                             'icon': '05.png',
                             'type': 'web',
@@ -329,7 +348,7 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
                             'product_name': '',
                             'campaign_message': '',
                             'camp_id': '',
-                            'image': 'cover.png'
+                            'image': 'demo/m2.jpg'
                         };
                     }
                 }

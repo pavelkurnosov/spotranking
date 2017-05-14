@@ -162,10 +162,14 @@
                                                                         <div class="margin-bottom-10">
                                                                             <a data-toggle="modal" data-target="#myModal" class="cursor-zoom-in" ng-click="vm.currArticle = article">
                                                                                 <img class="img-responsive max-height-100 margin-auto" ng-src="./styles/img/{{article.image}}" ng-if="article.type == 'newspaper' || article.type == 'web' || article.type == 'ooh'">
-                                                                                <video class="width-full" controls ng-if="article.type == 'tv_radio'">{{article.type}}
+                                                                                <video class="width-full" controls ng-if="article.type == 'tv'">{{article.type}}
                                                                                     <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
                                                                                     Your browser does not support the video tag.
                                                                                 </video>
+                                                                                <audio class="width-full" controls ng-if="article.type == 'radio'">
+                                                                                    <source src="./styles/img/temp/audio1.mp3" type="audio/mpeg"/>
+                                                                                    <source src="./styles/img/temp/audio.ogg" type="audio/ogg"/>
+                                                                                </audio>
                                                                             </a>
                                                                         </div>
                                                                         <!--<div class="margin-bottom-10"><img class="img-responsive margin-auto" src="./styles/img/temp/9.jpg"></div>-->
@@ -285,29 +289,29 @@
                                         <td><a ng-click="vm.searchFlag = true;vm.search('all')" ng-if="vm.searchCounts.total">{{vm.searchCounts.total}} Spots</a></td>
                                     </tr>
                                     <tr>
-                                        <td>Television</td>
-                                        <td><a ng-click="vm.searchFlag = true;vm.search('tv')" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
-                                    </tr>
-                                    <tr>
                                         <td>Newspaper</td>
                                         <td><a ng-click="vm.searchFlag = true;vm.search('newspaper')" ng-if="vm.searchCounts.newspaper">{{vm.searchCounts.newspaper}} Spots</a></td>
                                     </tr>
                                     <tr>
-                                        <td>Magazine</td>
-                                        <td><a ng-click="vm.searchFlag = true;vm.search('newspaper')" ng-if="vm.searchCounts.magazine">{{vm.searchCounts.magazine}} Spots</a></td>
+                                        <td>Television</td>
+                                        <td><a ng-click="vm.searchFlag = true;vm.search('tv')" ng-if="vm.searchCounts.television">{{vm.searchCounts.television}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Radio</td>
-                                        <td><a ng-click="vm.searchFlag = true;vm.search('newspaper')" ng-if="vm.searchCounts.radio">{{vm.searchCounts.radio}} Spots</a></td>
+                                        <td><a ng-click="vm.searchFlag = true;vm.search('radio')" ng-if="vm.searchCounts.radio">{{vm.searchCounts.radio}} Spots</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magazine</td>
+                                        <td><a ng-click="vm.searchFlag = true;vm.search('ooh')" ng-if="vm.searchCounts.magazine">{{vm.searchCounts.magazine}} Spots</a></td>
                                     </tr>
                                     <tr>
                                         <td>Online Display</td>
-                                        <td><a ng-click="vm.searchFlag = true;vm.search('newspaper')" ng-if="vm.searchCounts.online_display">{{vm.searchCounts.online_display}} Spots</a></td>
+                                        <td><a ng-click="vm.searchFlag = true;vm.search('web')" ng-if="vm.searchCounts.online_display">{{vm.searchCounts.online_display}} Spots</a></td>
                                     </tr>
-                                    <tr>
+                                    <!--<tr>
                                         <td>Outdoor</td>
                                         <td><a ng-click="vm.searchFlag = true;vm.search('newspaper')" ng-if="vm.searchCounts.outdoor">{{vm.searchCounts.outdoor}} Spots</a></td>
-                                    </tr>
+                                    </tr>-->
                                 </table>
                             </div>
 
@@ -340,10 +344,14 @@
             </div>-->
             <div class="modal-body">
                 <img class="img-responsive width-full" ng-src="./styles/img/{{vm.currArticle.image}}" ng-if="vm.currArticle.type == 'newspaper' || vm.currArticle.type == 'web' || vm.currArticle.type == 'ooh'">
-                <video class="width-full" controls ng-if="vm.currArticle.type == 'tv_radio'">
+                <video class="width-full" controls ng-if="vm.currArticle.type == 'tv'">
                     <source ng-src="./styles/img/temp/video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
+                <audio class="width-full" controls ng-if="vm.currArticle.type == 'radio'">
+                    <source src="./styles/img/temp/audio.mp3" type="audio/mpeg"/>
+                    <source src="./styles/img/temp/audio.ogg" type="audio/ogg"/>
+                </audio>
             </div>
             <!--<div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">
