@@ -1250,6 +1250,19 @@ angular.module('app.biz', ['ui.router'])
                     }
                 }
             })
+            .state('app.biz.marketingActivity', {
+                url: '/marketing_activity',
+                data: {
+                    title: 'Marketing Activity'
+                },
+                views: {
+                    "content@app": {
+                        templateUrl: 'app/biz/views/marketing-activity.html',
+                        controller: 'MarketingActivityController',
+                        controllerAs: 'vm'
+                    }
+                }
+            })
         ;
     })
 ;

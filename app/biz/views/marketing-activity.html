@@ -4,124 +4,165 @@
             <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>Comparing the performance across multiple campaigns
-                    </h2>
+                    <h2>Campaign Filters</h2>
                 </header>
 
                 <!-- widget div-->
                 <div>
                     <div class="content-fluid">
                         <div class="row">
-                            <div class="col-xs-4">
-                                <form class="form-horizontal">
-                                    <div class="form-group" ng-repeat="i in [1,1,1] track by $index">
-                                        <label class="col-md-4 control-label">Campaign {{$index + 1}}</label>
-                                        <div class="col-md-8">
-                                            <select class="form-control">
-                                                <option>Please select a profile</option>
-                                                <option>profile 1</option>
-                                                <option>profile 2</option>
-                                                <option>profile 3</option>
-                                                <option>profile 4</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label"></label>
-                                        <div class="col-md-8">
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="radiobox style-0" checked="checked" name="style-0">
-                                                    <span>Select by region</span>
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" class="radiobox style-0" name="style-0">
-                                                    <span>Select by media type</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">From</label>
-                                        <div class="col-md-8">
-                                            <div class="smart-form">
-                                                <label class="input"> <i class="icon-append fa fa-calendar"></i>
-                                                    <input type="text" name="request" placeholder=""
-                                                           data-smart-datepicker data-dateformat='dd/mm/yy' ng-model="vm.sdate">
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-md-4 control-label">To</label>
-                                        <div class="col-md-8">
-                                            <div class="smart-form">
-                                                <label class="input"> <i class="icon-append fa fa-calendar"></i>
-                                                    <input type="text" name="request" placeholder=""
-                                                           data-smart-datepicker data-dateformat='dd/mm/yy' ng-model="vm.edate">
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
+                            <div class="col-sm-3">
+                                <div class="well">
+                                    <b>My Brand</b> : Product Name
+                                </div>
                             </div>
-                            <div class="col-xs-8">
-                                <div highchart class="margin-bottom-10" data="vm.data1"></div>
-                                <div highchart class="margin-bottom-10" data="vm.data2"></div>
+                            <div class="col-sm-5">
+                                <div class="well padding-top-0">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <legend class="margin-bottom-10">Marketing Action</legend>
+                                            <div class="form-group margin-0 margin-bottom-5">
+                                                <label class="col-md-3 padding-left-0 control-label">Paid Media</label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Offline Media" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Newspapers" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group margin-0 margin-bottom-5">
+                                                <label class="col-md-3 padding-left-0 control-label"></label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Online Media" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Social Ad" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group margin-0 margin-bottom-5 margin-top-10">
+                                                <label class="col-md-3 padding-left-0 control-label">Owned Media</label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Offline Media" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Company PR" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group margin-0 margin-bottom-5">
+                                                <label class="col-md-3 padding-left-0 control-label"></label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Online Media" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Social Accounts" type="text">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group margin-0 margin-bottom-5 margin-top-10">
+                                                <label class="col-md-3 padding-left-0 control-label">Earned Media</label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Disable" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Mentions" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="form-group margin-0 margin-bottom-5">
+                                                <label class="col-md-3 padding-left-0 control-label"></label>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Online Media" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <input class="form-control" placeholder="Social Engagement" type="text">
+                                                </div>
+                                                <div class="col-md-3 padding-left-0">
+                                                    <button class="btn btn-primary width-full">All</button>
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="well padding-top-0">
+                                    <form class="form-horizontal">
+                                        <fieldset>
+                                            <legend class="margin-bottom-10">Match with <b>Marketing Condition</b></legend>
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="checkbox style-0">
+                                                        <span>Upload Sales Outcome</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-md-12">
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="checkbox style-0">
+                                                        <span>Mins</span>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="checkbox style-0">
+                                                        <span>Hrs</span>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="checkbox style-0">
+                                                        <span>Day</span>
+                                                    </label>
+                                                    <label class="checkbox-inline">
+                                                        <input type="checkbox" class="checkbox style-0">
+                                                        <span>Month</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <label>Select a date (range):</label>
+                                                </div>
+                                                <div class="col-sm-6">
+
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" id="from" data-smart-datepicker data-min-restrict="#to" data-number-of-months="1" data-changes-month="true" data-default-date="+1w" type="text" placeholder="From">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-sm-6">
+
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input class="form-control" id="to" data-smart-datepicker data-max-restrict="#from" data-number-of-months="1" data-changes-month="true" data-default-date="+1w" type="text" placeholder="Select a date">
+                                                            <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </fieldset>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="row" ng-repeat="label in vm.labels">
+
         <div class="col-xs-12">
             <div jarvis-widget data-widget-color="blueDark" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-deletebutton="false" data-widget-fullscreenbutton="false" data-widget-custombutton="false" data-widget-sortable="false">
                 <header>
                     <span class="widget-icon"> <i class="fa fa-align-justify"></i> </span>
-                    <h2>{{label}}
-                    </h2>
+                    <h2>Monthly Marketing Activity</h2>
                 </header>
 
                 <!-- widget div-->
                 <div>
                     <div class="content-fluid">
-                        <div class="row">
-                            <div class="col-xs-4">
-                                <table class="table table-responsive text-center">
-                                    <thead>
-                                    <tr>
-                                        <th class="text-center">Date Period</th>
-                                        <th class="text-center">{{vm.sdate}} - {{vm.edate}}</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr ng-repeat="item in vm.items">
-                                        <td>{{item.key}}</td>
-                                        <td><a class="cursor-pointer">{{item.val}}</a></td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="col-xs-8">
-                                <div class="container-fluid">
-                                    <div class="row">
-                                        <div class="col-xs-6">
-                                            <div highchart class="margin-bottom-10" data="vm.data3"></div>
-                                        </div>
-                                        <div class="col-xs-6">
-                                            <div highchart class="margin-bottom-10" data="vm.data2"></div>
-                                        </div>
-                                        <div class="col-xs-12">
-                                            <div highchart class="margin-bottom-10" data="vm.data2"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div highchart data="vm.data"></div>
                     </div>
                 </div>
             </div>
