@@ -6459,6 +6459,19 @@ angular.module('app.biz').controller('MainSearchController', function ($scope, $
 
 'use strict';
 
+angular.module('app.biz').controller('MarketingActivityController', function ($scope) {
+    var vm = this;
+    vm.socialWebsites = [
+        {name: "Facebook"},
+        {name: "Twitter"},
+        {name: "Youtube"},
+        {name: "Google+"},
+        {name: "Pinterest"}
+    ];
+
+});
+'use strict';
+
 angular.module('app.biz').controller('MeasuringOutputController', function () {
     var vm = this;
 
