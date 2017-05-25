@@ -723,8 +723,12 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 .width-0 {
     width: 0;
 }
+.marketing-header {
+    font-weight: bolder;
+    font-size: large;
+}
 .marketing-label {
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 10px;
     background: #3b9ff3;
     padding-bottom: 10px;
