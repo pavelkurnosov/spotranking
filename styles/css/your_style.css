@@ -723,3 +723,18 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
 .width-0 {
     width: 0;
 }
+.marketing-label {
+    font-size: 20px;
+    margin-top: 10px;
+    background: #3b9ff3;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center!important;
+    padding-left: 10px;
+    margin-left: 5px;
+    margin-right: -5px;
+    color: white;
+}
+.marketing-button {
+    width: calc(100% - 30px);
+}
