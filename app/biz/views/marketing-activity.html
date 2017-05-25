@@ -49,11 +49,11 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Offline Media</button>
+                                                                    <button class="btn btn-style1 marketing-button" ng-init="btnLabel1 = 'Offline Media'">{{btnLabel1}}</button>
                                                                     <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Offline Media</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-click="btnLabel1 = 'Offline Media'"><a>Offline Media</a></li>
+                                                                        <li ng-click="btnLabel1 = 'Disable'"><a>Disable</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
