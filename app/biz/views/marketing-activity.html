@@ -49,21 +49,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button" ng-init="btnLabel1 = 'Offline Media'">{{btnLabel1}}</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[0]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-click="btnLabel1 = 'Offline Media'"><a>Offline Media</a></li>
-                                                                        <li ng-click="btnLabel1 = 'Disable'"><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[0]" ng-click="vm.currItems[0] = item" ng-class="{'item-actived':vm.currItems[0] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Newspapers</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[1]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Newspapers</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[1]" ng-click="vm.currItems[1] = item" ng-class="{'item-actived':vm.currItems[1] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -71,21 +67,17 @@
                                                         <div class="row">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Online Media</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[2]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Online Media</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[2]" ng-click="vm.currItems[2] = item" ng-class="{'item-actived':vm.currItems[2] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Social Ad</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[3]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Social Ad</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[3]" ng-click="vm.currItems[3] = item" ng-class="{'item-actived':vm.currItems[3] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -100,21 +92,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Offline Media</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[4]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Offline Media</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[4]" ng-click="vm.currItems[4] = item" ng-class="{'item-actived':vm.currItems[4] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Company PR</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[5]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Company PR</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[5]" ng-click="vm.currItems[5] = item" ng-class="{'item-actived':vm.currItems[5] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -122,21 +110,17 @@
                                                         <div class="row">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Online Media</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[6]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Online Media</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[6]" ng-click="vm.currItems[6] = item" ng-class="{'item-actived':vm.currItems[6] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Social Accounts</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[7]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Social Accounts</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[7]" ng-click="vm.currItems[7] = item" ng-class="{'item-actived':vm.currItems[7] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -151,20 +135,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Disable</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[8]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[8]" ng-click="vm.currItems[8] = item" ng-class="{'item-actived':vm.currItems[8] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Mentions</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[9]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Mentions</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[9]" ng-click="vm.currItems[9] = item" ng-class="{'item-actived':vm.currItems[9] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -172,34 +153,31 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style1 marketing-button">Online Media</button>
-                                                                    <button class="btn btn-style1 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style1 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[10]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Online Media</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[10]" ng-click="vm.currItems[10] = item" ng-class="{'item-actived':vm.currItems[10] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-style2 marketing-button">Social Engagement</button>
-                                                                    <button class="btn btn-style2 dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+                                                                    <button class="btn btn-style2 dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[11]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li><a>Social Engagement</a></li>
-                                                                        <li><a>Disable</a></li>
+                                                                        <li ng-repeat="item in vm.items[11]" ng-click="vm.currItems[11] = item" ng-class="{'item-actived':vm.currItems[11] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <div class="col-md-6 col-md-offset-6 padding-left-0">
-                                                                <button class="btn btn-success width-full">All</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </fieldset>
+
+                                        <div class="row">
+                                            <div class="col-md-4 col-md-offset-4 padding-left-0">
+                                                <button class="btn btn-success width-full">All</button>
+                                            </div>
+                                        </div>
                                     </form>
                                 </div>
                             </div>

@@ -3,9 +3,43 @@
 angular.module('app.biz').controller('MarketingActivityController', function ($scope) {
     var vm = this;
 
+    vm.items = [
+        ['Offline Media', 'Disable'],
+        ['All', 'Newspapers', 'Magazine', 'TV', 'Radio', 'OOH'],
+        ['Online Media', 'Disable'],
+        ['All', 'Display', 'Organic Search', 'Paid Search', 'Social Ad', 'Referral', 'Email', 'Other'],
+        ['Offline Media', 'Disable'],
+        ['All', 'Retail in Store', 'Brochure', 'Flyers', 'Company PR'],
+        ['Online Media', 'Disable'],
+        ['Social Accounts', 'Disable'],
+        ['Ofline Media', 'Disable'],
+        ['Mentions', 'WOM Conversations'],
+        ['Online Media', 'Disable'],
+        ['Social Engagement', 'Online Rating', 'Online WOM Referral']
+    ];
+    vm.currItems = [];
+    angular.forEach(vm.items, function (val, key) {
+        var ind = 0;
+        if (key == 1) {
+            ind = 1;
+        } else if (key == 3) {
+            ind = 4;
+        } else if (key == 5) {
+            ind = 4;
+        } else if (key == 7) {
+            ind = 0;
+        } else if (key == 9) {
+            ind = 0;
+        } else if (key == 11) {
+            ind = 0;
+        }
+        vm.currItems[vm.currItems.length] = val[ind];
+    });
+
+
     vm.getRandomData = function () {
         var ary = [];
-        for (var i = 0; i < 30; i ++) {
+        for (var i = 0; i < 30; i++) {
             ary[ary.length] = Math.ceil(Math.random() * 100);
         }
         return ary;
@@ -120,7 +154,7 @@ angular.module('app.biz').controller('MarketingActivityController', function ($s
             tooltip: {
                 valueSuffix: ' '
             }
-        },{
+        }, {
             name: 'Timing',
             type: 'spline',
             yAxis: 2,
