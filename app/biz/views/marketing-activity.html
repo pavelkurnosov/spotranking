@@ -49,17 +49,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[0]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[0]}" data-toggle="dropdown">{{vm.currItems[0]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[0]" ng-click="vm.currItems[0] = item" ng-class="{'item-actived':vm.currItems[0] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[0]" ng-click="vm.currItems[0] = item; vm.clicked[0] = true;" ng-class="{'item-actived1':vm.currItems[0] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[1]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[1]}" data-toggle="dropdown">{{vm.currItems[1]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[1]" ng-click="vm.currItems[1] = item" ng-class="{'item-actived':vm.currItems[1] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[1]" ng-click="vm.currItems[1] = item; vm.clicked[1] = true;" ng-class="{'item-actived2':vm.currItems[1] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -67,17 +67,17 @@
                                                         <div class="row">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[2]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[2]}" data-toggle="dropdown">{{vm.currItems[2]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[2]" ng-click="vm.currItems[2] = item" ng-class="{'item-actived':vm.currItems[2] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[2]" ng-click="vm.currItems[2] = item; vm.clicked[2] = true;" ng-class="{'item-actived1':vm.currItems[2] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[3]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[3]}" data-toggle="dropdown">{{vm.currItems[3]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[3]" ng-click="vm.currItems[3] = item" ng-class="{'item-actived':vm.currItems[3] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[3]" ng-click="vm.currItems[3] = item; vm.clicked[3] = true;" ng-class="{'item-actived2':vm.currItems[3] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -92,17 +92,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[4]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[4]}" data-toggle="dropdown">{{vm.currItems[4]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[4]" ng-click="vm.currItems[4] = item" ng-class="{'item-actived':vm.currItems[4] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[4]" ng-click="vm.currItems[4] = item; vm.clicked[4] = true;" ng-class="{'item-actived1':vm.currItems[4] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[5]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[5]}" data-toggle="dropdown">{{vm.currItems[5]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[5]" ng-click="vm.currItems[5] = item" ng-class="{'item-actived':vm.currItems[5] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[5]" ng-click="vm.currItems[5] = item; vm.clicked[5] = true;" ng-class="{'item-actived2':vm.currItems[5] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -110,17 +110,17 @@
                                                         <div class="row">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[6]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[6]}" data-toggle="dropdown">{{vm.currItems[6]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[6]" ng-click="vm.currItems[6] = item" ng-class="{'item-actived':vm.currItems[6] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[6]" ng-click="vm.currItems[6] = item; vm.clicked[6] = true;" ng-class="{'item-actived1':vm.currItems[6] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[7]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[7]}" data-toggle="dropdown">{{vm.currItems[7]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[7]" ng-click="vm.currItems[7] = item" ng-class="{'item-actived':vm.currItems[7] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[7]" ng-click="vm.currItems[7] = item; vm.clicked[7] = true;" ng-class="{'item-actived2':vm.currItems[7] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -135,17 +135,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[8]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[8]}" data-toggle="dropdown">{{vm.currItems[8]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[8]" ng-click="vm.currItems[8] = item" ng-class="{'item-actived':vm.currItems[8] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[8]" ng-click="vm.currItems[8] = item; vm.clicked[8] = true;" ng-class="{'item-actived1':vm.currItems[8] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[9]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[9]}" data-toggle="dropdown">{{vm.currItems[9]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[9]" ng-click="vm.currItems[9] = item" ng-class="{'item-actived':vm.currItems[9] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[9]" ng-click="vm.currItems[9] = item; vm.clicked[9] = true;" ng-class="{'item-actived2':vm.currItems[9] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -153,17 +153,17 @@
                                                         <div class="row margin-bottom-5">
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[10]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[10]}" data-toggle="dropdown">{{vm.currItems[10]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[10]" ng-click="vm.currItems[10] = item" ng-class="{'item-actived':vm.currItems[10] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[10]" ng-click="vm.currItems[10] = item; vm.clicked[10] = true;" ng-class="{'item-actived1':vm.currItems[10] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 padding-left-0">
                                                                 <div class="btn-group dropdown width-full" data-dropdown>
-                                                                    <button class="btn btn-default dropdown-toggle width-full" data-toggle="dropdown">{{vm.currItems[11]}} <span class="caret"></span></button>
+                                                                    <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[11]}" data-toggle="dropdown">{{vm.currItems[11]}} <span class="caret"></span></button>
                                                                     <ul class="dropdown-menu">
-                                                                        <li ng-repeat="item in vm.items[11]" ng-click="vm.currItems[11] = item" ng-class="{'item-actived':vm.currItems[11] == item}"><a>{{item}}</a></li>
+                                                                        <li ng-repeat="item in vm.items[11]" ng-click="vm.currItems[11] = item; vm.clicked[11] = true;" ng-class="{'item-actived2':vm.currItems[11] == item}"><a>{{item}}</a></li>
                                                                     </ul>
                                                                 </div>
                                                             </div>

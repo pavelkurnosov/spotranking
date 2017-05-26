@@ -745,10 +745,19 @@ div, span, h1, h2, h3, h4, h5, h6, p, a, th, td {
     background: #fc4a1a;
     border-color: #c73e19;
 }
+.btn-style1:hover {
+    background: #ec471b;
+}
 .btn-style2 {
     background: #f7b733;
     border-color: #d8a234;
 }
-.item-actived {
+.btn-style2:hover {
+    background: #e8ab2d;
+}
+.item-actived1 {
+    background: #fc4a1a;
+}
+.item-actived2 {
     background: #f7b733;
 }

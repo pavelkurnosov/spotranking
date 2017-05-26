@@ -18,6 +18,7 @@ angular.module('app.biz').controller('MarketingActivityController', function ($s
         ['Social Engagement', 'Online Rating', 'Online WOM Referral']
     ];
     vm.currItems = [];
+    vm.clicked = [];
     angular.forEach(vm.items, function (val, key) {
         var ind = 0;
         if (key == 1) {
@@ -34,6 +35,7 @@ angular.module('app.biz').controller('MarketingActivityController', function ($s
             ind = 0;
         }
         vm.currItems[vm.currItems.length] = val[ind];
+        vm.clicked[vm.clicked.length] = false;
     });
 
 
