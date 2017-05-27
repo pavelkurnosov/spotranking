@@ -18,19 +18,20 @@
                                             <legend class="margin-bottom-10 marketing-header">&nbsp;</legend>
                                             <div class="form-group margin-0 margin-bottom-5">
                                                 <div class="col-md-6 padding-left-0">
-                                                    <select class="form-control">
-                                                        <option>My Brand</option>
-                                                        <option>Competitor 1</option>
-                                                        <option>Competitor 2</option>
-                                                        <option>Competitor 3</option>
-                                                    </select>
+                                                    <div class="btn-group dropdown width-full" data-dropdown>
+                                                        <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style1':vm.clicked[12]}" data-toggle="dropdown">{{vm.currItems[12]}} <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li ng-repeat="item in vm.items[12]" ng-click="vm.currItems[12] = item; vm.clicked[12] = true;" ng-class="{'item-actived1':vm.currItems[12] == item}"><a>{{item}}</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                                 <div class="col-md-6 padding-left-0">
-                                                    <select class="form-control">
-                                                        <option>Product Name 1</option>
-                                                        <option>Product Name 2</option>
-                                                        <option>Product Name 3</option>
-                                                    </select>
+                                                    <div class="btn-group dropdown width-full" data-dropdown>
+                                                        <button class="btn btn-default dropdown-toggle width-full" ng-class="{'btn-style2':vm.clicked[13]}" data-toggle="dropdown">{{vm.currItems[13]}} <span class="caret"></span></button>
+                                                        <ul class="dropdown-menu">
+                                                            <li ng-repeat="item in vm.items[13]" ng-click="vm.currItems[13] = item; vm.clicked[13] = true;" ng-class="{'item-actived2':vm.currItems[13] == item}"><a>{{item}}</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </fieldset>

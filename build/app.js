@@ -6487,7 +6487,9 @@ angular.module('app.biz').controller('MarketingActivityController', function ($s
         ['Ofline Media', 'Disable'],
         ['Mentions', 'WOM Conversations'],
         ['Online Media', 'Disable'],
-        ['Social Engagement', 'Online Rating', 'Online WOM Referral']
+        ['Social Engagement', 'Online Rating', 'Online WOM Referral'],
+        ['My Brand', 'Competitor 1', 'Competitor 2', 'Competitor 3'],
+        ['Product Name 1', 'Product Name 2', 'Product Name 3']
     ];
     vm.currItems = [];
     vm.clicked = [];
